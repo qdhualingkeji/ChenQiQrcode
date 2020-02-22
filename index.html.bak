@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>一码追溯_二维码防伪追溯巡检管理系统_微唤淘</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="applicable-device"content="pc,mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="微唤淘,二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
+<meta name="description" content="一码追溯,二维码综合管理服务平台创导者,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
+<meta property="og:image" content="qrcode/searchimg/logo.jpg" />
+<link rel="canonical" href="https://qrcode.pro">
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/font.css" />
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="qrcode/js/swiper.min.js"></script>
+<script type="application/ld+json">
+	{
+		"@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+		"@id": "https://qrcode.pro",
+		"appid": "1592101312390986",
+		"title": "一码追溯_二维码防伪追溯巡检管理系统",
+		"images": [
+			"https://qrcode.pro/qrcode/ig/logo-m.png"
+		],
+		"pubDate": "2018-11-21T08:00:01"
+	}
+</script>
+<script type="text/javascript">
+$(function(){
+  var nav=$("header");
+  var win=$(window);
+  var sc=$(document);
+  win.scroll(function(){
+    if(sc.scrollTop()>=50){
+      nav.addClass("fix");
+    }else{
+    nav.removeClass("fix");
+    }
+  });
+});
+</script>
+<style>
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.system-feature-box h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.system-feature-box .system-tab-content {
+    margin-top: 56px;
+	height:430px;
+}
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-md-6 {
+    width: 50%;
+}
+.system-create-code-easy-box .system-tab-content-li.first {
+    padding: 0 !important;
+}
+.system-tab-content-li h4 {
+    font-size: 16px;
+    color: 
+    #4a4a4a;
+    font-weight: 700;
+    line-height: 16px;
+}
+.system-tab-content-li p {
+    font-size: 14px;
+    color: 
+    #4a4a4a;
+    margin-top: 16px;
+    line-height: 14px;
+}
+.system-tab-content-li {
+    padding: 40px 0 0;
+    position: relative;
+}
+
+.system-create-code-easy-box .right-box {
+    margin-top: 8px;
+}
+.system-create-code-easy-box .right-box .left-img {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+.system-create-code-easy-box .right-box .left-img img {
+    width: 100%;
+}
+.system-create-code-easy-box .right-box .right-img {
+    display: inline-block;
+    width: 300px;
+}
+.system-create-code-easy-box .right-box .right-img img {
+    width: 100%;
+}
+.light-new-bg {
+    background-color:#f7f9f7;
+}
+.system-feature-box {
+    padding: 100px 0 80px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+    <a href="/" class="logo fl">&nbsp;</a>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="active">
+				<a href="/">首页</a>
+			</li>
+            <li>
+				<a href="/qrcode/function">案例模板</a>
+			</li>
+			<li>
+				<a href="/tools/qrcode/">二维码生成器</a>
+			</li>
+            <li class="list">
+				<a href="/qrcode/solution">定制价格</a>
+            </li>
+			<li class="list">
+				<a href="/help/faq/information/">帮助</a>
+			</li>
+        </ul>
+		<div class="nav_button">
+			<a href="/login" target="_blank" class="login but">登录</a>
+			<a class="kf-open registered but"><span>申请试用</span></a>
+		</div>
+    </div>
+</div>
+</header>
+<nav class="topnav">
+    <div class="topnav-layer">
+        <div class="topnav-menu">
+            <div class="topnav-menu-col" id="topnavToggle">
+                <div class="topnav-rotate-top"><span></span></div>
+                <div class="topnav-rotate-middle"><span></span></div>
+                <div class="topnav-rotate-bottom"><span></span></div>
+            </div>
+        </div>
+        <div class="topnav-logo"><a href="/"></a></div>
+        <div class="topnav-reg"><a href="/login">登录</a></div>
+    </div>
+    <div class="menu-list">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/qrcode/function">功能</a></li>
+            <li>
+                <a href="/qrcode/solution">解决方案</a>
+                <p><a href="/qrcode/solution">一站式</a></p>
+                <p><a href="/qrcode/solution/traceback.html">防伪追溯</a></p>
+                <p><a href="/qrcode/solution/inspect.html">设备巡检</a></p>
+                <p><a href="/qrcode/solution/record.html">周期记录</a></p>
+            </li>
+            <li>
+				<a href="/qrcode/case">案例展示</a>
+				<p><a href="https://qrcode.pro/q/?c=16666661150000000129000008000004">农药追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000128000009000000">种子追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000003000041000000">化肥追溯</a></p>
+				<p><a href="/qrcode/case">更多案例</a></p>
+			</li>
+            <li>
+				<a href="/help/faq/information/">资讯帮助</a>
+				<p><a href="/help/faq/problem/">常识问答</a></p>
+				<p><a href="/help/faq/information/">行业资讯</a></p>
+				<p><a href="/help/faq/help/">帮助文档</a></p>
+				<p><a href="/qrcode/about/">关于我们</a></p>
+			</li>
+			<li><a href="/tools/qrcode/">二维码生成器</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="banner min_w">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:url(qrcode/ig/lunbo1.jpg)">
+                <a href="/help/faq/manure/86.php">「肥料二维码可追溯标签，实现肥料扫码验真伪」</a>
+            </div>
+            <div class="swiper-slide" style="background:url(qrcode/ig/lunbo2.jpg)">
+                <a href="/help/faq/knowledge/48.php">「如何实现一物一码标签打印，一物一码标签如何制作？」</a>
+            </div>
+            <div class="swiper-slide" style="background:url(qrcode/ig/lunbo3.jpg)">
+                <a href="/help/faq/fruit/151.php">「水果一物一码可追溯标签如何制作？」</a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+	<div class="big_size">
+		<h1>二维码追溯综合管理平台</h1>
+		<div class="al">
+			<a class="chatqq">点击试用</a>
+			<a class="watch but btn-video"><i class="playicon"></i>观看视频</a>
+		</div>
+	</div>
+</div>
+<div class="video-bg"></div>
+<div class="video-box">
+    <div class="video_lr">
+        <video controls preload="none"  x5-playsinline="" playsinline="" webkit-playsinline="">
+			<source src=""></source>
+        </video>
+        <div class="video-close"></div>
+    </div>
+</div>
+<script type="text/javascript">
+var swiper = new Swiper('.swiper-container', {
+	effect: 'fade',
+	autoplay: {
+		delay: 8000,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+//news
+var swiper = new Swiper('.merchants', {
+	  loop : true,
+      navigation: {
+        nextEl: '.merchants-next',
+        prevEl: '.merchants-prev',
+      },
+    });
+</script>
+<div class="collaboration min_w">
+    <div class="title">丰富场景应用 满足多样化需求</div>
+    <ul>
+        <li><i class="chanpin"></i><p>产品展示</p></li>
+        <li><i class="fangwei"></i><p>防伪追溯</p></li>
+        <li><i class="fenlei"></i><p>分类管理</p></li>
+        <li><i class="weijian"></i><p>设备维检</p></li>
+        <li><i class="daili"></i><p>代理管理</p></li>
+        <li><i class="shuju"></i><p>数据分析</p></li>
+        <li><i class="quanxian"></i><p>权限管理</p></li>
+        <li><i class="yingxiao"></i><p>营销推广</p></li>
+    </ul>
+    <a class="more but" href="/qrcode/function">查看更多功能介绍</a>
+</div>
+
+<section id="system-create-code-easy-box" class="system-feature-box system-create-code-easy-box light-new-bg">
+	<div class="w-1000">
+		<h3 class="text-darkgrey-new">轻松生成二维码，满足你的多种用途</h3>
+		<div class="system-tab-content row">
+			<div class="col-md-6 left-box" style="width: 50%;float: left;">
+				<ul class="system-tab-content-ul">
+					<li class="system-tab-content-li first">
+						<h4>免费创建</h4>
+						<p>各类二维码均能免费生成，生成的二维码长期有效</p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>丰富组件</h4>
+						<p>图片、文字、音视频、文件、网址、表单、联系方式等十几种组件</p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>表单功能</h4>
+						<p>轻松实现签到、报名等信息收集，低成本满足巡查等管理场景</p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>批量生成</h4>
+						<p>让你简单高效生成大量同类二维码，减少重复工作</p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>行业模版</h4>
+						<p>常见行业模板免费套用，只需3步即可生成属于自己的二维码</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 right-box" style="width: 50%;float: left;">
+				<div class="left-img">
+					<img src="static/images/products/create-easy-code-left@2x_5446a29.png" alt="">
+				</div>
+				<div class="right-img">
+					<img src="static/images/products/create-easy-code-right-top@2x_c8ad3fd.png" alt="" style="margin-top: 40px;">
+					<img src="static/images/products/create-easy-code-right-bottom@2x_2ad4f5b.png" alt="" style="margin-top: 24px;">
+				</div>
+			</div>
+		</div>
+		<div style="width:318px;height:48px;margin:0 auto;margin-top:55px;">
+			<a><div style="width:148px;height:48px;line-height:48px;color:#fff;text-align:center;font-size:15px;background-color:#4caf50;border-radius:5px;">使用模板创建</div></a>
+			<a><div style="width:148px;height:44px;line-height:48px;margin-top:-48px;margin-left:170px;color:#4caf50;;text-align:center;font-size:15px;border:#4caf50 solid 2px;background-color:#fff;border-radius:5px;">自定义创建</div></a>
+		</div>
+	</div>
+</section>
+
+<!--
+<div class="service min_w">
+    <div class="title">多功能管理平台区块化解决方案</div>
+    <p>一站式模块化整体解决方案 满足您的一切需求</p>
+    <ul class="min_w">
+        <li>
+            <img src="/qrcode/ig/zs.png" alt="追溯平台">
+            <h2>产品追溯解决方案</h2>
+            <div class="plan">
+                <dl>
+                    <dt>覆盖原料、生产、仓库、分销、终端全过程追踪管理</dt>
+                    <dt>一对一、一对多，多种赋码方式批量生成，方便、快捷</dt>
+                    <dt>信息关联追溯源头，提高用户可信度，快速提升企业品牌知名度</dt>
+                </dl>
+            </div>
+            <div class="seemore"><a href="/qrcode/solution/traceback.html" class="but">查看更多</a></div>
+        </li>
+        <li>
+            <img src="/qrcode/ig/fw.png" alt="防伪追溯">
+            <h2>防伪查询解决方案</h2>
+            <div class="plan">
+                <dl>
+                    <dt>扫码验真伪、查授权、防窜货、防越级、质量追溯</dt>
+                    <dt>一物一码，扫码查询、编号查询多种查询方式</dt>
+                    <dt>全网物联，告别假货，提高品牌可信度增加复购率</dt>
+                </dl>
+            </div>
+            <div class="seemore"><a href="/qrcode/solution/traceback.html" class="but">查看更多</a></div>
+        </li>
+        <li>
+            <img src="/qrcode/ig/xj.png" alt="巡检系统">
+            <h2>设备维检解决方案</h2>
+            <div class="plan">
+                <dl>
+                    <dt>设备维护、安防巡检、实时公告等时间流信息展示</dt>
+                    <dt>活码管理，内容可实时变更，后台统一管理，告别传统纸质记录</dt>
+                    <dt>扫描二维码快速了解相关信息，方便、快捷、高效</dt>
+                </dl>
+            </div>
+            <div class="seemore"><a href="/qrcode/solution/inspect.html" class="but">查看更多</a></div>
+        </li>
+        <li>
+            <img src="/qrcode/ig/mp.png" alt="网络名片">
+            <h2>种植、养殖记录解决方案</h2>
+            <div class="plan">
+                <dl>
+                    <dt>蔬菜水果施肥记录、生长周期全程信息记录管理</dt>
+                    <dt>家禽、牲畜养殖周期记录、喂食记录全程信息记录</dt>
+                    <dt>实现种植、养殖业产品全生命周期可追溯，品质产品扫码可鉴</dt>
+                </dl>
+            </div>
+            <div class="seemore"><a href="/qrcode/solution/record.html" class="but">查看更多</a></div>
+        </li>
+    </ul>
+</div>
+-->
+<!--
+<div class="project">
+    <div class="title">广泛应用于各个行业</div>
+    <div class="text">引爆 “8” 亿移动互联网用户</div>
+    <ul class="w1200">
+        <li><a href="/qrcode/case/"><img src="qrcode/ig/case/gs.jpg" alt="水果蔬菜追溯"><p>果蔬生鲜行业</p></a></li>
+        <li><a href="/qrcode/case/agriculture.html"><img src="qrcode/ig/case/ny.jpg" alt="种子化肥农药追溯"><p>种子化肥农药</p></a></li>
+        <li><a href="/qrcode/case/wine.html"><img src="qrcode/ig/case/js.jpg" alt="酒水防伪溯源"><p>酒水行业</p></a></li>
+        <li><a href="/qrcode/case/cosmetics.html"><img src="/qrcode/ig/case/hz.jpg" alt="化妆品防伪追溯"><p>化妆品行业</p></a></li>
+        <li><a href="/qrcode/case/clothing.html"><img src="/qrcode/ig/case/fz.jpg" alt="服装溯源"><p>服装行业</p></a></li>
+        <li><a href="/qrcode/case/electronics.html"><img src="/qrcode/ig/case/dq.jpg" alt="电器溯源"><p>电子电器行业</p></a></li>
+        <li><a href="/qrcode/case/maintain.html"><img src="/qrcode/ig/case/wj.jpg" alt="巡检系统"><p>设备巡检维护</p></a></li>
+        <li><a href="/qrcode/nongyao/"><img src="/qrcode/ig/case/10.jpg"><p>查看更多行业</p></a></li>
+    </ul>
+</div>
+<div class="join_bg min_w">
+    <div class="title">一站式二维码综合管理服务 <span>助力企业快速迈向互联网+时代</span></div>
+    <div class="text">一码追溯专注于物联网标示帮助企业提高品牌形象、产品品质提供整体解决方案</div>
+    <a href="/qrcode/solution" class="but">了解更多</a>
+</div>
+-->
+
+<!--
+<div class="case min_w">
+    <div class="title">案例在线体验</div>
+    <ul class="w1200">
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrny.png" alt="农药追溯"></p><span class="span">农药二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrsc.jpg" alt="蔬菜追溯"></p><span class="span">蔬菜二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrhz.png" alt="化妆品防伪追溯"></p><span class="span">化妆品二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrsp.png" alt="食品追溯"></p><span class="span">食品二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrxj.png" alt="设备巡检"></p><span class="span">设备巡检维护</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrlc.png" alt="项目流程"></p><span class="span">项目流程进度</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrxx.png" alt="幼儿园食谱二维码"></p><span class="span">幼儿园每日食谱</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="/qrcode/ig/case/qrmp.png" alt="名片二维码"></p><span class="span">聚合网络名片</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+    </ul>
+</div>
+-->
+
+<!--
+<div class="build w1200">
+    <h2>「QRCODE」 在你的行业，扫出价值</h2>
+    <p>一码追溯二维码管理技术团队致力于为您的企业提升品牌形象与产品品质。专业为您的企业及产品提供一站式二维码管理解决方案,联系客服了解更多信息。</p>
+    <div class="lj_but">
+        <a class="but chatqq">在线咨询</a>
+        <a href="/login" target="_blank" class="but last">立即登录</a>
+    </div>
+</div>
+<div class="cooperation">
+  <div class="title">最新资讯</div>
+  <div class="merchants">
+  <div class="merchants-next"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <span><a href="https://qrcode.pro/help/faq/antifake/162.php" target="_blank">二维码防伪，什么是二维码防伪？二维码防伪原理是什么？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/inspect/160.php" target="_blank">机械设备零件如何实现二维码标签扫码防伪追溯？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/inspect/167.php" target="_blank">灭火器二维码巡检系统</a></span>
+      <span><a href="https://qrcode.pro/help/faq/poultry/152.php" target="_blank">猪肉二维码可追溯标签如何生成？猪肉溯源二维码在线制作</a></span>
+      <span><a href="https://qrcode.pro/help/faq/pesticide/150.php" target="_blank">农药旧包装袋如何实现二维码可追溯？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/seed/35.php" target="_blank">种子二维码标签追溯，如何实现一物一码追溯？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/inspect/166.php" target="_blank">二维码巡检系统如何实现？</a></span>
+      </div>
+      <div class="swiper-slide">
+      <span><a href="https://qrcode.pro/help/faq/agriculture/119.php" target="_blank">农产品实现二维码溯源有什么好处？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/agriculture/75.php" target="_blank">蜂蜜二维码标签扫码可追溯，扫码分辨真假蜂蜜？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/vegetables/16.php" target="_blank">有机蔬菜二维码溯源追溯系统_让百姓吃上“放心菜”</a></span>
+      <span><a href="https://qrcode.pro/help/faq/knowledge/47.php" target="_blank">什么是二维码巡检？什么是二维码设备维护巡检？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/knowledge/45.php" target="_blank">一物一码，什么是一物一码？如何实现一物一码追溯？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/knowledge/8.php" target="_blank">二维码追溯优点好处，追溯系统的作用，防伪溯源的优势是什么？</a></span>
+      <span><a href="https://qrcode.pro/help/faq/manure/116.php" target="_blank">化肥追溯二维码怎么印在袋子上？</a></span>
+      </div>
+    </div>    
+    <div class="merchants-prev"></div>
+  </div>
+</div>
+<footer class="min_w">
+    <div class="container w1200">
+        <ul>
+            <li>
+                <div class="span"><img src="/qrcode/ig/wxlogo.png"></div>
+                <div class="span">
+                    <div class="quick_nav">
+                    <div class="title">快速导航</div>
+                        <p><a href="/qrcode/function">功能</a></p>
+                        <p><a href="/qrcode/solution">解决方案</a></p>
+                        <p><a href="/qrcode/case">案例展示</a></p>
+                        <p><a href="/help/faq/information/">资讯帮助</a></p>
+						<p><a href="/tools/qrcode/">二维码生成器</a></p>
+						<p><a href="/qrcode/copyright.html" target="_blank">用户协议</a></p>
+                        <p><a href="/sitemap.xml" target="_blank">sitemap</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="title">友情链接</div>
+                <div class="friend_link">
+                    <a href="https://qrcode.pro" target="_blank">二维码追溯</a>
+                </div>
+            </li>
+            <li>
+                <div class="contact">
+                    <div class="title">联系方式</div>
+                    <div class="address">
+                        <p><span>Q Q：</span>907002002</p>
+                        <p><span>网址：</span>www.qrcode.pro</p>
+                        <p><span>邮箱：</span>qrcode@qrcode.pro</p>
+                        <p><span>地址：</span>青州一码追溯网络科技有限公司</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <div class="w1200">
+            <div class="text">Copyright © 2015-2018 一码追溯 qrcode.pro <a href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备17024272号-4</a></div>
+            <div class="icon iShare">
+                <a class="wechat">
+                    <div class="tc"><span>扫一扫</span><p>分享给微信好友</p><div class="ewm"><img src="/qrcode/ig/qrcodepro.png"></div></div>
+                </a>
+                <a class="qq icon-qq">
+                    <div class="tc"><span>官方 QQ 群</span><p>（申请时请说明备注）</p><p>主群：176261032</p></div>
+                </a>
+                <a class="qzone iShare_qzone" title="分享到QQ空间"></a>
+                <a class="sina iShare_weibo" title="分享到新浪微博"></a>
+                <a class="douban iShare_douban" title="分享到豆瓣"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="m_foot">
+    <div class="ft_icon">
+        <a class="qq icon-qq chatqq"></a>
+        <a class="wechat wx_ewm"></a>
+        <a href="tel:0536-2136306" class="tel"></a>
+    </div>
+    <div class="copyright">Copyright © 2015-2018 一码追溯 qrcode.pro <br>
+    <a href="/qrcode/copyright.html" target="_blank">用户协议&nbsp;&nbsp;</a><a href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备17024272号-4</a></div>
+</div>
+<div class="tc_ewm">
+    <div class="tp">
+    <img src="/qrcode/ig/gzh.png">
+    <p>扫码或长按识别 微信咨询</p></div>
+    <a class="close"></a>
+</div>
+<div class="ewm_bg"></div>
+<div id="fr_icon">
+    <a class="qq tb chatqq"><i class="corner">QQ咨询<br>官方客服 907002002</i></a>
+    <div class="wechat tb wx"><i class="corner"><img src="/qrcode/ig/gzh.png"><br>扫一扫 微信咨询</i></div>
+    <div class="tel tb phone"><i class="corner">0536-2136306</i></div>
+</div>
+<div id="back-to-top"><a href="#top" class="top"></a></div>
+<div id="kf_icon" class="kf_icon"><span class="online kf-open"></span></div>
+<div class="kf">
+    <div id="kf_box"></div>
+    <div class="kf_close return"></div>
+</div>
+<div id="ban">
+    <ul>
+        <li><a class="chatqq">QQ 咨询</a></li>
+        <li><a class="kf-open">在线咨询</a></li>
+        <li><a href="/">返回首页</a></li>
+    </ul>
+</div>
+<div id="qqkf"></div>
+-->
+<script type="text/javascript" src="qrcode/js/index.js"></script>
+<script type="text/javascript" src="qrcode/js/share.js"></script>
+</body>
+</html>
