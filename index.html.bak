@@ -146,11 +146,107 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 .action-box2{
 	width:318px;height:48px;margin:0 auto;margin-top:55px;
 }
-.symbcj_div,.ljpbdy_div,.glwdewm_div{
+.symbcj_div,.ljpbdy_div,.glwdewm_div,.ckwdewm_div,.mfsy_div{
 	width:148px;height:48px;line-height:48px;color:#fff;text-align:center;font-size:15px;background-color:#4caf50;border-radius:5px;
 }
-.zdycj_div,.mhewm_div,.mfcj_div{
+.zdycj_div,.mhewm_div,.mfcj_div,.ckjg_div{
 	width:148px;height:44px;line-height:48px;margin-top:-48px;margin-left:170px;color:#4caf50;;text-align:center;font-size:15px;border:#4caf50 solid 2px;background-color:#fff;border-radius:5px;
+}
+
+.system-features-new-box {
+    padding: 100px 0;
+    color: #000;
+}
+.system-features-title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.text-center {
+    text-align: center;
+}
+.text-darkgrey-new {
+    color: #4a4a4a !important;
+}
+.system-features-desc {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 16px;
+}
+.system-features-content-box {
+	height:260px;
+    margin-top: 66px;
+}
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+.advantage {
+    width: 220px;
+    padding: 40px 0 27px;
+	/*
+    min-height: 260px;
+	*/
+    box-shadow: 0 6px 10px rgba(0,0,0,.15);
+	border-radius: 10px;
+	background:#fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.icon-feature-safety {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin: 0 auto 24px;
+    background-image: url(static/images/products/product-safe@2x_9176836.png);
+    background-size: cover;
+}
+.advantage h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #4A4A4A;
+}
+.advantage p {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+.icon-feature-scene.wending {
+    background-position: 0 1px;
+}
+.icon-feature-scene {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url(static/images/products/icon-feature-scene_23ad74b.png);
+    background-size: 200% 200%;
+    margin: 0 auto 24px;
+}
+.icon-feature-jingji {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin: 0 auto 24px;
+    background-image: url(static/images/products/product-trophy@2x_cdad54d.png);
+    background-size: contain;
+}
+
+.footer-to-price-new {
+    background-color: #F7F9F7;
+    padding: 80px 0;
+}
+.footer-to-price-new .use-cliao-user-title {
+    color: #333;
+    font-weight: 400;
+    font-size: 28px;
 }
 </style>
 </head>
@@ -451,6 +547,108 @@ var swiper = new Swiper('.merchants', {
 		</div>
 	</div>
 </section>
+
+<div class="case min_w">
+    <div class="title">案例在线体验</div>
+    <ul class="w1200">
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="农药追溯"></p><span class="span">农药二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrsc.jpg" alt="蔬菜追溯"></p><span class="span">蔬菜二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="化妆品防伪追溯"></p><span class="span">化妆品二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="食品追溯"></p><span class="span">食品二维码溯源</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="设备巡检"></p><span class="span">设备巡检维护</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrlc.png" alt="项目流程"></p><span class="span">项目流程进度</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrxx.png" alt="幼儿园食谱二维码"></p><span class="span">幼儿园每日食谱</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrmp.png" alt="名片二维码"></p><span class="span">聚合网络名片</span></div>
+                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<section id="system-features-new-box" class="white system-features-new-box">
+	<div class="w-1000 features">
+		<h3 class="system-features-title text-center text-darkgrey-new">全面保障你的应用体验</h3>
+		<p class="text-center system-features-desc text-center text-darkgrey-new">懂你的疑虑，草料专业的技术与服务，解决你的后顾之忧</p>
+		<div class="row system-features-content-box">
+			<div class="col-md-3">
+				<div class="advantage">
+					<div class="icon-feature-safety"></div>
+					<h3>持续安全运营</h3>
+					<p>2011年成立至今<br>帮助数百万企业、机构<br>实现二维码应用</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="advantage">
+					<div class="icon-feature-scene wending"></div>
+					<h3>系统稳定可靠</h3>
+					<p>基于阿里云架构服务<br>专业云服务支持<br>安全稳定有保障</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="advantage">
+					<div class="icon-feature-jingji"></div>
+					<h3>行业标准制定</h3>
+					<p>参与《商品二维码》<br>《名片二维码通用技术规范》<br>等国家标准起草并制定</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="advantage">
+					<div class="icon-feature-scene easy"></div>
+					<h3>专业服务团队</h3>
+					<p>5×8小时在线售前咨询<br>1对1售后顾问<br>问题及时响应</p>
+				</div>
+			</div>
+		</div>
+		<p style="height:50px;font-size: 18px;text-align:center;margin-top:25px;">欢迎与我们沟通：<span class="fa fa-phone m-r-xs"></span> 400-002-0232</p>
+	</div>
+</section>
+
+	<div class="w-p100 footer-to-price-new">
+		<div class="row text-center use-cliao-user-box">
+			<h3 class="use-cliao-user-title">免费即可使用，付费获取更高功能及专享服务</h3>
+			<div class="action-box2">
+				<a><div class="mfsy_div">免费使用</div></a>
+				<a><div class="ckjg_div">查看价格</div></a>
+			</div>
+		</div>
+	</div>
 
 <!--
 <div class="service min_w">
