@@ -58,12 +58,6 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     font-weight: 700;
     text-align: center;
 }
-ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p {
-    margin: 0;
-    padding: 0;
-    word-wrap: break-word;
-    word-break: break-all;
-}
 .system-feature-box .system-tab-content {
     margin-top: 56px;
 	height:430px;
@@ -80,8 +74,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 }
 .system-tab-content-li h4 {
     font-size: 16px;
-    color: 
-    #4a4a4a;
+    color: #4a4a4a;
     font-weight: 700;
     line-height: 16px;
 }
@@ -120,6 +113,44 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 }
 .system-feature-box {
     padding: 100px 0 80px;
+}
+.system-beautiful-new-box .system-tab-content-li img, .system-anytime-new-box .system-tab-content-li img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.system-beautiful-new-box .system-tab-content-li .dashed-line, .system-anytime-new-box .system-tab-content-li .dashed-line {
+    border-left: 1px dashed 
+    #ddd;
+    height: 100%;
+    position: absolute;
+    left: 9px;
+    top: 50px;
+}
+.system-beautiful-new-box .system-tab-content-li .content-info, .system-anytime-new-box .system-tab-content-li .content-info {
+    margin-left: 36px;
+}
+.system-beautiful-new-box .system-tab-content-li.first, .system-anytime-new-box .system-tab-content-li.first {
+    padding-top: 48px;
+}
+.system-tab-content-li.first {
+    margin-top: 10px;
+}
+.system-tab-content-li .content-info h4 {
+    padding-top: 2px;
+}
+.system-anytime-new-box .system-tab-content-li .content-info p, .system-beautiful-new-box .system-tab-content-li .content-info p {
+    line-height: 21px;
+}
+.action-box2{
+	width:318px;height:48px;margin:0 auto;margin-top:55px;
+}
+.symbcj_div,.ljpbdy_div,.glwdewm_div{
+	width:148px;height:48px;line-height:48px;color:#fff;text-align:center;font-size:15px;background-color:#4caf50;border-radius:5px;
+}
+.zdycj_div,.mhewm_div,.mfcj_div{
+	width:148px;height:44px;line-height:48px;margin-top:-48px;margin-left:170px;color:#4caf50;;text-align:center;font-size:15px;border:#4caf50 solid 2px;background-color:#fff;border-radius:5px;
 }
 </style>
 </head>
@@ -299,9 +330,124 @@ var swiper = new Swiper('.merchants', {
 				</div>
 			</div>
 		</div>
-		<div style="width:318px;height:48px;margin:0 auto;margin-top:55px;">
-			<a><div style="width:148px;height:48px;line-height:48px;color:#fff;text-align:center;font-size:15px;background-color:#4caf50;border-radius:5px;">使用模板创建</div></a>
-			<a><div style="width:148px;height:44px;line-height:48px;margin-top:-48px;margin-left:170px;color:#4caf50;;text-align:center;font-size:15px;border:#4caf50 solid 2px;background-color:#fff;border-radius:5px;">自定义创建</div></a>
+		<div class="action-box2">
+			<a><div class="symbcj_div">使用模板创建</div></a>
+			<a><div class="zdycj_div">自定义创建</div></a>
+		</div>
+	</div>
+</section>
+
+<section class="system-feature-box system-beautiful-new-box white">
+	<div class="w-1000">
+		<h3 class="text-darkgrey-new">美化加排版，帮你实现快速打印应用</h3>
+		<div class="system-tab-content row">
+			<div class="col-md-6 left-box" style="width: 50%;float: left;">
+				<img src="static/images/products/product-print@2x_d6447d0.png" alt="" style="width: 460px;">
+			</div>
+			<div class="col-md-6 right-box" style="width: 50%;float: left;">
+				<ul class="system-tab-content-ul">
+					<li class="system-tab-content-li first">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>二维码美化</h4>
+							<p>添加logo、更换二维码样式、颜色，添加背景图等，让你的二维码更美观</p>
+						</div>
+						<div class="dashed-line"></div>
+					</li>
+					<li class="system-tab-content-li">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>快速排版</h4>
+							<p>提供A4排版、标签排版、打包下载等多种排版方式，满足你的各种应用需求</p>
+						</div>
+						<div class="dashed-line"></div>
+					</li>
+					<li class="system-tab-content-li">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>印刷打印</h4>
+							<p>排版格式兼容主流打印机和标签打印机，也可打包下载自行打印</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="action-box2">
+			<a><div class="ljpbdy_div">了解排版打印</div></a>
+			<a><div class="mhewm_div">美化二维码</div></a>
+		</div>
+	</div>
+</section>
+
+<section class="system-feature-box light-new-bg">
+	<div class="w-1000">
+		<h3 class="text-darkgrey-new">强大的管理后台，更灵活地使用二维码</h3>
+		<div class="system-tab-content row">
+			<div class="col-md-6 left-box" style="width: 50%;float: left;">
+				<ul class="system-tab-content-ul">
+					<li class="system-tab-content-li first">
+						<h4>二维码图案不变</h4>
+						<p>已生成的二维码修改内容，扫码同步更新，避免内容修改重复打印，节约印刷成本</p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>二维码设置</h4>
+						<p>提供有效期、指定扫码人员、扫码打开方式等设置，让你的二维码内容更安全 </p>
+					</li>
+					<li class="system-tab-content-li">
+						<h4>后台管理</h4>
+						<p>登录草料，即可对已生成的二维码可进行查看、再次修改、删除、统计等统一管理</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 right-box" style="width: 455px;float: left;margin-left: 36px;">
+				<img src="static/images/products/product-control@2x_9ea8875.png" alt="" style="width: 100%;">
+			</div>
+		</div>
+		<div class="action-box2">
+			<a><div class="glwdewm_div">管理我的二维码</div></a>
+			<a><div class="mfcj_div">免费创建</div></a>
+		</div>
+	</div>
+</section>
+
+<section class="system-feature-box system-anytime-new-box white">
+	<div class="w-1000">
+		<h3 class="text-darkgrey-new">随时跟进使用效果，及时调整业务策略</h3>
+		<div class="system-tab-content row">
+			<div class="col-md-6 left-box" style="width: 50%;float: left;">
+				<img src="static/images/products/product-anytime@2x_0d81407.png" alt="" style="width: 460px;">
+			</div>
+			<div class="col-md-6 right-box" style="width: 50%;float: left;">
+				<ul class="system-tab-content-ul">
+					<li class="system-tab-content-li first">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>扫描量实时统计</h4>
+							<p>二维码扫描量实时统计，快速跟进营销效果，随时调整二维码内容</p>
+						</div>
+						<div class="dashed-line"></div>
+					</li>
+					<li class="system-tab-content-li">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>记录汇总、导出</h4>
+							<p>随时查看表单内容了解业务状态，系统自动汇总，支持筛选与导出， 提升数据采集效率</p>
+						</div>
+						<div class="dashed-line"></div>
+					</li>
+					<li class="system-tab-content-li">
+						<img src="static/images/products/Bitmap-new@2x_4936b5e.png" alt="">
+						<div class="content-info">
+							<h4>多平台查看</h4>
+							<p>支持手机端、电脑端双平台查看，不错过任何一份信息</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="action-box2">
+			<a><div class="ckwdewm_div">查看我的二维码</div></a>
+			<a><div class="mfcj_div">免费创建</div></a>
 		</div>
 	</div>
 </section>
