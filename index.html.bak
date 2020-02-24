@@ -69,9 +69,6 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 .col-md-6 {
     width: 50%;
 }
-.system-create-code-easy-box .system-tab-content-li.first {
-    padding: 0 !important;
-}
 .system-tab-content-li h4 {
     font-size: 16px;
     color: #4a4a4a;
@@ -90,6 +87,9 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     position: relative;
 }
 
+.system-create-code-easy-box .system-tab-content-li.first {
+    padding: 0 !important;
+}
 .system-create-code-easy-box .right-box {
     margin-top: 8px;
 }
@@ -153,6 +153,12 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	width:148px;height:44px;line-height:48px;margin-top:-48px;margin-left:170px;color:#4caf50;;text-align:center;font-size:15px;border:#4caf50 solid 2px;background-color:#fff;border-radius:5px;
 }
 
+.text-center {
+    text-align: center;
+}
+.text-darkgrey-new {
+    color: #4a4a4a !important;
+}
 .system-features-new-box {
     padding: 100px 0;
     color: #000;
@@ -161,12 +167,6 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
-}
-.text-center {
-    text-align: center;
-}
-.text-darkgrey-new {
-    color: #4a4a4a !important;
 }
 .system-features-desc {
     font-size: 14px;
@@ -199,14 +199,6 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     margin: 0 auto;
     text-align: center;
 }
-.icon-feature-safety {
-    width: 48px;
-    height: 48px;
-    background-repeat: no-repeat;
-    margin: 0 auto 24px;
-    background-image: url(static/images/products/product-safe@2x_9176836.png);
-    background-size: cover;
-}
 .advantage h3 {
     font-size: 18px;
     margin-bottom: 24px;
@@ -218,6 +210,14 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+}
+.icon-feature-safety {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin: 0 auto 24px;
+    background-image: url(static/images/products/product-safe@2x_9176836.png);
+    background-size: cover;
 }
 .icon-feature-scene.wending {
     background-position: 0 1px;
@@ -389,12 +389,12 @@ var swiper = new Swiper('.merchants', {
         <li><i class="quanxian"></i><p>权限管理</p></li>
         <li><i class="yingxiao"></i><p>营销推广</p></li>
     </ul>
-    <a class="more but" href="/qrcode/function">查看更多功能介绍</a>
+    <a class="more but" href="http://qlcode.qdhualing.com/solutionCommodity.htm">查看更多功能介绍</a>
 </div>
 
 <section id="system-create-code-easy-box" class="system-feature-box system-create-code-easy-box light-new-bg">
 	<div class="w-1000">
-		<h3 class="text-darkgrey-new">轻松生成二维码，满足你的多种用途</h3>
+		<h3 class="text-darkgrey-new">一站式模块化整体解决方案&nbsp;满足您的一切需求</h3>
 		<div class="system-tab-content row">
 			<div class="col-md-6 left-box" style="width: 50%;float: left;">
 				<ul class="system-tab-content-ul">
@@ -432,7 +432,7 @@ var swiper = new Swiper('.merchants', {
 		</div>
 		<div class="action-box2">
 			<a><div class="symbcj_div">使用模板创建</div></a>
-			<a><div class="zdycj_div">自定义创建</div></a>
+			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login"><div class="zdycj_div">自定义创建</div></a>
 		</div>
 	</div>
 </section>
@@ -504,7 +504,7 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<a><div class="glwdewm_div">管理我的二维码</div></a>
+			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login"><div class="glwdewm_div">管理我的二维码</div></a>
 			<a><div class="mfcj_div">免费创建</div></a>
 		</div>
 	</div>
@@ -661,9 +661,7 @@ var swiper = new Swiper('.merchants', {
 		<p>邮箱地址：qdhualing@126.com</p>
 		<p>自动化控制系统集成网址：www.qdhualing.com</p>
 	</div>
-	<div class="bqxx" style="width:1440px;height:52px;line-height:52px;border-top: 1px solid rgba(255,255,255,0.5);margin:0 auto;text-align: center;
-    font-size: 14px;
-    color: #999999;letter-spacing: 0;">
+	<div class="bqxx" style="width:1440px;height:52px;line-height:52px;border-top: 1px solid rgba(255,255,255,0.5);margin:0 auto;text-align: center;font-size: 14px;color: #999999;letter-spacing: 0;">
 		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
 	</div>
 </div>
