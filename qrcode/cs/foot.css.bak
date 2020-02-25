@@ -1,0 +1,9 @@
+.w_grid_div{
+	width:100%;height:auto;background-color:#1F232A;
+}
+.info-tell{
+	width:1340px;padding-top: 25px;height: auto;margin:0 auto;margin-bottom: 40px;
+}
+.info-tell p{
+	font-size: 15px;color:#FFFFFF;letter-spacing: 0;line-height: 45px;
+}

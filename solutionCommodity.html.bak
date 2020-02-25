@@ -7,6 +7,7 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
 <style>
 .w-1000 {
     width: 1000px;
@@ -161,8 +162,50 @@ box-shadow: 0 10px 20px -10px
     text-align: center;
     line-height: 24px;
 }
+.advanced-feature-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 64px;
+    font-weight: 700;
+}
+.advanced-feature-item {
+    width: 100%;
+    background: #fff;
+	padding: 24px;
+	border-bottom: 1px dashed #d9d9d9;
+	border-right: 1px dashed #d9d9d9;
+}
+.advanced-feature-item .img-box {
+    margin-bottom: 16px;
+    text-align: left;
+}
+.advanced-feature-item .img-box img {
+    width: 24px;
+    height: 24px;
+}
+.advanced-feature-item-title {
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.advanced-feature-item-desc {
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    line-height: 24px;
+}
+.client-list li {
+    width: 25%;
+    height: 82px;
+    float: left;
+    margin: 15px 0px;
+    position: relative;
+}
 </style>
  <title>Document</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
  </head>
  <body>
   <header>
@@ -258,7 +301,7 @@ box-shadow: 0 10px 20px -10px
 			</h3>
 			<div class="goods-case-box">
 				<ul class="good-case-ul">
-					<li class="col-md-4 good-scene-item">
+					<li class="good-scene-item">
 						<a href="detail.htm?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
 							<div class="img-box img-pic-one"></div>
 							<div class="goods-info-box">
@@ -274,7 +317,7 @@ box-shadow: 0 10px 20px -10px
 							</div>
 						</a>
 					</li>
-					<li class="col-md-4 good-scene-item" style="margin-left: 20px;">
+					<li class="good-scene-item" style="margin-left: 20px;">
 						<a href="detail.htm?id=1380" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="22">
 							<div class="img-box img-pic-two"></div>
 							<div class="goods-info-box">
@@ -290,7 +333,7 @@ box-shadow: 0 10px 20px -10px
 							</div>
 						</a>
 					</li>
-					<li class="col-md-4 good-scene-item" style="margin-top: 64px;">
+					<li class="good-scene-item" style="margin-top: 64px;">
 						<a href="detail.htm?id=1371" class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="23">
 							<div class="img-box img-pic-three"></div>
 							<div class="goods-info-box">
@@ -306,7 +349,7 @@ box-shadow: 0 10px 20px -10px
 							</div>
 						</a>
 					</li>
-					<li class="col-md-4 good-scene-item" style="margin-left: 20px;margin-top: 64px;">
+					<li class="good-scene-item" style="margin-left: 20px;margin-top: 64px;">
 						<a href="detail.htm?id=1372" class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="24">
 							<div class="img-box img-pic-four"></div>
 							<div class="goods-info-box">
@@ -328,7 +371,6 @@ box-shadow: 0 10px 20px -10px
 	</div>
 
 	<div class="w-p100 white business-info-bg" style="padding: 100px 0;height: 140px;">
-	<!--
 		<div class="w-1000 row text-center business-info-box">
 			<div class="business-info-title">二维码让业务信息流动更快</div>
 			<div class="row">
@@ -367,10 +409,9 @@ box-shadow: 0 10px 20px -10px
 				</div>
 			</div>
 		</div>
-		-->
 	</div>
 
-	<div class="w-p100 white advanced-feature-wrapper" style="padding: 48px 0;padding-top: 238px;">
+	<div class="w-p100 white advanced-feature-wrapper" style="height: 650px;padding: 48px 0;padding-top: 238px;">
 		<div class="w-1000 row text-center advanced-feature-box">
 			<div class="advanced-feature-title">众多高级功能和服务，满足企业用户深度应用</div>
 			<div class="row">
@@ -491,5 +532,77 @@ box-shadow: 0 10px 20px -10px
 			</div>
 		</div>
 	</div>
+
+	<div class="w-p100 white" style="height:290px;padding: 72px 0px;">
+		<div class="w-1000 row p-b-md text-center contact-wrapper logo-demo-v3">
+			<h2 class="scene-title" style="font-size: 24px;margin-bottom: 44px;font-weight: bold;">他们都在使用麒麟二维码</h2>
+			<div style="width:1000px;">
+			   <ul class="client-list">
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/V8sO46IrR0u9Ab7zKya2dA.png" alt="" style="width:224px;height:42px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/OylI7ylqRCeSohg2uB6n6w.png" alt="" style="width:224px;height:36px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/2yc9iRliS06gcVWxF8VE6Q.png" class="img2" alt="" style="width:224px;height:30px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/PJDKykTbQkyXB9III0_ieA.png" class="img2" alt="" style="width:224px;height:26px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/92c4e81f-f013-4f1f-9c2a-82a9e55ffb3c.png" class="img2" alt="" style="width:224px;height:58px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/u7xv9kwXS5-HRoOC4_56NA.png" class="img2" alt="" style="width:224px;height:56px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/gpWPsehgQmarb9Gtn_j07g.png" class="img2" alt="" style="width:224px;height:59px;">
+					</a>
+				  </li>
+				  <li class="fl">
+					<em style="display:none">合作客户</em>
+					<a href="javascript:;">
+					  <img src="qlqrcode_files/images/cjyMvvCIQvePbgd3n_BrNw.png" class="img2" alt="" style="width:224px;height:39px;">
+					</a>
+				  </li>
+			   </ul>				
+			</div>
+		</div>
+	</div>
+
+	
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
  </body>
 </html>
