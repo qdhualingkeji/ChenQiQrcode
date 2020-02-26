@@ -85,7 +85,7 @@ header .nav .logo{
 	background-size:contain;
 }
 header.fix .nav .logo{
-	background:url(qrcode/ig/logo.png) no-repeat center;
+	background:url(../../qrcode/ig/logo.png) no-repeat center;
 	background-size:contain;
 }
 header .nav .navbar{
@@ -121,8 +121,16 @@ header .nav .navbar .menu li a{
 	color:#fff;
 	font-size: 18px;
 	line-height:20px;
-  padding: 6px 15px;
-  border-radius: 3px;
+    padding: 6px 15px;
+    border-radius: 3px;
+	display:inline-block;
+}
+header .nav .navbar .menu li .a2{
+	color:#363636;
+	font-size: 18px;
+	line-height:20px;
+	padding: 6px 15px;
+	border-radius: 3px;
 	display:inline-block;
 }
 header .nav .navbar .menu li a:hover{
@@ -178,6 +186,7 @@ header .nav .nav_button .login{
 	padding: 5px 20px;
 	background-color: transparent;
 }
+
 header .nav .nav_button .login:hover{
 	color: #00a3ff;
   background-color: #fff;

@@ -121,8 +121,16 @@ header .nav .navbar .menu li a{
 	color:#fff;
 	font-size: 18px;
 	line-height:20px;
-  padding: 6px 15px;
-  border-radius: 3px;
+    padding: 6px 15px;
+    border-radius: 3px;
+	display:inline-block;
+}
+header .nav .navbar .menu li .a2{
+	color:#363636;
+	font-size: 18px;
+	line-height:20px;
+	padding: 6px 15px;
+	border-radius: 3px;
 	display:inline-block;
 }
 header .nav .navbar .menu li a:hover{
@@ -177,6 +185,12 @@ header .nav .nav_button .login{
 	border: 1px solid #fff;
 	padding: 5px 20px;
 	background-color: transparent;
+}
+header .nav .nav_button .login2 {
+    border: 1px solid #000;
+	padding: 5px 20px;
+	color:#363636;
+	background-color:transparent;
 }
 header .nav .nav_button .login:hover{
 	color: #00a3ff;

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
+<style>
+.usePrice_div{
+	width:100%;
+	height:400px;
+	margin-top:65px;
+	text-align: center;
+	background:#F7F9F7;
+}
+.usePrice_div .title1{
+	width: 100%;
+	margin-top: 40px;
+	font-size: 26px;
+	text-align: center;
+	position: absolute;
+}
+.usePrice_div .title2{
+	width: 100%;
+	margin-top: 85px;
+	font-size: 18px;
+	text-align: center;
+	position: absolute;
+}
+.usePrice_div .space_div{
+	width: 100%;
+	height:150px;
+}
+.usePrice_div .list_div{
+	width:1000px;
+	height:300px;
+	background-color:#fff;
+	margin:0 auto;
+}
+.usePrice_div .list_div .item_div{
+	width:20%;height:300px;float:left;box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
+}
+.usePrice_div .list_div .item_div .p-x_div{
+	width:200px;height:132px;
+}
+.usePrice_div .list_div .item_div .p-t-md_div{
+	font-size: 18px;margin-top:15px;
+}
+.usePrice_div .list_div .item_div .p-b-md_div{
+	font-size: 14px;margin-top:15px;
+}
+.usePrice_div .list_div .item_div .price_div{
+	margin-top:15px;
+}
+.usePrice_div .list_div .item_div .fuhao_span{
+	color: #999;
+}
+.usePrice_div .list_div .item_div .jine_span{
+	font-size: 30px;
+}
+.usePrice_div .list_div .item_div .text-intro_div{
+	width: 100%;height:60px;
+}
+.usePrice_div .list_div .item_div .text_div1{
+	text-align: center;color:#666;font-size: 12px;margin-top: 15px;
+}
+.usePrice_div .list_div .item_div .text_div2{
+	text-align: center;color:#666;font-size: 12px;margin-top: 5px;
+}
+.usePrice_div .list_div .item_div .buy_div{
+	width:112px;height:38px;line-height:38px;margin:0 auto;font-size:15px;color: #f57c00;border: #f57c00 solid 1px;border-radius:5px;
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+<header>
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
+    <a href="/" class="logo fl">&nbsp;</a>
+    <div class="navbar">
+        <ul class="menu" style="color:#000;">
+            <li class="active">
+				<a class="a2" href="index.html">首页</a>
+			</li>
+            <li>
+				<a class="a2" href="solutionCommodity.html">案例模板</a>
+			</li>
+			<li>
+				<a class="a2" href="qrcodeCreate.html">二维码生成器</a>
+			</li>
+            <li class="list">
+				<a class="a2" href="/qrcode/solution">定制价格</a>
+            </li>
+			<li class="list">
+				<a class="a2" href="/help/faq/information/">帮助</a>
+			</li>
+        </ul>
+		<div class="nav_button">
+			<a href="/login" target="_blank" class="login2 but">登录</a>
+			<a class="kf-open registered but"><span>申请试用</span></a>
+		</div>
+    </div>
+</div>
+</header>
+<nav class="topnav">
+    <div class="topnav-layer">
+        <div class="topnav-menu">
+            <div class="topnav-menu-col" id="topnavToggle">
+                <div class="topnav-rotate-top"><span></span></div>
+                <div class="topnav-rotate-middle"><span></span></div>
+                <div class="topnav-rotate-bottom"><span></span></div>
+            </div>
+        </div>
+        <div class="topnav-logo"><a href="/"></a></div>
+        <div class="topnav-reg"><a href="/login">登录</a></div>
+    </div>
+    <div class="menu-list">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/qrcode/function">功能</a></li>
+            <li>
+                <a href="/qrcode/solution">解决方案</a>
+                <p><a href="/qrcode/solution">一站式</a></p>
+                <p><a href="/qrcode/solution/traceback.html">防伪追溯</a></p>
+                <p><a href="/qrcode/solution/inspect.html">设备巡检</a></p>
+                <p><a href="/qrcode/solution/record.html">周期记录</a></p>
+            </li>
+            <li>
+				<a href="/qrcode/case">案例展示</a>
+				<p><a href="https://qrcode.pro/q/?c=16666661150000000129000008000004">农药追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000128000009000000">种子追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000003000041000000">化肥追溯</a></p>
+				<p><a href="/qrcode/case">更多案例</a></p>
+			</li>
+            <li>
+				<a href="/help/faq/information/">资讯帮助</a>
+				<p><a href="/help/faq/problem/">常识问答</a></p>
+				<p><a href="/help/faq/information/">行业资讯</a></p>
+				<p><a href="/help/faq/help/">帮助文档</a></p>
+				<p><a href="/qrcode/about/">关于我们</a></p>
+			</li>
+			<li><a href="/tools/qrcode/">二维码生成器</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="usePrice_div">
+	<div class="title1">麒麟为你提供的不止是好用的产品，还有极具性价比的定价</div>
+	<div class="title2">从内容展示到深度记录应用，满足不同规模不同需求，为企业创造价值</div>
+	<div class="space_div"></div>
+	<div class="list_div">
+		<div class="item_div">
+			<div class="p-x_div">
+				<div class="p-t-md_div">一个月</div>
+				<div class="p-b-md_div">个人或小团队应用</div>
+				<div class="price_div">
+					<span class="fuhao_span">￥</span>
+					<span class="jine_span">60</span>
+				</div>
+				<div class="text-intro_div">
+					<div class="text_div1">基础功能免费使用</div>
+					<div class="text_div2">小程序访问加速</div>
+				</div>
+				<div class="buy_div">立即购买</div>
+			</div>
+		</div>
+		<div class="item_div">
+			<div class="p-x_div">
+				<div class="p-t-md_div">三个月</div>
+				<div class="p-b-md_div">企业简单应用</div>
+				<div class="price_div">
+					<span class="fuhao_span">￥</span>
+					<span class="jine_span">150</span>
+				</div>
+				<div class="text-intro_div">
+					<div class="text_div1">去除麒麟底部标识</div>
+					<div class="text_div2">音视频播放不限人数</div>
+				</div>
+				<div class="buy_div">立即购买</div>
+			</div>
+		</div>
+		<div class="item_div">
+			<div class="p-x_div">
+				<div class="p-t-md_div">一年</div>
+				<div class="p-b-md_div">企业深度应用</div>
+				<div class="price_div">
+					<span class="fuhao_span">￥</span>
+					<span class="jine_span">600</span>
+				</div>
+				<div class="text-intro_div">
+					<div class="text_div1">去除麒麟所有标识</div>
+					<div class="text_div2">更大容量/音视频流量</div>
+				</div>
+				<div class="buy_div">立即购买</div>
+			</div>
+		</div>
+		<div class="item_div">
+			<div class="p-x_div">
+				<div class="p-t-md_div">永久</div>
+				<div class="p-b-md_div">企业巡检记录专业应用</div>
+				<div class="price_div">
+					<span class="fuhao_span">￥</span>
+					<span class="jine_span">2000</span>
+				</div>
+				<div class="text-intro_div">
+					<div class="text_div1">增加高级记录功能</div>
+					<div class="text_div2">容量/音视频流量10倍提升</div>
+				</div>
+				<div class="buy_div">立即购买</div>
+			</div>
+		</div>
+		<div class="item_div">
+			<div class="p-x_div">
+				<div class="p-t-md_div">连续包月</div>
+				<div class="p-b-md_div">麒麟云服务独立系统</div>
+				<div class="price_div">
+					<span class="fuhao_span">￥</span>
+					<span class="jine_span">50</span>
+				</div>
+				<div class="text-intro_div">
+					<div class="text_div1">企业独立小程序</div>
+					<div class="text_div2">企业独立管理后台</div>
+				</div>
+				<div class="buy_div">立即购买</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

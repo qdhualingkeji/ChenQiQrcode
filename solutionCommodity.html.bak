@@ -9,20 +9,6 @@
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
 <style>
-header .nav .navbar .menu li a{
-	color:#363636;
-	font-size: 18px;
-	line-height:20px;
-	padding: 6px 15px;
-	border-radius: 3px;
-	display:inline-block;
-}
-header .nav .nav_button .login {
-    border: 1px solid #000;
-	padding: 5px 20px;
-	color:#363636;
-	background-color:transparent;
-}
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
@@ -237,19 +223,19 @@ $(function(){
     <div class="navbar">
         <ul class="menu" style="color:#000;">
             <li class="active">
-				<a href="index.html">首页</a>
+				<a class="a2" href="index.html">首页</a>
 			</li>
             <li>
-				<a href="qrcode/solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模板</a>
 			</li>
 			<li>
-				<a href="/tools/qrcode/">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate.html">二维码生成器</a>
 			</li>
             <li class="list">
-				<a href="/qrcode/solution">定制价格</a>
+				<a class="a2" href="/qrcode/solution">定制价格</a>
             </li>
 			<li class="list">
-				<a href="/help/faq/information/">帮助</a>
+				<a class="a2" href="/help/faq/information/">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
