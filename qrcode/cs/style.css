@@ -85,7 +85,7 @@ header .nav .logo{
 	background-size:contain;
 }
 header.fix .nav .logo{
-	background:url(/qrcode/ig/logo.png) no-repeat center;
+	background:url(../../qrcode/ig/logo.png) no-repeat center;
 	background-size:contain;
 }
 header .nav .navbar{

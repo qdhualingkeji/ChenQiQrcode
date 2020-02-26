@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
+<style>
+.title {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    font-size: 40px;
+    color: #555;
+    text-align: center;
+}
+.cli_nav {
+    width: 100%;
+    background: #EDF1EA;
+}
+.p-a-0 {
+    padding: 0 !important;
+}
+.cli_nav .sub_nav {
+    height: 44px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.cli_nav .sub_nav li {
+    float: left;
+    height: 100%;
+    list-style: none;
+    padding: 12px 0 8px;
+}
+.cli_nav .sub_nav li a.on {
+    color: #4caf50;
+}
+.cli_nav .sub_nav .on {
+    position: relative;
+    font-weight: bold;
+}
+.cli_nav .sub_nav li a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0px 14px;
+    margin-right: 20px;
+    text-align: center;
+    z-index: 1;
+}
+.cli_nav .sub_nav li a svg {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+}
+.createQrcode_div{
+	width:148px;
+	height:48px;
+	line-height:48px;
+	color:#fff;
+	text-align:center;
+	font-size:15px;
+	margin:0 auto;
+	margin-top:50px;
+	background-color:#2871AB;
+	border-radius:5px;
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+<header class="fix">
+    <div class="nav">
+        <a href="/" class="logo fl">&nbsp;</a>
+        <div class="navbar">
+            <ul class="menu">
+                <li>
+					<a href="index.html">首页</a>
+				</li>
+                <li>
+					<a href="solutionCommodity.html">案例模板</a>
+				</li>
+				<li class="active">
+					<a href=".html">二维码生成器</a>
+				</li>
+				<li>
+					<a href="">定制价格</a>
+				</li>
+				<li>
+					<a href="">帮助</a>
+				</li>
+            </ul>
+                <div class="nav_button">
+                    <a href="/login" target="_blank" class="login but">登录</a>
+                    <a class="kf-open registered but"><span>申请试用</span></a>
+                </div>
+        </div>
+    </div>
+</header>
+<div class="title">免费二维码在线生成器</div>
+<div class="cli_nav nav_gray scene_mobile clearfix p-a-0">
+	<ul class="sub_nav sub_mobile_nav cli_head_container clearfix">
+		<li>
+			<a href="//cli.im/text" title="生成文本二维码" class="tab_sep on" onclick="StatisticsData(120,11)">文本</a>
+		</li>
+		<li>
+			<a href="//cli.im/url" title="生成网址二维码" class="tab_sep [navigation_url]" onclick="StatisticsData(120,12)">网址</a>
+		</li>
+		<li>
+			<a href="//cli.im/files" title="生成文件二维码" class="tab_sep [navigation_files]" onclick="StatisticsData(120,13)">文件</a>
+		</li>
+		<li>
+			<a href="//cli.im/img" title="生成图片二维码" class="tab_sep [navigation_img]" onclick="StatisticsData(120,14)">图片</a>
+		</li>
+		<li>
+			<a href="//cli.im/multimedia" title="生成音视频二维码" class="tab_sep [navigation_multimedia]" onclick="StatisticsData(120,15)">音视频</a>
+		</li>
+		<li>
+			<a href="//cli.im/vcard" title="名片二维码" class="tab_sep [navigation_vcard]" onclick="StatisticsData(120,16)">名片</a>
+		</li>
+		<li>
+			<a href="//cli.im/weixin" title="美化微信二维码" class="tab_sep [navigation_weixin]" onclick="StatisticsData(120,17)">微信</a>
+		</li>
+		<li>
+			<a href="//cli.im/tools" title="更多高级功能" class="tab_sep [navigation_tools]" onclick="StatisticsData(120,161)">更多工具</a>
+		</li>
+		<div class="pull-right right-nav-items">
+			<li class="pull-left nav-tool-popover-scan-new" data-container="body" data-toggle="popover" data-placement="bottom" data-html="html" data-original-title="" title="">
+				<a href="//cli.im/user/active/newcode?navigation=1" title="新建活码" class="tab_sep m-r-0 [navigation_newcode]" onclick="StatisticsData(92,18)">
+					<svg viewBox="0 0 1024 1024" fill="currentColor" aria-hidden="true">
+						<path d="M848 474H550V152h-76v322H176c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h298v322h76V550h298c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path>
+					</svg> 新建活码
+				</a>
+			</li>
+			<li class="pull-left nav-tool-popover-scan-new" data-container="body" data-toggle="popover" data-placement="bottom" data-html="html" data-content="<div class='common-popover-content'>通过二维码图片，快速解析内容</div>" style="padding: 12px 0px 8px;" data-original-title="" title="">
+				<a href="//cli.im/deqr" title="解码" class="tab_sep m-r-0 [navigation_deqr]" onclick="StatisticsData(1,15)">
+					<svg viewBox="0 0 1024 1024">
+						
+					</svg>
+					解码
+				</a>
+			</li>
+		</div>
+	</ul>
+</div>
+
+<div style="width:1903px;height:430px;background-color:#F7F9F7;">
+	<div style="width:1000px;height:430px;margin:0 auto;">
+		<div style="width:700px;height:370px;float:left;">
+			<div style="width:100%;height:260px;background-color:#fff;">
+				<textarea style="width:100%;height:175px;padding:24px;font-size: 16px;border:0;" placeholder="请输入文字内容"></textarea>
+			</div>
+			<div class="createQrcode_div">使用模板创建</div>
+		</div>
+		<div style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;float:right;">此处生成二维码</div>
+	</div>
+</div>	
+
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+</body>
+</html>
