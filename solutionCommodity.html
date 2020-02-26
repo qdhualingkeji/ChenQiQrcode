@@ -9,6 +9,20 @@
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
 <style>
+header .nav .navbar .menu li a{
+	color:#363636;
+	font-size: 18px;
+	line-height:20px;
+	padding: 6px 15px;
+	border-radius: 3px;
+	display:inline-block;
+}
+header .nav .nav_button .login {
+    border: 1px solid #000;
+	padding: 5px 20px;
+	color:#363636;
+	background-color:transparent;
+}
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
@@ -29,14 +43,13 @@
     height: 190px;
     width: 490px;
     background-color:#fff;
-text-align: left;
-font-size: 14px;
-margin-top: 20px;
-padding: 0 !important;
-float: left;
-cursor: pointer;
-box-shadow: 0 10px 20px -10px
-    rgba(0,0,0,.15);
+	text-align: left;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 0 !important;
+	float: left;
+	cursor: pointer;
+	box-shadow: 0 10px 20px -10px rgba(0,0,0,.15);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     transition: 200ms all ease;
@@ -80,15 +93,13 @@ box-shadow: 0 10px 20px -10px
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: 
-    #000;
+    color: #000;
     font-weight: 700;
     line-height: 18px;
     margin: 20px 0 12px;
 }
 .goods-item-desc {
-    color: 
-    #4a4a4a;
+    color: #4a4a4a;
     line-height: 18px;
     font-size: 12px;
     text-overflow: ellipsis;
@@ -132,12 +143,11 @@ box-shadow: 0 10px 20px -10px
 .business-info-item {
     width: 100%;
     background: #fff;
-padding: 36px 24px;
-position: relative;
-top: 80px;
-border-radius: 4px;
-box-shadow: 0 10px 20px -10px
-    rgba(0,0,0,.15);
+	padding: 36px 24px;
+	position: relative;
+	top: 80px;
+	border-radius: 4px;
+	box-shadow: 0 10px 20px -10px rgba(0,0,0,.15);
 }
 .business-info-item .img-box {
     width: 70px;
@@ -151,8 +161,7 @@ box-shadow: 0 10px 20px -10px
 }
 .business-info-item-item-title {
     font-size: 16px;
-    color: 
-    rgba(0,0,0,.87);
+    color: rgba(0,0,0,.87);
     text-align: center;
     margin-bottom: 24px;
 }
@@ -223,15 +232,15 @@ $(function(){
  </head>
  <body>
   <header>
-<div class="nav">
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
-        <ul class="menu">
+        <ul class="menu" style="color:#000;">
             <li class="active">
-				<a href="/">首页</a>
+				<a href="index.html">首页</a>
 			</li>
             <li>
-				<a href="qrcode/solutionCommodity.html">案例模板</a>
+				<a href="solutionCommodity.html">案例模板</a>
 			</li>
 			<li>
 				<a href="/tools/qrcode/">二维码生成器</a>
