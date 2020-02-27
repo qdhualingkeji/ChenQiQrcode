@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+function changeTab(flag){
+	if(flag==1){
+		$("#wzjtm_div").css("border-bottom","2px solid #4caf50");
+		$("#wzjtm_div").css("color","#4caf50");
+		$("#wzhm_div").css("border-bottom","2px solid rgba(120,130,140,.13)");
+		$("#wzhm_div").css("color","#000");
+
+		$("#wzjtmsm_div").css("display","block");
+		$("#wzhmsm_div").css("display","none");
+
+		$("#dwzcq_a").css("display","none");
+		
+		$("#createQrcode_div").css("display","block");
+		$("#createUrlcode_div").css("display","none");
+	}
+	else if(flag==2){
+		$("#wzjtm_div").css("border-bottom","2px solid rgba(120,130,140,.13)");
+		$("#wzjtm_div").css("color","#000");
+		$("#wzhm_div").css("border-bottom","2px solid #4caf50");
+		$("#wzhm_div").css("color","#4caf50");
+
+		$("#wzjtmsm_div").css("display","none");
+		$("#wzhmsm_div").css("display","block");
+
+		$("#dwzcq_a").css("display","block");
+
+		$("#createQrcode_div").css("display","block");
+		$("#createUrlcode_div").css("display","none");
+	}
+}
+</script>
+<style>
+body{
+	margin:0;
+}
+.wzjtmsm_div,.wzhmsm_div{
+	width:100%;height:40px;line-height:40px;font-size:12px;color:#999;
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+<div class="center_div" style="width:1903px;height:430px;background-color:#F7F9F7;">
+	<div style="width:1000px;height:430px;margin:0 auto;padding-top: 50px;">
+		<div style="width:700px;height:370px;float:left;">
+			<div style="width:100%;height:40px;">
+				<div id="wzjtm_div" style="width:104px;height:37px;line-height:37px;color:#4caf50;text-align:center;float:left;border-bottom: 2px solid #4caf50;" onclick="changeTab(1);">
+					网址静态码
+				</div>
+				<div id="wzhm_div" style="width:104px;height:37px;line-height:37px;color:#000;text-align:center;float:left;border-bottom: 2px solid rgba(120,130,140,.13);" onclick="changeTab(2);">
+					网址活码
+				</div>
+			</div>
+			<div class="wzjtmsm_div" id="wzjtmsm_div">静态码直接对网址进行编码，生成后内容无法改变，不能统计扫描数据。</div>
+			<div class="wzhmsm_div" id="wzhmsm_div" style="display:none;">活码生成印刷后内容仍可随时修改，无需替换二维码，还能跟踪扫描数据。</div>
+			<div style="margin-top: 26px !important;">
+				<input type="text" id="url_inp" name="text" placeholder="http://" style="width:100%;font-size: 20px;padding: 15px;border: rgba(120,130,140,.25) solid 1px;color:#55595c;background-color:#fff;">
+				<a id="dwzcq_a" style="color: #357bb3;font-size: 12px;display:none;">多网址生成二维码</a>
+			</div>
+			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:50px;text-align:center;color:rgba(255,255,255,1);background-color:#4caf50;border-radius:3px;">生成二维码</div>
+			<div class="createUrlcode_div" id="createUrlcode_div" style="width:128px;height:38px;line-height:38px;margin:0 auto;margin-top:50px;text-align:center;color:rgba(255,255,255,1);background-color:#4caf50;border-radius:3px;display:none;">生成网址活码</div>
+		</div>
+		<div style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;float:right;">此处生成二维码</div>
+	</div>
+</div>	
+
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+ </body>
+</html>

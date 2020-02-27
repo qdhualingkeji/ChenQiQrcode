@@ -239,7 +239,7 @@ $(function(){
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="/login" target="_blank" class="login but">登录</a>
+			<a href="/login" target="_blank" class="login2 but">登录</a>
 			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
     </div>
