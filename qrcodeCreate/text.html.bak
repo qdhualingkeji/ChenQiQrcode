@@ -114,7 +114,7 @@
 			<a href="url.html" title="生成网址二维码" class="tab_sep [navigation_url]" onclick="StatisticsData(120,12)">网址</a>
 		</li>
 		<li>
-			<a href="//cli.im/vcard" title="名片二维码" class="tab_sep [navigation_vcard]" onclick="StatisticsData(120,16)">名片</a>
+			<a href="vcard.html" title="名片二维码" class="tab_sep [navigation_vcard]" onclick="StatisticsData(120,16)">名片</a>
 		</li>
 	</ul>
 </div>

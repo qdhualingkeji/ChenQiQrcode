@@ -185,54 +185,61 @@ function showXmDropdownDiv(){
 .xmDropdown_div{
 	width:160px;height:55px;margin-top: -10px;margin-left: 205px;color:rgba(0,0,0,.87);background-color:#fff;border: 1px solid rgba(0,0,0,.1);border-radius: 3px;display:none;
 }
-/*
-.left-info, .right-info {
-    width: 58%;
-    margin-left: 205px;
-}
-.left-info {
-    margin-top: 23px;
-}
-.p-vcard-info {
-	width:406px;
-	height:23px;
-    font-size: 14px;
+.companyVcardTitle {
+    font-size: 20px;
     color: rgba(0,0,0,.87);
-	border-bottom: 1px dashed rgba(221,224,226,.8);
+    text-align: center;
+	font-weight: 500;
 }
-.p-vcard-info input {
-    border: 0 none;
-    width: 286px;
-    height: 22px;
+.companyVcardIntro {
+    font-size: 14px;
+    color: #7f7f7f;
+    margin-top: 34px;
+    line-height: 20px;
 }
-
-.add-item {
+.advantageTitle {
+    font-size: 18px;
+	font-weight: 500;
+    color: #333;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+.advantageIntro {
+    font-size: 14px;
+	font-weight: 500;
+    color: #7f7f7f;
+    line-height: 26px;
+    margin-left: 1px;
+    align-items: center;
+    display: flex;
+}
+.advantageIntro span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
+    margin-right: 6px;
+    background: #7f7f7f;
+}
+.advantageDetail {
     font-size: 14px;
-    line-height: 44px;
-    color: #357BB3;
-    margin-left: 204px;
-    position: relative;
+    color:#357BB3;
+    margin-left: 2px;
+    margin-top: 8px;
+    display: inline-block;
 }
-.fa-plus-circle {
-    content: "\f055";
+.ljsy_div {
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    color: #2871AB;
+	text-align: center;
+	font-size: 15px;
+	border:#2871AB solid 1px;
+	margin: 60px auto;
+	background-color:#fff;
+    border-radius: 5px;
 }
-.dropdown-menu {
-    width: 160px;
-    color: rgba(0,0,0,.87);
-	border-radius: 3px;
-	border: 1px solid rgba(0,0,0,.1);
-    transform-origin: top left;
-	z-index: 1000;
-}
-.dropdown-item {
-    width: 158px;
-	height:18px;
-	padding: 3px 20px;
-    float:left;
-}
-*/
 </style>
 <title>Document</title>
 </head>
@@ -243,16 +250,16 @@ function showXmDropdownDiv(){
         <div class="navbar">
             <ul class="menu">
                 <li>
-					<a href="index.html">首页</a>
+					<a href="../index.html">首页</a>
 				</li>
                 <li>
 					<a href="../solutionCommodity.html">案例模板</a>
 				</li>
 				<li class="active">
-					<a href="qrcodeCreate.html">二维码生成器</a>
+					<a href="../qrcodeCreate.html">二维码生成器</a>
 				</li>
 				<li>
-					<a href="price.html">定制价格</a>
+					<a href="../price.html">定制价格</a>
 				</li>
 				<li>
 					<a href="">帮助</a>
@@ -324,19 +331,6 @@ function showXmDropdownDiv(){
 				<div class="item_div" data-contact="qq" data-value="QQ">QQ</div>
 				<div class="item_div" data-contact="weibo" data-value="微博">微博</div>
 			</div>
-				
-				<!--
-			    <div class="dropdown-menu text-xs" style="display: none;">
-				   <a class="dropdown-item" data-contact="email" data-value="邮箱" href="javascript:void(0);">邮箱</a>
-				   <a class="dropdown-item" data-contact="url" data-value="网址" href="javascript:void(0);">网址</a>
-				   <a class="dropdown-item" data-contact="fax" data-value="传真" href="javascript:void(0);">传真</a>
-				   <a class="dropdown-item" data-contact="phone" data-value="电话" href="javascript:void(0);">电话</a>
-				   <a class="dropdown-item" data-contact="weixin" data-value="微信" href="javascript:void(0);">微信</a>
-				   <a class="dropdown-item" data-contact="qq" data-value="QQ" href="javascript:void(0);">QQ</a>
-				   <a class="dropdown-item" data-contact="weibo" data-value="微博" href="javascript:void(0);">微博</a>
-			    </div>
-				-->
-
 			
 			<div class="personInfo2_div" id="personInfo2_div">
 				<div class="p-vcard-info" style="">
@@ -380,10 +374,20 @@ function showXmDropdownDiv(){
 				</div>
 			</div>
 
-			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#4caf50;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:#2871AB;background-color:#2871AB;border-radius:3px;">生成二维码</div>
 		</div>
-		<div style="width:278px;height:659px;line-height:659px;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
-			
+		<div style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+			<h1 class="companyVcardTitle">企业名片二维码</h1>
+			<div class="companyVcardIntro">一次性创建多人名片，并可以对名片进行统一管理，适用于企业成员使用</div>
+			<h2 class="advantageTitle">企业名片专属功能：</h2>
+			<h3 class="advantageIntro"><span></span>免费创建，不限数量</h3>
+			<h3 class="advantageIntro"><span></span>上传Excel可批量创建名片</h3>
+			<h3 class="advantageIntro"><span></span>支持自定义名片样式</h3>
+			<h3 class="advantageIntro"><span></span>自动生成企业通讯录</h3>
+			<h3 class="advantageIntro"><span></span>点击公司名称可查看公司介绍</h3>
+			<h3 class="advantageIntro"><span></span>电脑端统一管理成员名片</h3>
+			<a class="advantageDetail" href="" target="_blank">了解详情</a>
+			<div class="ljsy_div">立即使用</div>
 		</div>
 	</div>
 </div>
