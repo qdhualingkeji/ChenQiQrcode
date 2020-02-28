@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
+<style>
+.title {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    color: #555;
+    text-align: center;
+}
+.cli_nav {
+    width: 100%;
+	/*
+    background: #EDF1EA;
+	*/
+}
+.p-a-0 {
+    padding: 0 !important;
+}
+.cli_nav .sub_nav {
+    height: 44px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.cli_nav .sub_nav li {
+    float: left;
+    height: 100%;
+    list-style: none;
+    padding: 12px 0 8px;
+}
+.cli_nav .sub_nav li a.on {
+    color: #4caf50;
+}
+.cli_nav .sub_nav .on {
+    position: relative;
+    font-weight: bold;
+}
+.cli_nav .sub_nav li a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0px 14px;
+    margin-right: 20px;
+    text-align: center;
+    z-index: 1;
+}
+.cli_nav .sub_nav li a svg {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -1px;
+}
+.personVcardTitle {
+    font-size: 20px;
+    color: rgba(0,0,0,.87);
+    text-align: center;
+    margin-top: 25px;
+	font-weight: 500;
+}
+.personVcardDesc {
+    text-align: center;
+    color: #999;
+    margin-top: 8px;
+}
+.avator {
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+	margin-left: 70px;
+}
+.avator img {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-size: contain;
+}
+.upload {
+    position: absolute;
+    width: 89px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.uploadClick {
+    font-size: 12px;
+    color: #FFF;
+	background:rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    width: 89px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.left-info, .right-info {
+    width: 58%;
+    margin-left: 205px;
+}
+.left-info {
+    margin-top: 23px;
+}
+.p-vcard-info {
+width:406px;
+height:23px;
+    padding: 12px 0 6px;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+border-bottom: 1px dashed rgba(221,224,226,.8);
+}
+.p-vcard-info input {
+    border: 0 none;
+    width: 286px;
+    height: 22px;
+}
+
+.add-item {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 44px;
+    color: 
+    #357BB3;
+    margin-left: 204px;
+    position: relative;
+}
+.fa-plus-circle {
+    content: "\f055";
+}
+.dropdown-menu {
+    width: 160px;
+    color: rgba(0,0,0,.87);
+border-radius: 3px;
+border: 1px solid rgba(0,0,0,.1);
+    transform-origin: top left;
+	z-index: 1000;
+}
+.dropdown-item {
+    width: 158px;
+	height:18px;
+	padding: 3px 20px;
+    float:left;
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+<header class="fix">
+    <div class="nav">
+        <a href="/" class="logo fl">&nbsp;</a>
+        <div class="navbar">
+            <ul class="menu">
+                <li>
+					<a href="index.html">首页</a>
+				</li>
+                <li>
+					<a href="../solutionCommodity.html">案例模板</a>
+				</li>
+				<li class="active">
+					<a href="qrcodeCreate.html">二维码生成器</a>
+				</li>
+				<li>
+					<a href="price.html">定制价格</a>
+				</li>
+				<li>
+					<a href="">帮助</a>
+				</li>
+            </ul>
+			<div class="nav_button">
+				<a href="/login" target="_blank" class="login but">登录</a>
+				<a class="kf-open registered but"><span>申请试用</span></a>
+			</div>
+        </div>
+    </div>
+</header>
+<div class="title">免费二维码在线生成器</div>
+<div class="cli_nav nav_gray scene_mobile clearfix p-a-0">
+	<ul class="sub_nav sub_mobile_nav cli_head_container clearfix">
+		<li>
+			<a href="text.html" title="生成文本二维码" class="tab_sep">文本</a>
+		</li>
+		<li>
+			<a href="url.html" title="生成网址二维码" class="tab_sep [navigation_url]" onclick="StatisticsData(120,12)">网址</a>
+		</li>
+		<li>
+			<a href="vcard.html" title="名片二维码" class="tab_sep [navigation_vcard] on" onclick="StatisticsData(120,16)">名片</a>
+		</li>
+	</ul>
+</div>
+
+<div class="center_div" style="width:1903px;height:auto;background-color:#F7F9F7;">
+	<div style="width:1000px;height:669px;margin:0 auto;padding-top: 25px;padding-bottom: 25px;">
+		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+			<h1 class="personVcardTitle">个人名片二维码</h1>
+			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
+			<div class="avator">
+				<img id="upload-img" src="https://blogcdnimg.clewm.net/2018/06/default_head_image.png" alt="" width="90" height="90" border="0">
+				<div class="upload pointer" id="upload-btn">
+					<input type="file" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="">
+					<div class="uploadClick">上传</div>
+				</div>
+			</div>
+
+			<div class="left-info">
+				<div class="p-vcard-info">
+					<label class="required" for="name">姓名</label>
+					<input data-id="13" name="name" type="text" value="" autocomplete="off" disableautocomplete="">
+				</div>
+				<div class="p-vcard-info p-vcard-mobile">
+					<label class="required" for="mobile">手机</label>
+					<input data-id="14" name="mobile" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="add-mobile pointer">添加手机</span>
+				</div>
+				<div class="p-vcard-info">
+					<label for="email">邮箱</label>
+					<input data-id="15" name="email" type="text" value="" autocomplete="off" disableautocomplete="">
+				</div>
+				<div class="p-vcard-info else-contact">
+					<div class="dropdown">
+						<span id="vcard-info-name" class="defaultDropDown">邮箱</span>
+					</div>
+					<input name="email" cname="邮箱" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="remove-item pointer">删除</span>
+				</div>
+				<div class="p-vcard-info else-contact">
+					<div class="dropdown">
+						<span id="vcard-info-name" class="defaultDropDown">电话</span>
+					</div>
+					<input name="phone" cname="电话" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="remove-item pointer">删除</span>
+				</div>
+				<div class="p-vcard-info else-contact">
+					<div class="dropdown">
+						<span id="vcard-info-name" class="defaultDropDown">QQ</span>
+					</div>
+					<input name="qq" cname="QQ" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="remove-item pointer">删除</span>
+				</div>
+				<div class="p-vcard-info else-contact">
+					<div class="dropdown">
+						<span id="vcard-info-name" class="defaultDropDown">QQ</span>
+					</div>
+					<input name="qq" cname="QQ" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="remove-item pointer">删除</span>
+				</div>
+				<div class="p-vcard-info else-contact">
+					<div class="dropdown">
+						<span id="vcard-info-name" class="defaultDropDown">QQ</span>
+					</div>
+					<input name="qq" cname="QQ" type="text" value="" autocomplete="off" disableautocomplete="">
+					<span class="remove-item pointer">删除</span>
+				</div>
+			</div>
+
+			<div id="add-item" class="add-item"><i class="fa fa-plus-circle"></i>
+                              添加联系方式
+                              <div class="dropdown-menu text-xs" style="display: block;"><a class="dropdown-item" data-contact="email" data-value="邮箱" href="javascript:void(0);">邮箱</a><a class="dropdown-item" data-contact="url" data-value="网址" href="javascript:void(0);">网址</a><a class="dropdown-item" data-contact="fax" data-value="传真" href="javascript:void(0);">传真</a><a class="dropdown-item" data-contact="phone" data-value="电话" href="javascript:void(0);">电话</a><a class="dropdown-item" data-contact="weixin" data-value="微信" href="javascript:void(0);">微信</a><a class="dropdown-item" data-contact="qq" data-value="QQ" href="javascript:void(0);">QQ</a><a class="dropdown-item" data-contact="weibo" data-value="微博" href="javascript:void(0);">微博</a></div></div>
+
+		</div>
+		<div style="width:278px;height:659px;line-height:659px;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+			
+		</div>
+	</div>
+</div>
+
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+</body>
+</html>
