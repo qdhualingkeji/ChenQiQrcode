@@ -12,19 +12,36 @@
 <script>
 $(function(){
 	$(".lxfsDropdown_div .item_div").click(function(){
-		addLxfsItem(this);
+		addLxfsItem(this,1);
+		$("#lxfsDropdown_div").css("display","none");
+	});
+	$(".xmDropdown_div .item_div").click(function(){
+		addXmItem(this,2);
+		$("#xmDropdown_div").css("display","none");
 	});
 });
 
-function addLxfsItem(o){
+function addLxfsItem(o,index){
 	var contact=$(o).attr("data-contact");
 	var value=$(o).attr("data-value");
-	$("#personInfo1_div").append("<div class=\"p-vcard-info\">"
+	$("#personInfo"+index+"_div").append("<div class=\"p-vcard-info\">"
 					+value
 					+"<div class=\""+contact+"Inp_div\">"
 						+"<input name=\""+contact+"\" type=\"text\" value=\"\">"
 					+"</div>"
-					+"<span class=\"remove_span\" onclick=\"removeLxfsItemDiv(this)\">删除</span>"
+					+"<span class=\"remove_span\" onclick=\"removeItemDiv(this)\">删除</span>"
+				+"</div>");
+}
+
+function addXmItem(o){
+	var contact=$(o).attr("data-contact");
+	var value=$(o).attr("data-value");
+	$("#personInfo2_div").append("<div class=\"p-vcard-info\">"
+					+value
+					+"<div class=\""+contact+"Inp_div\">"
+						+"<input name=\""+contact+"\" type=\"text\" value=\"\">"
+					+"</div>"
+					+"<span class=\"remove_span\" onclick=\"removeItemDiv(this)\">删除</span>"
 				+"</div>");
 }
 
@@ -32,9 +49,12 @@ function showLxfsDropdownDiv(){
 	$("#lxfsDropdown_div").css("display","block");
 }
 
-function removeLxfsItemDiv(o){
+function removeItemDiv(o){
 	$(o).parent().remove();
-	$("#lxfsDropdown_div").css("display","none");
+}
+
+function showXmDropdownDiv(){
+	$("#xmDropdown_div").css("display","block");
 }
 </script>
 <style>
@@ -140,7 +160,7 @@ function removeLxfsItemDiv(o){
 .p-vcard-info{
 	width:406px;height:39px;line-height:39px;font-size: 14px;color:rgba(0,0,0,.87);border-bottom: 1px dashed rgba(221,224,226,.8);
 }
-.nameInp_div,.mobileInp_div,.emailInp_div,.urlInp_div,.faxInp_div,.phoneInp_div,.weixinInp_div,.qqInp_div,.weiboInp_div{
+.nameInp_div,.mobileInp_div,.emailInp_div,.urlInp_div,.faxInp_div,.phoneInp_div,.weixinInp_div,.qqInp_div,.weiboInp_div,.jobInp_div,.touxianInp_div,.addressInp_div,.noteInp_div{
 	width:286px;height:39px;margin-top:-41px;margin-left: 50px;
 }
 .p-vcard-info input {
@@ -149,14 +169,21 @@ function removeLxfsItemDiv(o){
 .p-vcard-info .remove_span{
 	font-size: 14px;color:#357BB3;margin-top: -37px;margin-right: 15px;float: right;cursor: pointer;
 }
-.tjlxfs_div{
+.tjlxfs_div,.tjxm_div{
 	width: 58%;height:39px;line-height:39px;margin-left: 205px;color: #357BB3;border-bottom: 1px dashed rgba(221,224,226,.8);
 }
 .lxfsDropdown_div{
 	width:160px;height:180px;margin-top: -10px;margin-left: 205px;color:rgba(0,0,0,.87);background-color:#fff;border: 1px solid rgba(0,0,0,.1);border-radius: 3px;display:none;
 }
-.lxfsDropdown_div .item_div{
+.lxfsDropdown_div .item_div,.xmDropdown_div .item_div{
 	width:118px;height:18px;line-height:24px;padding: 3px 20px;cursor: pointer;
+}
+.personInfo2_div,.personInfo3_div{
+	width: 58%;
+    margin-left: 205px;
+}
+.xmDropdown_div{
+	width:160px;height:55px;margin-top: -10px;margin-left: 205px;color:rgba(0,0,0,.87);background-color:#fff;border: 1px solid rgba(0,0,0,.1);border-radius: 3px;display:none;
 }
 /*
 .left-info, .right-info {
@@ -255,7 +282,7 @@ function removeLxfsItemDiv(o){
 
 <div class="center_div" style="width:1903px;height:auto;background-color:#F7F9F7;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-top: 25px;padding-bottom: 25px;">
-		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
@@ -285,29 +312,6 @@ function removeLxfsItemDiv(o){
 						<input name="email" type="text" value="">
 					</div>
 				</div>
-				<!--
-				<div class="p-vcard-info">
-					邮箱
-					<div class="emailInp_div">
-						<input name="email" type="text" value="">
-					</div>
-					<span class="remove_span">删除</span>
-				</div>
-				<div class="p-vcard-info">
-					电话
-					<div class="phoneInp_div">
-						<input name="phone" type="text" value="">
-					</div>
-					<span class="remove_span">删除</span>
-				</div>
-				<div class="p-vcard-info">
-					QQ
-					<div class="qqInp_div">
-						<input name="qq" type="text" value="">
-					</div>
-					<span class="remove_span">删除</span>
-				</div>
-				-->
 			</div>
 
 			<div class="tjlxfs_div" id="tjlxfs_div" onclick="showLxfsDropdownDiv()">添加联系方式</div>
@@ -333,42 +337,50 @@ function removeLxfsItemDiv(o){
 			    </div>
 				-->
 
-			<div class="right-info">
-				<div class="p-vcard-info" style="position: relative;">
-					<label class="" for="company">公司</label>
-					<input id="company" data-id="16" name="company" type="text" value="" autocomplete="off" disableautocomplete="">
-					<div id="company-menu" class="dropdown-menu text-xs company-menu">
-						<a href="javascript:;" class="dropdown-item">领家公司</a>
-						<a href="javascript:;" class="dropdown-item">领家公司2</a>
-						<a href="javascript:;" class="dropdown-item">领家公司3</a>
+			
+			<div class="personInfo2_div" id="personInfo2_div">
+				<div class="p-vcard-info" style="">
+					公司
+					<div class="nameInp_div">
+						<input name="company" type="text" value="">
 					</div>
 				</div>
-				<div class="p-vcard-info">
-					<label class="" for="dep">部门</label>
-					<input data-id="17" name="dep" type="text" value="" autocomplete="off" disableautocomplete="">
+				<div class="p-vcard-info" style="">
+					部门
+					<div class="nameInp_div">
+						<input name="dep" type="text" value="">
+					</div>
 				</div>
-				<div class="p-vcard-info">
-					<label class="" for="job">职位</label>
-					<input data-id="18" name="job" type="text" value="" autocomplete="off" disableautocomplete="">
-				</div>
-				<div id="add-item1" class="add-item" style="margin-left: 0;">
-					<i class="fa fa-plus-circle"></i>
-					添加项目
-					  <div class="dropdown-menu text-xs">
-						  <a class="dropdown-item" data-contact="job" data-value="职位" href="javascript:void(0);">职位</a>
-						  <a class="dropdown-item" data-contact="touxian" data-value="头衔" href="javascript:void(0);">头衔</a>
-					  </div>
-				</div>
-				<div class="p-vcard-info" style="border-top: 1px dashed rgba(221,224,226,.8);">
-				  <label class="" for="address">地址</label>
-				  <input data-id="19" name="address" type="text" value="" autocomplete="off" disableautocomplete="">
-				</div>
-				<div class="p-vcard-info">
-				  <label class="" for="note">签名</label>
-				  <input data-id="22" name="note" type="text" value="" autocomplete="off" disableautocomplete="">
+				<div class="p-vcard-info" style="">
+					职位
+					<div class="nameInp_div">
+						<input name="job" type="text" value="">
+					</div>
 				</div>
 			</div>
 
+			<div class="tjxm_div" id="tjxm_div" onclick="showXmDropdownDiv()">添加项目</div>
+			<div class="xmDropdown_div" id="xmDropdown_div">
+				<div class="item_div" data-contact="job" data-value="职位">职位</div>
+				<div class="item_div" data-contact="touxian" data-value="头衔">头衔</div>
+			</div>
+
+			<div class="personInfo3_div" id="personInfo3_div">
+				<div class="p-vcard-info" style="">
+					地址
+					<div class="addressInp_div">
+						<input name="address" type="text" value="">
+					</div>
+				</div>
+				<div class="p-vcard-info" style="">
+					签名
+					<div class="noteInp_div">
+						<input name="note" type="text" value="">
+					</div>
+				</div>
+			</div>
+
+			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#4caf50;border-radius:3px;">生成二维码</div>
 		</div>
 		<div style="width:278px;height:659px;line-height:659px;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
 			
