@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
+<style>
+.center_div{
+	width:933px;height:2911px;margin:0 auto;margin-top:105px;
+}
+.smsqymp_div{
+	width:100%;height:31px;color:rgba(0,0,0,0.87);font-size:24px;margin:0 auto;margin-bottom:14px;padding-bottom:0px;font-weight:300;
+}
+.date_span{
+	margin-left:3px;font-weight: 400;font-size: 12px;color:#999;
+}
+.title_div{
+	font-size: 16px;color:#656565;font-weight: 700;
+}
+.content_div{
+	font-size:16px;color: #656565;line-height:30px;
+}
+.clzwqy_div{
+	margin-top:20px;
+}
+.qdgn_div{
+	margin-top:50px;
+}
+.khsm_div{
+	
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+<header>
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
+    <a href="/" class="logo fl">&nbsp;</a>
+    <div class="navbar">
+        <ul class="menu" style="color:#000;">
+            <li class="active">
+				<a class="a2" href="index.html">首页</a>
+			</li>
+            <li>
+				<a class="a2" href="solutionCommodity.html">案例模板</a>
+			</li>
+			<li>
+				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+			</li>
+            <li class="list">
+				<a class="a2" href="/qrcode/solution">定制价格</a>
+            </li>
+			<li class="list">
+				<a class="a2" href="/help/faq/information/">帮助</a>
+			</li>
+        </ul>
+		<div class="nav_button">
+			<a href="/login" target="_blank" class="login2 but">登录</a>
+			<a class="kf-open registered but"><span>申请试用</span></a>
+		</div>
+    </div>
+</div>
+</header>
+
+<div class="center_div">
+	<div class="smsqymp_div">什么是企业名片？</div>
+	<span class="date_span">2018-04-19</span>
+	<div class="content_div clzwqy_div">企业名片是草料专为企业用户提供的名片二维码生成工具，可以免费使用，适用于公司管理员或HR为公司员工创造专属名片。支持多种方式快速添加成员，一次性为多人创建名片，并提供企业主页、人员管理等高级功能。<a>如何制作</a></div>
+	<div class="content_div qdgn_div">企业名片还拥有以下强大功能：</div>
+	<div class="title_div khsm_div">1、客户扫码即可查看名片，一键保存到通讯录</div>
+	<div class="content_div" style="margin-top:8px;">名片基于二维码的特性，可以快速分享传播，无需添加微信好友，客户使用微信“扫一扫”，即可查看名片信息，快速保存到通讯录。</div>
+	<img alt="" data-media-type="image" src="2018/04/1402x.png" style="width: 600px;height: 344px;cursor:default;">
+	<div class="title_div" style="margin-top:50px;">2、实时统计名片分发效果，挖掘潜在客户</div>
+	<div class="content_div" style="margin-top:8px;">草料提供名片统计功能，可以实时查看名片被查看及保存的数量，了解谁对你更感兴趣，帮助你精准挖掘及拓展潜在客户。</div>
+	<img alt="" data-media-type="image" src="2018/02/img-03@2x_zhj_20180222.png" style="width: 600px;height: 376px;cursor:default;">
+	<div class="title_div" style="margin-top:30px;">3、企业主页展示，增加信任背书</div>
+	<div class="content_div" style="margin-top:8px;">企业名片除了展示公司名称、职务和联系方式等纸质名片的基本信息外，还提供了图文信息、音视频等形式展示你的工作背景、公司业务、产品等更丰富的信息，让客户全方位地了解公司，连接客户与商机。</div>
+	<img data-media-type="image" src="2018/04/截图-2.png" style="height:279px;width:600px;cursor:default;">
+	<div class="title_div" style="margin-top:30px;">4、统一企业通讯录，快速查找同事通讯录</div>
+	<div class="content_div" style="margin-top:8px;">企业名片创建名片，系统会自动识别搭建组织架构，生成企业通讯录。成员微信扫码即可认领名片，拥有企业通讯录，支持随时快速查找同事通讯录。</div>
+	<img data-media-type="image" src="2018/04/4-1402x.png" style="height:356px;width:600px;cursor:default;">
+	<div class="title_div" style="margin-top:30px;">5、公司成员管理，随时管理员工身份与权限</div>
+	<div class="content_div" style="margin-top:8px;">公司管理员可以在后台统一管理，随时更新员工身份信息，员工离职，可以标记离职和删除。</div>
+	<img data-media-type="image" src="2018/04/截图-1.png" style="width: 600px;height: 285px;cursor:default;">
+	<div class="title_div" style="margin-top:30px;">草料还提供了多种方式添加成员，一次性生成全公司名片</div>
+	<div class="content_div" style="margin-top:8px;"> 支持多种方式进行添加成员，提升名片制作效率：Excel编辑信息批量导入员工信息、单个添加单人信息、扫二维码快速邀请。员工扫码认领名片，可以在微信上更新个人资料，名片内容同步更新。查看教程 </div>
+	<img data-media-type="image" src="2019/04/15560781334766_企业名片操作8.png" style="cursor: default;">
+</div>
+
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+</body>
+</html>

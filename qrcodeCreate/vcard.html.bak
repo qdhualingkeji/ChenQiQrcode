@@ -93,6 +93,15 @@ function showXmDropdownDiv(){
     position: relative;
     font-weight: bold;
 }
+.cli_nav .sub_nav .on::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    width: 100%;
+    height: 2px;
+    background-color: #4caf50;
+}
 .cli_nav .sub_nav li a {
     position: relative;
     display: inline-block;
@@ -256,7 +265,7 @@ function showXmDropdownDiv(){
 					<a href="../solutionCommodity.html">案例模板</a>
 				</li>
 				<li class="active">
-					<a href="../qrcodeCreate.html">二维码生成器</a>
+					<a href="text.html">二维码生成器</a>
 				</li>
 				<li>
 					<a href="../price.html">定制价格</a>
@@ -374,7 +383,7 @@ function showXmDropdownDiv(){
 				</div>
 			</div>
 
-			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:#2871AB;background-color:#2871AB;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#2871AB;border-radius:3px;">生成二维码</div>
 		</div>
 		<div style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
 			<h1 class="companyVcardTitle">企业名片二维码</h1>
