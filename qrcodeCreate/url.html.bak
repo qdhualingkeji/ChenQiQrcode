@@ -55,7 +55,7 @@ body{
     content: ' ';
     position: absolute;
     left: 0;
-    bottom: -11px;
+    bottom: -14px;
     width: 100%;
     height: 2px;
     background-color: #4caf50;
