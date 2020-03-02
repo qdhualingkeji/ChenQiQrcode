@@ -40,6 +40,15 @@ $(function(){
     nav.removeClass("fix");
     }
   });
+
+  $(".client-list a").mouseover(function(){
+	$(this).find(".img1").css("display","none");
+	$(this).find(".img2").css("display","inline-block");
+  });
+  $(".client-list a").mouseout(function(){
+	$(this).find(".img1").css("display","inline-block");
+	$(this).find(".img2").css("display","none");
+  });
 });
 </script>
 <style>
@@ -248,6 +257,49 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     margin-top: 10px;
     position: relative;
 }
+.client-list li .img1{
+	display: inline-block;
+}
+.client-list li .img2{
+	display: none;
+}
+.lfyl_img{
+	width:224px;height:58px;margin-left:-38px;
+}
+.lprhy_img{
+	width:224px;height:56px;
+}
+.lwzy_img{
+	width:224px;height:59px;
+}
+.slyt_img{
+	width:224px;height:47px;margin-top:5px;margin-left: 49px;
+}
+.dthlj_img{
+	width:224px;height:42px;
+}
+.dyhkjc_img{
+	width:224px;height:36px;
+}
+.hnycxny_img{
+	width:224px;height:30px;margin-top: 3px;
+}
+.hm_img{
+	width:224px;height:26px;margin-top: 4px;
+}
+.jnkyjt_img{
+	width:224px;height:39px;margin-left:-27px;
+}
+.wrhxcl_img{
+	width:224px;height:39px;
+}
+.mzgj_img{
+	width:224px;height:39px;
+}
+.htkg_img{
+	width:224px;height:28px;margin-top:6px;
+}
+
 
 .footer-to-price-new {
 	/*
@@ -665,73 +717,85 @@ var swiper = new Swiper('.merchants', {
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/92c4e81f-f013-4f1f-9c2a-82a9e55ffb3c.png" class="img2" alt="" style="width:224px;height:58px;margin-left:-38px;">
+					  <img class="img1 lfyl_img" src="qlqrcode_files/images/b1ae4b03-1d4d-4258-88fd-f2594ace25ed.png" alt="">
+					  <img class="img2 lfyl_img" src="qlqrcode_files/images/92c4e81f-f013-4f1f-9c2a-82a9e55ffb3c.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/u7xv9kwXS5-HRoOC4_56NA.png" class="img2" alt="" style="width:224px;height:56px;">
+					  <img class="img1 lprhy_img" src="qlqrcode_files/images/zS_YRPEER4eVSoqJYmxE_A.png" alt="">
+					  <img class="img2 lprhy_img" src="qlqrcode_files/images/u7xv9kwXS5-HRoOC4_56NA.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/gpWPsehgQmarb9Gtn_j07g.png" class="img2" alt="" style="width:224px;height:59px;">
+					  <img class="img1 lwzy_img" src="qlqrcode_files/images/3BcLkB7BTUmHuD1fWIY3Ug.png" alt="">
+					  <img class="img2 lwzy_img" src="qlqrcode_files/images/gpWPsehgQmarb9Gtn_j07g.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/shengliyoutian.jpg" class="img2" alt="" style="width:224px;height:47px;margin-top:5px;margin-left: 49px;">
+					  <img class="img1 slyt_img" src="qlqrcode_files/images/shengliyoutian1.jpg" alt="">
+					  <img class="img2 slyt_img" src="qlqrcode_files/images/shengliyoutian.jpg" alt="">
 					</a>
 				  </li>
 				  <li class="li1">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/V8sO46IrR0u9Ab7zKya2dA.png" alt="" style="width:224px;height:42px;">
+					  <img class="img1 dthlj_img" src="qlqrcode_files/images/IVTJYC15S_miYffXdFwHBA.png" alt="">
+					  <img class="img2 dthlj_img" src="qlqrcode_files/images/V8sO46IrR0u9Ab7zKya2dA.png" alt="">
 					</a>
 				  </li>
 				  <li class="li1">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/OylI7ylqRCeSohg2uB6n6w.png" alt="" style="width:224px;height:36px;">
+					  <img class="img1 dyhkjc_img" src="qlqrcode_files/images/OEAY-g19T4aXVfjcoRpVUw.png" alt="">
+					  <img class="img2 dyhkjc_img" src="qlqrcode_files/images/OylI7ylqRCeSohg2uB6n6w.png" alt="">
 					</a>
 				  </li>
 				  <li class="li1">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/2yc9iRliS06gcVWxF8VE6Q.png" class="img2" alt="" style="width:224px;height:30px;margin-top: 3px;">
+					  <img class="img1 hnycxny_img" src="qlqrcode_files/images/OP_bG_UqQVOX656W-W2usQ.png" alt="">
+					  <img class="img2 hnycxny_img" src="qlqrcode_files/images/2yc9iRliS06gcVWxF8VE6Q.png" alt="">
 					</a>
 				  </li>
 				  <li class="li1">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/PJDKykTbQkyXB9III0_ieA.png" class="img2" alt="" style="width:224px;height:26px;margin-top: 4px;">
+					  <img class="img1 hm_img" src="qlqrcode_files/images/FKMs6dSxT5uuM37-7YezMw.png" alt="">
+					  <img class="img2 hm_img" src="qlqrcode_files/images/PJDKykTbQkyXB9III0_ieA.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/2y_b-H4TT8GntPvP2NyDSw.png" class="img2" alt="" style="width:224px;height:39px;margin-left:-27px;">
+					  <img class="img1 jnkyjt_img" src="qlqrcode_files/images/o8cYLHcfSSCP1dopxIC-8g.png" alt="">
+					  <img class="img2 jnkyjt_img" src="qlqrcode_files/images/2y_b-H4TT8GntPvP2NyDSw.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/8lt6xTBLTQi6Bl1P672tjQ.png" class="img2" alt="" style="width:224px;height:39px;">
+					  <img class="img1 wrhxcl_img" src="qlqrcode_files/images/4VrLJMisTU2xBRJmqwDBng.png" alt="">
+					  <img class="img2 wrhxcl_img" src="qlqrcode_files/images/8lt6xTBLTQi6Bl1P672tjQ.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/cjyMvvCIQvePbgd3n_BrNw.png" class="img2" alt="" style="width:224px;height:39px;">
+					  <img class="img1 mzgj_img" src="qlqrcode_files/images/fLoo-f5cQwydvhq6U7XjNw.png" alt="">
+					  <img class="img2 mzgj_img" src="qlqrcode_files/images/cjyMvvCIQvePbgd3n_BrNw.png" alt="">
 					</a>
 				  </li>
 				  <li class="fl">
 					<em style="display:none">合作客户</em>
 					<a href="javascript:;">
-					  <img src="qlqrcode_files/images/sanjianghangtian.jpg" class="img2" alt="" style="width:224px;height:28px;margin-top:6px;">
+					  <img class="img1 htkg_img" src="qlqrcode_files/images/sanjianghangtian1.jpg" alt="">
+					  <img class="img2 htkg_img" src="qlqrcode_files/images/sanjianghangtian.jpg" alt="">
 					</a>
 				  </li>
 			   </ul>				
