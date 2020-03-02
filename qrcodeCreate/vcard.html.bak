@@ -75,8 +75,8 @@ function showXmDropdownDiv(){
     padding: 0 !important;
 }
 .cli_nav .sub_nav {
-    height: 44px;
     width: 1000px;
+    height: 58px;
     margin: 0 auto;
     position: relative;
 }
@@ -84,14 +84,18 @@ function showXmDropdownDiv(){
     float: left;
     height: 100%;
     list-style: none;
+	/*
     padding: 12px 0 8px;
+	*/
 }
 .cli_nav .sub_nav li a.on {
     color: #4caf50;
 }
 .cli_nav .sub_nav .on {
     position: relative;
+	/*
     font-weight: bold;
+	*/
 }
 .cli_nav .sub_nav .on::after {
     content: ' ';
@@ -105,7 +109,7 @@ function showXmDropdownDiv(){
 .cli_nav .sub_nav li a {
     position: relative;
     display: inline-block;
-    font-size: 14px;
+    font-size: 24px;
     padding: 0px 14px;
     margin-right: 20px;
     text-align: center;
@@ -241,10 +245,10 @@ function showXmDropdownDiv(){
     width: 96px;
     height: 36px;
     line-height: 36px;
-    color: #2871AB;
+    color: #00A3FF;
 	text-align: center;
 	font-size: 15px;
-	border:#2871AB solid 1px;
+	border:#00A3FF solid 1px;
 	margin: 60px auto;
 	background-color:#fff;
     border-radius: 5px;
@@ -296,8 +300,8 @@ function showXmDropdownDiv(){
 	</ul>
 </div>
 
-<div class="center_div" style="width:1903px;height:auto;background-color:#F7F9F7;">
-	<div style="width:1000px;height:669px;margin:0 auto;padding-top: 25px;padding-bottom: 25px;">
+<div class="center_div" style="width:1903px;height:auto;">
+	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
 		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
@@ -400,6 +404,8 @@ function showXmDropdownDiv(){
 		</div>
 	</div>
 </div>
+
+<div class="footSpace_div"></div>
 
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">

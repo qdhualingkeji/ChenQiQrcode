@@ -171,6 +171,21 @@
 }
 </style>
 <title>Document</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var nav=$("header");
+  var win=$(window);
+  var sc=$(document);
+  win.scroll(function(){
+    if(sc.scrollTop()>=50){
+      nav.addClass("fix");
+    }else{
+    nav.removeClass("fix");
+    }
+  });
+});
+</script>
 </head>
 <body>
 <header>
@@ -178,7 +193,7 @@
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
         <ul class="menu" style="color:#000;">
-            <li class="active">
+            <li>
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li>
@@ -187,7 +202,7 @@
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
-            <li class="list">
+            <li class="active">
 				<a class="a2" href="/qrcode/solution">定制价格</a>
             </li>
 			<li class="list">
@@ -401,6 +416,8 @@
 		</div>
 	</div>
 </div>
+
+<div class="footSpace_div"></div>
 
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">

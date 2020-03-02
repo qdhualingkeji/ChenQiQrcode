@@ -222,10 +222,10 @@ $(function(){
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
         <ul class="menu" style="color:#000;">
-            <li class="active">
+            <li>
 				<a class="a2" href="index.html">首页</a>
 			</li>
-            <li>
+            <li class="active">
 				<a class="a2" href="solutionCommodity.html">案例模板</a>
 			</li>
 			<li>
@@ -600,7 +600,6 @@ $(function(){
 		</div>
 	</div>
 
-	
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">
 	<div class="info-tell">

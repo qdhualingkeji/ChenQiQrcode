@@ -6,6 +6,11 @@
 	width:100%;
 	height:auto;
 	background-color:#1F232A;
+}
+.w_grid2_div{
+	width:100%;
+	height:auto;
+	background-color:#1F232A;
 	bottom: 0;
 	position: fixed;
 }

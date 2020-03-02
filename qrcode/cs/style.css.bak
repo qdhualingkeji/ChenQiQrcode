@@ -139,7 +139,7 @@ header .nav .navbar .menu li a:hover{
 header.fix .nav .navbar .menu li a, header.fix .nav .navbar .menu li dl.active a{
 	color: #222;
 }
-header.fix .nav .navbar .menu li a:hover, header.fix .nav .navbar .menu li.active a, header.fix .nav .navbar .menu li dl.active a:hover{
+header.fix .nav .navbar .menu li a:hover, header.fix .nav .navbar .menu li.active a, header.fix .nav .navbar .menu li dl.active a:hover, header.fix .nav .navbar .menu li .a2:hover{
 	color: #00a3ff;
 }
 header .nav .navbar .menu li dl{
@@ -186,7 +186,12 @@ header .nav .nav_button .login{
 	padding: 5px 20px;
 	background-color: transparent;
 }
-
+header .nav .nav_button .login2 {
+    border: 1px solid #000;
+	padding: 5px 20px;
+	color:#363636;
+	background-color:transparent;
+}
 header .nav .nav_button .login:hover{
 	color: #00a3ff;
   background-color: #fff;
