@@ -85,6 +85,10 @@
 	background-color:#00A3FF;
 	border-radius:5px;
 }
+.mark .text {
+    float: left;
+    width: 100%;
+}
 </style>
 <title>Document</title>
 </head>
@@ -142,9 +146,24 @@
 		</div>
 		<div style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;border: 1px solid #d4d0c8;float:right;">此处生成二维码</div>
 	</div>
-</div>	
+</div>
 
-<div class="footSpace_div"></div>
+<div class="city_why">
+	<div class="city_why_box">			
+		<div class="imgbox"><img src="../qrcode/ig/tools-1.jpg" alt="什么是二维码追溯？"></div>
+		<div class="textbox">
+			<h2>什么是二维码追溯？</h2>
+			<p>
+			二维码追溯就是消费者购买带有追溯码的产品后通过手机扫描产品包装上的二维码，对所购买产品的原料来源、加工过程、生产周期、流通信息、质量检测、产地信息、厂家信息等进行品质追溯、溯源追查的过程。
+			</p>
+			<div class="mark">
+				<div class="text"><strong>一物一码 品质追溯</strong> <br>一码追溯二维码追溯系统，让每一件商品都具有独立的“身份证”，实现了品牌产品质量全程可追溯。</div>
+			</div>	
+			<a target="_blank" href="http://qrcode.pro/help/faq/knowledge" class="button1">点击试用</a>
+			<a class="button2 chatqq">在线咨询</a>
+		</div>			
+	</div>
+</div>
 
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">

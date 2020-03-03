@@ -6,11 +6,26 @@
 <meta name="Author" content="">
 <meta name="Keywords" content="">
 <meta name="Description" content="">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
 <script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
 <script>
-
+function createQrcode(){
+	var url=$("#url_inp").val();
+	$.ajax({
+		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/createQrcodeByCQSCQ",
+		data:{url:url},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(data){
+			var qrcode=JSON.parse(data).qrcode;
+			$("#showQrcode_div").empty();
+			$("#showQrcode_div").append("<img src=\"http://www.bainuojiaoche.com:8080"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+		}
+	});
+}
 </script>
 <style>
 body{
@@ -147,9 +162,9 @@ body{
 			<div style="margin-top: 26px !important;">
 				<input type="text" id="url_inp" name="text" placeholder="http://" style="width:100%;font-size: 20px;padding: 15px;border: rgba(120,130,140,.25) solid 1px;color:#55595c;background-color:#fff;">
 			</div>
-			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:50px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:50px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;" onclick="createQrcode()">生成二维码</div>
 		</div>
-		<div style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;border: 1px solid #d4d0c8;float:right;">此处生成二维码</div>
+		<div id="showQrcode_div" style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;border: 1px solid #d4d0c8;float:right;">此处生成二维码</div>
 	</div>
 </div>	
 
