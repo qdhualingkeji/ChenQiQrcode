@@ -8,6 +8,41 @@
 <meta name="Description" content="">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+function createQrcode(){
+	var content=$("#content_ta").val();
+	$.ajax({
+		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/createQrcodeByCQSCQ",
+		data:{url:content},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(data){
+			var qrcode=JSON.parse(data).qrcode;
+			$("#showQrcode_div").empty();
+			$("#showQrcode_div").append("<img src=\"http://www.bainuojiaoche.com:8080"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+
+			$("#content_ta").css("display","none");
+			$("#rwmysc_div").css("display","block");
+			$("#showContent_div").css("display","block");
+			$("#showContent_div").text(content);
+			$("#createQrcode_div").css("display","none");
+			$("#newOne_div").css("display","block");
+		}
+	});
+}
+
+function newOneQrcode(){
+	$("#content_ta").css("display","block");
+	$("#rwmysc_div").css("display","none");
+	$("#showContent_div").css("display","none");
+	$("#showContent_div").text("");
+	$("#createQrcode_div").css("display","block");
+	$("#newOne_div").css("display","none");
+	$("#showQrcode_div").text("此处生成二维码");
+}
+</script>
 <style>
 .title {
     padding-top: 90px;
@@ -73,7 +108,30 @@
     position: relative;
     top: -1px;
 }
-.createQrcode_div{
+
+.contentTa_div{
+	width:100%;height:260px;background-color:#fff;
+}
+.content_ta{
+	width:100%;height:212px;padding:24px;font-size: 16px;border: 1px solid #d4d0c8;border-radius: 3px;
+}
+.rwmysc_div{
+	color:#4A4A4A;
+	text-align:center;
+	display:none;
+}
+.showContent_div{
+	width:100%;
+	height:156px;
+	line-height:156px;
+	text-align:center;
+	font-size: 20px;
+	border: rgba(120,130,140,.25) solid 1px;
+	color:#000;
+	background-color:#fff;
+	display:none;
+}
+.createQrcode_div,.newOne_div{
 	width:148px;
 	height:48px;
 	line-height:48px;
@@ -84,6 +142,17 @@
 	margin-top:25px;
 	background-color:#00A3FF;
 	border-radius:5px;
+}
+.showQrcode_div{
+	width:260px;
+	height:260px;
+	line-height:260px;
+	text-align:center;
+	color:#bbb;
+	font-size: 16px;
+	background-color:#fff;
+	border: 1px solid #d4d0c8;
+	float:right;
 }
 .mark .text {
     float: left;
@@ -139,12 +208,15 @@
 <div style="width:1903px;height:374px;">
 	<div style="width:913px;height:314px;margin:0 auto;">
 		<div style="width:550px;height:273px;float:left;">
-			<div style="width:100%;height:260px;background-color:#fff;">
-				<textarea style="width:100%;height:212px;padding:24px;font-size: 16px;border: 1px solid #d4d0c8;border-radius: 3px;" placeholder="请输入文字内容"></textarea>
+			<div class="contentTa_div" id="contentTa_div">
+				<textarea class="content_ta" id="content_ta" placeholder="请输入文字内容"></textarea>
+				<div class="rwmysc_div" id="rwmysc_div">二维码已生成</div>
+				<div class="showContent_div" id="showContent_div"></div>
 			</div>
-			<div class="createQrcode_div">使用模板创建</div>
+			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()">使用模板创建</div>
+			<div class="newOne_div" id="newOne_div" onclick="newOneQrcode()" style="display:none;">再建一个</div>
 		</div>
-		<div style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;border: 1px solid #d4d0c8;float:right;">此处生成二维码</div>
+		<div class="showQrcode_div" id="showQrcode_div">此处生成二维码</div>
 	</div>
 </div>
 
@@ -159,7 +231,7 @@
 			<div class="mark">
 				<div class="text"><strong>一物一码 品质追溯</strong> <br>一码追溯二维码追溯系统，让每一件商品都具有独立的“身份证”，实现了品牌产品质量全程可追溯。</div>
 			</div>	
-			<a target="_blank" href="http://qrcode.pro/help/faq/knowledge" class="button1">点击试用</a>
+			<a target="_blank" href="" class="button1">点击试用</a>
 			<a class="button2 chatqq">在线咨询</a>
 		</div>			
 	</div>

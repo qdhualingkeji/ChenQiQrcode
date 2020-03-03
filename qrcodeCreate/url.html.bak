@@ -22,9 +22,24 @@ function createQrcode(){
 		success:function(data){
 			var qrcode=JSON.parse(data).qrcode;
 			$("#showQrcode_div").empty();
-			$("#showQrcode_div").append("<img src=\"http://www.bainuojiaoche.com:8080"+qrcode+"\"/>");
+			$("#showQrcode_div").append("<img src=\"http://www.bainuojiaoche.com:8080"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+
+			$("#url_inp").css("display","none");
+			$("#showUrl_div").css("display","block");
+			$("#showUrl_div").text(url);
+			$("#createQrcode_div").css("display","none");
+			$("#newOne_div").css("display","block");
 		}
 	});
+}
+
+function newOneQrcode(){
+	$("#url_inp").css("display","block");
+	$("#showUrl_div").css("display","none");
+	$("#showUrl_div").text("");
+	$("#createQrcode_div").css("display","block");
+	$("#newOne_div").css("display","none");
+	$("#showQrcode_div").text("此处生成二维码");
 }
 </script>
 <style>
@@ -102,6 +117,50 @@ body{
 	font-size:15px;
 	color:#999;
 }
+.urlInp_div{
+	margin-top: 26px !important;
+}
+.url_inp{
+	width:100%;
+	font-size: 20px;
+	padding: 15px;
+	border: rgba(120,130,140,.25) solid 1px;
+	color:#55595c;
+	background-color:#fff;
+}
+.showUrl_div{
+	width:96%;
+	height:56px;
+	line-height:56px;
+	text-align:center;
+	font-size: 20px;
+	border: rgba(120,130,140,.25) solid 1px;
+	color:#000;
+	background-color:#fff;
+	display:none;
+}
+.createQrcode_div,.newOne_div{
+	width:112px;
+	height:38px;
+	line-height:38px;
+	margin:0 auto;
+	margin-top:50px;
+	text-align:center;
+	color:rgba(255,255,255,1);
+	background-color:#00A3FF;
+	border-radius:3px;
+}
+.showQrcode_div{
+	width:260px;
+	height:260px;
+	line-height:260px;
+	text-align:center;
+	color:#bbb;
+	font-size: 16px;
+	background-color:#fff;
+	border: 1px solid #d4d0c8;
+	float:right;
+}
 </style>
 <title>Document</title>
 </head>
@@ -159,12 +218,14 @@ body{
 			</div>
 			<div class="wzjtmsm_div" id="wzjtmsm_div">静态码直接对网址进行编码，生成后内容无法改变，不能统计扫描数据。</div>
 			<div class="wzhmsm_div" id="wzhmsm_div" style="display:none;">活码生成印刷后内容仍可随时修改，无需替换二维码，还能跟踪扫描数据。</div>
-			<div style="margin-top: 26px !important;">
-				<input type="text" id="url_inp" name="text" placeholder="http://" style="width:100%;font-size: 20px;padding: 15px;border: rgba(120,130,140,.25) solid 1px;color:#55595c;background-color:#fff;">
+			<div class="urlInp_div" id="urlInp_div">
+				<input type="text" class="url_inp" id="url_inp" name="text" placeholder="http://"/>
+				<div class="showUrl_div" id="showUrl_div"></div>
 			</div>
-			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:50px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;" onclick="createQrcode()">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()">生成二维码</div>
+			<div class="newOne_div" id="newOne_div" onclick="" style="display:none;">再建一个</div>
 		</div>
-		<div id="showQrcode_div" style="width:260px;height:260px;line-height:260px;text-align:center;color:#bbb;font-size: 16px;background-color:#fff;border: 1px solid #d4d0c8;float:right;">此处生成二维码</div>
+		<div class="showQrcode_div" id="showQrcode_div">此处生成二维码</div>
 	</div>
 </div>	
 
