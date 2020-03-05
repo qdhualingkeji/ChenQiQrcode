@@ -139,7 +139,7 @@ header .nav .navbar .menu li a:hover{
 header.fix .nav .navbar .menu li a, header.fix .nav .navbar .menu li dl.active a{
 	color: #222;
 }
-header.fix .nav .navbar .menu li a:hover, header.fix .nav .navbar .menu li.active a, header.fix .nav .navbar .menu li dl.active a:hover, header.fix .nav .navbar .menu li .a2:hover{
+header.fix .nav .navbar .menu li a:hover, header.fix .nav .navbar .menu li.active a, header.fix .nav .navbar .menu li dl.active a:hover{
 	color: #00a3ff;
 }
 header .nav .navbar .menu li dl{

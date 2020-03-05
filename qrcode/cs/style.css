@@ -81,7 +81,7 @@ header .nav .logo{
 	height:50px;
 	margin-left:20px;
 	margin-top: 7px;
-	background:url(/qrcode/ig/logo-white.png) no-repeat center;
+	background:url(../../qrcode/ig/logo-white.png) no-repeat center;
 	background-size:contain;
 }
 header.fix .nav .logo{

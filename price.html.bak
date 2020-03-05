@@ -205,7 +205,7 @@ $(function(){
             <li class="active">
 				<a class="a2" href="/qrcode/solution">定制价格</a>
             </li>
-			<li class="list">
+			<li>
 				<a class="a2" href="/help/faq/information/">帮助</a>
 			</li>
         </ul>

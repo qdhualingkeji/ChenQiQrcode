@@ -9,6 +9,15 @@
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <link rel="stylesheet" type="text/css" href="qrcode/cs/foot.css" />
 <style>
+header .nav .logo {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 7px;
+    background: url(qrcode/ig/logo.png) no-repeat center;
+    background-size: contain;
+}
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
@@ -232,7 +241,7 @@ $(function(){
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="list">
-				<a class="a2" href="/qrcode/solution">定制价格</a>
+				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li class="list">
 				<a class="a2" href="/help/faq/information/">帮助</a>

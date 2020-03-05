@@ -21,6 +21,25 @@ $(function(){
 	});
 });
 
+function createQrcode(){
+	var formData = new FormData(document.getElementById("form1"));
+	console.log(formData);
+	$.ajax({
+		type:"post",
+		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP",
+		dataType: "jsonp",
+		data:formData,
+		//data:{aaa:"aaa"},
+		cache: false,
+		processData: false,
+		contentType: false,
+		jsonpCallback:"jsonpCallback",
+		success: function (data){
+			console.log(data);
+		}
+	});
+}
+
 function addLxfsItem(o,index){
 	var contact=$(o).attr("data-contact");
 	var value=$(o).attr("data-value");
@@ -302,13 +321,14 @@ function showXmDropdownDiv(){
 
 <div class="center_div" style="width:1903px;height:auto;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
+		<form id="form1" name="form1" method="post" enctype="multipart/form-data">
 		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
 				<img id="upload-img" src="https://blogcdnimg.clewm.net/2018/06/default_head_image.png" alt="" width="90" height="90" border="0">
 				<div class="upload pointer" id="upload-btn">
-					<input type="file" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="">
+					<input type="file" name="avatorImg" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="">
 					<div class="uploadClick">上传</div>
 				</div>
 			</div>
@@ -386,9 +406,10 @@ function showXmDropdownDiv(){
 					</div>
 				</div>
 			</div>
-
-			<div class="createQrcode_div" id="createQrcode_div" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">生成二维码</div>
 		</div>
+		</form>
+
 		<div style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
 			<h1 class="companyVcardTitle">企业名片二维码</h1>
 			<div class="companyVcardIntro">一次性创建多人名片，并可以对名片进行统一管理，适用于企业成员使用</div>
@@ -404,8 +425,6 @@ function showXmDropdownDiv(){
 		</div>
 	</div>
 </div>
-
-<div class="footSpace_div"></div>
 
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">
