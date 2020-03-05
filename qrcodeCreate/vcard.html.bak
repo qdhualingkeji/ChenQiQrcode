@@ -7,7 +7,6 @@
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
-<link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
 <script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
 <script>
 $(function(){
@@ -33,6 +32,7 @@ function createQrcode(){
 		cache: false,
 		processData: false,
 		contentType: false,
+		jsonp:'jsonpCallback',
 		jsonpCallback:"jsonpCallback",
 		success: function (data){
 			console.log(data);

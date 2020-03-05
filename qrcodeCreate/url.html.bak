@@ -8,7 +8,6 @@
 <meta name="Description" content="">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
-<link rel="stylesheet" type="text/css" href="../qrcode/cs/foot.css" />
 <script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
 <script>
 function createQrcode(){
@@ -160,6 +159,10 @@ body{
 	background-color:#fff;
 	border: 1px solid #d4d0c8;
 	float:right;
+}
+.mark .text {
+    float: left;
+    width: 100%;
 }
 </style>
 <title>Document</title>
