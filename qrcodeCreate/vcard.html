@@ -21,15 +21,20 @@ $(function(){
 	});
 
 	var type=getQueryString("type");
-	if(type==1){
-	
+	type=1;
+	if(type==1){//名片创建成功
+		$("#add_div").css("display","none");
+		$("#qympewm_div").css("display","none");
+
+		$("#createSuccess_div").css("display","block");
+		$("#showQrcode_div").css("display","block");
 	}
-	else if(type==2){
+	else if(type==2){//再建一张
 		
 	}
 	else{
 		$("#add_div").css("display","block");
-		$("qympewm_div").css("display","block");
+		$("#qympewm_div").css("display","block");
 	}
 });
 
@@ -294,6 +299,8 @@ function showAvatorImg(obj){
 	width:100%;
 	height:auto;
 	background-color:#1F232A;
+	position: relative;
+	bottom:0;
 }
 .info-tell{
 	width:1202px;
@@ -318,6 +325,22 @@ function showAvatorImg(obj){
 	font-size: 14px;
 	color: #999999;
 	letter-spacing: 0;
+}
+
+.field_touxian,.field_phone,.field_email,.field_url,.field_fax,.field_weixin,.field_qq,.field_weibo,.field_company,.field_address,.field_sign{
+	width:318px;height:20px;padding: 10px 0 10px 22px;border-bottom: 1px solid rgba(120,130,140,.13);color:rgba(0,0,0,.87);font-size: 14px;
+}
+.showQrcode_div{
+	width:260px;
+	height:260px;
+	line-height:260px;
+	text-align:center;
+	color:#bbb;
+	font-size: 16px;
+	background-color:#fff;
+	border: 1px solid #d4d0c8;
+	float:right;
+	display:none;
 }
 </style>
 <title>Document</title>
@@ -369,7 +392,7 @@ function showAvatorImg(obj){
 <div class="center_div" style="width:1903px;height:auto;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
 		<form id="form1" name="form1" method="post" action="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP" enctype="multipart/form-data">
-		<div id="add_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
+		<div id="add_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;display:none;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
@@ -461,7 +484,37 @@ function showAvatorImg(obj){
 		</div>
 		</form>
 
-		<div id="qympewm_div" style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+		<div id="createSuccess_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;display:none;">
+			<div style="text-align:center;color:#4A4A4A;font-size: 14px;margin-top: 30px;">名片创建成功</div>
+			<div class="previewCard" style="width:340px;height:180px;border: 1px solid rgba(120,130,140,.13);margin:30px auto;">
+				<div class="previewCard_name" style="font-size: 24px;color:rgba(0,0,0,.87);margin-top: 28px;margin-left: 22px;">aaa</div>
+				<div class="previewCard_phone" style="font-size: 12px;color:#666;margin-top: 10px;margin-left: 22px;">13608977126</div>
+				<img class="previewCard_avatar" src="https://ncstatic.clewm.net/rsrc/2020/0306/15/d566a49a9c8c77ddf20766de635fad02.jpg" style="width: 75px;height: 75px;float:right;margin-top: -50px;margin-right: 24px;border-radius: 50%;">
+				<span class="previewCard_dep" style="font-size: 12px;color:#666;margin-top: 5px;margin-left: 22px;">研发部</span>
+				<span class="previewCard_job" style="font-size: 12px;color:#666;margin-top: 5px;margin-left: 18px;">java研发</span>
+				<div class="previewCard_company" style="font-size: 12px;color:#666;margin-top: 38px;margin-left: 22px;">华凌科技</div>
+			</div>
+			<div class="previewForm" style="width: 340px;margin: 0 auto;">
+				<div class="field_touxian">touxian</div>
+				<div class="field_phone">13608977126</div>
+				<div class="field_email">806867709@qq.com</div>
+				<div class="field_url">http://www.baidu.com</div>
+				<div class="field_fax">chuanzhen</div>
+				<div class="field_phone">110</div>
+				<div class="field_weixin">weixin</div>
+				<div class="field_qq">qq</div>
+				<div class="field_weibo">weibo</div>
+				<div class="field_company">gongsi</div>
+				<div class="field_address">dizhi</div>
+				<div class="field_sign">qianming</div>
+			</div>
+			<div style="width:242px;margin:0 auto;margin-bottom:20px;">
+				<div class="edit_div" id="edit_div" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);border-radius:3px;">编辑</div>
+				<div class="zjyz_div" id="zjyz_div" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:#00A3FF;border:1px solid #00A3FF;border-radius:3px;">再建一张</div>
+			</div>
+		</div>
+
+		<div id="qympewm_div" style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);display:none;">
 			<h1 class="companyVcardTitle">企业名片二维码</h1>
 			<div class="companyVcardIntro">一次性创建多人名片，并可以对名片进行统一管理，适用于企业成员使用</div>
 			<h2 class="advantageTitle">企业名片专属功能：</h2>
@@ -474,6 +527,8 @@ function showAvatorImg(obj){
 			<a class="advantageDetail" href="" target="_blank">了解详情</a>
 			<div class="ljsy_div">立即使用</div>
 		</div>
+		
+		<div class="showQrcode_div" id="showQrcode_div">此处生成二维码</div>
 	</div>
 </div>
 
