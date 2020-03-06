@@ -6,6 +6,7 @@
 <meta name="Author" content="">
 <meta name="Keywords" content="">
 <meta name="Description" content="">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
 <script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
 <script>
@@ -18,26 +19,47 @@ $(function(){
 		addXmItem(this,2);
 		$("#xmDropdown_div").css("display","none");
 	});
+
+	var type=getQueryString("type");
+	if(type==1){
+	
+	}
+	else if(type==2){
+		
+	}
+	else{
+		$("#add_div").css("display","block");
+		$("qympewm_div").css("display","block");
+	}
 });
 
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return  unescape(r[2]); return null;
+}
+
 function createQrcode(){
-	var formData = new FormData(document.getElementById("form1"));
+	/*
+	var formData = new FormData();
+	formData.append('avatorImg',$("#uploadfile").files[0]);
 	console.log(formData);
 	$.ajax({
 		type:"post",
-		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP",
-		dataType: "jsonp",
+		url:"http://120.27.5.36:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP",
 		data:formData,
-		//data:{aaa:"aaa"},
-		cache: false,
+		//data:{company:"aaa"},
+		dataType:'jsonp',
+		//cache: false,
 		processData: false,
-		contentType: false,
-		jsonp:'jsonpCallback',
-		jsonpCallback:"jsonpCallback",
+		//contentType: false,
 		success: function (data){
 			console.log(data);
 		}
 	});
+	*/
+
+	$("#submit_but").click();
 }
 
 function addLxfsItem(o,index){
@@ -74,6 +96,20 @@ function removeItemDiv(o){
 
 function showXmDropdownDiv(){
 	$("#xmDropdown_div").css("display","block");
+}
+
+function uploadImage(){
+	$("#uploadfile").click();
+}
+
+function showAvatorImg(obj){
+	var windowURL = window.URL || window.webkitURL;
+	var $file = $(obj);
+    var fileObj = $file[0];
+	if (fileObj && fileObj.files && fileObj.files[0]) {
+		var dataURL = windowURL.createObjectURL(fileObj.files[0]);
+		$("#upload-img").attr("src",dataURL);
+	}
 }
 </script>
 <style>
@@ -272,6 +308,36 @@ function showXmDropdownDiv(){
 	background-color:#fff;
     border-radius: 5px;
 }
+
+.w_grid_div{
+	width:100%;
+	height:auto;
+	background-color:#1F232A;
+}
+.info-tell{
+	width:1202px;
+	padding-top: 25px;
+	height: auto;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.info-tell p{
+	font-size: 15px;
+	color:#FFFFFF;
+	letter-spacing: 0;
+	line-height: 45px;
+}
+.bqxx{
+	width:1440px;
+	height:52px;
+	line-height:52px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	margin:0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: 0;
+}
 </style>
 <title>Document</title>
 </head>
@@ -321,15 +387,18 @@ function showXmDropdownDiv(){
 
 <div class="center_div" style="width:1903px;height:auto;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
-		<form id="form1" name="form1" method="post" enctype="multipart/form-data">
-		<div style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
+		<form id="form1" name="form1" method="post" action="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP" enctype="multipart/form-data">
+		<div id="add_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
 				<img id="upload-img" src="https://blogcdnimg.clewm.net/2018/06/default_head_image.png" alt="" width="90" height="90" border="0">
 				<div class="upload pointer" id="upload-btn">
-					<input type="file" name="avatorImg" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="">
-					<div class="uploadClick">上传</div>
+					<input type="file" name="avatorImg" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="" onchange="showAvatorImg(this)">
+					<!--
+					<input type="file" name="avatorImg" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile">
+					-->
+					<div class="uploadClick" onclick="uploadImage()">上传</div>
 				</div>
 			</div>
 
@@ -407,10 +476,11 @@ function showXmDropdownDiv(){
 				</div>
 			</div>
 			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">生成二维码</div>
+			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
 		</form>
 
-		<div style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
+		<div id="qympewm_div" style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);">
 			<h1 class="companyVcardTitle">企业名片二维码</h1>
 			<div class="companyVcardIntro">一次性创建多人名片，并可以对名片进行统一管理，适用于企业成员使用</div>
 			<h2 class="advantageTitle">企业名片专属功能：</h2>
