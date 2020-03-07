@@ -213,7 +213,7 @@ header .nav .logo {
 	background-color:#1F232A;
 }
 .info-tell{
-	width:1340px;
+	width:950px;
 	padding-top: 25px;
 	height: auto;
 	margin:0 auto;
@@ -346,6 +346,7 @@ $(function(){
 				<span style="font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;">Office</span>
 				一样，即刻制作二维码
 			</h3>
+				<a style="position: absolute;margin-top: -105px;margin-left: 300px;">查看更多</a>
 			<div class="goods-case-box">
 				<ul class="good-case-ul">
 					<li class="good-scene-item">

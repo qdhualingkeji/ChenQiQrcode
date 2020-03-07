@@ -361,7 +361,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	background-color:#1F232A;
 }
 .info-tell{
-	width:1340px;
+	width:950px;
 	padding-top: 25px;
 	height: auto;
 	margin:0 auto;

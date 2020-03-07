@@ -30,7 +30,7 @@ $(function(){
 	});
 
 	var type=getQueryString("type");
-	type=1;
+	//type=1;
 	if(type==1){//名片创建成功
 		$("#add_div").css("display","none");
 		$("#qympewm_div").css("display","none");
@@ -49,7 +49,7 @@ $(function(){
 			htmlGoodsGRMP=JSON.parse(data).htmlGoodsGRMP;
 			$("#previewCard_name").text(htmlGoodsGRMP.name);
 			$("#previewCard_mobile").text(htmlGoodsGRMP.mobile);
-			$("#previewCard_avator").attr("src",htmlGoodsGRMP.avatorUrl);
+			$("#previewCard_avator").attr("src","http://www.bainuojiaoche.com:8080"+htmlGoodsGRMP.avatorUrl);
 			$("#previewCard_dep").text(htmlGoodsGRMP.dep);
 			$("#previewCard_job").text(htmlGoodsGRMP.job);
 			$("#previewCard_company").text(htmlGoodsGRMP.company);
@@ -155,7 +155,11 @@ function getQueryString(name){
 }
 
 function createQrcode(){
-	$("#submit_but").click();
+	$("#add_div #submit_but").click();
+}
+
+function saveUpdate(){
+	$("#editGRMP_div #submit_but").click();
 }
 
 function addItem(o,index){
@@ -220,10 +224,15 @@ function showEditDiv(){
 	$("#createSuccess_div").css("display","none");
 	$("#editGRMP_div").css("display","block");
 
+	$("#editGRMP_div input[name='uuid']").val(htmlGoodsGRMP.uuid);
 	$("#editGRMP_div input[name='name']").val(htmlGoodsGRMP.name);
 	$("#editGRMP_div input[name='mobile']").val(htmlGoodsGRMP.mobile);
 	$("#editGRMP_div input[name='email']").val(htmlGoodsGRMP.email);
 
+	var avatorUrl=htmlGoodsGRMP.avatorUrl;
+	if(avatorUrl!=""){
+		$("#editGRMP_div #upload-img").attr("src","http://www.bainuojiaoche.com:8080"+avatorUrl);
+	}
 	var url=htmlGoodsGRMP.url;
 	if(url!=""){
 		addItem("#editGRMP_div #lxfsDropdown_div div[data-contact='url']",1);
@@ -267,6 +276,11 @@ function showEditDiv(){
 
 	$("#editGRMP_div input[name='address']").val(htmlGoodsGRMP.address);
 	$("#editGRMP_div input[name='note']").val(htmlGoodsGRMP.note);
+}
+
+function showSuccessDiv(){
+	$("#createSuccess_div").css("display","block");
+	$("#editGRMP_div").css("display","none");
 }
 </script>
 <style>
@@ -470,8 +484,6 @@ function showEditDiv(){
 	width:100%;
 	height:auto;
 	background-color:#1F232A;
-	position: relative;
-	bottom:0;
 }
 .info-tell{
 	width:1202px;
@@ -650,7 +662,7 @@ function showEditDiv(){
 					</div>
 				</div>
 			</div>
-			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:3px;">生成二维码</div>
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
 		</form>
@@ -680,12 +692,14 @@ function showEditDiv(){
 				<div class="field_note" id="field_note"></div>
 			</div>
 			<div style="width:242px;margin:0 auto;margin-bottom:20px;">
-				<div class="edit_div" id="edit_div" onclick="showEditDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);border-radius:3px;">编辑</div>
-				<div class="zjyz_div" id="zjyz_div" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:#00A3FF;border:1px solid #00A3FF;border-radius:3px;">再建一张</div>
+				<div class="edit_div" id="edit_div" onclick="showEditDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);cursor:pointer;border-radius:3px;">编辑</div>
+				<div class="zjyz_div" id="zjyz_div" onclick="location.href='vcard.html?type=2'" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:#00A3FF;border:1px solid #00A3FF;cursor:pointer;border-radius:3px;">再建一张</div>
 			</div>
 		</div>
 
+		<form id="form2" name="form2" method="post" action="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/editHtmlGoodsGRMP" enctype="multipart/form-data">
 		<div class="editGRMP_div" id="editGRMP_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;display:none;">
+			<input type="hidden" name="uuid"/>
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
@@ -773,12 +787,13 @@ function showEditDiv(){
 				</div>
 			</div>
 			<div style="width:242px;margin:0 auto;margin-bottom:20px;">
-				<div class="cancel_div" id="cancel_div" onclick="showEditDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);border-radius:3px;">取消</div>
-				<div class="save_div" id="save_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">保存修改</div>
+				<div class="cancel_div" id="cancel_div" onclick="showSuccessDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);cursor:pointer;border-radius:3px;">取消</div>
+				<div class="save_div" id="save_div" onclick="saveUpdate()" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:3px;">保存修改</div>
 			</div>
 			
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
+		</form>
 
 		<div id="qympewm_div" style="width:234px;height:619px;padding: 40px 24px 0;float:right;background-color:#fff;border: 1px solid rgba(120,130,140,.13);display:none;">
 			<h1 class="companyVcardTitle">企业名片二维码</h1>
@@ -796,6 +811,24 @@ function showEditDiv(){
 		
 		<div class="showQrcode_div" id="showQrcode_div">此处生成二维码</div>
 	</div>
+
+	<div class="city_why">
+		<div class="city_why_box">			
+			<div class="imgbox"><img src="../qrcode/ig/tools-1.jpg" alt="什么是二维码追溯？"></div>
+			<div class="textbox">
+				<h2>什么是二维码追溯？</h2>
+				<p>
+				二维码追溯就是消费者购买带有追溯码的产品后通过手机扫描产品包装上的二维码，对所购买产品的原料来源、加工过程、生产周期、流通信息、质量检测、产地信息、厂家信息等进行品质追溯、溯源追查的过程。
+				</p>
+				<div class="mark">
+					<div class="text"><strong>一物一码 品质追溯</strong> <br>一码追溯二维码追溯系统，让每一件商品都具有独立的“身份证”，实现了品牌产品质量全程可追溯。</div>
+				</div>	
+				<a target="_blank" href="" class="button1">点击试用</a>
+				<a class="button2 chatqq">在线咨询</a>
+			</div>			
+		</div>
+	</div>
+
 </div>
 
 <!--w_grid-1568271949559_start-->
