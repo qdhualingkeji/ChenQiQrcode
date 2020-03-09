@@ -787,8 +787,8 @@ function showSuccessDiv(){
 				</div>
 			</div>
 			<div style="width:242px;margin:0 auto;margin-bottom:20px;">
-				<div class="cancel_div" id="cancel_div" onclick="showSuccessDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);border-radius:3px;">取消</div>
-				<div class="save_div" id="save_div" onclick="saveUpdate()" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;border-radius:3px;">保存修改</div>
+				<div class="cancel_div" id="cancel_div" onclick="showSuccessDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);cursor:pointer;border-radius:3px;">取消</div>
+				<div class="save_div" id="save_div" onclick="saveUpdate()" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:3px;">保存修改</div>
 			</div>
 			
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
