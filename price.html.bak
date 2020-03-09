@@ -10,12 +10,11 @@
 <style>
 header .nav .logo {
     display: block;
-    width: 300px;
-    height: 50px;
+    width: 628px;
+    height: 65px;
     margin-left: 20px;
-    margin-top: 7px;
     background: url(qrcode/ig/logo.png) no-repeat center;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 .usePrice_div{
 	width:100%;
@@ -184,7 +183,7 @@ header .nav .logo {
 	background-color:#1F232A;
 }
 .info-tell{
-	width:1202px;
+	width:995px;
 	padding-top: 25px;
 	height: auto;
 	margin:0 auto;

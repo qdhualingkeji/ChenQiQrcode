@@ -77,16 +77,15 @@ header{
 }
 header .nav .logo{
 	display:block;
-	width:300px;
-	height:50px;
+	width:628px;
+	height:65px;
 	margin-left:20px;
-	margin-top: 7px;
-	background:url(/qrcode/ig/logo-white.png) no-repeat center;
-	background-size:contain;
+	background:url(../../qrcode/ig/logo-white.png) no-repeat center;
+	background-size:100% 100%;
 }
 header.fix .nav .logo{
 	background:url(../../qrcode/ig/logo.png) no-repeat center;
-	background-size:contain;
+	background-size:100% 100%;
 }
 header .nav .navbar{
 	text-align:right;

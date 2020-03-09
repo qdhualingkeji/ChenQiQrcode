@@ -521,7 +521,7 @@ var swiper = new Swiper('.merchants', {
         <li><i class="quanxian"></i><p>权限管理</p></li>
         <li><i class="yingxiao"></i><p>营销推广</p></li>
     </ul>
-    <a class="more but" href="http://qlcode.qdhualing.com/solutionCommodity.htm">查看更多功能介绍</a>
+    <a class="more but" href="solutionCommodity.html">查看更多功能介绍</a>
 </div>
 
 <section id="system-create-code-easy-box" class="system-feature-box system-create-code-easy-box light-new-bg">
@@ -564,7 +564,7 @@ var swiper = new Swiper('.merchants', {
 		</div>
 		<div class="action-box2">
 			<a><div class="symbcj_div">使用模板创建</div></a>
-			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login"><div class="zdycj_div">自定义创建</div></a>
+			<a><div class="zdycj_div">自定义创建</div></a>
 		</div>
 	</div>
 </section>
@@ -693,31 +693,31 @@ var swiper = new Swiper('.merchants', {
     <ul class="w1200">
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="农药追溯"></p><span class="span">农药二维码溯源</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="商品展示"></p><span class="span">商品展示</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrsc.jpg" alt="多媒体资料"></p><span class="span">多媒体资料</span></div>
                 <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrsc.jpg" alt="蔬菜追溯"></p><span class="span">蔬菜二维码溯源</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="建筑施工"></p><span class="span">建筑施工</span></div>
                 <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="化妆品防伪追溯"></p><span class="span">化妆品二维码溯源</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="行业模板4"></p><span class="span">行业模板4</span></div>
                 <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="食品追溯"></p><span class="span">食品二维码溯源</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
-            </div>
-        </li>
-        <li>
-            <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="设备巡检"></p><span class="span">设备巡检维护</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="行业模板5"></p><span class="span">行业模板5</span></div>
                 <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
@@ -880,7 +880,7 @@ var swiper = new Swiper('.merchants', {
 		<h3 class="use-cliao-user-title">免费即可使用，付费获取更高功能及专享服务</h3>
 		<div class="action-box2">
 			<a><div class="mfsy_div">免费使用</div></a>
-			<a><div class="ckjg_div">查看价格</div></a>
+			<a href="price.html"><div class="ckjg_div">查看价格</div></a>
 		</div>
 	</div>
 </div>

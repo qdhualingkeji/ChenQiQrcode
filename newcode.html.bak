@@ -10,15 +10,16 @@
 <style>
 header .nav .logo {
     display: block;
-    width: 300px;
-    height: 50px;
+    width: 560px;
+    height: 58px;
     margin-left: 20px;
     margin-top: 7px;
     background: url(qrcode/ig/logo.png) no-repeat center;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 </style>
-  <title>Document</title><script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<title>Document</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
   var nav=$("header");
@@ -36,28 +37,28 @@ $(function(){
  </head>
  <body>
 <header>
-  <div class="nav">
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
-        <ul class="menu">
-            <li class="active">
-				<a href="index.html">首页</a>
-			</li>
+        <ul class="menu" style="color:#000;">
             <li>
-				<a href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="index.html">首页</a>
+			</li>
+            <li class="active">
+				<a class="a2" href="solutionCommodity.html">案例模板</a>
 			</li>
 			<li>
-				<a href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="list">
-				<a href="price.html">定制价格</a>
+				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li class="list">
-				<a href="/help/faq/information/">帮助</a>
+				<a class="a2" href="/help/faq/information/">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="/login" target="_blank" class="login but">登录</a>
+			<a href="/login" target="_blank" class="login2 but">登录</a>
 			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
     </div>
@@ -104,5 +105,23 @@ $(function(){
         </ul>
     </div>
 </nav>
+<div class="center_div" style="width: 100%;margin-top:65px;background-color: #F9F9F9;">
+	<div class="selectModule_div" style="width:1000px;height:1090px;margin:0 auto;">
+		<div class="active_new_code_title" style="width:100%;height: 32px;line-height: 32px;font-size: 32px;text-align:center;padding:64px 0 0;color:#333;">选择模板，开始创建活码</div>
+		<div class="moduleList_div" style="width:100%;height:600px;margin-top: 32px;background-color:yellow;">
+			<a>
+				<div style="width:160px;height:260px;">
+					<div style="width:160px;height:220px;line-height:220px;text-align: center;color:#666;font-size: 14px;background-color:#fff;box-shadow: 0 2px 5pxrgba(0,0,0,.05);">从空白新建</div>
+				</div>
+			</a>
+			<div style="width:160px;height:260px;margin-top:-260px;margin-left:210px;">
+				<div style="width:160px;height:220px;background-image: url('rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+					
+				</div>
+				<div style="width:160px;height:40px;line-height:40px;color:#333;font-size: 14px;font-weight:bold;text-align: center;background-color:green;">商品展示</div>
+			</div>
+		</div>
+	</div>
+</div>
  </body>
 </html>
