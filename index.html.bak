@@ -112,7 +112,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     padding: 100px 0 80px;
 }
 .system-feature-box h3 {
-    font-size: 25px;
+    font-size: 26px;
     line-height: 24px;
     font-weight: 700;
     text-align: center;
@@ -161,7 +161,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	line-height:48px;
 	color:#fff;
 	text-align:center;
-	font-size:15px;
+	font-size:16px;
 	background-color:#00A3FF;
 	border-radius:5px;
 }
@@ -700,43 +700,43 @@ var swiper = new Swiper('.merchants', {
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrsc.jpg" alt="多媒体资料"></p><span class="span">多媒体资料</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="建筑施工"></p><span class="span">建筑施工</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="行业模板4"></p><span class="span">行业模板4</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="行业模板5"></p><span class="span">行业模板5</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrlc.png" alt="项目流程"></p><span class="span">项目流程进度</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrxx.png" alt="幼儿园食谱二维码"></p><span class="span">幼儿园每日食谱</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrmp.png" alt="名片二维码"></p><span class="span">聚合网络名片</span></div>
-                <div class="instead"><div class="img"><img src="/qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
     </ul>
