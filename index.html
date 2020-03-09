@@ -49,6 +49,10 @@ $(function(){
 	$(this).find(".img2").css("display","none");
   });
 });
+
+function openModule(){
+	location.href="newcode.html";
+}
 </script>
 <style>
 .w-1000 {
@@ -114,7 +118,9 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 .system-feature-box h3 {
     font-size: 26px;
     line-height: 24px;
+	/*
     font-weight: 700;
+	*/
     text-align: center;
 }
 .system-feature-box .system-tab-content {
@@ -190,7 +196,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     color: #000;
 }
 .system-features-title {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 24px;
     font-weight: 700;
 }
@@ -354,6 +360,10 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
     text-align: center;
     background: #f9f9f9;
 }
+.case .just img{
+	width:230px;
+	height:250px;
+}
 
 .w_grid_div{
 	width:100%;
@@ -512,14 +522,14 @@ var swiper = new Swiper('.merchants', {
 <div class="collaboration min_w">
     <div class="title">丰富场景应用 满足多样化需求</div>
     <ul>
-        <li><i class="chanpin"></i><p>产品展示</p></li>
-        <li><i class="fangwei"></i><p>防伪追溯</p></li>
-        <li><i class="fenlei"></i><p>分类管理</p></li>
-        <li><i class="weijian"></i><p>设备维检</p></li>
-        <li><i class="daili"></i><p>代理管理</p></li>
-        <li><i class="shuju"></i><p>数据分析</p></li>
-        <li><i class="quanxian"></i><p>权限管理</p></li>
-        <li><i class="yingxiao"></i><p>营销推广</p></li>
+        <li><i class="chanpin" onclick="openModule()"></i><p>产品展示</p></li>
+        <li><i class="fangwei" onclick="openModule()"></i><p>防伪追溯</p></li>
+        <li><i class="fenlei" onclick="openModule()"></i><p>分类管理</p></li>
+        <li><i class="weijian" onclick="openModule()"></i><p>设备维检</p></li>
+        <li><i class="daili" onclick="openModule()"></i><p>代理管理</p></li>
+        <li><i class="shuju" onclick="openModule()"></i><p>数据分析</p></li>
+        <li><i class="quanxian" onclick="openModule()"></i><p>权限管理</p></li>
+        <li><i class="yingxiao" onclick="openModule()"></i><p>营销推广</p></li>
     </ul>
     <a class="more but" href="solutionCommodity.html">查看更多功能介绍</a>
 </div>
@@ -694,19 +704,19 @@ var swiper = new Swiper('.merchants', {
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="商品展示"></p><span class="span">商品展示</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/202003090001.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrsc.jpg" alt="多媒体资料"></p><span class="span">多媒体资料</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/202003090002.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="建筑施工"></p><span class="span">建筑施工</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/202003090003.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
@@ -746,7 +756,7 @@ var swiper = new Swiper('.merchants', {
 <section id="system-features-new-box" class="white system-features-new-box">
 	<div class="w-1000 features">
 		<h3 class="system-features-title text-center text-darkgrey-new">全面保障你的应用体验</h3>
-		<p class="text-center system-features-desc text-center text-darkgrey-new">懂你的疑虑，草料专业的技术与服务，解决你的后顾之忧</p>
+		<p class="text-center system-features-desc text-center text-darkgrey-new">懂你的疑虑，辰麒专业的技术与服务，解决你的后顾之忧</p>
 		<div class="row system-features-content-box">
 			<div class="col-md-3">
 				<div class="advantage">
@@ -783,7 +793,7 @@ var swiper = new Swiper('.merchants', {
 
 	<div class="w-p100" style="height:290px;padding: 72px 0px;">
 		<div class="w-1000 p-b-md text-center contact-wrapper logo-demo-v3">
-			<h2 class="scene-title" style="font-size: 24px;margin-bottom: 44px;font-weight: bold;">超过百万用户都在使用辰麒二维码</h2>
+			<h2 class="scene-title" style="font-size: 25px;margin-bottom: 44px;font-weight: bold;">超过百万用户都在使用辰麒二维码</h2>
 			<div style="width:1000px;">
 			   <ul class="client-list">
 				  <li class="fl">

@@ -398,6 +398,7 @@ header .nav .nav_button .registered:hover:before{
 	font-size:60px;
 	color:#00a3ff;
 	margin-bottom:20px;
+	cursor:pointer;
 }
 .collaboration ul li p{
 	font-size:18px;

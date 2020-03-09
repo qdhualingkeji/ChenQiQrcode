@@ -78,7 +78,7 @@ header{
 header .nav .logo{
 	display:block;
 	width:560px;
-	height:56px;
+	height:58px;
 	margin-top: 3px;
 	margin-left:20px;
 	background:url(../../qrcode/ig/logo-white.png) no-repeat center;
@@ -392,6 +392,7 @@ header .nav .nav_button .registered:hover:before{
 	width:25%;
 	float:left;
 	margin-bottom:60px;
+	cursor:pointer;
 }
 .collaboration ul li i{
 	display:block;
