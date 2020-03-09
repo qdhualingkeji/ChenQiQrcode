@@ -573,8 +573,8 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<a><div class="symbcj_div">使用模板创建</div></a>
-			<a><div class="zdycj_div">自定义创建</div></a>
+			<a href="newcode.html"><div class="symbcj_div">使用模板创建</div></a>
+			<a href="newcode.html"><div class="zdycj_div">自定义创建</div></a>
 		</div>
 	</div>
 </section>
@@ -648,8 +648,8 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login"><div class="glwdewm_div">管理我的二维码</div></a>
-			<a><div class="mfcj_div">免费创建</div></a>
+			<a><div class="glwdewm_div">管理我的二维码</div></a>
+			<a href="newcode.html"><div class="mfcj_div">免费创建</div></a>
 		</div>
 	</div>
 </section>
@@ -715,7 +715,7 @@ var swiper = new Swiper('.merchants', {
         </li>
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="建筑施工" style="width:230px;height:250px;"></p><span class="span">建筑施工</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrhz.png" alt="建筑施工"></p><span class="span">建筑施工</span></div>
                 <div class="instead"><div class="img"><img src="qrcode/ig/case/202003090003.png"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
@@ -889,7 +889,7 @@ var swiper = new Swiper('.merchants', {
 	<div class="row text-center use-cliao-user-box">
 		<h3 class="use-cliao-user-title">免费即可使用，付费获取更高功能及专享服务</h3>
 		<div class="action-box2">
-			<a><div class="mfsy_div">免费使用</div></a>
+			<a href="newcode.html"><div class="mfsy_div">免费使用</div></a>
 			<a href="price.html"><div class="ckjg_div">查看价格</div></a>
 		</div>
 	</div>
