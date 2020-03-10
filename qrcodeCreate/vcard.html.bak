@@ -39,7 +39,7 @@ $(function(){
 		$("#showQrcode_div").css("display","block");
 
 		$.ajax({
-		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/getHtmlGoodsGRMP",
+		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/chenQi/getHtmlGoodsGRMP",
 		data:{uuid:"a3fad9434d16407d839da271387a6f95"},
 		dataType:"jsonp",
 		type: "post",
@@ -574,7 +574,7 @@ function showSuccessDiv(){
 
 <div class="center_div" style="width:1903px;height:auto;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
-		<form id="form1" name="form1" method="post" action="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/addHtmlGoodsGRMP" enctype="multipart/form-data">
+		<form id="form1" name="form1" method="post" action="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/chenQi/addHtmlGoodsGRMP" enctype="multipart/form-data">
 		<div class="add_div" id="add_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;display:none;">
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
@@ -839,7 +839,7 @@ function showSuccessDiv(){
 		<p>自动化控制系统集成网址：www.qdhualing.com</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->
