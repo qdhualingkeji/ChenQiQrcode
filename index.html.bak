@@ -415,7 +415,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 				<a href="price.html">定制价格</a>
             </li>
 			<li class="list">
-				<a href="/help/faq/information/">帮助</a>
+				<a href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
@@ -903,7 +903,7 @@ var swiper = new Swiper('.merchants', {
 		<p>自动化控制系统集成网址：www.qdhualing.com</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

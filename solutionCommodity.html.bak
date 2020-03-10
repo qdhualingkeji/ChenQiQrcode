@@ -350,7 +350,7 @@ $(function(){
 			<div class="goods-case-box">
 				<ul class="good-case-ul">
 					<li class="good-scene-item">
-						<a href="detail.htm?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
+						<a target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
 							<div class="img-box img-pic-one"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">商品展示二维码</h3>
@@ -366,7 +366,7 @@ $(function(){
 						</a>
 					</li>
 					<li class="good-scene-item" style="margin-left: 20px;">
-						<a href="detail.htm?id=1380" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="22">
+						<a target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="22">
 							<div class="img-box img-pic-two"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">多媒体资料二维码</h3>
@@ -382,7 +382,7 @@ $(function(){
 						</a>
 					</li>
 					<li class="good-scene-item" style="margin-top: 64px;">
-						<a href="detail.htm?id=1371" class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="23">
+						<a class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="23">
 							<div class="img-box img-pic-three"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">产品说明书二维码</h3>
@@ -398,7 +398,7 @@ $(function(){
 						</a>
 					</li>
 					<li class="good-scene-item" style="margin-left: 20px;margin-top: 64px;">
-						<a href="detail.htm?id=1372" class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="24">
+						<a class="good-scene-item-href" target="_blank" statisticanalyze="" sec-data="24">
 							<div class="img-box img-pic-four"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">建筑施工二维码</h3>
@@ -647,7 +647,7 @@ $(function(){
 		<p>自动化控制系统集成网址：www.qdhualing.com</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com 鲁ICP备15031378号
+		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->
