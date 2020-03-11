@@ -182,7 +182,9 @@ header .nav .nav_button a{
 	margin: 10px 4px;
 }
 header .nav .nav_button .login{
+	/*
 	border: 1px solid #fff;
+	*/
 	padding: 5px 20px;
 	background-color: transparent;
 }
@@ -392,13 +394,13 @@ header .nav .nav_button .registered:hover:before{
 	width:25%;
 	float:left;
 	margin-bottom:60px;
-	cursor:pointer;
 }
 .collaboration ul li i{
 	display:block;
 	font-size:60px;
 	color:#00a3ff;
 	margin-bottom:20px;
+	cursor:pointer;
 }
 .collaboration ul li p{
 	font-size:18px;

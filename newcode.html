@@ -49,7 +49,7 @@ header .nav .logo {
 .moduleList_div{
 	width:100%;
 	height:600px;
-	margin-top: 32px;
+	margin-top: 48px;
 }
 .moduleList_div .item_div{
 	width:160px;
@@ -137,6 +137,22 @@ $(function(){
     }
   });
 });
+
+function goAddModule(type){
+	var url;
+	switch(type){
+		case "spzs":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine";
+		break;
+		case "dmtzl":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=dmtzl";
+		break;
+		case "jzsg":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg";
+		break;
+	}
+	location.href=url;
+}
 </script>
  </head>
  <body>
@@ -213,10 +229,13 @@ $(function(){
 <div class="center_div">
 	<div class="selectModule_div">
 		<div class="active_new_code_title">选择模板，开始创建二维码</div>
+
+		<div style="width:775px;height:3px;margin: 0 auto;margin-top: 62px;background-color:rgba(120,130,140,.13)"></div>
+
 		<div class="moduleList_div">
 			<a>
 				<div class="item_div">
-					<div class="create_div">从空白新建</div>
+					<div class="create_div" onclick="alert('模板待添加')">从空白新建</div>
 				</div>
 			</a>
 			<div class="item_div spzsItem_div" id="item_div">
@@ -225,7 +244,7 @@ $(function(){
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('spzs')">应用此模板</div>
 				</div>
 				<div class="title_div">商品展示</div>
 			</div>
@@ -235,7 +254,7 @@ $(function(){
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('dmtzl')">应用此模板</div>
 				</div>
 				<div class="title_div">多媒体资料</div>
 			</div>
@@ -245,7 +264,7 @@ $(function(){
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模板</div>
 				</div>
 				<div class="title_div">建筑施工</div>
 			</div>

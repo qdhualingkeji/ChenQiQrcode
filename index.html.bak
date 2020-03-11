@@ -170,6 +170,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	font-size:16px;
 	background-color:#00A3FF;
 	border-radius:5px;
+	cursor:pointer;
 }
 .zdycj_div,.mhewm_div,.mfcj_div,.ckjg_div{
 	width:148px;
@@ -183,6 +184,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	border:#00A3FF solid 2px;
 	background-color:#fff;
 	border-radius:5px;
+	cursor:pointer;
 }
 
 .text-center {
@@ -420,7 +422,9 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
         </ul>
 		<div class="nav_button">
 			<a href="/login" target="_blank" class="login but">登录</a>
+			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
+			-->
 		</div>
     </div>
 </div>
@@ -484,7 +488,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	<div class="big_size">
 		<h1>二维码追溯综合管理平台</h1>
 		<div class="al">
-			<a class="chatqq">点击试用</a>
+			<a href="newcode.html">点击试用</a>
 			<a class="watch but btn-video"><i class="playicon"></i>观看视频</a>
 		</div>
 	</div>
@@ -573,8 +577,8 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<a href="newcode.html"><div class="symbcj_div">使用模板创建</div></a>
-			<a href="newcode.html"><div class="zdycj_div">自定义创建</div></a>
+			<div class="symbcj_div" onclick="location.href='newcode.html'">使用模板创建</div>
+			<div class="zdycj_div" onclick="alert('这个模板有待添加')">自定义创建</div>
 		</div>
 	</div>
 </section>
@@ -639,7 +643,7 @@ var swiper = new Swiper('.merchants', {
 					</li>
 					<li class="system-tab-content-li">
 						<h4>后台管理</h4>
-						<p>登录草料，即可对已生成的二维码可进行查看、再次修改、删除、统计等统一管理</p>
+						<p>登录辰麒，即可对已生成的二维码可进行查看、再次修改、删除、统计等统一管理</p>
 					</li>
 				</ul>
 			</div>
@@ -648,8 +652,8 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<a><div class="glwdewm_div">管理我的二维码</div></a>
-			<a href="newcode.html"><div class="mfcj_div">免费创建</div></a>
+			<div class="glwdewm_div" onclick="location.href='http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login'">管理我的二维码</div>
+			<div class="mfcj_div" onclick="location.href='newcode.html'">免费创建</div>
 		</div>
 	</div>
 </section>
@@ -889,8 +893,8 @@ var swiper = new Swiper('.merchants', {
 	<div class="row text-center use-cliao-user-box">
 		<h3 class="use-cliao-user-title">免费即可使用，付费获取更高功能及专享服务</h3>
 		<div class="action-box2">
-			<a href="newcode.html"><div class="mfsy_div">免费使用</div></a>
-			<a href="price.html"><div class="ckjg_div">查看价格</div></a>
+			<div class="mfsy_div" onclick="location.href='newcode.html'">免费使用</div>
+			<div class="ckjg_div" onclick="location.href='price.html'">查看价格</div>
 		</div>
 	</div>
 </div>
@@ -903,7 +907,7 @@ var swiper = new Swiper('.merchants', {
 		<p>自动化控制系统集成网址：www.qdhualing.com</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

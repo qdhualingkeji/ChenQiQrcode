@@ -182,9 +182,14 @@ header .nav .nav_button a{
 	margin: 10px 4px;
 }
 header .nav .nav_button .login{
+	/*
 	border: 1px solid #fff;
+	*/
 	padding: 5px 20px;
+	/*
 	background-color: transparent;
+	*/
+	background-color: #00a3ff;
 }
 header .nav .nav_button .login2 {
     border: 1px solid #000;
