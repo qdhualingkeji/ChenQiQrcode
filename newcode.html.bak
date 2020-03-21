@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="Generator" content="EditPlus®">
   <meta name="Author" content="">
-  <meta name="Keywords" content="">
+  <meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
   <meta name="Description" content="">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
@@ -122,7 +122,7 @@ header .nav .logo {
 	background-image: url('rsrc/scene/d7af232e659079fc9c325ec65cefcc551548146997.png');
 }
 </style>
-<title>Document</title>
+<title>辰麒二维码追溯系统，一物一码，智能追溯</title>
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -142,13 +142,13 @@ function goAddModule(type){
 	var url;
 	switch(type){
 		case "spzs":
-			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine";
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine&from=cq";
 		break;
 		case "dmtzl":
-			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=dmtzl";
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=dmtzl&from=cq";
 		break;
 		case "jzsg":
-			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg";
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
 		break;
 	}
 	location.href=url;
@@ -235,7 +235,7 @@ function goAddModule(type){
 		<div class="moduleList_div">
 			<a>
 				<div class="item_div">
-					<div class="create_div">从空白新建</div>
+					<div class="create_div" onclick="alert('模板待添加')">从空白新建</div>
 				</div>
 			</a>
 			<div class="item_div spzsItem_div" id="item_div">

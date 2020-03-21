@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>一码追溯_二维码防伪追溯巡检管理系统_微唤淘</title>
+<title>辰麒二维码追溯系统，一物一码，智能追溯</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="applicable-device"content="pc,mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="keywords" content="微唤淘,二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
+<meta name="keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
 <meta name="description" content="一码追溯,二维码综合管理服务平台创导者,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
 <meta property="og:image" content="qrcode/searchimg/logo.jpg" />
 <link rel="canonical" href="https://qrcode.pro">
@@ -421,7 +421,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="/login" target="_blank" class="login but">登录</a>
+			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but">登录</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
