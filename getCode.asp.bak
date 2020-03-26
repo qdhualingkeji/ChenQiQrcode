@@ -10,7 +10,7 @@
   <script type="text/javascript">
   var code='<%=request("code")%>';
   var jsonParams=JSON.parse('<%=request("jsonParams")%>');
-  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+jsonParams.uuid+"&accountId="+jsonParams.accountId+"&code="+code;
+  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="++"&accountId="+jsonParams.accountId+"&code="+code;
   </script>
  </head>
  <body>
