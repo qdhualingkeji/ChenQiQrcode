@@ -7,7 +7,7 @@
 <meta name="applicable-device"content="pc,mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
-<meta name="description" content="一码追溯,二维码综合管理服务平台创导者,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
+<meta name="description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
 <meta property="og:image" content="qrcode/searchimg/logo.jpg" />
 <link rel="canonical" href="https://qrcode.pro">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
@@ -479,14 +479,13 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
             <div class="swiper-slide" style="background:url(qrcode/ig/lunbo2.jpg)">
                 <a href="/help/faq/knowledge/48.php">「如何实现一物一码标签打印，一物一码标签如何制作？」</a>
             </div>
-            <div class="swiper-slide" style="background:url(qrcode/ig/lunbo3.jpg)">
+            <div class="swiper-slide" style="background:url(qrcode/ig/lunbo3.png)">
                 <a href="/help/faq/fruit/151.php">「水果一物一码可追溯标签如何制作？」</a>
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
-	<div class="big_size">
-		<h1>二维码追溯综合管理平台</h1>
+	<div class="big_size" style="margin-top:285px;margin-left:65px;position:absolute;">
 		<div class="al">
 			<a href="newcode.html">点击试用</a>
 			<a class="watch but btn-video"><i class="playicon"></i>观看视频</a>
