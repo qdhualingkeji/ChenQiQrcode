@@ -335,7 +335,7 @@ function showSuccessDiv(){
 .cli_nav .sub_nav li a {
     position: relative;
     display: inline-block;
-    font-size: 24px;
+    font-size: 23px;
     padding: 0px 14px;
     margin-right: 20px;
     text-align: center;
@@ -807,7 +807,7 @@ function showSuccessDiv(){
 			<h3 class="advantageIntro"><span></span>自动生成企业通讯录</h3>
 			<h3 class="advantageIntro"><span></span>点击公司名称可查看公司介绍</h3>
 			<h3 class="advantageIntro"><span></span>电脑端统一管理成员名片</h3>
-			<a class="advantageDetail" href="mingpianma.html" target="_blank">了解详情</a>
+			<a class="advantageDetail" href="../mingpianma.html" target="_blank">了解详情</a>
 			<div class="ljsy_div">立即使用</div>
 		</div>
 		

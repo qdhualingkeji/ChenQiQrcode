@@ -298,6 +298,8 @@ header .nav .nav_button .registered:hover:before{
 	font-weight:400;
 }
 .banner .big_size .al{
+	width: 292px;
+	margin: auto;
 	font-size:18px;
 }
 .banner .big_size .al a{
@@ -565,7 +567,7 @@ header .nav .nav_button .registered:hover:before{
 	font-size: 15px;
 }
 .case ul li .spin {
-  height: 300px;
+  height: 260px;
   transition: 0.5s;
   transform-style: preserve-3d;
   position: relative;
@@ -590,8 +592,8 @@ header .nav .nav_button .registered:hover:before{
   border-bottom: none;
 }
 .case ul li .spin .just p{
-	width: 230px;
-  height: 250px;
+  width: 230px;
+  height: 210px;
 }
 .case ul li .spin .just .span {
   display: block;
@@ -606,18 +608,18 @@ header .nav .nav_button .registered:hover:before{
 .case ul li .spin .instead {
   transform: rotateY(180deg);
   width: 230px;
-  height: 250px;
+  height: 210px;
   background: #242424;
   transition: 0.5s ease-out;
 }
 .case ul li .spin .instead .img {
   width: 230px;
-  height: 250px;
+  height: 210px;
 }
 .case ul li .spin .instead .img img {
 	width: 150px;
 	height: 150px;
-	margin: 50px 40px;
+	margin: 30px 30px;
 }
 .case ul li .spin .instead .span {
   display: block;
