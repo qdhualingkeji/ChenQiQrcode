@@ -109,7 +109,9 @@ header .nav .logo {
 }
 .version_div{
 	width:952px;
+	/*
 	height:292px;
+	*/
 	margin:0 auto;
 	margin-top: 125px;
 	margin-bottom: 50px;
@@ -144,15 +146,19 @@ header .nav .logo {
 	font-size:16px;
 	font-weight: 600;
 }
-.version_div .bbrl_div{
+.version_div .jcgn_div,.version_div .bbrl_div,.version_div .txjld_div,.version_div .qyzhxz_div{
 	width:952px;
 	height:56px;
 	line-height:56px;
 	background:#F9F9F9;
 }
-.version_div .bbrl_span{
+.version_div .jcgn_span,.version_div .bbrl_span,.version_div .txjld_span,.version_div .qyzhxz_span{
 	margin-left:20px;
 	font-weight: 600;
+}
+.rightSign_span{
+	color:#4caf50;
+	font-size:18px;
 }
 .version_div .content_div{
 	width:952px;
@@ -393,22 +399,53 @@ $(function(){
 			<span class="price_span">2670元/年</span>
 		</div>
 	</div>
-	<div class="bbrl_div">
-		<span class="bbrl_span">版本容量/音视频流量</span>
+	<div class="jcgn_div">
+		<span class="jcgn_span">基础功能</span>
 	</div>
 	<div class="content_div">
 		<div class="row_div">
 			<div class="col1_div">
-				<span class="col1_span">图片/文件容量</span>
+				<span class="col1_span">二维码长期有效</span>
+			</div>
+			<div class="col2_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col3_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col4_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">二维码生成数量/扫描次数</span>
+			</div>
+			<div class="col2_div">不限</div>
+			<div class="col3_div">不限</div>
+			<div class="col4_div">不限</div>
+			<div class="col5_div">不限</div>
+		</div>
+	</div>
+	<div class="bbrl_div">
+		<span class="bbrl_span">扫码展示图片、文件、音视频等内容</span>
+	</div>
+	<div class="content_div">
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">图片/文件上传总容量限额</span>
 			</div>
 			<div class="col2_div">50M</div>
 			<div class="col3_div">1G</div>
 			<div class="col4_div">3G</div>
-			<div class="col5_div">30G，可扩容</div>
+			<div class="col5_div">30G</div>
 		</div>
 		<div class="row_div">
 			<div class="col1_div">
-				<span class="col1_span">音视频容量</span>
+				<span class="col1_span">音视频上传总容量限额</span>
 			</div>
 			<div class="col2_div">500M</div>
 			<div class="col3_div">不限</div>
@@ -426,12 +463,129 @@ $(function(){
 		</div>
 		<div class="row_div">
 			<div class="col1_div">
-				<span class="col1_span">音视频播放流量</span>
+				<span class="col1_span">音视频高清播放流量</span>
 			</div>
 			<div class="col2_div">12G</div>
 			<div class="col3_div">240G</div>
 			<div class="col4_div">600G</div>
-			<div class="col5_div">6000G，可扩容</div>
+			<div class="col5_div">6000G</div>
+		</div>
+	</div>
+	<div class="txjld_div">
+		<span class="txjld_span">扫码填写记录单，收集多种信息</span>
+	</div>
+	<div class="content_div">
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">记录填写与查看</span>
+			</div>
+			<div class="col2_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col3_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col4_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">图片水印防作假</span>
+			</div>
+			<div class="col2_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col3_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col4_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">记录图片高清查看限额</span>
+			</div>
+			<div class="col2_div">100M</div>
+			<div class="col3_div">100M</div>
+			<div class="col4_div">100M</div>
+			<div class="col5_div">不限</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">高级权限设置</span>
+			</div>
+			<div class="col2_div">-</div>
+			<div class="col3_div">-</div>
+			<div class="col4_div">-</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">记录协作人数</span>
+			</div>
+			<div class="col2_div">-</div>
+			<div class="col3_div">-</div>
+			<div class="col4_div">-</div>
+			<div class="col5_div">15名协作人</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">消息提醒人数（每个记录单）</span>
+			</div>
+			<div class="col2_div">3人</div>
+			<div class="col3_div">3人</div>
+			<div class="col4_div">3人</div>
+			<div class="col5_div">不限</div>
+		</div>
+	</div>
+	<div class="qyzhxz_div">
+		<span class="qyzhxz_span">企业账号协作</span>
+	</div>
+	<div class="content_div">
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">协作管理权限</span>
+			</div>
+			<div class="col2_div">-</div>
+			<div class="col3_div">-</div>
+			<div class="col4_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">子管理员人数</span>
+			</div>
+			<div class="col2_div">-</div>
+			<div class="col3_div">-</div>
+			<div class="col4_div">2个</div>
+			<div class="col5_div">5个</div>
+		</div>
+		<div class="row_div">
+			<div class="col1_div">
+				<span class="col1_span">账号操作日志</span>
+			</div>
+			<div class="col2_div">-</div>
+			<div class="col3_div">-</div>
+			<div class="col4_div">
+				<span class="rightSign_span">√</span>
+			</div>
+			<div class="col5_div">
+				<span class="rightSign_span">√</span>
+			</div>
 		</div>
 	</div>
 </div>
