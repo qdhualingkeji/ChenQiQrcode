@@ -106,6 +106,10 @@ header .nav .logo {
 	color: #f57c00;
 	border: #f57c00 solid 1px;
 	border-radius:5px;
+	cursor:pointer;
+}
+.usePrice_div .list_div .item_div .buy_div:hover{
+	background-color:#f57c00;
 }
 .version_div{
 	width:952px;
@@ -738,7 +742,7 @@ $(function(){
 	<h3 class="hyywmgt_h3">欢迎与我们沟通</h3>
 	<div class="but_div">
 		<a href="http://wpa.qq.com/msgrd?v=3&uin=1578569337&site=qq&menu=yes" target="blank">
-			<div class="qqzx_div" style="">QQ咨询</div>
+			<div class="qqzx_div">QQ咨询</div>
 		</a>
 		<div class="dhwx_div">15712773653（微信同号）</div>
 	</div>
