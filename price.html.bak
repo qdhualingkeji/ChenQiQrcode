@@ -5,7 +5,7 @@
 <meta name="Generator" content="EditPlus®">
 <meta name="Author" content="">
 <meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
-<meta name="Description" content="">
+<meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <style>
 header .nav .logo {
@@ -29,32 +29,35 @@ header .nav .logo {
 }
 .usePrice_div .title1{
 	width: 100%;
-	margin-top: 40px;
-	font-size: 26px;
+	margin-top: 65px;
+	font-size: 30px;
 	text-align: center;
 	position: absolute;
 }
 .usePrice_div .title2{
 	width: 100%;
-	margin-top: 85px;
-	font-size: 18px;
+	margin-top: 115px;
+	font-size: 16px;
 	text-align: center;
 	position: absolute;
 }
 .usePrice_div .space_div{
 	width: 100%;
-	height:150px;
+	height:175px;
 }
 .usePrice_div .list_div{
-	width:1000px;
+	width:952px;
 	height:300px;
+	/*
 	background-color:#fff;
+	*/
 	margin:0 auto;
 }
 .usePrice_div .list_div .item_div{
-	width:20%;
+	width:200px;
 	height:300px;
 	float:left;
+	background-color:#fff;
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
 }
 .usePrice_div .list_div .item_div .p-x_div{
@@ -76,7 +79,7 @@ header .nav .logo {
 	color: #999;
 }
 .usePrice_div .list_div .item_div .jine_span{
-	font-size: 30px;
+	font-size: 18px;
 }
 .usePrice_div .list_div .item_div .text-intro_div{
 	width: 100%;
@@ -105,19 +108,19 @@ header .nav .logo {
 	border-radius:5px;
 }
 .version_div{
-	width:1000px;
+	width:952px;
 	height:292px;
 	margin:0 auto;
-	margin-top: 100px;
+	margin-top: 125px;
 	margin-bottom: 50px;
 }
 .version_div .title_div{
-	width:1000px;
+	width:952px;
 	height:84px;
 	border-bottom: 2px solid rgba(120,130,140,.25);
 }
 .version_div .title_div .col1_div{
-	width:166px;
+	width:190px;
 	float:left;
 }
 .version_div .title_div .bbdb_span{
@@ -125,8 +128,8 @@ header .nav .logo {
 	font-weight: 600;
 	margin-left:20px;
 }
-.version_div .title_div .col2_div,.version_div .title_div .col3_div,.version_div .title_div .col4_div,.version_div .title_div .col5_div,.version_div .title_div .col6_div{
-	width:166px;
+.version_div .title_div .col2_div,.version_div .title_div .col3_div,.version_div .title_div .col4_div,.version_div .title_div .col5_div{
+	width:190px;
 	float:left;
 	text-align:center;
 }
@@ -142,7 +145,7 @@ header .nav .logo {
 	font-weight: 600;
 }
 .version_div .bbrl_div{
-	width:1000px;
+	width:952px;
 	height:56px;
 	line-height:56px;
 	background:#F9F9F9;
@@ -152,7 +155,7 @@ header .nav .logo {
 	font-weight: 600;
 }
 .version_div .content_div{
-	width:1000px;
+	width:952px;
 	background:#F9F9F9;
 }
 .version_div .content_div .row_div{
@@ -160,7 +163,7 @@ header .nav .logo {
 	height:40px;
 }
 .version_div .content_div .col1_div{
-	width:166px;
+	width:190px;
 	height:40px;
 	line-height:40px;
 	float:left;
@@ -169,8 +172,8 @@ header .nav .logo {
 	color: #666;
 	margin-left:20px;
 }
-.version_div .content_div .col2_div,.version_div .content_div .col3_div,.version_div .content_div .col4_div,.version_div .content_div .col5_div,.version_div .content_div .col6_div{
-	width:166px;
+.version_div .content_div .col2_div,.version_div .content_div .col3_div,.version_div .content_div .col4_div,.version_div .content_div .col5_div{
+	width:190px;
 	height:40px;
 	line-height:40px;
 	color: #666;
@@ -305,75 +308,60 @@ $(function(){
 	<div class="list_div">
 		<div class="item_div">
 			<div class="p-x_div">
-				<div class="p-t-md_div">一个月</div>
-				<div class="p-b-md_div">个人或小团队应用</div>
+				<div class="p-t-md_div">免费版</div>
+				<div class="p-b-md_div">免费试用</div>
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
-					<span class="jine_span">60</span>
+					<span class="jine_span">0元/年</span>
 				</div>
 				<div class="text-intro_div">
-					<div class="text_div1">基础功能免费使用</div>
-					<div class="text_div2">小程序访问加速</div>
+					<div class="text_div1">二维码生成数量不限</div>
+					<div class="text_div2">限时7天</div>
 				</div>
 				<div class="buy_div">立即购买</div>
 			</div>
 		</div>
-		<div class="item_div">
+		<div class="item_div" style="margin-left:50px;">
 			<div class="p-x_div">
-				<div class="p-t-md_div">三个月</div>
-				<div class="p-b-md_div">企业简单应用</div>
+				<div class="p-t-md_div">基础版</div>
+				<div class="p-b-md_div">内容展示简单应用</div>
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
-					<span class="jine_span">150</span>
+					<span class="jine_span">600元/年</span>
 				</div>
 				<div class="text-intro_div">
-					<div class="text_div1">去除辰麒底部标识</div>
-					<div class="text_div2">音视频播放不限人数</div>
+					<div class="text_div1">去除辰麒所有标识，开放所有模</div>
+					<div class="text_div2">版和定制功能，客服一对一辅导</div>
 				</div>
 				<div class="buy_div">立即购买</div>
 			</div>
 		</div>
-		<div class="item_div">
+		<div class="item_div" style="margin-left:50px;">
 			<div class="p-x_div">
-				<div class="p-t-md_div">一年</div>
-				<div class="p-b-md_div">企业深度应用</div>
+				<div class="p-t-md_div">高级版</div>
+				<div class="p-b-md_div">内容展示多人协作</div>
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
-					<span class="jine_span">600</span>
+					<span class="jine_span">1270元/年</span>
 				</div>
 				<div class="text-intro_div">
-					<div class="text_div1">去除辰麒所有标识</div>
-					<div class="text_div2">更大容量/音视频流量</div>
+					<div class="text_div1">多管理员账号协作建码/数据管</div>
+					<div class="text_div2">理，更大容量/少量个性化定制</div>
 				</div>
 				<div class="buy_div">立即购买</div>
 			</div>
 		</div>
-		<div class="item_div">
+		<div class="item_div" style="margin-left:50px;">
 			<div class="p-x_div">
-				<div class="p-t-md_div">永久</div>
-				<div class="p-b-md_div">企业巡检记录专业应用</div>
+				<div class="p-t-md_div">行业版</div>
+				<div class="p-b-md_div">行业专属二维码应用</div>
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
-					<span class="jine_span">2000</span>
+					<span class="jine_span">2670元/年</span>
 				</div>
 				<div class="text-intro_div">
-					<div class="text_div1">增加高级记录功能</div>
-					<div class="text_div2">容量/音视频流量10倍提升</div>
-				</div>
-				<div class="buy_div">立即购买</div>
-			</div>
-		</div>
-		<div class="item_div">
-			<div class="p-x_div">
-				<div class="p-t-md_div">连续包月</div>
-				<div class="p-b-md_div">辰麒云服务独立系统</div>
-				<div class="price_div">
-					<span class="fuhao_span">￥</span>
-					<span class="jine_span">50</span>
-				</div>
-				<div class="text-intro_div">
-					<div class="text_div1">企业独立小程序</div>
-					<div class="text_div2">企业独立管理后台</div>
+					<div class="text_div1">多管理员账号协作建码/数据管</div>
+					<div class="text_div2">理，根据客户需求定制功能开发</div>
 				</div>
 				<div class="buy_div">立即购买</div>
 			</div>
@@ -385,29 +373,24 @@ $(function(){
 	<div class="title_div">
 		<div class="col1_div"><span class="bbdb_span">版本对比<span></div>
 		<div class="col2_div">
-			<div class="long_div">一个月</div>
+			<div class="long_div">免费版</div>
 			<span class="fuhao_span">￥</span>
-			<span class="price_span">60</span>
+			<span class="price_span">0元/年</span>
 		</div>
 		<div class="col3_div">
-			<div class="long_div">三个月</div>
+			<div class="long_div">基础版</div>
 			<span class="fuhao_span">￥</span>
-			<span class="price_span">150</span>
+			<span class="price_span">600元/年</span>
 		</div>
 		<div class="col4_div">
-			<div class="long_div">一年</div>
+			<div class="long_div">高级版</div>
 			<span class="fuhao_span">￥</span>
-			<span class="price_span">600</span>
+			<span class="price_span">1270元/年</span>
 		</div>
 		<div class="col5_div">
-			<div class="long_div">永久</div>
+			<div class="long_div">行业版</div>
 			<span class="fuhao_span">￥</span>
 			<span class="price_span">2000</span>
-		</div>
-		<div class="col6_div">
-			<div class="long_div">连续包月</div>
-			<span class="fuhao_span">￥</span>
-			<span class="price_span">50</span>
 		</div>
 	</div>
 	<div class="bbrl_div">
@@ -422,7 +405,6 @@ $(function(){
 			<div class="col3_div">1G</div>
 			<div class="col4_div">3G</div>
 			<div class="col5_div">30G，可扩容</div>
-			<div class="col6_div">1000G，可扩容</div>
 		</div>
 		<div class="row_div">
 			<div class="col1_div">
@@ -432,7 +414,6 @@ $(function(){
 			<div class="col3_div">不限</div>
 			<div class="col4_div">不限</div>
 			<div class="col5_div">不限</div>
-			<div class="col6_div">不限</div>
 		</div>
 		<div class="row_div">
 			<div class="col1_div">
@@ -442,7 +423,6 @@ $(function(){
 			<div class="col3_div">不限</div>
 			<div class="col4_div">不限</div>
 			<div class="col5_div">不限</div>
-			<div class="col6_div">不限</div>
 		</div>
 		<div class="row_div">
 			<div class="col1_div">
@@ -452,7 +432,6 @@ $(function(){
 			<div class="col3_div">240G</div>
 			<div class="col4_div">600G</div>
 			<div class="col5_div">6000G，可扩容</div>
-			<div class="col6_div">20000G，可扩容</div>
 		</div>
 	</div>
 </div>
