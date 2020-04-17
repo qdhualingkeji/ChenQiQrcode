@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+  .main_div {
+    width: 350px;
+    background-color:#fff;
+    float: left;
+  }
+  .title_div {
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.memo1_div, .memo2_div {
+    width: 95%;
+    margin-top: 20px;
+}
+.embed1_div {
+    width: 95%;
+    text-align: center;
+    margin-top: 20px;
+}
+.image1_div {
+    width: 95%;
+    text-align: center;
+}
+.image1_1_img, .image1_2_img, .image1_3_img, .image1_4_img, .image1_5_img {
+    width: 95%;
+    height: 300px;
+    margin-top: 25px;
+}
+  </style>
+<title>Document</title>
+</head>
+<body>
+<div class="main_div" id="main_div">
+	<div class="title_div">
+		双冠王
+	</div>
+	<div class="memo1_div">
+		<div style="text-align:center;">
+			<strong><span style="font-size:18px;">尤克里里教学——初识基本和弦</span></strong> 
+		</div>
+	</div>
+	<div class="embed1_div" id="embed1_div">
+		<embed alt="" src="http://www.bainuojiaoche.com:8080/GoodsPublic/resource/embed/dmtzl/d707ea145302bad9422553804f43d669_conv.H_57_5.mp4" style="width: 95%;height: 300px;margin-top: 25px;">
+	</div>
+	<div class="memo2_div">
+		<p>
+			<strong>和弦是啥？</strong>&nbsp;
+		</p>
+		<p>
+			一般人玩一个乐器，第一句肯定问：这个哆在哪？ 没错，和弦就可以看作是哆唻咪等音符的组合，左手按住和弦，右手拨琴弦就会发出悦耳的声音了。我们的目的是快速上手，快速演奏出想唱的歌，所以这些细节没必要一开始搞懂，等学到瓶颈再来深入。&nbsp;
+		</p>
+		<p>
+			C Am F G7 这四个和弦被称为无敌四和弦。之所以无敌，是因为掌握了它们就可以演奏很多歌曲.
+		</p>
+	</div>
+	<div class="image1_div" id="image1_div">
+		<img class="image1_1_img" alt="" src="images/dmtzl/c769d75fc7033f7218ca8bcb0c08624e.jpg">
+	</div>
+</div>
+ </body>
+</html>

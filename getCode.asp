@@ -9,8 +9,12 @@
   <title>Document</title>
   <script type="text/javascript">
   var code='<%=request("code")%>';
-  var jsonParams=JSON.parse('<%=request("jsonParams")%>');
-  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+jsonParams.uuid+"&accountId="+jsonParams.accountId+"&code="+code;
+  var params='<%=request("params")%>';
+  var paramArr=params.split(",");
+  var accountId=paramArr[0];
+  var uuid=paramArr[1];
+  //alert(accountId+","+uuid);
+  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+uuid+"&accountId="+accountId+"&code="+code;
   </script>
  </head>
  <body>
