@@ -11,10 +11,17 @@
   var code='<%=request("code")%>';
   var params='<%=request("params")%>';
   var paramArr=params.split(",");
-  var accountId=paramArr[0];
-  var uuid=paramArr[1];
-  //alert(accountId+","+uuid);
-  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+uuid+"&accountId="+accountId+"&code="+code;
+  var from=paramArr[0];
+  if(from=="showGoods"){
+	  var accountId=paramArr[1];
+	  var uuid=paramArr[2];
+	  //alert(accountId+","+uuid);
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+uuid+"&accountId="+accountId+"&code="+code;
+  }
+  else if(from=="bindWX"){
+	  var accountId=paramArr[1];
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/bindWX?accountId="+accountId+"&code="+code;
+  }	
   </script>
  </head>
  <body>
