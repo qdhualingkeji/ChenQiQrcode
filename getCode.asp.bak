@@ -20,8 +20,12 @@
   }
   else if(from=="bindWX"){
 	  var accountId=paramArr[1];
-	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/goBindWX?accountId="+accountId+"&code="+code;
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/bindWX?accountId="+accountId+"&code="+code;
   }	
+  else if(from=="checkPhoneAdmin"){
+	  var fromUrl=paramArr[1];
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/"+fromUrl;
+  }
   </script>
  </head>
  <body>

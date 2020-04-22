@@ -22,6 +22,10 @@
 	  var accountId=paramArr[1];
 	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/bindWX?accountId="+accountId+"&code="+code;
   }	
+  else if(from=="checkPhoneAdmin"){
+	  var fromUrl=paramArr[1];
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/"+fromUrl+"?code="+code;
+  }
   </script>
  </head>
  <body>
