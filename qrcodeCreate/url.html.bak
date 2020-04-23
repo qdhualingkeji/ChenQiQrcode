@@ -46,9 +46,9 @@ body{
 	margin:0;
 }
 .title {
-    padding-top: 90px;
+    padding-top: 130px;
     padding-bottom: 40px;
-    font-size: 40px;
+    font-size: 30px;
     color: #555;
     text-align: center;
 }

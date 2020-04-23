@@ -62,7 +62,7 @@ header .nav .logo {
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	//initContentDiv("dlzc");
+	initContentDiv("dlzc");
 });
 
 function initContentDiv(navFlag){
@@ -127,16 +127,161 @@ function initContentDiv(navFlag){
 		contentStr+="<div>";
 		contentStr+="<img src=\"qlqrcode_files/images/202004230010.png\"/>";
 		contentStr+="</div>";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
-		contentStr+="";
+	}
+	else if(navFlag=="hymb"){
+		$("hymbNav_div").attr("class","item_div selected");
+
+		contentStr+="<div>行业模板使用操作说明</div>";
+		contentStr+="<div>红酒模板</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230011.png\" style=\"width:1100px;height:318px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>导航栏找到红酒点击添加</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230012.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入标题，点击编辑按钮上传图片</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230013.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入产品信息，可以上传图片，编辑排版，字体大小可调</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230014.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入商品详情，操作下面的显示按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230015.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>上传产品说明和介绍，可以上传图片，编辑排版，字体大小可调</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230016.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击编辑上传对应的产品图片</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230017.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>所有内容上传完成后点击右上角生成二维码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230018.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>生码成功后，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
+		contentStr+="<div>例如：</div>";
+		contentStr+="<div>1、家纺模板：</div>";
+		contentStr+="<div>点击左侧导航栏家纺进入：</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230019.png\" style=\"width:1100px;height:362px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击添加</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230020.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入名称，编辑图片上传</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230021.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入产品参数，操作下面的按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230022.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>根据需要点击编辑上传相应的产品图片</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230023.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>所有内容上传完成后点击右上角生成二维码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230024.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
+		contentStr+="<div>2、艺术品模板：</div>";
+		contentStr+="<div>点击左侧导航栏艺术品进入：</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230025.png\" style=\"width:1100px;height:258px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击添加</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230026.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入名称，编辑图片上传</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230027.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入产品参数，操作下面的按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230028.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>输入作品简介，可以上传图片，编辑排版，字体大小可调。</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230029.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>所有内容上传完成后点击右上角生成二维码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230030.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
+		contentStr+="<div>3、说明书模板：</div>";
+		contentStr+="<div>点击左侧导航栏说明书进入：</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230031.png\" style=\"width:1100px;height:364px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击添加</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230032.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击编辑上传相应图片，输入产品标题</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230033.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>根据需要输入内容，内容可以为空白，空白后扫码不显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230034.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>根据需要填写参数，点击显示按钮就变成隐藏，根据需要自己选择，选择隐藏后扫码不显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230035.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击编辑按钮可以上传图片，可一次性上传五张，按图片上传顺序显示</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230036.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击编辑可上传视频</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230037.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>所有内容上传完成后点击右上角生成二维码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230038.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
+		contentStr+="<div>说明书模板可以用EXCEL批量生成二维码，操作如下：</div>";
+		contentStr+="<div>点击左侧导航栏说明书进入：</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230039.png\" style=\"width:1100px;height:373px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击EXCEL批量生成</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230040.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>进入页面，跟说明书添加模板操作步骤一样，所有内容编辑完成后</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230041.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>点击右上角上传EXCEL生成一批码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230042.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>下载EXCEL模板，填写完成后点击我已填好EXCEL,下一步</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230043.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>上传EXCEL,即可自动生成二维码</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230044.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>箭头所指红框里的即为批量生成的二维码，点击详情即可查看</div>";
+		contentStr+="<div>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230045.png\"/>";
+		contentStr+="</div>";
+		contentStr+="<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
 	}
 	contentDiv.append(contentStr);
 }
@@ -180,6 +325,7 @@ function initContentDiv(navFlag){
 		<div class="item_div selected" id="dlzcNav_div" onclick="initContentDiv('dlzc')">登录、注册</div>
 		<div class="item_div" id="zhgsxxNav_div" onclick="initContentDiv('zhgsxx')">设置账户信息和公司信息</div>
 		<div class="item_div" id="zdymbNav_div" onclick="initContentDiv('zdymb')">自定义模板</div>
+		<div class="item_div" id="hymbNav_div" onclick="initContentDiv('hymb')">行业模板使用操作说明</div>
 	</div>
 	<div class="rightNav_div" id="rightNav_div" style="margin-top:-120px;margin-left:320px;font-size:16px;">
 		<div id="content_div" style="width:1100px;margin:15px auto 0;">
@@ -187,161 +333,7 @@ function initContentDiv(navFlag){
 			
 			-->
 
-			<div>行业模板使用操作说明</div>
-			<div>红酒模板</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230011.png" style="width:1100px;height:318px;"/>
-			</div>
-			<div>导航栏找到红酒点击添加</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230012.png"/>
-			</div>
-			<div>输入标题，点击编辑按钮上传图片</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230013.png"/>
-			</div>
-			<div>输入产品信息，可以上传图片，编辑排版，字体大小可调</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230014.png"/>
-			</div>
-			<div>输入商品详情，操作下面的显示按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230015.png"/>
-			</div>
-			<div>上传产品说明和介绍，可以上传图片，编辑排版，字体大小可调</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230016.png"/>
-			</div>
-			<div>点击编辑上传对应的产品图片</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230017.png"/>
-			</div>
-			<div>所有内容上传完成后点击右上角生成二维码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230018.png"/>
-			</div>
-			<div>生码成功后，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>
-			<div>例如：</div>
-			<div>1、家纺模板：</div>
-			<div>点击左侧导航栏家纺进入：</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230019.png" style="width:1100px;height:362px;"/>
-			</div>
-			<div>点击添加</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230020.png"/>
-			</div>
-			<div>输入名称，编辑图片上传</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230021.png"/>
-			</div>
-			<div>输入产品参数，操作下面的按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230022.png"/>
-			</div>
-			<div>根据需要点击编辑上传相应的产品图片</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230023.png"/>
-			</div>
-			<div>所有内容上传完成后点击右上角生成二维码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230024.png"/>
-			</div>
-			<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>
-			<div>2、艺术品模板：</div>
-			<div>点击左侧导航栏艺术品进入：</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230025.png" style="width:1100px;height:258px;"/>
-			</div>
-			<div>点击添加</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230026.png"/>
-			</div>
-			<div>输入名称，编辑图片上传</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230027.png"/>
-			</div>
-			<div>输入产品参数，操作下面的按钮可以根据需要选择显示或隐藏，选择隐藏后扫码不显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230028.png"/>
-			</div>
-			<div>输入作品简介，可以上传图片，编辑排版，字体大小可调。</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230029.png"/>
-			</div>
-			<div>所有内容上传完成后点击右上角生成二维码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230030.png"/>
-			</div>
-			<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>
-			<div>3、说明书模板：</div>
-			<div>点击左侧导航栏说明书进入：</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230031.png" style="width:1100px;height:364px;"/>
-			</div>
-			<div>点击添加</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230032.png"/>
-			</div>
-			<div>点击编辑上传相应图片，输入产品标题</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230033.png"/>
-			</div>
-			<div>根据需要输入内容，内容可以为空白，空白后扫码不显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230034.png"/>
-			</div>
-			<div>根据需要填写参数，点击显示按钮就变成隐藏，根据需要自己选择，选择隐藏后扫码不显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230035.png"/>
-			</div>
-			<div>点击编辑按钮可以上传图片，可一次性上传五张，按图片上传顺序显示</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230036.png"/>
-			</div>
-			<div>点击编辑可上传视频</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230037.png"/>
-			</div>
-			<div>所有内容上传完成后点击右上角生成二维码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230038.png"/>
-			</div>
-			<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>
-			<div>说明书模板可以用EXCEL批量生成二维码，操作如下：</div>
-			<div>点击左侧导航栏说明书进入：</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230039.png" style="width:1100px;height:373px;"/>
-			</div>
-			<div>点击EXCEL批量生成</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230040.png"/>
-			</div>
-			<div>进入页面，跟说明书添加模板操作步骤一样，所有内容编辑完成后</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230041.png"/>
-			</div>
-			<div>点击右上角上传EXCEL生成一批码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230042.png"/>
-			</div>
-			<div>下载EXCEL模板，填写完成后点击我已填好EXCEL,下一步</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230043.png"/>
-			</div>
-			<div>上传EXCEL,即可自动生成二维码</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230044.png"/>
-			</div>
-			<div>箭头所指红框里的即为批量生成的二维码，点击详情即可查看</div>
-			<div>
-				<img src="qlqrcode_files/images/202004230045.png"/>
-			</div>
-			<div>生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+			
 
 
 
