@@ -109,6 +109,7 @@ header .nav .logo {
 	cursor:pointer;
 }
 .usePrice_div .list_div .item_div .buy_div:hover{
+	color:#fff;
 	background-color:#f57c00;
 }
 .version_div{
@@ -291,10 +292,10 @@ $(function(){
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="active">
-				<a class="a2" href="/qrcode/solution">定制价格</a>
+				<a class="a2" href="qrcode.html">定制价格</a>
             </li>
 			<li>
-				<a class="a2" href="/help/faq/information/">帮助</a>
+				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
