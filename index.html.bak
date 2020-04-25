@@ -421,7 +421,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but">登录</a>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but">登录</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -618,8 +618,32 @@ var swiper = new Swiper('.merchants', {
     <ul class="w1200">
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="商品展示"></p><span class="span">商品展示</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrny.png" alt="红酒"></p><span class="span">红酒</span></div>
                 <div class="instead"><div class="img"><img src="qrcode/ig/case/202003090001.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="白酒"></p><span class="span">白酒</span></div>
+                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="家纺"></p><span class="span">家纺</span></div>
+                <div class="instead"><div class="img"><img src="http://www.qrcodesy.com:8080/GoodsPublic/upload/20200418160121.jpg"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrlc.png" alt="艺术品"></p><span class="span">艺术品</span></div>
+                <div class="instead"><div class="img"><img src="http://www.qrcodesy.com:8080/GoodsPublic/upload/20200418161220.jpg"></div><span class="span">扫码体验</span></div>
+            </div>
+        </li>
+        <li>
+            <div class="spin">
+                <div class="just"><p><img src="qrcode/ig/case/qrxx.png" alt="说明书"></p><span class="span">说明书</span></div>
+                <div class="instead"><div class="img"><img src="http://www.qrcodesy.com:8080/GoodsPublic/upload/20200330155851.jpg"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
@@ -636,32 +660,8 @@ var swiper = new Swiper('.merchants', {
         </li>
         <li>
             <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="行业模板4"></p><span class="span">行业模板4</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
-            </div>
-        </li>
-        <li>
-            <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrxj.png" alt="行业模板5"></p><span class="span">行业模板5</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
-            </div>
-        </li>
-        <li>
-            <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrlc.png" alt="项目流程"></p><span class="span">项目流程进度</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
-            </div>
-        </li>
-        <li>
-            <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrxx.png" alt="幼儿园食谱二维码"></p><span class="span">幼儿园每日食谱</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
-            </div>
-        </li>
-        <li>
-            <div class="spin">
-                <div class="just"><p><img src="qrcode/ig/case/qrmp.png" alt="名片二维码"></p><span class="span">聚合网络名片</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="just"><p><img src="qrcode/ig/case/qrmp.png" alt="积分兑换奖品"></p><span class="span">积分兑换奖品</span></div>
+                <div class="instead"><div class="img"><img src="http://www.qrcodesy.com:8080/GoodsPublic/upload/jfdhjp/20200425173001.jpg"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
     </ul>

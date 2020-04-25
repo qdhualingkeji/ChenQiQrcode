@@ -103,22 +103,52 @@ header .nav .logo {
 .moduleList_div .item_div .create_div{
 	width:160px;height:220px;line-height:220px;text-align: center;color:#666;font-size: 14px;background-color:#fff;box-shadow: 0 2px 5pxrgba(0,0,0,.05);
 }
-.spzsItem_div{
+.hjItem_div{
 	margin-top:-260px;margin-left:210px;
 }
-.spzsContent_div{
+.hjContent_div{
 	background-image: url('rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');
 }
-.dmtzlItem_div{
+.bjItem_div{
 	margin-top:-260px;margin-left:420px;
+}
+.bjContent_div{
+	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+}
+.jfItem_div{
+	margin-top:-260px;margin-left:630px;
+}
+.jfContent_div{
+	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+}
+.yspItem_div{
+	margin-top:-260px;margin-left:840px;
+}
+.yspContent_div{
+	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+}
+.smsItem_div{
+	margin-top:0px;margin-left:0px;
+}
+.smsContent_div{
+	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+}
+.dmtzlItem_div{
+	margin-top:-260px;margin-left:210px;
 }
 .dmtzlContent_div{
 	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
 }
 .jzsgItem_div{
-	margin-top:-260px;margin-left:630px;
+	margin-top:-260px;margin-left:420px;
 }
 .jzsgContent_div{
+	background-image: url('rsrc/scene/d7af232e659079fc9c325ec65cefcc551548146997.png');
+}
+.jfdhjpItem_div{
+	margin-top:-260px;margin-left:630px;
+}
+.jfdhjpContent_div{
 	background-image: url('rsrc/scene/d7af232e659079fc9c325ec65cefcc551548146997.png');
 }
 </style>
@@ -141,13 +171,28 @@ $(function(){
 function goAddModule(type){
 	var url;
 	switch(type){
-		case "spzs":
+		case "redWine":
 			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine&from=cq";
+		break;
+		case "whiteWine":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=whiteWine&from=cq";
+		break;
+		case "homeTextiles":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=homeTextiles&from=cq";
+		break;
+		case "artwork":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=artwork&from=cq";
+		break;
+		case "productExplain":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=productExplain&from=cq";
 		break;
 		case "dmtzl":
 			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=dmtzl&from=cq";
 		break;
 		case "jzsg":
+			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
+		break;
+		case "jfdhjp":
 			url="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
 		break;
 	}
@@ -238,15 +283,55 @@ function goAddModule(type){
 					<div class="create_div" onclick="alert('模板待添加')">从空白新建</div>
 				</div>
 			</a>
-			<div class="item_div spzsItem_div" id="item_div">
-				<div class="content_div spzsContent_div">
+			<div class="item_div hjItem_div" id="item_div">
+				<div class="content_div hjContent_div">
 					
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('spzs')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('redWine')">应用此模板</div>
 				</div>
-				<div class="title_div">商品展示</div>
+				<div class="title_div">红酒</div>
+			</div>
+			<div class="item_div bjItem_div" id="item_div">
+				<div class="content_div bjContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('whiteWine')">应用此模板</div>
+				</div>
+				<div class="title_div">白酒</div>
+			</div>
+			<div class="item_div jfItem_div" id="item_div">
+				<div class="content_div jfContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('homeTextiles')">应用此模板</div>
+				</div>
+				<div class="title_div">家纺</div>
+			</div>
+			<div class="item_div yspItem_div" id="item_div">
+				<div class="content_div yspContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('artwork')">应用此模板</div>
+				</div>
+				<div class="title_div">艺术品</div>
+			</div>
+			<div class="item_div smsItem_div" id="item_div">
+				<div class="content_div smsContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('productExplain')">应用此模板</div>
+				</div>
+				<div class="title_div">说明书</div>
 			</div>
 			<div class="item_div dmtzlItem_div" id="item_div">
 				<div class="content_div dmtzlContent_div">
@@ -267,6 +352,16 @@ function goAddModule(type){
 					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模板</div>
 				</div>
 				<div class="title_div">建筑施工</div>
+			</div>
+			<div class="item_div jfdhjpItem_div" id="item_div">
+				<div class="content_div jfdhjpContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模板</div>
+				</div>
+				<div class="title_div">积分兑换奖品</div>
 			</div>
 		</div>
 	</div>
