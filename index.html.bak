@@ -364,7 +364,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 }
 .case .just img{
 	width:230px;
-	height:250px;
+	height:210px;
 }
 
 .w_grid_div{

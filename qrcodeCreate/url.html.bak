@@ -13,7 +13,7 @@
 function createQrcode(){
 	var url=$("#url_inp").val();
 	$.ajax({
-		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/chenQi/createQrcodeByCQSCQ",
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/createQrcodeByCQSCQ",
 		data:{url:url},
 		dataType:"jsonp",
 		type: "post",
@@ -21,7 +21,7 @@ function createQrcode(){
 		success:function(data){
 			var qrcode=JSON.parse(data).qrcode;
 			$("#showQrcode_div").empty();
-			$("#showQrcode_div").append("<img src=\"http://www.bainuojiaoche.com:8080"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+			$("#showQrcode_div").append("<img src=\"http://www.qrcodesy.com:8080"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
 
 			$("#url_inp").css("display","none");
 			$("#showUrl_div").css("display","block");
@@ -217,7 +217,7 @@ body{
 					<a href="../price.html">定制价格</a>
 				</li>
 				<li>
-					<a href="">帮助</a>
+					<a href="../help.html">帮助</a>
 				</li>
             </ul>
 			<div class="nav_button">

@@ -281,7 +281,7 @@ $(function(){
 <div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
-        <ul class="menu" style="color:#000;">
+        <ul class="menu">
             <li>
 				<a class="a2" href="index.html">首页</a>
 			</li>
@@ -292,14 +292,14 @@ $(function(){
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="active">
-				<a class="a2" href="qrcode.html">定制价格</a>
+				<a href="price.html">定制价格</a>
             </li>
 			<li>
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->

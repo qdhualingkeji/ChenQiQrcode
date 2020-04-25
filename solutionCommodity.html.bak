@@ -349,7 +349,7 @@ $(function(){
 				<span style="font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;">Office</span>
 				一样，即刻制作二维码
 			</h3>
-				<a href="" style="margin-top: -105px;margin-left: 285px;position: absolute;">查看更多</a>
+				<a href="newcode.html" style="margin-top: -105px;margin-left: 285px;position: absolute;">查看更多</a>
 			<div class="goods-case-box">
 				<ul class="good-case-ul">
 					<li class="good-scene-item">
