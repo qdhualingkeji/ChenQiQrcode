@@ -119,7 +119,7 @@ header .nav .logo {
 	margin-top:-260px;margin-left:630px;
 }
 .jfContent_div{
-	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+	background-image: url('rsrc/scene/202004260001.png');
 }
 .yspItem_div{
 	margin-top:-260px;margin-left:840px;
@@ -131,25 +131,19 @@ header .nav .logo {
 	margin-top:0px;margin-left:0px;
 }
 .smsContent_div{
-	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+	background-image: url('rsrc/scene/202004260002.png');
 }
 .dmtzlItem_div{
 	margin-top:-260px;margin-left:210px;
 }
 .dmtzlContent_div{
-	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+	background-image: url('rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
 }
 .jzsgItem_div{
 	margin-top:-260px;margin-left:420px;
 }
 .jzsgContent_div{
-	background-image: url('rsrc/scene/d7af232e659079fc9c325ec65cefcc551548146997.png');
-}
-.jfdhjpItem_div{
-	margin-top:-260px;margin-left:630px;
-}
-.jfdhjpContent_div{
-	background-image: url('rsrc/scene/d7af232e659079fc9c325ec65cefcc551548146997.png');
+	background-image: url('rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
@@ -349,16 +343,6 @@ function goAddModule(type){
 					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模板</div>
 				</div>
 				<div class="title_div">建筑施工</div>
-			</div>
-			<div class="item_div jfdhjpItem_div" id="item_div">
-				<div class="content_div jfdhjpContent_div">
-					
-				</div>
-				<div class="overlay_div">
-					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模板</div>
-				</div>
-				<div class="title_div">积分兑换奖品</div>
 			</div>
 		</div>
 	</div>

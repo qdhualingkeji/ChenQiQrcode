@@ -364,7 +364,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 }
 .case .just img{
 	width:230px;
-	height:210px;
+	height:230px;
 }
 
 .w_grid_div{
@@ -625,7 +625,7 @@ var swiper = new Swiper('.merchants', {
         <li>
             <div class="spin">
                 <div class="just"><p><img src="qrcode/ig/case/qrsp.png" alt="白酒"></p><span class="span">白酒</span></div>
-                <div class="instead"><div class="img"><img src="qrcode/ig/case/qr.png"></div><span class="span">扫码体验</span></div>
+                <div class="instead"><div class="img"><img src="http://www.qrcodesy.com:8080/GoodsPublic/upload/20200425173115.jpg"></div><span class="span">扫码体验</span></div>
             </div>
         </li>
         <li>
