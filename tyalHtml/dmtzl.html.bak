@@ -11,7 +11,7 @@
   .main_div {
     width: 350px;
     background-color:#fff;
-    float: left;
+    margin:auto;
   }
   .title_div {
     width: 95%;
@@ -23,12 +23,12 @@
 }
 .memo1_div, .memo2_div {
     width: 95%;
-    margin-top: 20px;
+    margin: 20px auto 0;
 }
 .embed1_div {
     width: 95%;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto 0;
 }
 .image1_div {
     width: 95%;
@@ -70,5 +70,5 @@
 		<img class="image1_1_img" alt="" src="images/dmtzl/c769d75fc7033f7218ca8bcb0c08624e.jpg">
 	</div>
 </div>
- </body>
+</body>
 </html>
