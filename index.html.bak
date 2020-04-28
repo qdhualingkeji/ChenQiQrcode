@@ -29,6 +29,16 @@
 </script>
 <script type="text/javascript">
 $(function(){
+  var gkspbw=$("#gkspBg_div").css("width");
+  gkspbw=gkspbw.substring(0,gkspbw.length-2);
+  var gkspw=$("#gksp_div").css("width");
+  gkspw=gkspw.substring(0,gkspw.length-2);
+  var gksph=$("#gksp_div").css("height");
+  gksph=gksph.substring(0,gksph.length-2);
+  var closeDiv=$("#gkspBg_div #close_div");
+  closeDiv.css("margin-top","-"+gksph+"px");
+  closeDiv.css("margin-left",(gkspbw-gkspw)/2+parseInt(gkspw)+"px");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -53,8 +63,30 @@ $(function(){
 function openModule(){
 	location.href="newcode.html";
 }
+
+function openGkspBgDiv(flag){
+	$("#gkspBg_div").css("display",(flag==1)?"block":"none");
+}
 </script>
 <style>
+.gkspBg_div{
+	width:100%;
+	height:100%;
+	background:rgba(77,77,77,0.5);
+	position:fixed;
+	display:none;
+	z-index:1;
+}
+.gksp_div{
+	width:640px;height:360px;margin:235px auto 0;
+}
+.gksp_div video{
+	width:100%;height:100%;
+}
+.gksp_div .close_div{
+	width:45px;height:45px;line-height:45px;color:#fff;font-size:40px;text-align:center;background:#00A3FF;cursor:pointer;
+}
+
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
@@ -400,6 +432,14 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 </head>
 <body>
 <header>
+<div class="gkspBg_div" id="gkspBg_div">
+	<div class="gksp_div" id="gksp_div">
+		<video controls="controls"/>
+			<source src="qlqrcode_files/embed/202004280001.mp4" type="video/mp4"></source>
+		</video>
+	</div>
+	<div class="close_div" id="close_div" onclick="openGkspBgDiv(0)">X</div>
+</div>
 <div class="nav">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
@@ -488,7 +528,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	<div class="big_size" style="width:100%;margin-top:285px;position:absolute;">
 		<div class="al">
 			<a href="newcode.html">点击试用</a>
-			<a class="watch but btn-video"><i class="playicon"></i>观看视频</a>
+			<a class="watch but btn-video" onclick="openGkspBgDiv(1)"><i class="playicon"></i>观看视频</a>
 		</div>
 	</div>
 </div>
@@ -607,7 +647,7 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<div class="glwdewm_div" onclick="location.href='http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/login'">管理我的二维码</div>
+			<div class="glwdewm_div" onclick="location.href='http://www.qrcodesy.com:8080/GoodsPublic/merchant/login'">管理我的二维码</div>
 			<div class="mfcj_div" onclick="location.href='newcode.html'">免费创建</div>
 		</div>
 	</div>

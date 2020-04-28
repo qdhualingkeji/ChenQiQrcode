@@ -193,7 +193,7 @@ function goAddModule(type){
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
 		break;
 		case "jfdhjp":
-			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=cq";
+			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp";
 		break;
 	}
 	location.href=url;
@@ -223,7 +223,7 @@ function goAddModule(type){
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="/login" target="_blank" class="login2 but">登录</a>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
 			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
     </div>
