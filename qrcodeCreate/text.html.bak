@@ -12,7 +12,7 @@
 function createQrcode(){
 	var content=$("#content_ta").val();
 	$.ajax({
-		url:"http://www.bainuojiaoche.com:8080/GoodsPublic/merchant/chenQi/createQrcodeByCQSCQ",
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/createQrcodeByCQSCQ",
 		data:{url:content},
 		dataType:"jsonp",
 		type: "post",

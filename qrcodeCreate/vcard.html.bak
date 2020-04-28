@@ -231,7 +231,7 @@ function showEditDiv(){
 
 	var avatorUrl=htmlGoodsGRMP.avatorUrl;
 	if(avatorUrl!=""){
-		$("#editGRMP_div #upload-img").attr("src","http://www.bainuojiaoche.com:8080"+avatorUrl);
+		$("#editGRMP_div #upload-img").attr("src","http://www.qrcodesy.com:8080"+avatorUrl);
 	}
 	var url=htmlGoodsGRMP.url;
 	if(url!=""){

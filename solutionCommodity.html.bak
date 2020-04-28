@@ -256,7 +256,7 @@ $(function(){
 </script>
  </head>
  <body>
-<header>
+<header class="fix">
 <div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">

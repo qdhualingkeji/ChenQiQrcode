@@ -239,7 +239,7 @@ function goAddModule(type){
             </div>
         </div>
         <div class="topnav-logo"><a href="/"></a></div>
-        <div class="topnav-reg"><a href="/login">登录</a></div>
+        <div class="topnav-reg"><a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login">登录</a></div>
     </div>
     <div class="menu-list">
         <ul>

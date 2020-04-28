@@ -452,7 +452,7 @@ $(function(){
 				<span class="col1_span">二维码长期有效</span>
 			</div>
 			<div class="col2_div">
-				<span class="rightSign_span">√</span>
+				<span class="rightSign_span"></span>
 			</div>
 			<div class="col3_div">
 				<span class="rightSign_span">√</span>

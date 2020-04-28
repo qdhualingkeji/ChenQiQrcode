@@ -35,6 +35,21 @@
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var nav=$("header");
+  var win=$(window);
+  var sc=$(document);
+  win.scroll(function(){
+    if(sc.scrollTop()>=50){
+      nav.addClass("fix");
+    }else{
+    nav.removeClass("fix");
+    }
+  });
+});
+</script>
 </head>
 <body>
 <header>

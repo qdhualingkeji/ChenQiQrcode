@@ -317,7 +317,7 @@ function initContentDiv(navFlag){
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
-            <li class="active">
+            <li>
 				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li class="active">
