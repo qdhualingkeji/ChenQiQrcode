@@ -64,11 +64,24 @@ function openModule(){
 	location.href="newcode.html";
 }
 
+/*
+//之前已经有视频标签了，这个方法暂时不用
 function openGkspBgDiv(flag){
-	$("#gkspBg_div").css("display",(flag==1)?"block":"none");
+	if(flag==1){
+		alert(flag);
+		$("#gkspBg_div").css("display","block");
+		$(".video-bg").css("display","none");
+		$(".video-box").css("display","none");
+	}
+	else{
+		$("#gkspBg_div").css("display","none");
+	}
 }
+*/
 </script>
 <style>
+/*
+之前已经有视频样式了，这些样式暂时不用
 .gkspBg_div{
 	width:100%;
 	height:100%;
@@ -86,7 +99,7 @@ function openGkspBgDiv(flag){
 	width:100%;
 	height:100%;
 }
-.gksp_div .close_div{
+.gkspBg_div .close_div{
 	width:45px;
 	height:45px;
 	line-height:45px;
@@ -96,6 +109,7 @@ function openGkspBgDiv(flag){
 	background:#00A3FF;
 	cursor:pointer;
 }
+*/
 
 .w-1000 {
     width: 1000px;
@@ -442,6 +456,8 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 </head>
 <body>
 <header>
+<!--
+之前已经有视频标签了，这些标签暂时不用
 <div class="gkspBg_div" id="gkspBg_div">
 	<div class="gksp_div" id="gksp_div">
 		<video controls="controls"/>
@@ -450,6 +466,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 	</div>
 	<div class="close_div" id="close_div" onclick="openGkspBgDiv(0)">X</div>
 </div>
+-->
 <div class="nav">
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
@@ -546,7 +563,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 <div class="video-box">
     <div class="video_lr">
         <video controls preload="none"  x5-playsinline="" playsinline="" webkit-playsinline="">
-			<source src=""></source>
+			<source src="qlqrcode_files/embed/202004280001.mp4"></source>
         </video>
         <div class="video-close"></div>
     </div>
