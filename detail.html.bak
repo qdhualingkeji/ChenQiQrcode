@@ -1,0 +1,1957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品标签二维码-辰麒二维码制作教程</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit"><meta name="description" content="将二维码附在酒类、茶叶、美容保健品等各类商品外包装或标签中，消费者扫码即可查看商品的价格、基本信息、使用方式、厂家联系方式等内容，在有限的标签中展示更丰富的信息。" />
+<meta name="keywords" content="商品,商品标签,商品包装,酒类,红酒,白酒,啤酒,二维码,条形码,一维码,麒麟,酒水饮料,保健食品,日用品,家居建材,食品农产品,价格二维码" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+
+<link rel="stylesheet" href="qlqrcode_files/static/css/page-index-screen_51b1169.css">
+<link rel="icon" href="qlqrcode_files/images/favicon.ico" mce_href="/static/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="qlqrcode_files/images/favicon.ico" mce_href="/static/images/favicon.ico" type="image/x-icon"
+>
+<link rel="canonical" href="http://cli.im/" />
+<link rel="stylesheet" href="qlqrcode_files/cli/flatkit/assets/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="qlqrcode_files/cli/flatkit/assets/styles/app.min.css?v=20190711">
+<link rel="stylesheet" href="qlqrcode_files/cli/flatkit/assets/styles/cli_global.css?v=20190528">
+<link rel="stylesheet" href="qlqrcode_files/cli/flatkit/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="qlqrcode_files/cli/css/clicon.css?v=20180820">
+<script src="qlqrcode_files/cli/js/service_text.js?v=20190523"></script>
+<script src="qlqrcode_files/cli/js/consult.js?v=20181010"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="//static.clewm.net/cli/flatkit/assets/bootstrap/dist/css/bootstrapieV2.css">
+<script src="//static.clewm.net/cli/js/lib/plug/respond.min.js"></script>
+<script src="//static.clewm.net/cli/js/lib/plug/html5shiv.min.js"></script>
+<![endif]-->
+<script src="qlqrcode_files/cli/js/lib/jquery191.js"></script>
+<script src="qlqrcode_files/cli/flatkit/libs/jquery/bootstrap/dist/js/bootstrap_v3.0.js"></script>
+<script src="qlqrcode_files/static/js/lib/sea_3c3cab9.js"></script>
+<script>
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return  unescape(r[2]); return null;
+}
+
+$(function(){
+	var dcHtml="";
+	var waibHtml="";
+	var ctiuHtml="";
+	var id=getQueryString("id");
+	if(id==1381){
+		dcHtml+="<h1 class=\"detail_title\">";
+			dcHtml+="商品标签";
+			dcHtml+="<span style=\"position: relative;top: -2px;\">|</span>";
+			dcHtml+="二维码应用教程";
+		dcHtml+="</h1>";
+		dcHtml+="<h2 class=\"detail_desc\">";
+			dcHtml+="<div class=\"text_detail_desc\">";
+			dcHtml+="将二维码附在酒类、茶叶、美容保健品等各类商品外包装或标签中，消费者扫码即可查看商品的价格、基本信息、使用方式、厂家联系方式等内容，在有限的标签中展示更丰富的信息。  <br><br>";
+			dcHtml+="适用于：酒水饮料、保健食品、日用品、家居建材、食品农产品等各类商品外包装及标签";
+			dcHtml+="</div>";
+		dcHtml+="</h2>";
+		
+		waibHtml+="<p>";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 16px;\">";
+					waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190624/1561374916666514.jpg\" title=\"1561374916666514.jpg\" alt=\"首图.jpg\"/>";
+				waibHtml+="</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"font-size: 18px; color: #000000;\">";
+				waibHtml+="<strong>";
+					waibHtml+="<span style=\"color: #000000; font-size: 14px;\"></span>";
+					waibHtml+="<br />";
+				waibHtml+="</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"font-size: 18px; color: #000000;\">";
+				waibHtml+="<strong>应用效果</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 14px;\">商品标签二维码优势，包括：</span>";
+		waibHtml+="</p>";
+		waibHtml+="<ul class=\"list-paddingleft-2\" style=\"list-style-type: disc;\">";
+			waibHtml+="<li>";
+				waibHtml+="<p>将商品信息放入二维码，简化商品外包装内容；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>替代条形码，展示商品价格，统一线上线下价格</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>支持「图文」形式展示商品信息，激发购买欲；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>支持「音频」、「视频」模块，展示多媒体内容；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>支持「联系」模块，可添加电话、邮箱、地址，客户扫码一键拨打，一键导航；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>拥有「收藏」功能，客户查看二维码可随时收藏；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"margin-bottom: 25px;\">";
+					waibHtml+="【行业专属版】用户可开通企业专属小程序，自带企业品牌LOGO，增强客户对企业品牌的感知；支持「一键关注公众号」功能，实现二维码向公众号的快速引流。";
+					//waibHtml+="<a href=\"https://cli.im/price\" target=\"_blank\">了解详情 &gt;&gt;</a>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+		waibHtml+="</ul>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\"></p>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 18px; color: #000000;\">";
+				waibHtml+="<strong>";
+					waibHtml+="<br />";
+				waibHtml+="</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"font-size: 18px; color: #000000;\">";
+				waibHtml+="<strong>体验案例</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 18px; color: #000000;\">";
+				waibHtml+="<strong>";
+					waibHtml+="<br />";
+				waibHtml+="</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+		
+			waibHtml+="<span id=\"scene3\">";
+			waibHtml+="<div style=\"width: 100%; height: 400px;background-color: #fff;padding-top: 10px;margin: 0 auto 24px;\">";
+			waibHtml+="<div class=\"left-img-box\" style=\"width: 190px;height: 390px;border: 1px solid #ddd;position: relative;margin-left: 80px;float: left;background-size: 100%;background-repeat:repeat-y;background-image:url(//blogcdnimg.clewm.net/2019/07/middle2@2x.png);border-radius: 24px;overflow: hidden;z-index: 0;\">";
+			waibHtml+="<div class=\"imgTopBox\" style=\"position: absolute;z-index: 1;background: #999999;\">";
+			waibHtml+="<img src=\"//blogcdnimg.clewm.net/2019/07/top_white2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//blogcdnimg.clewm.net/2019/07/top_white2@2x.png\">";
+			waibHtml+="</div>";
+			waibHtml+="<div class=\"imgbottomBox\" style=\"position: absolute;bottom: 0px;z-index: -1;\">";
+			waibHtml+="<img src=\"//blogcdnimg.clewm.net/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//blogcdnimg.clewm.net/2019/07/bottom2@2x.png\">";
+			waibHtml+="</div>";
+			waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
+			waibHtml+="<div style=\"height: 354px;overflow-y: scroll;overflow-x: hidden;\">";
+			waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"tyalHtml/2019/06/红酒案例图片.jpg\" data-lity=\"\" data-lity-target=\"tyalHtml/2019/06/红酒案例图片.jpg\">";
+			waibHtml+="</div>";
+			waibHtml+="</div>";
+			waibHtml+="</div>";
+			waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(http://blogcdnimg.clewm.net/2019/06/four_border.png);background-repeat:no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
+			waibHtml+="<img src=\"tyalHtml/2019/06/红酒案例图片.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"tyalHtml/2019/06/红酒案例图片.png\">";
+			waibHtml+="</div>";
+			waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
+			waibHtml+="</div>";
+			waibHtml+="</span>";
+
+
+		waibHtml+="</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			
+		waibHtml+="</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"color: #000000;\">";
+				waibHtml+="<strong>";
+					waibHtml+="<span style=\"font-size: 18px;\">操作教程</span>";
+				waibHtml+="</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</h3>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p>";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 16px;\">第一步：编辑二维码内容</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>在页面右侧选择合适的案例模板，根据自己的需求进行修改并保存，快速生成二维码。</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/49719\" _src=\"https://cli.im/help/49719\">https://cli.im/help/49719</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong style=\"color: rgb(51, 51, 51); white-space: pre-wrap; font-size: 16px;\">";
+				waibHtml+="<br />";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p style=\"margin-bottom: 0px;\">";
+			waibHtml+="<strong style=\"color: rgb(51, 51, 51); white-space: pre-wrap; font-size: 16px;\">第二步：美化二维码</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>麒麟提供了二维码美化，可以设置二维码的样式、颜色，添加公司Logo，让二维码更美观。为了避免二维码无法识别，二维码前景色必须比后景色更深。</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48435\" _src=\"https://cli.im/help/48435\">https://cli.im/help/48435</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong style=\"color: rgb(51, 51, 51); white-space: pre-wrap; font-size: 16px;\">";
+				waibHtml+="<br />";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<strong style=\"color: rgb(51, 51, 51); white-space: pre-wrap; font-size: 16px;\">";
+				waibHtml+="第三步：下载二维码源文件，排版印刷";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="<strong>二维码下载：</strong>";
+			waibHtml+="麒麟二维码默认为PNG格式，同时提供PDF、SVG、EPS三种矢量格式，你可根据自己需求进行下载。";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="<strong>";
+				waibHtml+="<br />";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="<strong>麒麟排版印刷：</strong>";
+			waibHtml+="麒麟提供标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。";
+		waibHtml+="</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48925\" _src=\"https://cli.im/help/48925\">https://cli.im/help/48925</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p>";
+			waibHtml+="<strong>";
+				waibHtml+="<br />";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="<strong>其他工具排版软件：</strong>";
+			waibHtml+="如果你已经采购标签机，也可导出数据，使用其他标签排版软件进行排版打印。";
+		waibHtml+="</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48280\" _src=\"https://cli.im/help/48280\">https://cli.im/help/48280</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p></p>";
+		waibHtml+="<div class=\"scene-awesome-box\">";
+			waibHtml+="<div id=\"scene-awesome-info-box\" class=\"scene-awesome-info-box\" >";
+				waibHtml+="<div class=\"awesome-box-info\">";
+					waibHtml+="<i class=\"fa fa-thumbs-o-up\"></i>";
+					waibHtml+="<span id=\"awesome-name\" class=\"\">赞</span>";
+				waibHtml+="</div>";
+				waibHtml+="<span id=\"awesome-box-sum\" class=\"awesome-box-sum\">5</span>";
+			waibHtml+="</div>";
+			waibHtml+="<div id=\"re-awesome-click\" class=\"re-awesome none\">";
+				waibHtml+="你已经赞过了，不能重复赞";
+			waibHtml+="</div>";
+		waibHtml+="</div>";
+		
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\" go-preview is_preview=\"0\" scene_id=\"1381\" code-click-data=\"61\" data-id=\"3194\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/89d64876885a2a3ab6d27647d1a946b91562498804.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="红酒标签";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		ctiuHtml+="<li class=\"create-tpl-item\" go-preview is_preview=\"0\" scene_id=\"1381\" code-click-data=\"61\" data-id=\"3209\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/3e5918003c45be96b1eaf2c956a74af31562551629.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="白酒标签";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		ctiuHtml+="<li class=\"create-tpl-item\" go-preview is_preview=\"0\" scene_id=\"1381\" code-click-data=\"61\" data-id=\"3210\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/5b16d13d638f2b8d665d660e74b7cf911562553843.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="家纺标签";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		ctiuHtml+="<li class=\"create-tpl-item\" go-preview is_preview=\"0\" scene_id=\"1381\" code-click-data=\"61\" data-id=\"3211\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/5f229ebe1187a96ad9c65d9b3075facd1562553862.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="艺术品标签";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		/*
+		ctiuHtml+="<li class=\"create-tpl-item\">";
+			ctiuHtml+="<a href=\"//console.cli.im/nedit\" target=\"_blank\" class=\"item-name item-doyourself\" onclick=\"StatisticsData(141, 26)\">";
+				ctiuHtml+="自定义创建";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</a>";
+		ctiuHtml+="</li>";
+		*/
+	
+		var tpl = scrollTpl('qlqrcode_files/images/2019/06/红酒案例图片.jpg', 'qlqrcode_files/images/2019/06/红酒案例图片.png');
+		$("#scene3").append(tpl);
+	}
+	else if(id==1380){
+		dcHtml+="<h1 class=\"detail_title\">";
+			dcHtml+="多媒体资料";
+			dcHtml+="<span style=\"position: relative;top: -2px;\">|</span>";
+			dcHtml+="二维码应用教程";
+		dcHtml+="</h1>";
+		dcHtml+="<h2 class=\"detail_desc\">";
+			dcHtml+="<div class=\"text_detail_desc\">";
+				dcHtml+="将产品画册、企业画册、招商手册等源文件内容制作成二维码，可印在资料袋、纸质画册上，也可通过微信发送，向你的客户随时分享宣传资料。<br>适用于：招商、宣传展会、门店销售等多种线上线下场景。";
+			dcHtml+="</div>";
+		dcHtml+="</h2>";
+					
+		waibHtml+="<p style=\"margin-bottom: 15px; white-space: normal; margin-top: 15px;\">";
+			waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190731/1564571834329164.png\" title=\"1564571834329164.png\" alt=\"产品画册二维码.png\" style=\"height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/attachment/image/20190731/1564571834329164.png\">";
+			waibHtml+="&nbsp; &nbsp; &nbsp;&nbsp;";
+		waibHtml+="</p>";
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px; white-space: normal;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">应用效果</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<ul class=\"list-paddingleft-2\" style=\"list-style-type: disc;\">";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"white-space: normal;\">支持添加文字、图片、文件、音视频等内容，文件可下载至手机中。</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"white-space: normal;\">添加「活码导航」模块，可点击跳转至别的二维码页面，分类展示更多产品。</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"white-space: normal;\">";
+					waibHtml+="<span style=\"color: #494949; font-size: 14px;\">添加「联系」模块，可以展示电话、地址、邮箱等信息，支持一键拨打电话。</span>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"white-space: normal;\">行业专属版用户可开通「专属小程序」，扫码界面展示企业logo，还可实现「一键关注公众号」，增加用户黏性。</p>";
+			waibHtml+="</li>";
+		waibHtml+="</ul>";
+		waibHtml+="<p style=\"white-space: normal; margin-bottom: 15px; margin-top: 15px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>";
+		waibHtml+="<h3 dir=\"ltr\" style=\"margin-bottom: 15px; white-space: normal; margin-top: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">体验案例</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<span id=\"scene4\">";
+				waibHtml+="<div style=\"width: 100%; height: 400px;background-color: #fff;padding-top: 10px;margin: 0 auto 24px;\">";
+					waibHtml+="<div class=\"left-img-box\" style=\"width: 190px;height: 390px;border: 1px solid #ddd;position: relative;margin-left: 80px;float: left;background-size: 100%;background-repeat: repeat-y;background-image: url(qlqrcode_files/images/2019/07/middle2@2x.png);border-radius: 24px;overflow: hidden;z-index: 0;\">";
+						waibHtml+="<div class=\"imgTopBox\" style=\"position: absolute;z-index: 1;background: #999999;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/top_white2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/top_white2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgbottomBox\" style=\"position: absolute;bottom: 0px;z-index: -1;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
+							waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+								waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/WechatIMG1.jpeg\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/WechatIMG1.jpeg\">";
+							waibHtml+="</div>";
+						waibHtml+="</div>";
+					waibHtml+="</div>";
+					waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
+						waibHtml+="<img src=\"qlqrcode_files/images/2019/06/产品画册.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/产品画册.png\">";
+					waibHtml+="</div>";
+					waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
+				waibHtml+="</div>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p style=\"white-space: normal;\"></p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="<span id=\"scene5\">";
+				waibHtml+="<div style=\"width: 100%; height: 400px;background-color: #fff;padding-top: 10px;margin: 0 auto 24px;\">";
+					waibHtml+="<div class=\"left-img-box\" style=\"width: 190px;height: 390px;border: 1px solid #ddd;position: relative;margin-left: 80px;float: left;background-size: 100%;background-repeat: repeat-y;background-image: url(qlqrcode_files/images/2019/07/middle2@2x.png);border-radius: 24px;overflow: hidden;z-index: 0;\">";
+						waibHtml+="<div class=\"imgTopBox\" style=\"position: absolute;z-index: 1;background: #999999;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/top_white2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/top_white2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgbottomBox\" style=\"position: absolute;bottom: 0px;z-index: -1;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
+							waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+								waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/WechatIMG2.jpeg\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/WechatIMG2.jpeg\">";
+							waibHtml+="</div>";
+						waibHtml+="</div>";
+					waibHtml+="</div>";
+					waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
+						waibHtml+="<img src=\"qlqrcode_files/images/2019/06/宜家家居产品画册.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/宜家家居产品画册.png\">";
+					waibHtml+="</div>";
+					waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
+				waibHtml+="</div>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p style=\"white-space: normal;\"></p>";
+		waibHtml+="<p style=\"white-space: normal;\"></p>";
+		waibHtml+="<p style=\"white-space: normal;\"></p>";
+		waibHtml+="<h3 style=\"margin-bottom: 15px; white-space: normal; margin-top: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">制作教程</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p style=\"white-space: normal;\">";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第一步：制作二维码</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="方式一：在首页点击";
+			//waibHtml+="<a href=\"https://cli.im/files\" target=\"_blank\">「文件」</a>";
+			waibHtml+="「文件」";
+			waibHtml+="，上传电子版的产品画册文件（推荐pdf格式），直接生成文件码。";
+		waibHtml+="</p>";
+		waibHtml+="<p>";
+			waibHtml+="方式二：使用麒麟二维码";
+			//waibHtml+="<a href=\"https://console.cli.im/nedit\" target=\"_blank\">「内容编辑器」</a>";
+			waibHtml+="「内容编辑器」";
+			waibHtml+="，可自由插入文字、图片、音视频等，生成二维码。";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-bottom: 15px; white-space: normal; margin-top: 15px;\">&nbsp; &nbsp; &nbsp;&nbsp;</p>";
+		waibHtml+="<p style=\"white-space: normal;\">";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第二步：美化二维码，上传企业LOGO，更具视觉吸引力</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>企业LOGO图片大小建议为128px左右的的高清正方形图片，过大或过小都可能影响印刷效果。</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48435\" _src=\"https://cli.im/help/48435\">https://cli.im/help/48435</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p style=\"margin-bottom: 15px; white-space: normal; margin-top: 15px;\">&nbsp; &nbsp; &nbsp;&nbsp;</p>";
+		waibHtml+="<p style=\"white-space: normal;\">";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第三步：下载二维码图片，交给广告公司，排版到印刷品的设计稿中</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"white-space: normal; margin-top: 15px; margin-bottom: 15px;\"></p>";
+		waibHtml+="<div class=\"scene-awesome-box\">";
+			waibHtml+="<div id=\"scene-awesome-info-box\" class=\"scene-awesome-info-box\">";
+				waibHtml+="<div class=\"awesome-box-info\">";
+					waibHtml+="<i class=\"fa fa-thumbs-o-up\"></i>";
+					waibHtml+="<span id=\"awesome-name\" class=\"\">赞</span>";
+				waibHtml+="</div>";
+				waibHtml+="<span id=\"awesome-box-sum\" class=\"awesome-box-sum\">11</span>";
+			waibHtml+="</div>";
+			waibHtml+="<div id=\"re-awesome-click\" class=\"re-awesome none\">你已经赞过了，不能重复赞</div>";
+		waibHtml+="</div>";
+  	  
+	  	var tpl = scrollTpl('qlqrcode_files/images/2019/06/WechatIMG1.jpeg', 'qlqrcode_files/images/2019/06/产品画册.png');
+		$('#scene4').append(tpl);
+		
+		var tpl = scrollTpl('qlqrcode_files/images/2019/06/WechatIMG2.jpeg', 'qlqrcode_files/images/2019/06/宜家家居产品画册.png');
+		$('#scene5').append(tpl);
+		
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\" go-preview=\"\" is_preview=\"0\" scene_id=\"1380\" code-click-data=\"61\" data-id=\"3192\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/c69e92aad2d2a0d541ff9e36c6bcbfaf1547088833.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="多媒体资料";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		/*
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\">";
+			ctiuHtml+="<a href=\"//console.cli.im/nedit\" target=\"_blank\" class=\"item-name item-doyourself\" onclick=\"StatisticsData(141, 26)\">";
+				ctiuHtml+="自定义创建";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</a>";
+		ctiuHtml+="</li>";
+		*/
+	}
+	else if(id==1371){
+		dcHtml+="<h1 class=\"detail_title\">";
+			dcHtml+="产品说明书";
+			dcHtml+="<span style=\"position: relative;top: -2px;\">|</span>";
+			dcHtml+="二维码应用教程";
+		dcHtml+="</h1>";
+		dcHtml+="<h2 class=\"detail_desc\">";
+			dcHtml+="<div class=\"text_detail_desc\">";
+				dcHtml+="将电子说明书二维码印刷在说明书上，取代厚重的纸制说明书，展示产品图文详情、安装使用视频教程、企业联系方式等更多内容。也可将二维码印制在产品包装和产品本身，用户随时扫码查看，无需四处寻找说明书。";
+			dcHtml+="</div>";
+		dcHtml+="</h2>";
+		
+		waibHtml+="<h3>";
+			waibHtml+="<span style=\"font-size: 18px;\">";
+				waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190621/1561105935810472.png\" title=\"1561105935810472.png\" alt=\"image.png\" style=\"height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/attachment/image/20190621/1561105935810472.png\">";
+			waibHtml+="</span>";
+		waibHtml+="</h3>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">应用效果</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<ul class=\"list-paddingleft-2\" style=\"list-style-type: disc;\">";
+			waibHtml+="<li>";
+				waibHtml+="<p>";
+					waibHtml+="<span style=\"font-size: 14px;\">微信扫码查看：无需关注公众号，阅读更方便</span>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>";
+					waibHtml+="<span style=\"font-size: 14px;\">无广告视频：更加直观的产品安装和使用教程</span>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>";
+					waibHtml+="<span style=\"font-size: 14px;\">下载收藏：扫码后可下载资料或收藏内容，将资料装进口袋</span>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p>";
+					//waibHtml+="<a href=\"https://cli.im/price\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); margin-bottom: 20px; line-height: 24px; list-style: none; outline: 0px; box-shadow: none; letter-spacing: 1px; font-family: &quot;PingFang SC&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Noto Sans&quot;, STHeiti, Tahoma, Arial, &quot;Microsoft YaHei&quot;, simsun, sans-serif; white-space: normal; box-sizing: inherit; font-weight: 700; font-size: 14px; text-decoration: underline;\">";
+						waibHtml+="<span style=\"box-sizing: inherit; font-weight: 700; font-size: 14px;\">行业专属版</span>";
+					//waibHtml+="</a>";
+					waibHtml+="<span style=\"color: #212121; font-family: &quot;PingFang SC&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Noto Sans&quot;, STHeiti, Tahoma, Arial, &quot;Microsoft YaHei&quot;, simsun, sans-serif; letter-spacing: 1px; background-color: #FFFFFF; font-size: 14px;\">";
+						waibHtml+="用户还可开通企业专属小程序，扫码界面自带企业品牌LOGO，增强客户对企业品牌的感知；支持「一键关注公众号」功能，实现二维码向公众号的快速引流。";
+					waibHtml+="</span>";
+					/*
+					waibHtml+="<a href=\"https://cli.im/price\" target=\"_blank\" style=\"box-sizing: inherit; background-color: rgb(255, 255, 255); margin-bottom: 20px; line-height: 24px; list-style: none; outline: 0px; box-shadow: none; letter-spacing: 1px; font-family: &quot;PingFang SC&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Noto Sans&quot;, STHeiti, Tahoma, Arial, &quot;Microsoft YaHei&quot;, simsun, sans-serif; white-space: normal; font-size: 14px; text-decoration: underline;\">";
+						waibHtml+="<span style=\"font-size: 14px;\">了解详情 &gt;&gt;</span>";
+					waibHtml+="</a>";
+					*/
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+		waibHtml+="</ul>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">体验案例</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p id=\"scene2\">";
+			waibHtml+="<div style=\"width: 100%; height: 400px;background-color: #fff;padding-top: 10px;margin: 0 auto 24px;\">";
+				waibHtml+="<div class=\"left-img-box\" style=\"width: 190px;height: 390px;border: 1px solid #ddd;position: relative;margin-left: 80px;float: left;background-size: 100%;background-repeat: repeat-y;background-image: url(qlqrcode_files/images/2019/07/middle2@2x.png);border-radius: 24px;overflow: hidden;z-index: 0;\">";
+					waibHtml+="<div class=\"imgTopBox\" style=\"position: absolute;z-index: 1;background: #999999;\">";
+						waibHtml+="<img src=\"qlqrcode_files/images/2019/07/top_white2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/top_white2@2x.png\">";
+					waibHtml+="</div>";
+					waibHtml+="<div class=\"imgbottomBox\" style=\"position: absolute;bottom: 0px;z-index: -1;\">";
+						waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
+					waibHtml+="</div>";
+					waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
+						waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+							waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/长图1.png\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/长图1.png\">";
+						waibHtml+="</div>";
+					waibHtml+="</div>";
+				waibHtml+="</div>";
+				waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
+					waibHtml+="<img src=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\">";
+				waibHtml+="</div>";
+				waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
+			waibHtml+="</div>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">制作教程</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 20px;\">";
+			waibHtml+="<strong>第一步：设计二维码内容</strong>";
+			waibHtml+="<br>";
+			waibHtml+="如果你已经有电子版的说明书文档，可以直接在麒麟二维码首页上传此文档，生成二维码；";
+			waibHtml+="<br>";
+			waibHtml+="此外你也可以使用「内容编辑器」，可像word一样进行图文混排，并插入音视频等组件，完成内容制作。";
+			waibHtml+="<br>";
+			/*
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/49719\" target=\"_blank\">https://cli.im/help/49719</a>";
+			*/
+			waibHtml+="<strong>";
+				waibHtml+="<br>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>第二步：下载高清矢量图并印刷</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 20px;\">";
+			waibHtml+="麒麟提供了二维码高清矢量图下载以及美化工具，你可以将二维码下载后和纸质说明书或产品外包装一起交由专门的包装设计店进行印制。";
+			waibHtml+="<br>";
+			//waibHtml+="美化教程详见：";
+			//waibHtml+="<a href=\"https://cli.im/help/48435\" target=\"_blank\">https://cli.im/help/48435</a>";
+			waibHtml+="<strong><br></strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>第三步：制作二维码不干胶贴在产品表面</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 20px;\">如果你制作了二维码不干胶想要贴在产品上，可直接黏贴在平整光滑的表面，曲面将影响二维码识别，请尽量避免。</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<div class=\"scene-awesome-box\">";
+			waibHtml+="<div id=\"scene-awesome-info-box\" class=\"scene-awesome-info-box\">";
+				waibHtml+="<div class=\"awesome-box-info\">";
+					waibHtml+="<i class=\"fa fa-thumbs-o-up\"></i>";
+					waibHtml+="<span id=\"awesome-name\" class=\"\">赞</span>";
+				waibHtml+="</div>";
+				waibHtml+="<span id=\"awesome-box-sum\" class=\"awesome-box-sum\">6</span>";
+			waibHtml+="</div>";
+			waibHtml+="<div id=\"re-awesome-click\" class=\"re-awesome none\">你已经赞过了，不能重复赞</div>";
+		waibHtml+="</div>";
+		
+	    var tpl =scrollTpl('https://blogcdnimg.clewm.net/2019/06/长图1.png', '//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&level=H&transparent=&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=220&kid=cliim&time=1562811763&key=0b383a3790414d92beab2e641052d7fa');
+	    $('#scene2').append(tpl);
+		
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\" go-preview=\"\" is_preview=\"0\" scene_id=\"1371\" code-click-data=\"61\" data-id=\"3190\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/7287c4141fe67ce7f45af48a7335b4611562318020.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="产品说明书";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		/*
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\">";
+			ctiuHtml+="<a href=\"//console.cli.im/nedit\" target=\"_blank\" class=\"item-name item-doyourself\" onclick=\"StatisticsData(141, 26)\">";
+				ctiuHtml+="自定义创建";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</a>";
+		ctiuHtml+="</li>";
+		*/
+	}
+	else if(id==1372){
+		dcHtml+="<h1 class=\"detail_title\">";
+			dcHtml+="建筑施工";
+			dcHtml+="<span style=\"position: relative;top: -2px;\">|</span>";
+			dcHtml+="二维码应用教程";
+		dcHtml+="</h1>";
+		dcHtml+="<h2 class=\"detail_desc\">";
+			dcHtml+="<div class=\"text_detail_desc\">";
+				dcHtml+="将二维码标签贴在展销会、订货会、门店、展厅、卖场的样品上，客户在体验样品实物时，扫码快速了解商品参数、报价和实际效果图，高效推介你的商品。<br>适用于：服装样衣、纺织面料、家居建材、食品农产品、化工材料、电器设备等各类样品";
+			dcHtml+="</div>";
+		dcHtml+="</h2>";
+		
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190625/1561431043384179.png\" title=\"1561431043384179.png\" alt=\"样品展示二维码配图3.png\" style=\"height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/attachment/image/20190625/1561431043384179.png\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"font-size: 14px;\">";
+				waibHtml+="<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<h3 style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">应用效果</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>微信扫码后，你的客户将看到你为他制作的图文介绍页。</p>";
+		waibHtml+="<p>还可实现以下效果：</p>";
+		waibHtml+="<ul class=\"list-paddingleft-2\" style=\"list-style-type: disc;\">";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2;\">加入「表格」模块，展示规格参数；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2;\">加入「音频」、「视频」模块，展示多媒体内容；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2;\">加入「文件」模块，方便客户获取报价单等文件资料；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2;\">加入「联系」模块，展示你的电话、邮箱、地址等信息；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2;\">点击二维码底部的「收藏」，保存看过的二维码至小程序中，客户可随时回看；</p>";
+			waibHtml+="</li>";
+			waibHtml+="<li>";
+				waibHtml+="<p style=\"line-height: 2; margin-bottom: 25px;\">";
+					//waibHtml+="<a href=\"https://cli.im/price\" target=\"_blank\">";
+						waibHtml+="<strong>【行业专属版】</strong>";
+					//waibHtml+="</a>";
+					waibHtml+="用户还可开通企业专属小程序，扫码界面自带企业品牌LOGO，增强客户对企业品牌的感知；支持「一键关注公众号」功能，实现二维码向公众号的快速引流。";
+					//waibHtml+="<a href=\"https://cli.im/price\" target=\"_blank\">了解详情 &gt;&gt;</a>";
+				waibHtml+="</p>";
+			waibHtml+="</li>";
+		waibHtml+="</ul>";
+		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 15px;\">";
+			waibHtml+="<span style=\"font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>";
+		waibHtml+="</p>";
+		waibHtml+="<h3 dir=\"ltr\" style=\"margin-top: 25px; margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">体验案例</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<span id=\"scene4\">";
+				waibHtml+="<div style=\"width: 100%; height: 400px;background-color: #fff;padding-top: 10px;margin: 0 auto 24px;\">";
+					waibHtml+="<div class=\"left-img-box\" style=\"width: 190px;height: 390px;border: 1px solid #ddd;position: relative;margin-left: 80px;float: left;background-size: 100%;background-repeat: repeat-y;background-image: url(qlqrcode_files/images/2019/07/middle2@2x.png);border-radius: 24px;overflow: hidden;z-index: 0;\">";
+						waibHtml+="<div class=\"imgTopBox\" style=\"position: absolute;z-index: 1;background: #999999;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/top_white2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/top_white2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgbottomBox\" style=\"position: absolute;bottom: 0px;z-index: -1;\">";
+							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
+						waibHtml+="</div>";
+						waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
+							waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+								waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/窗帘二维码效果.jpg\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/窗帘二维码效果.jpg\">";
+							waibHtml+="</div>";
+						waibHtml+="</div>";
+					waibHtml+="</div>";
+					waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
+						waibHtml+="<img src=\"qlqrcode_files/images/2019/06/窗帘二维码.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/窗帘二维码.png\">";
+					waibHtml+="</div>";
+					waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">";
+						waibHtml+="扫码体验完整案例效果";
+					waibHtml+="</div>";
+				waibHtml+="</div>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p style=\"margin-bottom: 25px;\"></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p style=\"margin-bottom: 25px;\"></p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<h3 style=\"margin-bottom: 15px;\">";
+			waibHtml+="<strong>";
+				waibHtml+="<span style=\"font-size: 18px;\">制作教程</span>";
+			waibHtml+="</strong>";
+		waibHtml+="</h3>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第一步：设计二维码内容 </strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>使用麒麟二维码「内容编辑器」，可像word一样图文混排，并插入多种模块，完成内容制作。</p>";
+		/*
+		waibHtml+="<p style=\"margin-bottom: 15px;\">教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/49719\" _src=\"https://cli.im/help/49719\">https://cli.im/help/49719</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p style=\"margin-bottom: 15px; margin-top: 15px;\">&nbsp; &nbsp; &nbsp;&nbsp;</p>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第二步：批量创建样品二维码</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>通常你需要制作大量样品标签二维码，可以将做好的单个二维码转换成批量模板。</p>";
+		waibHtml+="<p>然后将样品信息整理成excel表格，一次性导入就可快速完成批量二维码的制作，提升制作效率。</p>";
+		/*
+		waibHtml+="<p style=\"margin-bottom: 15px;\">";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/50146\" _src=\"https://cli.im/help/50146\">https://cli.im/help/50146</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p style=\"margin-bottom: 15px; margin-top: 15px;\">&nbsp; &nbsp; &nbsp;&nbsp;</p>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第三步：下载打印不干胶标签</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>麒麟提供快速美化和标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。</p>";
+		/*
+		waibHtml+="<p>";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48925\" _src=\"https://cli.im/help/48925\">https://cli.im/help/48925</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p>如果你已经采购标签机，也可导出数据，使用其他标签排版软件进行排版打印。</p>";
+		/*
+		waibHtml+="<p style=\"margin-bottom: 15px;\">";
+			waibHtml+="教程详见：";
+			waibHtml+="<a href=\"https://cli.im/help/48280\" _src=\"https://cli.im/help/48280\">https://cli.im/help/48280</a>";
+		waibHtml+="</p>";
+		*/
+		waibHtml+="<p style=\"margin-bottom: 15px; margin-top: 15px;\">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>";
+		waibHtml+="<p>";
+			waibHtml+="<span style=\"font-size: 16px;\">";
+				waibHtml+="<strong>第四步：贴在样品或吊牌上</strong>";
+			waibHtml+="</span>";
+		waibHtml+="</p>";
+		waibHtml+="<p>二维码必须贴在平直面上，贴在曲面上会影响识别，如果样品表面平整光滑，可直接黏贴。</p>";
+		waibHtml+="<p>你也可以定制空白的吊牌、卡牌作为标签基座，在设计时留出区域用于二维码标签的黏贴。</p>";
+		waibHtml+="<div class=\"scene-awesome-box\">";
+			waibHtml+="<div id=\"scene-awesome-info-box\" class=\"scene-awesome-info-box\">";
+				waibHtml+="<div class=\"awesome-box-info\">";
+					waibHtml+="<i class=\"fa fa-thumbs-o-up\"></i>";
+					waibHtml+="<span id=\"awesome-name\" class=\"\">赞</span>";
+				waibHtml+="</div>";
+				waibHtml+="<span id=\"awesome-box-sum\" class=\"awesome-box-sum\">2</span>";
+			waibHtml+="</div>";
+			waibHtml+="<div id=\"re-awesome-click\" class=\"re-awesome none\">";
+				waibHtml+="你已经赞过了，不能重复赞";
+			waibHtml+="</div>";
+		waibHtml+="</div>";
+		
+	    var tpl = scrollTpl('qlqrcode_files/images/2019/06/窗帘二维码效果.jpg', 'qlqrcode_files/images/2019/06/窗帘二维码.png');
+	    $('#scene4').append(tpl);
+	  	
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\" go-preview=\"\" is_preview=\"0\" scene_id=\"1372\" code-click-data=\"61\" data-id=\"3195\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/2b541c82ef7e535cf2f0a2c370dfa36c1547083765.png\">";
+			ctiuHtml+="<h4 class=\"item-name\">";
+				ctiuHtml+="建筑施工";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</h4>";
+		ctiuHtml+="</li>";
+		/*
+		ctiuHtml+="<li class=\"create-tpl-item Margin16\">";
+			ctiuHtml+="<a href=\"//console.cli.im/nedit\" target=\"_blank\" class=\"item-name item-doyourself\" onclick=\"StatisticsData(141, 26)\">";
+				ctiuHtml+="自定义创建";
+				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
+			ctiuHtml+="</a>";
+		ctiuHtml+="</li>";
+		*/
+	}
+	$("#detail-content").html(dcHtml);
+	$("#wordpress_article_info_box").html(waibHtml);
+	$("#create-tpl-item-ul").html(ctiuHtml);
+});
+</script>
+<script>
+	var CLI_DOMAIN='cli.im',
+	USER_DOMAIN='user.cli.im',
+	BIZ_DOMAIN='biz.cli.im',
+	QRAPI_DOMAIN='qrapi.cli.im',
+	STATIC_SERVICE='static.clewm.net/cli';
+</script>
+<script src="qlqrcode_files/static/js/common_d5afedb.js"></script>
+<script type="text/javascript">
+	var account='';
+	var tokenId = '';
+</script>
+<script charset="utf-8" src="qlqrcode_files/cli/js/getCapacityTips.js?v=20190721"></script>
+<style type="text/css">
+	@media screen and (max-device-width: 415px) {
+		.scene_mobile {
+			display: none;
+		}
+	}
+	@media screen and (min-device-width: 800px) {
+		.scene_mobile {
+		}
+	}
+
+</style>
+<script>
+	var _is_new = "";
+	var _capacity_info = null;
+</script>
+<script src="https://https-proxy.cli.im/ip-get&ip=123.168.122.244" type="text/ecmascript"></script>
+<script src="qlqrcode_files/static/js/sea-config_bc48384.js"></script>
+</head>
+
+<body>
+<input id="topicId" type="hidden" value="985"><input id="isAdmin" type="hidden" value="">
+<script type="text/javascript">
+	seajs.use('common');
+</script>
+<script>
+  (function () {
+    var autoVersion = [1564737626465][0] || 0;
+    document.documentElement.setAttribute('auto_version', autoVersion);
+  })();
+</script>
+<script src="qlqrcode_files/cli/js/browserTip.js?v=1564737626465"></script>
+<link rel="stylesheet" href="qlqrcode_files/cli/css/cli_head_top.css?v=20190606">
+<script type="text/javascript" src="qlqrcode_files/cli/js/capacity-nav-info-common.js?v=1564737626465"></script>
+<script>
+	var account='';
+	var tokenId = '';
+</script>
+<script src="qlqrcode_files/cli/js/cli_head_top.js?v=20190705"></script>
+<script id="support-ab-test" src="qlqrcode_files/cli/js/lib/abtp/index.js"></script>
+<script src="qlqrcode_files/cli/js/slide_top_index_v3.js?v=20190802"></script>
+<style>
+  .top-menu-solution .linkCotent {
+      position: absolute;
+      top: 54px;
+      left: -14px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: none;
+  }
+  .top-menu-solution:hover .linkCotent {
+      display: block;
+  }
+  .top-menu-solution .buildingLinks,.top-menu-solution .equipmentLinks {
+      height: 270px;
+  }
+  .top-menu-solution .compositeLinks {
+      height: 270px;
+  }
+
+  .w_grid_div{
+	width:100%;
+	height:auto;
+	background-color:#1F232A;
+}
+.info-tell{
+	width:950px;
+	padding-top: 25px;
+	height: auto;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.info-tell p{
+	font-size: 15px;
+	color:#FFFFFF;
+	letter-spacing: 0;
+	line-height: 45px;
+}
+.bqxx{
+	width:1440px;
+	height:52px;
+	line-height:52px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	margin:0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: 0;
+}
+</style>
+<!--
+<script>
+  (function () {
+    function getCookie(name) {
+        var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+        if (arr != null) {
+            return (arr[2]);
+        }
+    }
+
+    window.__createA = function () {
+      var html = [];
+      if (location.host.indexOf('cli.me') > -1) {
+        html.push('<a href="//user.cli.im" class="newfirst mycode" data="manage" data-type="manage" onclick="StatisticsData(120,1)">我的二维码</a>');
+      } else {
+        html.push('<a href="//console.cli.im/center" class="newfirst mycode" data="manage" data-type="manage" onclick="StatisticsData(120,1)">我的二维码</a>');
+      }
+      document.write(html.join(''));
+    };
+  })();
+</script>
+-->
+
+<header class="fix">
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
+    <a href="/" class="logo fl">&nbsp;</a>
+    <div class="navbar">
+        <ul class="menu" style="color:#000;">
+            <li>
+				<a class="a2" href="index.html">首页</a>
+			</li>
+            <li class="active">
+				<a class="a2" href="solutionCommodity.html">案例模板</a>
+			</li>
+			<li>
+				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+			</li>
+            <li class="list">
+				<a class="a2" href="price.html">定制价格</a>
+            </li>
+			<li class="list">
+				<a class="a2" href="help.html">帮助</a>
+			</li>
+        </ul>
+		<div class="nav_button">
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<!--
+			<a class="kf-open registered but"><span>申请试用</span></a>
+			-->
+		</div>
+    </div>
+</div>
+</header>
+<nav class="topnav">
+    <div class="topnav-layer">
+        <div class="topnav-menu">
+            <div class="topnav-menu-col" id="topnavToggle">
+                <div class="topnav-rotate-top"><span></span></div>
+                <div class="topnav-rotate-middle"><span></span></div>
+                <div class="topnav-rotate-bottom"><span></span></div>
+            </div>
+        </div>
+        <div class="topnav-logo"><a href="/"></a></div>
+        <div class="topnav-reg"><a href="/login">登录</a></div>
+    </div>
+    <div class="menu-list">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/qrcode/function">功能</a></li>
+            <li>
+                <a href="/qrcode/solution">解决方案</a>
+                <p><a href="/qrcode/solution">一站式</a></p>
+                <p><a href="/qrcode/solution/traceback.html">防伪追溯</a></p>
+                <p><a href="/qrcode/solution/inspect.html">设备巡检</a></p>
+                <p><a href="/qrcode/solution/record.html">周期记录</a></p>
+            </li>
+            <li>
+				<a href="/qrcode/case">案例展示</a>
+				<p><a href="https://qrcode.pro/q/?c=16666661150000000129000008000004">农药追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000128000009000000">种子追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000003000041000000">化肥追溯</a></p>
+				<p><a href="/qrcode/case">更多案例</a></p>
+			</li>
+            <li>
+				<a href="/help/faq/information/">资讯帮助</a>
+				<p><a href="/help/faq/problem/">常识问答</a></p>
+				<p><a href="/help/faq/information/">行业资讯</a></p>
+				<p><a href="/help/faq/help/">帮助文档</a></p>
+				<p><a href="/qrcode/about/">关于我们</a></p>
+			</li>
+			<li><a href="/tools/qrcode/">二维码生成器</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="clearfix"></div>
+<input type="hidden" id="STATICURL" value="//static.clewm.net/cli"><script>
+  $('.top-menu-solution').mouseenter(function() {
+    StatisticsData(115, 1);
+  });
+  //数据统计
+  function StatisticsData(fir,sec){
+    $.ajax({
+      async: true,
+      type: "get",
+      url: '/Api/ClickLog/click',
+      data: {
+          'fir': fir,
+          'sec': sec
+      },
+      dataType: 'jsonp',
+      jsonp: 'callback',
+      success: function(ret) {
+      }
+    });
+  }
+</script>
+<link rel="stylesheet" href="qlqrcode_files/static/css/active_scene_detail_28496d8.css">
+<script type="text/javascript" src="qlqrcode_files/cli/js/iscroll.js"></script>
+<script type="text/javascript" src="qlqrcode_files/static/js/navbarscroll_3720457.js"></script>
+<script src='qlqrcode_files/cli/js/socket.io.js'></script>
+<script>
+var account='';
+var head_status = '1';
+var sceneId = '1381';
+var sceneTitle = '商品标签';
+var SOCKETAPISURL = 'https://socket.api.cli.im';
+</script>
+<div class="wrapper p-b-lg" style='background-color: #ffffff;'>
+	<div class="mobile-logo-show mobile-to-pc">
+	   电脑网页登陆麒麟官网cli.im，注册账号即可制作二维码。
+	   <span mobile-pc-close class="mobile-pc-close">×</span>
+	</div>
+	<div class="case-detail-content">
+	   <div class="mobile-logo mobile-logo-show">
+		 <a href="//cli.im" class="logo"></a>
+	   </div>
+	</div>
+	<div class="case-detail-box">
+		<div class="case-detail-box-auto">
+			<div class="case-detail-content-top-box">
+			  <div class="show-detail-info clearfix">
+				  <div class="detail-content" id="detail-content">
+				  
+				  </div>
+			  </div>
+			</div>
+			<div class="case-detail-content p-b-lg">
+				<link rel="stylesheet" href="qlqrcode_files/static/css/include-active-scene-detail-wp_67cae2f.css">
+				<link rel="stylesheet" href="qlqrcode_files/static/css/include-format-wp_8eb94db.css">
+				<link rel="stylesheet" href="qlqrcode_files/static/css/lity.min_f0e73ac.css">
+				<link rel="stylesheet" href="qlqrcode_files/static/css/include-comment-list_8281bf2.css">
+				<link rel="stylesheet" href="qlqrcode_files/static/css/comments-discuss_bf6a89f.css">
+				<script type="text/javascript" src="qlqrcode_files/static/js/wp-help-tab-scene_ca03d3f.js"></script>
+				<style type="text/css">
+					.lity-content {
+						transform: scale(1.2);
+						max-width: 96%;
+					}
+				</style>
+				<script type="text/javascript" src="qlqrcode_files/static/js/lity.min_287ddc3.js"></script>
+				<script type="text/javascript">
+					var industry_id = '1';
+				  </script>
+				  <script type="text/javascript">
+				  var file_size = "" || 2;
+				</script>
+			<div>
+			<div class="wordpress-article">
+				<div id="wordpress_article_box" class="wordpress-article-box inline">
+					<div id="wait_now" class="wait-now" style="display: none;">
+						<img src="qlqrcode_files/cli/images/cli-loading@2x.gif">
+					</div>
+					<div id="wordpress_article_info_box" class="wordpress_article_info_box wordpress_article_info_box-first">
+					
+					
+						
+						
+						
+					</div>
+				
+					<div id="wordpress_article_info_box_sec" class="wordpress_article_info_box comment-box">
+						<script type="text/javascript">
+						var file_size = "" || 2;
+						var topic_id = "985";
+						Date.prototype.format = function(fmt) {
+						 var o = {
+						"M+" : this.getMonth()+1,                 //月份
+						"d+" : this.getDate(),                    //日
+						"h+" : this.getHours(),                   //小时
+						"m+" : this.getMinutes(),                 //分
+						"s+" : this.getSeconds(),                 //秒
+						"q+" : Math.floor((this.getMonth()+3)/3), //季度
+						"S"  : this.getMilliseconds()             //毫秒
+						};
+						if(/(y+)/.test(fmt)) {
+						fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+						}
+						 for(var k in o) {
+						if(new RegExp("("+ k +")").test(fmt)){
+						 fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+						 }
+						 }
+						return fmt;
+						}
+						</script>
+						<div>
+							<link rel="stylesheet" href="qlqrcode_files/static/css/include-comment-list_8281bf2.css">
+							<input id="topicId" type="hidden" value="985">
+							<input id="isAdmin" type="hidden" value="">
+							<input id="hasError" type="hidden" value="">
+							<div class="comments-wrapper mobile-comments-wrapper" comments-wrapper>
+								<div style="overflow: hidden;margin-bottom: 10px;">
+									<div class="left-box" style="display: inline-block;float: left;margin-top: 2px;font-size: 16px;font-weight: bold;">
+										讨论区
+									</div>
+									<div style="display: inline-block;float: right;">
+										<div class="btn btn-outline b-green text-green wantAsk" id="wantAsk" style="height: 28px; font-size: 12px; line-height: 12px; display: inline-block;">
+											我要提问
+										</div>
+									</div>
+								</div>
+								<div class="comments-header clearfix comments-header-new">
+									<div class="comments-stats">
+										<a query-code-string class="active" href="?">全部</a>
+									</div>
+									<div class="comments-col"></div>
+								</div>
+								<div class="text-xs text-grey p-b-lg p-t-lg text-center comment-empty">
+									暂无讨论
+								</div>
+							</div>
+							<script src="qlqrcode_files/static/js/include-comment-list_2fc3a27.js"></script>
+							<link rel="stylesheet" href="qlqrcode_files/static/css/comments-discuss_bf6a89f.css">
+							<style type="text/css">
+							#wechat-area {
+							  position: relative;
+							  height: 100px;
+							}
+							
+							#wechat-qr {
+							  width: 100px;
+							  height: 100px;
+							  vertical-align: bottom;
+							}
+							
+							.logo-in-qrcode {
+							  position: absolute;
+							  left: 40px;
+							  top: 40px;
+							  width: 20px;
+							  height: 20px;
+							}
+							
+							.logo-in-qrcode img {
+								width: 100%;
+								height: 100%;
+							}
+						
+							.scan-success {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100px;
+								height: 100px;
+								background-color: rgba(255,255,255,0.8);
+								text-align: center;
+								line-height: 100px;
+								color: rgba(0, 0, 0, 0.87);
+							}
+							
+							#email {
+							  width: 300px;
+							  border-radius: 4px;
+							}
+							
+							#email.email-new {
+							  margin-left: 176px;
+							}
+							
+							.feedback-box .feedback-label {
+							  font-size: 14px;
+							  color: #777;
+							  width: 95px;
+							  line-height: 38px;
+							  float: left;
+							}
+						
+							.feedback-box .feedback-content-500 {
+							  width: 408px;
+							}
+							
+							.feedback-box .feedback-content {
+							  max-width: 100%;
+							  float: left;
+							}
+							
+							.feedback-box .feedback-content .radio-inline {
+							  color: #666;
+							  margin-top: 10px;
+							}
+							
+							#error-message-discuss {
+							  font-size: 12px;
+							  margin-right: 10px;
+							  position: absolute;
+							  width: 100px;
+							  left: -18px;
+							  top: 40px;
+							}
+						
+							.submit-footer-box {
+							margin-top: 5px;
+							position: absolute;
+							top: 45px;
+							}
+							
+							.submit-footer-btn {
+								height: 28px;
+								font-size: 12px;
+								float: right;
+								line-height: 14px;
+								width: 72px;
+								letter-spacing: 2px;
+							}
+							</style>
+							<div class="mobile-discuss-box">
+								<div id="CommentsBox"></div>
+								<div id="feedback-box-scene-detail" class="feedback-item clearfix feedback-box none" style="position: relative;">
+									  <div class="feedback-label">
+										 <span class="text-danger">*</span> 
+										 回复方式
+									  </div>
+									  <div class="feedback-content feedback-content-500">
+										  <div>
+											  <label class="radio-inline">
+												<input type="radio" name="receiveMethod" id="receiveWechat" value="wechat"> 微信快捷接收（推荐）
+											  </label>
+											  <label class="radio-inline">
+												<input type="radio" name="receiveMethod" id="receiveEmail" value="email"> 邮箱接收
+											  </label>
+										  </div>
+										  <div class="none m-t" id="email-area">
+											<input id="email" name="email" class="form-control text-xs" placeholder="我们将以邮件形式答复你" type="text" value="">
+										  </div>
+										  <div class="none m-t text-darkgrey" id="wechat-area">
+											  <img alt="" src="" id="wechat-qr" class="m-r" />
+											  <div class="logo-in-qrcode">
+												<img src="qlqrcode_files/images/2017/10/logo-in-qrcode@2x.png">
+											  </div>
+											  <div class="scan-success none">
+												<i class="fa fa-check text-green"></i> 已关注
+											  </div>
+										  </div>
+									  </div>
+									  <div class="submit-footer-box">
+										  <span class="m-l text-danger none" id="error-message-discuss"></span>
+										  <button id="submit-footer-btn" class="btn green submit-footer-btn" data-loading-text="提交中">提交</button>
+									  </div>
+								</div>
+							</div>
+							<div id="modal-alert" class="modal fade" data-backdrop="true">
+							  <div class="modal-dialog">
+								  <div class="modal-content">
+									  <div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">
+											  <span aria-hidden="true">×</span>
+											  <span class="sr-only">Close</span>
+										  </button>
+										  <h4 class="modal-title"></h4>
+									  </div>
+									  <div class="modal-body p-a-lg"></div>
+								  </div>
+							  </div>
+							</div>
+							<script type="text/javascript">
+							function commentSingleTpl(id, username, add_time, content, imgTpl, fileTpl, actionTpl) {
+							return '<div class="comment-single" id="comment-'+id+'" data-id="'+id+'" data-name="'+username+'">'+
+							'<div class="comment-header">'+
+							username + '<span class="comment-time">'+add_time+'</span>'+
+							'</div>'+
+							'<div class="comment-content">'+
+							'<p>'+content+'</p>'+
+							imgTpl+
+							fileTpl+
+							'</div>'+
+							actionTpl+
+							'<div id="reply-box-'+id+'"></div>'+
+							'</div>';
+							}
+							
+							function tplImg(path) {
+							return '<img src="'+path+'?x-oss-process=image/resize,m_mfit,h_150,w_150" data-lity data-lity-target="'+path+'" alt="" class="comment-image img-zoomable"/>';
+							}
+							
+							function tplFile(path, name) {
+							return '<div class="comment-file"><a href="' + path + '">'+
+							'<i class="fa fa-paperclip"></i>' + name +
+							 '</a></div>';
+							}
+							
+							function submitFirstData(res, file_data, is_admin) {
+							if (res.status == 1) {
+							var tplImgArr = file_data.img_lists.map(function(item) {
+							return tplImg(item.path);
+							}).join('\n');
+							
+							var tplFileArr = file_data.file_lists.map(function(item) {
+							return tplFile(item.path, item.name);
+							}).join('\n');
+							
+							var tplImgs = file_data.img_lists.length
+							? '<div class="comment-images">' + tplImgArr + '</div>'
+							: '';
+							var tplFiles = file_data.file_lists.length
+							? '<div class="comment-files">' + tplFileArr + '</div>'
+							: '';
+							var actionDom = is_admin == 1
+							? '<div class="comment-action">'+
+							'<a href="javascript:;" class="text-grey">通过</a>'+
+							'<a href="javascript:;" data-type="reply" class="text-blue">回复</a>'+
+							'<a href="javascript:;" data-type="setTop" class="text-blue">置顶</a>'+
+							'<a href="javascript:;" data-type="delete" class="text-blue">删除</a>'+
+							'</div>'
+							: '<div class="comment-action">'+
+							'<a href="javascript:;" data-type="reply" class="text-blue">回复</a>'+
+							'</div>';
+							
+							// var now_date = new Date().format('MM-dd hh:mm');
+							var now_date = '刚刚';
+							
+							var commentSingleDom = commentSingleTpl(
+							res.data.comment_id,
+							account + '（我）',
+							now_date,
+							file_data.content,
+							tplImgs,
+							tplFiles,
+							actionDom
+							);
+							
+							if ($('.comment-empty').length) {
+							$('.comment-empty').remove();
+							$('.comments-wrapper').append(commentSingleDom);
+							} else {
+							$('.comment-list').prepend(commentSingleDom);
+							}
+							
+							$('html, body').animate({
+								  scrollTop: $('#comment-'+res.data.comment_id).offset().top - 102
+								}, 400);
+							
+							// 清空数据
+							$('.text-content').val('');
+							$('[img-box]').find('#wait').hide();
+							$('[file-tag]').remove();
+							$('[uploading-file]').hide();
+								// var count = $('.comment-count')[0].innerHTML;
+								// $('.comment-count').text(Number(count) + 1);
+								new_first_file_upload = false;
+							} else {
+							alert('发布失败');
+							}
+							}
+							
+								var utilsFun = {
+								getUrlPara: function (name) {
+									var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+									var r = window.location.search.substr(1).match(reg);
+									if (r != null) return unescape(r[2]);
+									return 0;
+								},
+								isCaseDetail: function () {
+								var _href = window.location.href;
+									
+									return _href.indexOf('case/detail') > -1;
+								},
+								isUrlHasQue: function() {
+								var _href = window.location.href;
+									return _href.indexOf('?') > -1;
+								}
+								}
+							
+							
+								if ((utilsFun.getUrlPara('page') || utilsFun.getUrlPara('type') || utilsFun.isUrlHasQue()) && utilsFun.isCaseDetail) {
+								$('html, body').animate({
+								  scrollTop: $('#wordpress_article_info_box_sec').length > 0 ? $('#wordpress_article_info_box_sec').offset().top - 40 : 0
+								}, 0);
+								}
+							
+							$(function(){
+							  var IS_ADMIN = Number($('#isAdmin').val()) || 0;
+							
+							  if (utilsFun.isCaseDetail()) {
+							  new commentsBox({
+							'el' : 'CommentsBox', // 要添加的进去的div标签，默认是id。
+							'cancel' : false,// 默认关闭
+							'placeholderContent' : ' 您在使用中有什么疑问，问一问有经验的人吧', // textarea默认的文字，暂时不支持
+							'marginTop' : '24px', // 评论框距离上面的div的距离
+							'pid': 0, // 上一级评论的id
+							'topic_id': topic_id, // 后端assign过来
+							'pid_from': 'footer',
+							submitSuccess: function(res, file_data, pid) {
+							StatisticsData(141,25);
+							$('[submit-btn], #submit-footer-btn').button('reset');
+							submitFirstData(res, file_data, isAdmin);
+							},
+							submitFail: function() {
+							alert('发布失败');
+							}
+							});
+							
+							$('#feedback-box-scene-detail').removeClass('none');
+							  }
+							
+							// 有没有关注公众号
+								var is_subscribed = false;
+							
+								// 回复类型
+								var submitType = '';
+							
+								function getWechatImage() {
+									$.ajax({
+									  type: 'GET',
+									  url: '//' + USER_DOMAIN + '/api/ask/isSubscribed',
+									  dataType: 'json',
+									  xhrFields: {
+										withCredentials: true
+									  },
+									  success: function(res) {
+										$('#wechat-qr').attr('src', res.data.qrcode_img);
+										is_subscribed = res.data.is_subscribed;
+										if (res.data.is_subscribed) {
+										  $('#wechat-area').addClass('none');
+										  $('.submit-footer-box').css('top', '45px');
+										} else {
+										  $('#wechat-area').removeClass('none');
+										  $('.submit-footer-box').css('top', '150px');
+										}
+										if (res.data.ssid && !res.data.is_subscribed) {
+										  if (socket.io) {
+											socket.io.disconnect(true);
+										  }
+										  _initWbSocket(res.data.ssid, 'weixin_ask_msg', function(message_obj) {
+											var status = Number(message_obj.status);
+											if (status == 1) {
+											  StatisticsData(141, 41);
+											  is_subscribed = true;
+											  $('.scan-success').removeClass('none');
+											} else {
+											  StatisticsData(141, 42);
+											  var error_msg = message_obj.errmsg;
+											  alert(error_msg);
+											}
+										  });
+										}
+									  },
+									  error: function() {
+										alert('加载失败');
+									  }
+									});
+								}
+							
+								
+								var socket = new Object();
+								  // 初始化websocket
+								function _initWbSocket(ssid, msg_name, callback) {
+									if (!socket.io) {
+									  //连接服务端
+									  socket.io = io(SOCKETAPISURL, {
+										'force new connection': true
+									  });
+									} else {
+									  if (!socket.io.connected) {
+										socket.io.connect();
+									  }
+									}
+									//socket连接后以uid登录
+									socket.io.on('connect', function() {
+									  socket.io.emit('login', 'weixin_ask_' + ssid);
+									});
+									//后端推送来消息时
+									socket.io.on(msg_name, function(req) {
+									  if (isJson(req)) {
+										req = JSON.parse(req);
+									  }
+									  callback(req);
+									});
+								}
+							
+								
+								function isJson(str) {
+									if (typeof str == 'string') {
+									  try {
+										JSON.parse(str);
+										return true;
+									  } catch (e) {
+										return false;
+									  }
+									}
+								}
+							
+								$('input[type=radio][name="receiveMethod"]').change(function() {
+									switch (this.value) {
+									  case 'wechat':
+										submitType = 'wechat';
+										if (!$('#wechat-qr').attr('src')) {
+										  $('#email-area').addClass('none');
+										  getWechatImage();
+										} else {
+										  $('#wechat-area').removeClass('none');
+										  $('#email-area').addClass('none');
+										  $('.submit-footer-box').css('top', '150px');
+										}
+										$('#feedback-modal-tips-text').text('我们会通过「麒麟二维码」公众号回复，请留意消息通知');
+										break;
+									  case 'email':
+										submitType = 'email';
+										$('#wechat-area').addClass('none');
+										$('#email-area').removeClass('none');
+										$('#feedback-modal-tips-text').text('我们会在工作时间通过邮件回复');
+										$('.submit-footer-box').css('top', '92px');
+										break;
+									  default:
+										break;
+									}
+								});
+							
+								function showError(msg) {
+									$('#error-message-discuss')
+									.text(msg)
+									.fadeIn()
+									.delay(2000)
+									.fadeOut();
+								}
+							
+								$(document).on('click', '#submit-footer-btn', function(e) {
+								StatisticsData(141,22);
+							
+								if (!submitType) {
+									  showError('请选择回复方式');
+									  return false;
+									}
+									if (submitType === 'wechat' && !is_subscribed) {
+									  showError('请先关注公众号');
+									  return false;
+									}
+							
+									if ($('#text-content').val() == '') {
+									  showError('内容不许为空');
+									  return false;
+									}
+							
+									var ct_email = $("#email").val();
+									var reg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/; //判断用户是不是输入正确的邮箱\
+							
+									if (submitType === 'email' && !reg.test(ct_email)) {
+									  showError('请输入正确邮箱');
+									  return false;
+									}
+							
+									$(this).button('loading');
+							
+									$(this).parents('.mobile-discuss-box').find('[submit-btn][data-pid="0"]').click();
+							})
+							
+							$(document).on('click', '#wantAsk', function(e) {
+							StatisticsData(141, 21);
+							if ($('[submit_box_id=0]').length > 0) {
+										$('html, body').animate({
+										  scrollTop: $('[submit_box_id=0]').offset().top - 62
+										}, 400);
+									}
+							})
+							})
+							
+							$('#modal-alert').on('hidden.bs.modal', function () {
+							  // 执行一些动作...
+							  var pid = $(this).find('.modal-body').attr('data-pid');
+							  $(this).parent().parent().parent().find('[filedatacode-test]').replaceWith('<input type="file" filedatacode-test class="btn uploadfile annex-btn-input" uptype="files" name="Filedata" data-pid='+ pid +'>');
+							
+							  $('[submit_box_id='+ pid +']').find('.text-content').focus();
+							  $('[submit_box_id='+ pid +']').find('.wait').hide();
+							  $('[submit_box_id='+ pid +']').find('[uploading-file]').hide();
+							  pd = false;
+							  new_first_file_upload = false;
+							})
+							
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="qlqrcode_files/static/js/include-article-scene-tab-box_b8d2d9e.js"></script>
+		<script type="text/javascript" src="qlqrcode_files/static/js/comments-discuss_10b89cc.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(document).on('lity:ready', function(event, instance) {
+					var lity_img_width = $('.lity-content img').width();
+					var lity_img_height = $('.lity-content img').height();
+					var window_width = $(window).width();
+					var window_height = $(window).height();
+		
+					if (lity_img_width * 1.2 > window_width) {
+						$('.lity-content').css('max-width', '80%');
+					}
+		
+					if (lity_img_height * 1.2 > window_height) {
+						$('.lity-content').css('max-width', '80%');
+					}
+				});
+		
+			})
+		</script>
+	</div>
+</div>
+<div class="create-contact-box">
+<div class="contact inline contact-mobile" style="display: inline-block;">
+<link rel="stylesheet" href="qlqrcode_files/static/css/include-scene-create-code_dd7b805.css">
+<script type="text/javascript">
+    var isUrl = 2;
+    var file_size = "" || 2;
+</script>
+<script type="text/javascript" src="qlqrcode_files/cli/js/comments-upload.js?v=20190430_1"></script>
+<script type="text/javascript" src="qlqrcode_files/cli/js/upload-comments.js?v=20190430_1"></script>
+<input class="industry" type="hidden" value="2">
+<input id="case" type="hidden" value="14">
+<div class="create-code-tpl-box leftClass" id="leftBox">
+	<div class="quick-create-tpl">
+		<div class="create-item-box">
+			<h3 class="quick-create-tpl-name">使用案例模板，快速新建</h3>
+			<ul class="create-tpl-item-ul" id="create-tpl-item-ul">
+				
+				
+				
+				
+			</ul>
+		</div>
+	</div>
+	<a style="display: none!important;" href="//cli.im/news/41954" target="_blank" class="call_for_papers" call_for_papers>
+	  <div class="call_for_papers_desc">
+		我们向你征集此场景的制码经验和应用案例，欢迎投稿。
+	  </div>
+	  <i class="fa fa-angle-right"></i>
+	</a>
+	<div id="return-top-box" class="return-top-box visibilityNone">
+		<div id="return-top-arrow" class="return-top-arrow none"></div>
+		<div id="return-top-info" class="return-top-info none">回到顶部</div>
+		<i class="fa fa-angle-up"></i>
+	</div>
+</div>
+<script src="qlqrcode_files/cli/js/solution_free.js?v=20190522"></script>
+<script>
+    $('[use-quickly-machine]').click(function() {
+        var api_host = '',
+            STATIC_SERVICE = '',
+            now_host = window.location.host;
+            if (now_host.indexOf('cli.me') != -1) {
+                api_host = 'cli.me';
+                STATIC_SERVICE = 'static.cli.me/cli'; //测试--本地
+            } else if (now_host.indexOf('cliim.net') != -1) {
+                api_host = 'cliim.net';
+                STATIC_SERVICE = 'static-develop.clewm.net/cli'; //测试--net
+            } else if (now_host.indexOf('cliim.com') !== -1) {
+                api_host = 'cliim.com';
+                STATIC_SERVICE = 'static-test.clewm.net/cli'; //测试--com
+            } else {
+                api_host = 'cli.im';
+                STATIC_SERVICE = 'static.clewm.net/cli';
+            }
+        if (account == false) { //未登录
+            seajs.use('//'+STATIC_SERVICE+'/js/login_plugin.js?v=20190610', function(cli) {
+                // change_type 为 13
+                cli.login_plugin('join', 12); // 带提示的登录
+            });
+        } else { //已登陆
+            //1，判断有没有到期，显示相应的弹窗 2，如果是完善信息的话，请求数据的借口 3，完成
+            
+            $.ajax({
+                type: "get",
+                url: '//user.' + api_host + '/api/index/get_probation_info',
+                dataType: "jsonp",
+                async: false,
+                success: function(ret) {
+                    var is_test = ret.is_test;
+                    if (is_test == 0) {
+                        //判断是否完善过信息  is_full=1表示已完善过信息
+                        $.ajax({
+                            type: "get",
+                            url: '//user.' + api_host + '/api/index/get_biz_info',
+                            dataType: "jsonp",
+                            success: function(ret) {
+                                var is_full = ret.is_full;
+                                if (is_full == 1 && ret.industry.id == $('input.industry').val()) {
+                                    openSolution();
+                                } else {
+                                  var industryId = $('input.industry').val();
+                                  var caseId = $('input#case').val();
+                                  window.location.href = '//'+ api_host +'/solution/index/free_trial?industry='+industryId + '&case=' + caseId;
+                                  // 弹出完善信息的框
+                                  // buildInfo.add_build_box_common('logined');
+                                }
+                            }
+                        });
+                    } else if (is_test == 1 || is_test == 2) {
+                        window.location.href = '//biz.'+ api_host +'/product';
+                    } else if (is_test == 3) {
+                        ViewFreeDialogInfo('ExpiredFreeFront');
+                    }
+                }
+            });
+
+        }
+    });
+</script><script type="text/javascript">
+    $(function(){
+        var tab_nav = $('#tab-nav');
+
+        // console.log(tab_nav);
+
+        var tab_comments = tab_nav.find('[tab-path=comment]');
+
+        if (tab_comments.length > 0) {
+            $('.toQuertion').removeClass('none').css('display', 'inline-block');
+        }
+    })
+
+	function goAddModule(o){
+		var dataId=$(o).attr("data-id");
+		switch(dataId){
+		case "3194":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine";
+		break;
+		case "3209":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=whiteWine";
+		break;
+		case "3210":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=homeTextiles";
+		break;
+		case "3211":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=artwork";
+		break;
+		case "3192":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=dmtzl";
+		break;
+		case "3190":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=productExplain";
+		break;
+		case "3195":
+			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg";
+		break;
+		}
+	}
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="modal-alert-mobile" class="modal fade" data-backdrop="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"></button>
+			</div>
+			<div class="modal-body">
+				<div class="img-box"></div>
+				请电脑登录麒麟进行建码
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modal-alert" class="modal fade" data-backdrop="true">
+  <div class="modal-dialog">
+	  <div class="modal-content">
+		  <div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">
+				  <span aria-hidden="true">×</span>
+				  <span class="sr-only">Close</span>
+			  </button>
+			  <h4 class="modal-title"></h4>
+		  </div>
+		  <div class="modal-body p-a-lg"></div>
+	  </div>
+  </div>
+</div>
+<div class="preview_doc_show none">
+  <div class="preview_doc_show_main">
+	<img alt="">
+  </div>
+  <button class="close preview_doc_show_close" type="button">
+	  <span aria-hidden="true">×</span>
+	  <span class="sr-only">关闭</span>
+  </button>
+  <div class="preview_doc_show_loading">
+	  <i class="fa fa-spinner fa-spin" style="font-size: 36px"></i>
+	  <br>
+	  <br>
+	  <p>加载中...</p>
+  </div>
+  <div class="preview_doc_show_bottom">
+  	<!--
+	<a [wrap-click-item] create-tpl-item class="preview_doc_show_use btn btn-lg green b-green" data-loading-text="正在生成...">立即使用</a>
+	-->
+	<a [wrap-click-item] class="preview_doc_show_use btn btn-lg green b-green" data-loading-text="正在生成..." onclick="goAddModule(this);">立即使用</a>
+  </div>
+</div>
+<script src="qlqrcode_files/cli/js/lib/plug/jceb.msgtip.js"></script>
+<script type="text/javascript" src="qlqrcode_files/static/js/create_code_plugins_c2cca83.js"></script>
+<script src="qlqrcode_files/static/js/active_scene_detail_bb05f76.js"></script>
+<div class="scene_footer">
+	<p>?2011-2019 Cli.im 宁波邻家网络科技有限公司<br>浙ICP备12002384号-4</p>
+</div>
+
+	  <div class="b-t-light scene_tip">
+	  <script type="text/javascript" src="qlqrcode_files/cli/js/qqserver_clicklog-jq1.9.1.js"></script>
+	  <!--
+	  <link rel="stylesheet" href="qlqrcode_files/static/css/cli_footer_new_7148ff6.css">
+	  -->
+	  <link rel="stylesheet" href="qlqrcode_files/cli_footer_new_7148ff6.css">
+	  
+
+	  <!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+	 
+		
+<script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement('script');
+                    hm.src = '//hm.baidu.com/hm.js?cb508e5fef81367bfa47f4ec313bf68c';        
+					var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+        var getCookie = function (name) {
+          var arr = document.cookie.match(new RegExp('(^| )' + name + '=([^;]*)(;|$)'));
+          if (arr == null) {
+            return '';
+          }
+          return unescape(arr[2]);
+        };
+        var cvid = getCookie('cvid');
+        if (!cvid) {
+          var domain = location.hostname.split('.').slice(-2).join('.');
+          hm = document.createElement('script');
+          hm.src = '//user.' + domain + '/api/visitor_analysis/get_cvid';
+          s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(hm, s);
+        }
+      })();
+                  _hmt.push(['_setPag?eTag', '7035', 'odd']);      _hmt.push(['_setVisitTag', '2118', 143638965]);    
+</script>
+<script>
+    $(function(){
+        $('.cli_foot .qq_show').hover(function(e) {
+            $('ul.qq_list').toggle();
+            e.stopPropagation();
+        });
+
+        $('[data-toggle="popover"]')
+            .popover({
+              trigger: 'manual',
+              animation: false,
+            })
+            .on('mouseenter', function () {
+                var _this = this;
+                $('.popover').remove();
+                $(this).popover('show');
+                $('.popover').find('.arrow').addClass('beforeNone');
+                $('.popover').on('mouseleave', function () {
+                    $(_this).popover('hide');
+                });
+            }).on('mouseleave', function () {
+                var _this = this;
+                setTimeout(function () {
+                    if (!$('.popover:hover').length) {
+                        $(_this).popover('hide');
+                    }
+                }, 100);
+            });
+
+              //数据统计
+        function StatisticsData(fir,sec){
+            $.ajax({
+                async: true,
+                type: "get",
+                url: '/Api/ClickLog/click',
+                data: {
+                    'fir': fir,
+                    'sec': sec
+                },
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                success: function(ret) {
+                }
+            });
+        }
+    })
+</script><script>
+(function() {
+    function getCookie(c_name){
+        if (document.cookie.length>0) {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1) {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1)
+                c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
+    }
+    var managerCookie = getCookie('climanager_v2');
+    if (managerCookie) {
+        var info = JSON.parse(unescape(getCookie('climanager_v2')))
+
+        if (info.manager_id == '18' || info.manager_id == '19' || info.manager_id == '20') {
+            $('.foot-open-qq-btn').attr('href', info.contact_link);
+            $('.foot-open-qq-btn').attr('target', '_blank');
+        }
+    }
+    $('.foot-open-qq-btn').on('click', function() {
+        StatisticsData(88,2);
+
+        $.ajax({
+            type: 'POST',
+            url: '//' + USER_DOMAIN + '/api/ask/addAsk',
+            xhrFields: {
+                withCredentials: true
+            }
+        });
+    })
+})();
+</script>
+</body>
+</html>
+<script src="qlqrcode_files/public/cli_analytics.js"></script></div>

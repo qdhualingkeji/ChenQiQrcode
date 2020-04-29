@@ -1,0 +1,416 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/cli/fonts/clicon/clicon.eot?m3yvjp');
+  src:  url('/cli/fonts/clicon/clicon.eot?m3yvjp#iefix') format('embedded-opentype'),
+    url('/cli/fonts/clicon/clicon.ttf?m3yvjp') format('truetype'),
+    url('/cli/fonts/clicon/clicon.woff?m3yvjp') format('woff'),
+    url('/cli/fonts/clicon/clicon.svg?m3yvjp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="clicon-"], [class*=" clicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clicon-computer-camera:before {
+  content: "\e900";
+}
+.clicon-corner-mark-check:before {
+  content: "\e901";
+}
+.clicon-module-imgtxt:before {
+  content: "\e902";
+}
+.clicon-module-rotate-imgs:before {
+  content: "\e903";
+}
+.clicon-module-web-nav:before {
+  content: "\e904";
+}
+.clicon-module-classify:before {
+  content: "\e905";
+}
+.clicon-service-smile-icon:before {
+  content: "\e906";
+}
+.clicon-edit:before {
+  content: "\e907";
+}
+.clicon-activeqr-url:before {
+  content: "\e908";
+}
+.clicon-business-building:before {
+  content: "\e909";
+}
+.clicon-module-file:before {
+  content: "\e90a";
+}
+.clicon-module-music:before {
+  content: "\e90b";
+}
+.clicon-module-video:before {
+  content: "\e90c";
+}
+.clicon-module-interactive:before {
+  content: "\e90d";
+}
+.clicon-module-link:before {
+  content: "\e90e";
+}
+.clicon-module-contact-info:before {
+  content: "\e90f";
+}
+.clicon-module-trace:before {
+  content: "\e910";
+}
+.clicon-module-mobile-massage:before {
+  content: "\e911";
+}
+.clicon-module-collect:before {
+  content: "\e912";
+}
+.clicon-streamline-jewelry:before {
+  content: "\e913";
+}
+.clicon-streamline-database:before {
+  content: "\e914";
+}
+.clicon-streamline-process:before {
+  content: "\e915";
+}
+.clicon-streamline-Qrcode:before {
+  content: "\e916";
+}
+.clicon-module-wechat:before {
+  content: "\e917";
+}
+.clicon-module-share:before {
+  content: "\e918";
+}
+.clicon-module-card:before {
+  content: "\e919";
+}
+.clicon-module-material:before {
+  content: "\e91a";
+}
+.clicon-module-material2:before {
+  content: "\e91b";
+}
+.clicon-module-massage:before {
+  content: "\e91c";
+}
+.clicon-module-custom-settings:before {
+  content: "\e91d";
+}
+.clicon-module-maintain:before {
+  content: "\e91e";
+}
+.clicon-module-info-column:before {
+  content: "\e91f";
+}
+.clicon-module-certification:before {
+  content: "\e920";
+}
+.clicon-eye:before {
+  content: "\e921";
+}
+.clicon-location:before {
+  content: "\e922";
+}
+.clicon-additional-info:before {
+  content: "\e923";
+}
+.clicon-social-info:before {
+  content: "\e924";
+}
+.clicon-code-block:before {
+  content: "\e925";
+}
+.clicon-qr-product-system:before {
+  content: "\e926";
+}
+.clicon-inspection-system:before {
+  content: "\e927";
+}
+.clicon-staff-manage:before {
+  content: "\e928";
+}
+.clicon-certificate-system:before {
+  content: "\e929";
+}
+.clicon-book-system:before {
+  content: "\e92a";
+}
+.clicon-account-manage:before {
+  content: "\e92b";
+}
+.clicon-qr-manage:before {
+  content: "\e92c";
+}
+.clicon-user-o-block:before {
+  content: "\e92d";
+}
+.clicon-personal-description:before {
+  content: "\e92e";
+}
+.clicon-solution:before {
+  content: "\e92f";
+}
+.clicon-polling-qrcode:before {
+  content: "\e930";
+}
+.clicon-market-notebook:before {
+  content: "\e931";
+}
+.clicon-market-shopping-caddie:before {
+  content: "\e932";
+}
+.clicon-market-separating-employee:before {
+  content: "\e933";
+}
+.clicon-market-share:before {
+  content: "\e934";
+}
+.clicon-market-tablet:before {
+  content: "\e935";
+}
+.clicon-market-count:before {
+  content: "\e936";
+}
+.clicon-print:before {
+  content: "\e937";
+}
+.clicon-save:before {
+  content: "\e938";
+}
+.clicon-logocli:before {
+  content: "\e939";
+}
+.clicon-helpcenter:before {
+  content: "\e93a";
+}
+.clicon-id-logo:before {
+  content: "\e93b";
+}
+.clicon-bottomright-corner:before {
+  content: "\e93c";
+}
+.clicon-up-arrow:before {
+  content: "\e93d";
+}
+.clicon-down-arrow:before {
+  content: "\e93e";
+}
+.clicon-module-danzheng:before {
+  content: "\e93f";
+}
+.clicon-delete-circle:before {
+  content: "\e940";
+}
+.clicon-online-pic:before {
+  content: "\e941";
+}
+.clicon-idcode-bell:before {
+  content: "\e942";
+}
+.clicon-idcode-bookmark:before {
+  content: "\e943";
+}
+.clicon-idcode-cog:before {
+  content: "\e944";
+}
+.clicon-idcode-commenting:before {
+  content: "\e945";
+}
+.clicon-idcode-dingding:before {
+  content: "\e946";
+}
+.clicon-idcode-enterprise-weixin:before {
+  content: "\e947";
+}
+.clicon-idcode-entrance:before {
+  content: "\e948";
+}
+.clicon-idcode-envelope:before {
+  content: "\e949";
+}
+.clicon-idcode-explore:before {
+  content: "\e94a";
+}
+.clicon-idcode-facebook-official:before {
+  content: "\e94b";
+}
+.clicon-idcode-google-plus-square:before {
+  content: "\e94c";
+}
+.clicon-idcode-heart:before {
+  content: "\e94d";
+}
+.clicon-idcode-home:before {
+  content: "\e94e";
+}
+.clicon-idcode-hourglass:before {
+  content: "\e94f";
+}
+.clicon-idcode-linkedin:before {
+  content: "\e950";
+}
+.clicon-idcode-location-arrow:before {
+  content: "\e951";
+}
+.clicon-idcode-map-marker:before {
+  content: "\e952";
+}
+.clicon-idcode-map:before {
+  content: "\e953";
+}
+.clicon-idcode-mobile-phone:before {
+  content: "\e954";
+}
+.clicon-idcode-mortar-board:before {
+  content: "\e955";
+}
+.clicon-idcode-people-number:before {
+  content: "\e956";
+}
+.clicon-idcode-phone:before {
+  content: "\e957";
+}
+.clicon-idcode-pinterest:before {
+  content: "\e958";
+}
+.clicon-idcode-plane:before {
+  content: "\e959";
+}
+.clicon-idcode-puzzle-piece:before {
+  content: "\e95a";
+}
+.clicon-idcode-qq:before {
+  content: "\e95b";
+}
+.clicon-idcode-rocket:before {
+  content: "\e95c";
+}
+.clicon-idcode-rss:before {
+  content: "\e95d";
+}
+.clicon-idcode-send:before {
+  content: "\e95e";
+}
+.clicon-idcode-special-plane:before {
+  content: "\e95f";
+}
+.clicon-idcode-star:before {
+  content: "\e960";
+}
+.clicon-idcode-tag:before {
+  content: "\e961";
+}
+.clicon-idcode-taobao:before {
+  content: "\e962";
+}
+.clicon-idcode-tencent-weibo:before {
+  content: "\e963";
+}
+.clicon-idcode-tie:before {
+  content: "\e964";
+}
+.clicon-idcode-trophy:before {
+  content: "\e965";
+}
+.clicon-idcode-twitter:before {
+  content: "\e966";
+}
+.clicon-idcode-users:before {
+  content: "\e967";
+}
+.clicon-idcode-wechat:before {
+  content: "\e968";
+}
+.clicon-idcode-weibo:before {
+  content: "\e969";
+}
+.clicon-excel:before {
+  content: "\e96a";
+}
+.clicon-right-arrow:before {
+  content: "\e96b";
+}
+.clicon-people:before {
+  content: "\e96c";
+}
+.clicon-management:before {
+  content: "\e96d";
+}
+.clicon-location2:before {
+  content: "\e96e";
+}
+.clicon-Initial-setup:before {
+  content: "\e96f";
+}
+.clicon-release:before {
+  content: "\e970";
+}
+.clicon-nav-general:before {
+  content: "\e971";
+}
+.clicon-nav-static-code:before {
+  content: "\e972";
+}
+.clicon-nav-qrcode:before {
+  content: "\e973";
+}
+.clicon-nav-senior-qrcode:before {
+  content: "\e974";
+}
+.clicon-nav-set:before {
+  content: "\e975";
+}
+.clicon-nav-solution:before {
+  content: "\e976";
+}
+.clicon-text-code:before {
+  content: "\e977";
+}
+.clicon-playlist-add:before {
+  content: "\e978";
+}
+.clicon-list-check:before {
+  content: "\e979";
+}
+.clicon-add:before {
+  content: "\e97a";
+}
+.clicon-help-outline:before {
+  content: "\e97b";
+}
+.clicon-update-log:before {
+  content: "\e97c";
+}
+.clicon-access-alarm:before {
+  content: "\e97d";
+}
+.clicon-nc-qrcode:before {
+  content: "\e97e";
+}
+.clicon-nav-company:before {
+  content: "\e97f";
+}
+.clicon-fontcolor:before {
+  content: "\e980";
+}
+.clicon-nav-history:before {
+  content: "\e981";
+}

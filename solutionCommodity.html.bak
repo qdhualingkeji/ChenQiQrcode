@@ -367,7 +367,7 @@ var _hmt = _hmt || [];
 			<div class="goods-case-box">
 				<ul class="good-case-ul">
 					<li class="good-scene-item">
-						<a href="http://qlcode.qdhualing.com/detail.htm?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
+						<a href="detail.html?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
 							<div class="img-box img-pic-one"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">商品展示二维码</h3>
@@ -383,7 +383,7 @@ var _hmt = _hmt || [];
 						</a>
 					</li>
 					<li class="good-scene-item" style="margin-left: 20px;">
-						<a href="http://qlcode.qdhualing.com/detail.htm?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
+						<a href="detail.html?id=1381" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="21">
 							<div class="img-box img-pic-two"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">积分兑换奖品二维码</h3>
@@ -399,7 +399,7 @@ var _hmt = _hmt || [];
 						</a>
 					</li>
 					<li class="good-scene-item" style="margin-top: 64px;">
-						<a href="http://qlcode.qdhualing.com/detail.htm?id=1380" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="22">
+						<a href="detail.html?id=1380" target="_blank" class="good-scene-item-href" statisticanalyze="" sec-data="22">
 							<div class="img-box img-pic-three"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">多媒体资料二维码</h3>
@@ -451,7 +451,7 @@ var _hmt = _hmt || [];
 							<div class="img-box img-pic-six"></div>
 							<div class="goods-info-box">
 								<h3 class="goods-item-title">家纺二维码</h3>
-								<p class="goods-item-desc" style="height:54px;">扫码即可查看家纺产品的环保信<br>息、价格视频等，助力家纺行业进<br>入多媒体销售新时代</p>
+								<p class="goods-item-desc" style="height:54px;">扫码即可查看家纺产品的环保信息<br>、价格视频等，助力家纺行业进<br>入多媒体销售新时代</p>
 								<div class="goods-item-link-box">
 									<div class="pointer goods-user-scene inline">
 										<p class="inline text-blue get-user-needs text-xs vermidd">应用教程</p>

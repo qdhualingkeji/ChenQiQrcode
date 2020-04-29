@@ -1,0 +1,340 @@
+/*
+  cli通用样式表
+  基于bootstrap和flatkit
+*/
+
+/* CSS初始化 */
+  html,body {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+  ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p{
+    margin:0;
+    padding:0;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  ul, li{
+    list-style:none outside none;
+  }
+
+  .wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .w-1000{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .w-p100 { width: 100%; }
+  .w-p50 { width: 50%; }
+  .w-p33 { width: 33.33333333%; }
+  .w-p20 { width: 20%;}
+
+  @media only screen and (max-width: 991px) {
+    .w-1000 {
+      width: 100%;
+      padding: 0 8px;
+    }
+  }
+
+
+  /*字体*/
+    body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Noto Sans', STHeiti, Tahoma, 'Arial', 'Microsoft YaHei', 'simsun', 'sans-serif';
+    }
+
+    .h1, h1 { font-size: 36px; }
+    .h2, h2 { font-size: 30px; }
+    .h3, h3 { font-size: 24px; }
+    .h4, h4 { font-size: 18px; }
+    .h5, h5 { font-size: 14px; }
+    .h6, h6 { font-size: 12px; }
+
+    .f-16 { font-size: 16px; }
+    .f-20 { font-size: 20px !important; }
+    .f-22 { font-size: 22px !important; }
+
+  /*颜色*/
+    /*橘色*/
+    .orange { background-color: #f57c00; color: rgba(255,255,255,.87)!important;}
+    .text-orange { color: #f57c00;}
+    .b-orange { border-color: #f57c00;}
+    .btn.orange:focus,.btn.orange:hover { background-color: #ef6c00; color: rgba(255, 255, 255, 0.87);}
+    .btn.text-orange:focus,.btn.text-orange:hover{ color:rgba(255,255,255,.87)!important; background-color:#f57c00;}
+    .btn.orange.disabled:focus, .btn.orange.disabled:hover { background-color: #ef6c00;}
+    a.text-orange:hover, a.text-orange:focus { color: #f57c00;}
+    /*绿色*/
+    .text-green { color: #4caf50;}
+    .b-green { border-color: #4caf50;}
+    .btn.green:focus,.btn.green:hover { background-color:#43a047; color: rgba(255, 255, 255, 0.87);}
+    .btn.text-green:focus,.btn.text-green:hover{ color:rgba(255,255,255,.87)!important; background-color:#4caf50;}
+    .btn.green.disabled:focus, .btn.green.disabled:hover { background-color: #4caf50;}
+    a.text-green:hover, a.text-green:focus { color: #4caf50;}
+    .b-l-green { border-left-color: #4caf50;}
+
+    /*蓝色*/
+    .text-blue { color: #357bb3; }
+    .text-blue:hover { color: #114a78; }
+
+    /*灰色*/
+    .text-darkblack { color: #000;}
+    .text-darkgrey { color: #666;}
+    .text-grey { color: #999;}
+    .text-lightgrey { color: #bbb;}
+    a.text-grey:hover, a.text-grey:focus { color: #999;}
+
+    .link { cursor: pointer;}
+    .link:hover, .link:focus { text-decoration: underline;}
+
+    /*灰色*/
+    .bg-f0f0f0 { background: #f0f0f0; }
+
+  /*按钮*/
+    .btn { padding: .5rem 1rem; line-height: 1.4; }
+    .btn-sm { padding: .3445rem .75rem; min-height: 2rem; line-height: 1.55; box-sizing: border-box;}
+    .btn-xs { padding: .1565rem .5rem; line-height: 1.5;}
+    .btn-lg { padding: .8125rem 1.25rem; line-height: 1.3;}
+
+    .btn-outline { line-height: 1.25; }
+    .btn-outline.btn-xs { line-height: 1.35; }
+
+    .btn.white:not([disabled]):hover,
+    .btn.white:not([disabled]):focus,
+    .btn.white:not([disabled]).active {
+      box-shadow: inset 0 0 0 1px rgba(120,130,140,.25);
+      background: #f8f8f8;
+    }
+
+    .md-check.cli-check>i {
+      background: #fff;
+      color: #4caf50;
+    }
+    .md-check.cli-check>i:before {
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    .md-check.cli-check input[type="checkbox"]:checked+i:before {
+      border: 1px solid #ddd;
+    }
+
+    .btn.disabled, .btn:disabled, fieldset[disabled] .btn {
+      cursor: default;
+    }
+
+  /*表单元素*/
+  .c-input, .input-group, .input-group-btn, .input-group-btn>.btn { z-index: 1;}
+  .input-group-btn .btn { z-index: 2; margin-left: -1px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+  .input-group>.form-control, .input-group>.input-group-addon, .input-group>.input-group-btn>.btn {border-radius: 0 .3rem .3rem 0;}
+  .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn { border-radius: 0 .3rem .3rem 0; height: 52px; }
+  .input-group-lg>.input-group-addon:hover, .input-group-lg>.input-group-btn>.btn:hover { line-height: 20px;}
+
+  .form-control-lg { min-height: 2.5rem; }
+  .form-control-sm, .input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn { min-height: 2rem; }
+  .input-group-sm>.input-group-addon:hover, .input-group-sm>.input-group-btn>.btn:hover { min-height: 2rem; line-height: 20px; }
+  .form-control.parsley-error { border-color: #ff0000;}
+
+  /*其它*/
+    .black-bg {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1040;
+      background-color: #000;
+      opacity: .5;
+      filter:alpha(opacity=50);
+    }
+
+  .new-light {
+    background-color: #F7F9F7;
+  }
+
+
+/*IE*/
+  ::-ms-clear, ::-ms-reveal{display: none;}
+
+/*bootstrap里没有，flatkit里有的*/
+  /*dropdown*/
+  .dropdown-toggle:after { margin-right: .25rem;margin-top: -1px;}
+  .cli-dropdown .dropdown-toggle { width: 120px; text-align: left; text-overflow: ellipsis; overflow: hidden; padding-right: 20px;}
+  .cli-dropdown .dropdown-toggle:after { position: absolute; right: 8px; top: 50%; margin-top: -1.5px;}
+
+/*bootstrap里有，被flatkit覆盖的*/
+  .alert a.alert-link:hover { text-decoration: underline;}
+
+/*覆盖flatkit里的样式*/
+  .pager>.active>a, .pager>.active>span, .pagination>.active>a, .pagination>.active>span {
+    color: #fff!important;
+    background-color: #4caf50!important;
+    border-color: #4caf50!important;
+  }
+  .box-shadow-z0 {
+    box-shadow: none !important;
+    border: 0;
+  }
+  .modal-body {
+    padding: 24px;
+  }
+
+/*flatkit里IE下bug（不仅仅是ie8）*/
+  .btn.btn-default, .btn.white { box-shadow: inset 0 0 0 1px rgba(120,130,140,.25);}
+  :-ms-input-placeholder.form-control { opacity: 1; color: #bbb;}
+
+/*flatkit在火狐下的bug*/
+  .label { font-size: 12px; }
+
+/*flatkit在mac下的bug*/
+  select.form-control { height: 38px;}
+  select.form-control-xs { height: 24px; }
+  select.form-control-sm { height: 32px; }
+  select.form-control-lg { height: 52px;}
+
+/*兼容劣质显示器 -- 把border颜色调深*/
+  .form-control { border-color: rgba(120,130,140,.25);}
+  .b-a { border: 1px solid rgba(120,130,140,.25); }
+  .b-t { border-top: 1px solid rgba(120,130,140,.25); }
+  .b-b { border-bottom: 1px solid rgba(120,130,140,.25); }
+  .b-l { border-left: 1px solid rgba(120,130,140,.25); }
+  .b-r { border-right: 1px solid rgba(120,130,140,.25); }
+  .b-a-light { border: 1px solid rgba(120,130,140,.13); }
+  .b-t-light { border-top: 1px solid rgba(120,130,140,.13); }
+  .b-b-light { border-bottom: 1px solid rgba(120,130,140,.13); }
+  .b-l-light { border-left: 1px solid rgba(120,130,140,.13); }
+  .b-r-light { border-right: 1px solid rgba(120,130,140,.13); }
+
+/*----bootstrapV3里有  我们自己的bootstrap里没有的---*/
+  .popover, .tooltip {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    font-size: 12px;
+  }
+  /*提示框*/
+    .tooltip.top { padding: 5px 0; margin-top: -3px; }
+    .tooltip.top .tooltip-arrow { bottom: 0; left: 50%; margin-left: -5px; border-width: 5px 5px 0; border-top-color: #000; }
+    .tooltip.right { padding: 0 5px; margin-left: 3px; }
+    .tooltip.right .tooltip-arrow { top: 50%; left: 0; margin-top: -5px; border-width: 5px 5px 5px 0; border-right-color: #000; }
+    .tooltip.bottom { padding: 5px 0;margin-top: 3px;}
+    .tooltip.bottom .tooltip-arrow { top: 0; left: 50%; margin-left: -5px; border-width: 0 5px 5px; border-bottom-color: #000; }
+    .tooltip.left { padding: 0 5px; margin-left: -3px; }
+    .tooltip.left .tooltip-arrow { top: 50%; right: 0; margin-top: -5px; border-width: 5px 0 5px 5px; border-left-color: #000; }
+    .tooltip-inner { max-width: none;}
+
+  /*弹出框*/
+    .popover { max-width: none; border: 1px solid #e5e5e5;}
+    .popover>.arrow { border-width: 11px; }
+    .popover>.arrow:after { content: ""; border-width: 10px; }
+    .popover>.arrow, .popover>.arrow:after { position: absolute; display: block; width: 0; height: 0; border-color: transparent; border-style: solid;}
+    .popover.right { margin-left: 10px; }
+    .popover.right>.arrow { top: 50%; left: -11px; margin-top: -11px; border-right-color: #999; border-right-color: #e5e5e5; border-left-width: 0; }
+    .popover.right>.arrow:after { bottom: -10px; left: 1px; content: " "; border-right-color: #fff; border-left-width: 0; }
+    .popover.left { margin-left: -10px; }
+    .popover.left>.arrow { top: 50%; right: -11px; margin-top: -11px; border-right-width: 0; border-left-color: #999; border-left-color: #e5e5e5; }
+    .popover.left>.arrow:after { right: 1px; bottom: -10px; content: " "; border-right-width: 0; border-left-color: #fff; }
+    .popover.top { margin-top: -10px; }
+    .popover.top>.arrow { bottom: -11px; left: 50%; margin-left: -11px; border-top-color: #999; border-top-color: #e5e5e5; border-bottom-width: 0; }
+    .popover.top>.arrow:after { bottom: 1px; margin-left: -10px; content: " "; border-top-color: #fff; border-bottom-width: 0; }
+    .popover.bottom { margin-top: 10px; }
+    .popover.bottom>.arrow { top: -11px; left: 50%; margin-left: -11px; border-top-width: 0; border-bottom-color: #999; border-bottom-color: #e5e5e5;}
+    .popover.bottom>.arrow:after { top: 1px; margin-left: -10px; content: " "; border-top-width: 0; border-bottom-color: #fff; }
+
+  /*well*/
+    .well {
+      min-height: 20px;
+      padding: 19px;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    }
+
+/*扩展flatkit*/
+  /*btn*/
+  .btn-group-xs .btn {
+    padding: .1565rem .5rem;
+    font-size: .8rem;
+  }
+
+  /*表单元素*/
+  .form-control-xs {
+    height: 24px;
+    min-height: 24px;
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+
+  /* 搜索*/
+  .search-wrap {
+    position: relative;
+    height: 30px;
+    margin-right: 15px;
+    }
+    .search-wrap .fa-search {
+      position: absolute;
+      top: 9px;
+      left: -20px;
+      font-size: 16px;
+      color: #bbb;
+    }
+    .search-wrap .fa-times-circle {
+      position: absolute;
+      z-index: 2;
+      right: 38px;
+      top: 10px;
+      color: #bbb;
+    }
+    .search-wrap .form-control {
+      width: 0;
+      height: 28px;
+      padding: 0;
+      font-size: 14px;
+      background: transparent;
+      transition: width 150ms ease-in-out;
+      border: 0;
+      }
+      .search-wrap.active .form-control {
+        width: 150px;
+        padding: 2px 20px 2px 0 !important;
+        margin-right: 5px;
+        border-bottom: 1px solid #ddd;
+      }
+    .search-wrap .search-btn {
+      display: none;
+      line-height: 32px;
+      color: #4caf50;
+      cursor: pointer;
+      }
+      .search-wrap .search-btn:hover {
+        color: #43a047;
+      }
+      .search-wrap.active .search-btn {
+        display: inline-block;
+      }
+
+  /*分页*/
+  .page-wrapper { display: block;}
+  .page-wrapper:after, .page-wrapper:before { display: table;content: " ";}
+  .page-wrapper:after { clear: both; }
+  .page-select .dropdown-toggle { width: 60px; }
+  .page-select .dropdown-menu { min-width: 60px; }
+  .page-wrapper .page-form { float:right; margin-top: 22px; margin-left: 10px;}
+  .page-wrapper .text { font-size: 12px; color: #999; float:left; margin: 0 5px; line-height: 24px;}
+  .page-wrapper .page-form .form-control { float:left; width: 40px;}
+  .page-wrapper .page-select { float: left; }
+  .page-select__text { line-height: 24px; font-size: 12px;}
+
+  /*modal*/
+  .modal-400 {
+    width: 400px;
+  }
+
+  /* 弥补biz 没有 .fr .fl class 的缺失 */
+  .fr {
+    float: right;
+  }
+  .fl {
+    float: left;
+  }
