@@ -282,6 +282,14 @@ function showSuccessDiv(){
 	$("#createSuccess_div").css("display","block");
 	$("#editGRMP_div").css("display","none");
 }
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 <style>
 .title {
@@ -335,7 +343,7 @@ function showSuccessDiv(){
 .cli_nav .sub_nav li a {
     position: relative;
     display: inline-block;
-    font-size: 23px;
+    font-size: 22px;
     padding: 0px 14px;
     margin-right: 20px;
     text-align: center;
@@ -397,7 +405,7 @@ function showSuccessDiv(){
     margin-left: 205px;
 }
 .p-vcard-info{
-	width:406px;height:39px;line-height:39px;font-size: 14px;color:rgba(0,0,0,.87);border-bottom: 1px dashed rgba(221,224,226,.8);
+	width:406px;height:39px;line-height:39px;font-size: 15px;color:rgba(0,0,0,.87);border-bottom: 1px dashed rgba(221,224,226,.8);
 }
 .nameInp_div,.mobileInp_div,.emailInp_div,.urlInp_div,.faxInp_div,.phoneInp_div,.weixinInp_div,.qqInp_div,.weiboInp_div,.jobInp_div,.touxianInp_div,.addressInp_div,.noteInp_div{
 	width:286px;height:39px;margin-top:-41px;margin-left: 50px;
@@ -664,7 +672,7 @@ function showSuccessDiv(){
 					</div>
 				</div>
 			</div>
-			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:112px;height:38px;line-height:38px;margin:0 auto;margin-top:35px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:3px;">生成二维码</div>
+			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:148px;height:48px;line-height:48px;margin:35px auto 0;text-align:center;font-size:15px;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:5px;">生成二维码</div>
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
 		</form>

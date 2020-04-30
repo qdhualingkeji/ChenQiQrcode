@@ -7,6 +7,18 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	var iw1_1=$("#image1_1_img").css("width");
+	iw2_1=iw2_1.substring(0,iw2_1.length-2);
+	$("#image2_1_img").css("height",iw2_1*1.2);
+
+	var iw2_1=$("#image2_1_img").css("width");
+	iw2_1=iw2_1.substring(0,iw2_1.length-2);
+	$("#image2_1_img").css("height",iw2_1*1.2);
+});
+</script>
   <style>
   .main_div{
 	  width: 350px;
@@ -35,6 +47,7 @@
   }
   .memo1_div, .memo2_div, .memo3_div {
     width: 95%;
+	line-height: 25px;
     margin-top: 20px;
 }
 .spxq_div {
@@ -67,19 +80,18 @@ table {
     border-spacing: 0;
 }
   </style>
-  <title>Document</title>
+  <title>辰麒二维码</title>
  </head>
  <body>
  <div class="main_div">
-	<div style="text-align:center;">辰麒二维码</div>
 	<div class="productName_div">
-		江小白
+		奔富红酒
 	</div>
 	<div class="image1_div" id="image1_div">
-		<img class="image1_1_img" alt="" src="images/spzs/22ad5cebe49933335608eeb6356e6ab9.png">
+		<img class="image1_1_img" id="image1_1_img" alt="" src="images/spzs/22ad5cebe49933335608eeb6356e6ab9.png">
 	</div>
 	<div class="memo1_div">
-		江小白SE表达瓶系列
+		奔富红酒SE表达瓶系列
 	</div>
 	<div class="spxq_div">
 		<table class="spxq_tab" id="spxq_tab">
@@ -123,19 +135,19 @@ table {
 		</table>
 	</div>
 		<div class="memo2_div">
-			江小白的主力单品。采用小瓶加语录的至简设计，以语录和表达功能实现与消费者的互动。具有清爽的香味与柔和的口感，是时尚感与利口化的标志性融合。
+			奔富红酒的主力单品。采用小瓶加语录的至简设计，以语录和表达功能实现与消费者的互动。具有清爽的香味与柔和的口感，是时尚感与利口化的标志性融合。
 【口感品鉴】
 嗅觉：轻微的苹果箱伴随着淡淡的青草味和些许杏仁味。
 味觉：质地细化冲击力不强，易于下喉。香味一直在口腔持续，甜味纤细绵长，入口不腻。
 		</div>
 		<div class="image2_div" id="image2_div">
-			<img class="image2_1_img" alt="" src="images/spzs/41116eb627d54a623813c01bcadd05ce.png">
+			<img class="image2_1_img" id="image2_1_img" alt="" src="images/spzs/41116eb627d54a623813c01bcadd05ce.png">
 		</div>
 		<div class="image3_div" id="image3_div">
 		</div>
 		<div class="memo3_div">
 		</div>
-		<div style="text-align:center;">http://qlcode.qdhualing.com</div>
+		<div style="text-align:center;">http://www.qrcodesy.com/</div>
   </div>
  </body>
 </html>
