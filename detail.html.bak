@@ -537,7 +537,7 @@ $(function(){
 					waibHtml+="</div>";
 				waibHtml+="</div>";
 				waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
-					waibHtml+="<img src=\"qlqrcode_files\images\2019\06\202004300001.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\">";
+					waibHtml+="<img src=\"qlqrcode_files/images/2019/06/202004300001.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\">";
 				waibHtml+="</div>";
 				waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
 			waibHtml+="</div>";

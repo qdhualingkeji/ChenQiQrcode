@@ -582,7 +582,7 @@ var _hmt = _hmt || [];
 	</ul>
 </div>
 
-<div class="center_div" style="width:1903px;height:auto;">
+<div class="center_div" style="width:100%;height:auto;">
 	<div style="width:1000px;height:669px;margin:0 auto;padding-bottom: 25px;">
 		<form id="form1" name="form1" method="post" action="http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/addHtmlGoodsGRMP" enctype="multipart/form-data">
 		<div class="add_div" id="add_div" style="width:700px;height:659px;float:left;background-color:#fff;border: 1px solid rgba(120,130,140,.13);overflow-y:auto;display:none;">

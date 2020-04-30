@@ -71,6 +71,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
 /*
 //之前已经有视频标签了，这个方法暂时不用
 function openGkspBgDiv(flag){
@@ -887,9 +888,9 @@ var swiper = new Swiper('.merchants', {
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">
 	<div class="info-tell">
-		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
 		<p>邮箱地址：qdhualing@126.com</p>
-		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+		<p>公司地址：</p>
 	</div>
 	<div class="bqxx">
 		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>

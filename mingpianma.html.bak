@@ -35,6 +35,21 @@
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var nav=$("header");
+  var win=$(window);
+  var sc=$(document);
+  win.scroll(function(){
+    if(sc.scrollTop()>=50){
+      nav.addClass("fix");
+    }else{
+    nav.removeClass("fix");
+    }
+  });
+});
+</script>
 </head>
 <body>
 <header>
@@ -52,15 +67,17 @@
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="list">
-				<a class="a2" href="/qrcode/solution">定制价格</a>
+				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li class="list">
-				<a class="a2" href="/help/faq/information/">帮助</a>
+				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="/login" target="_blank" class="login2 but">登录</a>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
+			-->
 		</div>
     </div>
 </div>
@@ -94,9 +111,9 @@
 <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">
 	<div class="info-tell">
-		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
 		<p>邮箱地址：qdhualing@126.com</p>
-		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
 		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
