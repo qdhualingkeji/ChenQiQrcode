@@ -7,6 +7,18 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	var iw1_1=$("#image1_1_img").css("width");
+	iw1_1=iw1_1.substring(0,iw1_1.length-2);
+	$("#image1_1_img").css("height",iw1_1);
+
+	var iw2_1=$("#image2_1_img").css("width");
+	iw2_1=iw2_1.substring(0,iw2_1.length-2);
+	$("#image2_1_img").css("height",iw2_1*0.644);
+});
+</script>
   <style>
     .main_div {
 		width: 350px;
@@ -64,7 +76,7 @@
 		border-spacing: 0;
 	}
   </style>
- <title>Document</title>
+ <title>建筑施工</title>
  </head>
  <body>
  <div class="main_div" id="main_div">
@@ -72,7 +84,7 @@
 		于祥海
 	</div>
 	<div class="image1_div" id="image1_div">
-		<img class="image1_1_img" alt="" src="images/jzsg/bf0b334d871019cf3b2359e22b405d1c.png">
+		<img class="image1_1_img" id="image1_1_img" alt="" src="images/jzsg/bf0b334d871019cf3b2359e22b405d1c.png">
 	</div>
 	<div class="ryxx_div">
 	   <table class="ryxx_tab" id="ryxx_tab">
@@ -161,7 +173,7 @@
 	  </table>
 	</div>
 	<div class="image2_div" id="image2_div">
-		<img class="image2_1_img" alt="" src="images/jzsg/43a339cd90f1a6b00c0c256d49d6a119.png">
+		<img class="image2_1_img" id="image2_1_img" alt="" src="images/jzsg/43a339cd90f1a6b00c0c256d49d6a119.png">
 	</div>
 </div>
 </body>

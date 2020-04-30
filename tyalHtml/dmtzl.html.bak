@@ -7,6 +7,14 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	var iw1_1=$("#image1_1_img").css("width");
+	iw1_1=iw1_1.substring(0,iw1_1.length-2);
+	$("#image1_1_img").css("height",iw1_1*1.18);
+});
+</script>
   <style>
   .main_div {
     width: 350px;
@@ -33,6 +41,7 @@
 .image1_div {
     width: 95%;
     text-align: center;
+	margin: auto;
 }
 .image1_1_img, .image1_2_img, .image1_3_img, .image1_4_img, .image1_5_img {
     width: 95%;
@@ -53,7 +62,7 @@
 		</div>
 	</div>
 	<div class="embed1_div" id="embed1_div">
-		<embed alt="" src="http://www.bainuojiaoche.com:8080/GoodsPublic/resource/embed/dmtzl/d707ea145302bad9422553804f43d669_conv.H_57_5.mp4" style="width: 95%;height: 300px;margin-top: 25px;">
+		<embed alt="" src="http://www.qrcodesy.com:8080/GoodsPublic/resource/embed/dmtzl/d707ea145302bad9422553804f43d669_conv.H_57_5.mp4" style="width: 95%;height: 300px;margin-top: 25px;">
 	</div>
 	<div class="memo2_div">
 		<p>
@@ -67,7 +76,7 @@
 		</p>
 	</div>
 	<div class="image1_div" id="image1_div">
-		<img class="image1_1_img" alt="" src="images/dmtzl/c769d75fc7033f7218ca8bcb0c08624e.jpg">
+		<img class="image1_1_img" id="image1_1_img" alt="" src="images/dmtzl/c769d75fc7033f7218ca8bcb0c08624e.jpg">
 	</div>
 </div>
 </body>

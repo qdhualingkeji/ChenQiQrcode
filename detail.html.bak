@@ -5,7 +5,7 @@
 <title>商品标签二维码-辰麒二维码制作教程</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit"><meta name="description" content="将二维码附在酒类、茶叶、美容保健品等各类商品外包装或标签中，消费者扫码即可查看商品的价格、基本信息、使用方式、厂家联系方式等内容，在有限的标签中展示更丰富的信息。" />
-<meta name="keywords" content="商品,商品标签,商品包装,酒类,红酒,白酒,啤酒,二维码,条形码,一维码,麒麟,酒水饮料,保健食品,日用品,家居建材,食品农产品,价格二维码" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="商品,商品标签,商品包装,酒类,红酒,白酒,啤酒,二维码,条形码,一维码,辰麒,酒水饮料,保健食品,日用品,家居建材,食品农产品,价格二维码" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 
@@ -186,7 +186,7 @@ $(function(){
 		waibHtml+="<p style=\"margin-bottom: 0px;\">";
 			waibHtml+="<strong style=\"color: rgb(51, 51, 51); white-space: pre-wrap; font-size: 16px;\">第二步：美化二维码</strong>";
 		waibHtml+="</p>";
-		waibHtml+="<p>麒麟提供了二维码美化，可以设置二维码的样式、颜色，添加公司Logo，让二维码更美观。为了避免二维码无法识别，二维码前景色必须比后景色更深。</p>";
+		waibHtml+="<p>辰麒提供了二维码美化，可以设置二维码的样式、颜色，添加公司Logo，让二维码更美观。为了避免二维码无法识别，二维码前景色必须比后景色更深。</p>";
 		/*
 		waibHtml+="<p>";
 			waibHtml+="教程详见：";
@@ -205,7 +205,7 @@ $(function(){
 		waibHtml+="</p>";
 		waibHtml+="<p>";
 			waibHtml+="<strong>二维码下载：</strong>";
-			waibHtml+="麒麟二维码默认为PNG格式，同时提供PDF、SVG、EPS三种矢量格式，你可根据自己需求进行下载。";
+			waibHtml+="辰麒二维码默认为PNG格式，同时提供PDF、SVG、EPS三种矢量格式，你可根据自己需求进行下载。";
 		waibHtml+="</p>";
 		waibHtml+="<p>";
 			waibHtml+="<strong>";
@@ -213,8 +213,8 @@ $(function(){
 			waibHtml+="</strong>";
 		waibHtml+="</p>";
 		waibHtml+="<p>";
-			waibHtml+="<strong>麒麟排版印刷：</strong>";
-			waibHtml+="麒麟提供标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。";
+			waibHtml+="<strong>辰麒排版印刷：</strong>";
+			waibHtml+="辰麒提供标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。";
 		waibHtml+="</p>";
 		/*
 		waibHtml+="<p>";
@@ -405,7 +405,7 @@ $(function(){
 			waibHtml+="，上传电子版的产品画册文件（推荐pdf格式），直接生成文件码。";
 		waibHtml+="</p>";
 		waibHtml+="<p>";
-			waibHtml+="方式二：使用麒麟二维码";
+			waibHtml+="方式二：使用辰麒二维码";
 			//waibHtml+="<a href=\"https://console.cli.im/nedit\" target=\"_blank\">「内容编辑器」</a>";
 			waibHtml+="「内容编辑器」";
 			waibHtml+="，可自由插入文字、图片、音视频等，生成二维码。";
@@ -537,7 +537,7 @@ $(function(){
 					waibHtml+="</div>";
 				waibHtml+="</div>";
 				waibHtml+="<div class=\"right-box\" style=\"width: 200px;height: 200px;float: left;margin-left: 150px;margin-top: 90px;background-image: url(qlqrcode_files/images/2019/06/four_border.png);background-repeat: no-repeat;background-size: 234px 214px;background-position: -16px -8px;\">";
-					waibHtml+="<img src=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\">";
+					waibHtml+="<img src=\"qlqrcode_files\images\2019\06\202004300001.png\" style=\"width: 160px; height: auto; float: left; margin-left: 21px; margin-top: 21px; cursor: pointer;\" data-lity=\"\" data-lity-target=\"//qr.api.cli.im/qr?data=http%3A%2F%2Fqr71.cn%2Fo18xyU%2Fq7awCIM&amp;level=H&amp;transparent=&amp;bgcolor=%23ffffff&amp;forecolor=%23000000&amp;blockpixel=12&amp;marginblock=1&amp;logourl=&amp;size=220&amp;kid=cliim&amp;time=1562811763&amp;key=0b383a3790414d92beab2e641052d7fa\">";
 				waibHtml+="</div>";
 				waibHtml+="<div style=\"float:left;margin-left: 181px;margin-top: 8px;font-weight: bold;color: rgba(0,0,0,.87);\">扫码体验完整案例效果</div>";
 			waibHtml+="</div>";
@@ -550,7 +550,7 @@ $(function(){
 		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 20px;\">";
 			waibHtml+="<strong>第一步：设计二维码内容</strong>";
 			waibHtml+="<br>";
-			waibHtml+="如果你已经有电子版的说明书文档，可以直接在麒麟二维码首页上传此文档，生成二维码；";
+			waibHtml+="如果你已经有电子版的说明书文档，可以直接在辰麒二维码首页上传此文档，生成二维码；";
 			waibHtml+="<br>";
 			waibHtml+="此外你也可以使用「内容编辑器」，可像word一样进行图文混排，并插入音视频等组件，完成内容制作。";
 			waibHtml+="<br>";
@@ -566,7 +566,7 @@ $(function(){
 			waibHtml+="<strong>第二步：下载高清矢量图并印刷</strong>";
 		waibHtml+="</p>";
 		waibHtml+="<p style=\"margin-top: 15px; margin-bottom: 20px;\">";
-			waibHtml+="麒麟提供了二维码高清矢量图下载以及美化工具，你可以将二维码下载后和纸质说明书或产品外包装一起交由专门的包装设计店进行印制。";
+			waibHtml+="辰麒提供了二维码高清矢量图下载以及美化工具，你可以将二维码下载后和纸质说明书或产品外包装一起交由专门的包装设计店进行印制。";
 			waibHtml+="<br>";
 			//waibHtml+="美化教程详见：";
 			//waibHtml+="<a href=\"https://cli.im/help/48435\" target=\"_blank\">https://cli.im/help/48435</a>";
@@ -720,7 +720,7 @@ $(function(){
 				waibHtml+="<strong>第一步：设计二维码内容 </strong>";
 			waibHtml+="</span>";
 		waibHtml+="</p>";
-		waibHtml+="<p>使用麒麟二维码「内容编辑器」，可像word一样图文混排，并插入多种模块，完成内容制作。</p>";
+		waibHtml+="<p>使用辰麒二维码「内容编辑器」，可像word一样图文混排，并插入多种模块，完成内容制作。</p>";
 		/*
 		waibHtml+="<p style=\"margin-bottom: 15px;\">教程详见：";
 			waibHtml+="<a href=\"https://cli.im/help/49719\" _src=\"https://cli.im/help/49719\">https://cli.im/help/49719</a>";
@@ -746,7 +746,7 @@ $(function(){
 				waibHtml+="<strong>第三步：下载打印不干胶标签</strong>";
 			waibHtml+="</span>";
 		waibHtml+="</p>";
-		waibHtml+="<p>麒麟提供快速美化和标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。</p>";
+		waibHtml+="<p>辰麒提供快速美化和标签制作工具，帮你以较低的成本和较高的效率，完成日常不干胶标签制作。</p>";
 		/*
 		waibHtml+="<p>";
 			waibHtml+="教程详见：";
@@ -1038,7 +1038,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 </script>
 <div class="wrapper p-b-lg" style='background-color: #ffffff;'>
 	<div class="mobile-logo-show mobile-to-pc">
-	   电脑网页登陆麒麟官网cli.im，注册账号即可制作二维码。
+	   电脑网页登陆辰麒官网cli.im，注册账号即可制作二维码。
 	   <span mobile-pc-close class="mobile-pc-close">×</span>
 	</div>
 	<div class="case-detail-content">
@@ -1518,7 +1518,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 										  $('#email-area').addClass('none');
 										  $('.submit-footer-box').css('top', '150px');
 										}
-										$('#feedback-modal-tips-text').text('我们会通过「麒麟二维码」公众号回复，请留意消息通知');
+										$('#feedback-modal-tips-text').text('我们会通过「辰麒二维码」公众号回复，请留意消息通知');
 										break;
 									  case 'email':
 										submitType = 'email';
@@ -1621,7 +1621,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 		</script>
 	</div>
 </div>
-<div class="create-contact-box" style="">
+<div class="create-contact-box" style="opacity: 1;">
 <div class="contact inline contact-mobile" style="display: inline-block;">
 <link rel="stylesheet" href="qlqrcode_files/static/css/include-scene-create-code_dd7b805.css">
 <script type="text/javascript">
@@ -1771,7 +1771,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 			</div>
 			<div class="modal-body">
 				<div class="img-box"></div>
-				请电脑登录麒麟进行建码
+				请电脑登录辰麒进行建码
 			</div>
 		</div>
 	</div>
