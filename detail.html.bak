@@ -341,7 +341,7 @@ $(function(){
 							waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
 						waibHtml+="</div>";
 						waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
-							waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+							waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 0px;overflow-x: hidden;\">";
 								waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/WechatIMG1.jpeg\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/WechatIMG1.jpeg\">";
 							waibHtml+="</div>";
 						waibHtml+="</div>";
@@ -531,7 +531,7 @@ $(function(){
 						waibHtml+="<img src=\"qlqrcode_files/images/2019/07/bottom2@2x.png\" alt=\"\" style=\"width: 190px; height: auto; cursor: pointer;\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/07/bottom2@2x.png\">";
 					waibHtml+="</div>";
 					waibHtml+="<div class=\"imgContentPreview\" style=\"width: 180px;height: 374px;border-radius:21px;position: absolute;top: 11px;left: 4px;background: #999999;\">";
-						waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 38px;overflow-x: hidden;\">";
+						waibHtml+="<div style=\"height: 354px;overflow-y: scroll;padding-top: 0px;overflow-x: hidden;\">";
 							waibHtml+="<img style=\"width: 174px;margin-left: 3px;height: auto; cursor: pointer;\" alt=\"场景图片\" src=\"qlqrcode_files/images/2019/06/长图1.png\" data-lity=\"\" data-lity-target=\"qlqrcode_files/images/2019/06/长图1.png\">";
 						waibHtml+="</div>";
 					waibHtml+="</div>";
@@ -1829,9 +1829,9 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 	  <!--w_grid-1568271949559_start-->
 <div id="w_grid-1568271949559" class="w_grid_div">
 	<div class="info-tell">
-		<p>资讯热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
 		<p>邮箱地址：qdhualing@126.com</p>
-		<p>自动化控制系统集成网址：www.qdhualing.com</p>
+		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
 		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
