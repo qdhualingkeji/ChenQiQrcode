@@ -11,8 +11,8 @@
 <script>
 $(function(){
 	var iw1_1=$("#image1_1_img").css("width");
-	iw2_1=iw2_1.substring(0,iw2_1.length-2);
-	$("#image2_1_img").css("height",iw2_1*1.2);
+	iw1_1=iw1_1.substring(0,iw1_1.length-2);
+	$("#image1_1_img").css("height",iw1_1*1.2);
 
 	var iw2_1=$("#image2_1_img").css("width");
 	iw2_1=iw2_1.substring(0,iw2_1.length-2);
@@ -104,7 +104,7 @@ table {
 						原料
 					</td>
 					<td class="value_td">
-						
+						原浆酒
 					</td>
 				</tr>
 				<tr height="50">
@@ -112,7 +112,7 @@ table {
 						酒精含量
 					</td>
 					<td class="value_td">
-						
+						30%
 					</td>
 				</tr>
 				<tr height="50">
@@ -120,7 +120,7 @@ table {
 						净含量
 					</td>
 					<td class="value_td">
-						
+						50ml
 					</td>
 				</tr>
 				<tr height="50">
