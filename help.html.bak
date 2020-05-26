@@ -264,6 +264,57 @@ function initContentDiv(navFlag){
 		contentStr+="</div>";
 		contentStr+="<div style=\"height:30px;line-height:30px;margin-bottom: 20px;\">生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
 	}
+	else if(navFlag=="jfdhjp"){
+		$("jfdhjpNav_div").attr("class","item_div selected");
+
+		contentStr+="<div style=\"height:30px;line-height:30px;\">积分二维码应用教程：</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250001.png\" style=\"width:800px;height:359px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">1.导航栏找到积分兑换奖品点击活动设置，编辑并保存设置</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250002.png\" style=\"width:800px;height:292px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250003.png\" style=\"width:800px;height:441px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.二维码生成</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.1、点击添加，添加公司logo和积分并保存</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250004.png\" style=\"width:800px;height:462px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250005.png\" style=\"width:800px;height:279px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.2、自定义文字点击下一步保存二维码，设置需要的二维码数量</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250006.png\" style=\"width:400px;height:400px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.3、扫码即可得到如下图所示</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250007.png\" style=\"width:400px;height:710px;\"/>";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250008.png\" style=\"width:400px;height:710px;margin-left:50px;\"/>";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250009.png\" style=\"width:400px;height:710px;margin-top:50px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.4、用户积分管理：可清楚的看到后台的积分消费情况</div>";
+		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
+		contentStr+="<img src=\"qlqrcode_files/images/202005250010.png\" style=\"width:800px;height:375px;\"/>";
+		contentStr+="</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">积分二维码产品描述：</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">将二维码放置于商铺中，消费者直接扫码即可领取本店积分，顾客主动积分，省下了店铺的人力和时间。</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">适用于：餐饮店，服装店，文具店，农副产品等各类商店</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">二维码积分优势：</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">1.取代了实物会员卡，积分更加方便快捷</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">2.店家自己设置奖品奖项以及积分额度，兑奖更为灵活方便</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">3.店家更直观的在后台查看消费数据，维护精准客户，提高店铺的活跃度</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">4.维护精准客户人群，能够更好的抓取消费者需要</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">一、：编辑活动内容</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">在页面左侧积分兑换奖品列表中，找到活动设置编辑活动内容并保存设置</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">二、二维码生成</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">在左上添加二维码，编辑商家Logo和参与活动积分，保存提交；页面主动跳转并导出二维码，文字可自由编辑</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">三、下载二维码源文件</div>";
+		contentStr+="<div style=\"height:30px;line-height:30px;\">可打印张贴店内或者外卖使用</div>";
+	}
 	else if(navFlag=="eplcsewm"){
 		$("#eplcsewmNav_div").attr("class","item_div selected");
 
@@ -294,7 +345,7 @@ function initContentDiv(navFlag){
 		contentStr+="</div>";
 		contentStr+="<div style=\"height:30px;line-height:30px;\">箭头所指红框里的即为批量生成的二维码，点击详情即可查看</div>";
 		contentStr+="<div style=\"margin-top:20px;margin-bottom: 20px;\">";
-		contentStr+="<img src=\"qlqrcode_files/images/202004230045.png\" style=\"width:800px;height:521px;\"/>";
+		contentStr+="<img src=\"qlqrcode_files/images/202004230045.png\" style=\"width:800px;height:554px;\"/>";
 		contentStr+="</div>";
 		contentStr+="<div style=\"height:30px;line-height:30px;margin-bottom: 20px;\">生码成功，扫码查看信息，若生成二维码后内容需要修改，点击编辑内容即可修改，修改后的二维码不需要重新生成，扫码显示内容为最新内容。</div>";
 	}
@@ -352,6 +403,7 @@ var _hmt = _hmt || [];
 		<div class="item_div" id="jfmbNav_div" onclick="initContentDiv('jfmb')">家纺模版</div>
 		<div class="item_div" id="yspmbNav_div" onclick="initContentDiv('yspmb')">艺术品模版</div>
 		<div class="item_div" id="smsmbNav_div" onclick="initContentDiv('smsmb')">说明书模版</div>
+		<div class="item_div" id="jfdhjpNav_div" onclick="initContentDiv('jfdhjp')">积分兑换奖品</div>
 		<div class="item_div" id="eplcsewmNav_div" onclick="initContentDiv('eplcsewm')">EXCEL批量生成二维码</div>
 	</div>
 	<div class="rightNav_div" id="rightNav_div" style="margin-top:-320px;margin-left:320px;font-size:16px;">
