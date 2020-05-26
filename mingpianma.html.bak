@@ -57,13 +57,13 @@ $(function(){
     <a href="/" class="logo fl">&nbsp;</a>
     <div class="navbar">
         <ul class="menu" style="color:#000;">
-            <li class="active">
+            <li>
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li>
 				<a class="a2" href="solutionCommodity.html">案例模板</a>
 			</li>
-			<li>
+			<li class="active">
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
 			</li>
             <li class="list">
