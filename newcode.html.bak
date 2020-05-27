@@ -218,7 +218,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li class="active">
-				<a class="a2" href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
@@ -281,14 +281,14 @@ var _hmt = _hmt || [];
 
 <div class="center_div">
 	<div class="selectModule_div">
-		<div class="active_new_code_title">选择模板，开始创建二维码</div>
+		<div class="active_new_code_title">选择模版，开始创建二维码</div>
 
 		<div style="width:775px;height:3px;margin: 0 auto;margin-top: 62px;background-color:rgba(120,130,140,.13)"></div>
 
 		<div class="moduleList_div">
 			<a>
 				<div class="item_div">
-					<div class="create_div" onclick="alert('模板待添加')">从空白新建</div>
+					<div class="create_div" onclick="alert('模版待添加')">从空白新建</div>
 				</div>
 			</a>
 			<div class="item_div hjItem_div" id="item_div">
@@ -297,7 +297,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('redWine')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('redWine')">应用此模版</div>
 				</div>
 				<div class="title_div">红酒</div>
 			</div>
@@ -307,7 +307,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('whiteWine')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('whiteWine')">应用此模版</div>
 				</div>
 				<div class="title_div">白酒</div>
 			</div>
@@ -317,7 +317,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('homeTextiles')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('homeTextiles')">应用此模版</div>
 				</div>
 				<div class="title_div">家纺</div>
 			</div>
@@ -327,7 +327,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('artwork')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('artwork')">应用此模版</div>
 				</div>
 				<div class="title_div">艺术品</div>
 			</div>
@@ -340,7 +340,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('productExplain')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('productExplain')">应用此模版</div>
 				</div>
 				<div class="title_div">说明书</div>
 			</div>
@@ -350,7 +350,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('dmtzl')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('dmtzl')">应用此模版</div>
 				</div>
 				<div class="title_div">多媒体资料</div>
 			</div>
@@ -360,7 +360,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模版</div>
 				</div>
 				<div class="title_div">建筑施工</div>
 			</div>
@@ -370,7 +370,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模版</div>
 				</div>
 				<div class="title_div">积分兑换奖品</div>
 			</div>

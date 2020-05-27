@@ -351,9 +351,9 @@ $(function(){
 		waibHtml+="<p></p>";
 		waibHtml+="<p>";
 		waibHtml+="<strong>";
-		waibHtml+="<span style=\"font-size: 16px;\">第四步：微信扫描商品码</span></strong></p>";
-		waibHtml+="";
-		waibHtml+="";
+		waibHtml+="<span style=\"font-size: 16px;\">第四步：微信扫描商品码</span>";
+		waibHtml+="</strong>";
+		waibHtml+="</p>";
 		waibHtml+="<p>打开手机端微信扫一扫，扫相应的商品码可领取一定积分。当积分达到该活动的兑奖积分时，会出现兑奖码、奖品兑换提示，用此兑奖码到商家处兑换奖品。生成兑奖码后会扣除一定账户积分，通过再次扫商品码获取更多积分。每个商品码只能扫一次，重复扫码无效。</p>";
 		
 		ctiuHtml+="<a href=\"http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp\"><li class=\"create-tpl-item Margin16\"  is_preview=\"0\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/2b541c82ef7e535cf2f0a2c370dfa36c1547083765.png\">";

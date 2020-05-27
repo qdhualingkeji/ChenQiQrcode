@@ -279,7 +279,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li class="active">
-				<a class="a2" href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
@@ -345,7 +345,7 @@ var _hmt = _hmt || [];
 <div style="width:100%;height:218px;padding: 105px 0 0;">
 	<div style="width:1000px;height:204px;text-align: center;margin:0 auto;">
 		<h1 style="font-size: 30px;line-height: 30px;font-weight: 700;">
-			多用户模板化
+			多用户模版化
 			<span style="font-size: 18px;display: block;line-height: 18px;margin-top: 16px;">二维码应用方案</span>
 		</h1>
 		<p style="margin-top: 24px;font-size: 16px;line-height: 20px;">帮助各种规模企业用户在招商、推广、服务等各环节，应用二维码迅速解决信息分享问题</p>
