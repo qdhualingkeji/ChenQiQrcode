@@ -8,6 +8,61 @@
 <meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <style>
+.login_bg_div{
+	width:100%;height:100%;background-color:rgba(0, 0, 0, 0.3);position:fixed;display:none;z-index:6;
+}
+.login_div{
+	width: 795px;height: 540px;margin: 60px auto 0;background: #eff2f3;border: 1px solid #eee;padding:1px;border-radius: 6px;box-sizing: border-box;overflow: hidden;position: relative;
+}
+.login_div .closeBut_div{
+	right:10px;top:10px;color:#bbb;position: absolute;cursor: pointer;
+}
+.login_div .dlqlzh_div{
+	height: 34px;line-height: 34px;font-size: 24px;color: #4caf50;text-align: center;margin-top: 50px;
+}
+.login_div .main_div{
+	width: 735px;height:380px;margin: 45px auto 0;background-color: #fff;padding:1px;
+}
+.login_div .logLeft_div{
+	width:365px;height:220px;margin-top: 50px;
+}
+.login_div .sjhdl_h2{
+	height:20px;line-height:20px;color: #4a4a4a;font-size:16px;font-weight: 700;text-align: center;margin-bottom: 20px;
+}
+.login_div .userName_div,.login_div .password_div{
+	width: 220px;height:48px;margin: auto;border-bottom: 1px solid #eee;
+}
+.login_div .userName_inp,.login_div .password_inp{
+	width: 210px;height: 48px;line-height: 48px;font-size: 14px;padding: 0 5px;border-radius: 4px;border: 1px solid rgba(120,130,140,0.25);
+}
+.login_div .loginBut_div{
+	width: 220px;height: 38px;line-height: 38px;font-size: 16px;color:#fff;text-align:center;margin:40px auto 0;border-radius: 4px;background-color:rgb(76, 175, 80);cursor: pointer;
+}
+.login_div .cutLine_div{
+	width: 1px;height: 183px;left: 50%;margin-top: -183px;background-color: rgba(120,130,140,.13);position: absolute;
+}
+.login_div .logRight_div{
+	width:365px;height:220px;margin-top:-220px;margin-left:370px;
+}
+.login_div .wxkjdl_h2{
+	height:20px;line-height:20px;color: #4a4a4a;font-size:16px;font-weight: 700;text-align: center;margin-bottom: 20px;
+}
+.login_div .wxkjdl_div{
+	width: 100%;height:210px;margin: 20px auto 0;text-align: center;
+}
+.login_div .qrcode_img{
+	width: 180px;height:180px;
+}
+.login_div .wxsys_div{
+	font-size: 12px;color: #9B9B9B;
+}
+.login_div .regist_div{
+	font-size: 12px;color: #9b9b9b;text-align: center;margin-top: 75px;
+}
+.login_div .regist_a{
+	color: #357bb3;
+}
+
 header .nav .logo {
     display: block;
     width: 560px;
@@ -263,6 +318,7 @@ header .nav .logo {
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script src="qlqrcode_files/MD5.js"></script>
 <script type="text/javascript">
 $(function(){
   var nav=$("header");
@@ -277,16 +333,161 @@ $(function(){
   });
 });
 
+function goRegist(){
+	var price=$("#price_hid").val();
+	location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/regist?action=buy&price="+price;
+}
+
+function checkInputData(){
+	if(checkUserName()){
+		if(checkPassword()){
+			login();
+		}
+	}
+}
+
+function focusUserName(){
+	var userName=$("#userName").val();
+	if(userName=="请填写用户名"){
+		$("#userName").val("");
+		$("#userName").css("color","#000");
+	}
+}
+
+function checkUserName(){
+	var userName=$("#userName").val();
+	if(userName==null||userName==""||userName=="请填写用户名"){
+		$("#userName").css("color","#f00");
+		$("#userName").val("请填写用户名");
+		return false;
+	}
+	else
+		return true;
+}
+
+function checkPassword(){
+	var password=$("#password").val();
+	if(password==null||password==""||password=="请填写密码"){
+		alert("请填写密码");
+		return false;
+	}
+	else
+		return true;
+}
+
+function login(){
+  var userName=$("#userName").val();
+  var password=MD5($("#password").val()).toUpperCase();
+  $.ajax({
+	 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/loginQL",
+	 dataType:'jsonp',
+	 data:"userName="+userName+"&password="+password,
+	 processData: false, 
+	 jsonp:'callback',
+	 jsonpCallback:"jsonpCallback",
+	 type:'get',
+	 success:function(data){
+	   var json=JSON.parse(data);
+	   //console.log(json);
+	   if(json.status==0){
+		  var price=$("#price_hid").val();
+		  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/saveQLUser?price="+price+"&userName="+userName+"&password="+password;
+	   }
+	   else{
+		  alert(json.msg);
+	   }
+	 },
+	 error:function(XMLHttpRequest, textStatus, errorThrown) {
+	   alert(XMLHttpRequest);
+	   alert(XMLHttpRequest.status);
+	   alert(XMLHttpRequest.readyState);
+	   alert(textStatus);
+	 }
+ });
+}
+
+function goFeeBuy(price){
+	if(price==0){
+		location.href="newcode.html";
+	}
+	else{
+		price=0.01;
+	  $.ajax({
+		 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/checkIfLogin",
+		 dataType:'jsonp',
+		 processData: false, 
+		 jsonp:'callback',
+		 jsonpCallback:"jsonpCallback",
+		 type:'get',
+		 success:function(data){
+		   var json=JSON.parse(data);
+		   console.log(json);
+		   if(json.status==0){
+			  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goFeeBuy?price="+price;
+		   }
+		   else{
+			  //location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/regist?price="+price;
+			  $("#login_bg_div").css("display","block");
+			  $("#login_bg_div #price_hid").val(price);
+		   }
+		 },
+		 error:function(XMLHttpRequest, textStatus, errorThrown) {
+		   alert(XMLHttpRequest);
+		   alert(XMLHttpRequest.status);
+		   alert(XMLHttpRequest.readyState);
+		   alert(textStatus);
+		 }
+	  });
+	}
+}
+
+function closeLoginBgDiv(){
+	$("#login_bg_div").css("display","none");
+}
+
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
 })();
 </script>
 </head>
 <body>
+
+<div class="login_bg_div" id="login_bg_div">
+	<div class="login_div">
+		<div class="closeBut_div" onclick="closeLoginBgDiv();">X</div>
+		<div class="dlqlzh_div">登录辰麒账号</div>
+		<div class="main_div">
+			<div class="logLeft_div">
+				<h2 class="sjhdl_h2">手机号登录</h2>
+				<div class="userName_div">
+					<input type="text" class="userName_inp" id="userName" onfocus="focusUserName();" onblur="checkUserName();"/>
+				</div>
+				<div class="password_div">
+					<input type="password" class="password_inp" id="password" onblur="checkPassword();"/>
+				</div>
+				<div class="loginBut_div" onclick="checkInputData();">登 录</div>
+			</div>
+			<div class="cutLine_div"></div>
+			<div class="logRight_div">
+				<h2 class="wxkjdl_h2">微信快捷登录</h2>
+				<div class="wxkjdl_div">
+					<img class="qrcode_img" src="http://www.qrcodesy.com:8080/GoodsPublic/resource/images/009.png"/>
+ 					<div class="wxsys_div">微信扫一扫，快速登录</div>
+				</div>
+			</div>
+ 			<div class="regist_div">还没有账号？<a class="regist_a" onclick="goRegist();">立即免费注册</a></div>
+		</div>
+		<input type="hidden" id="price_hid"/>
+	</div>
+</div>
+
 <header class="fix">
 <div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
@@ -376,7 +577,7 @@ var _hmt = _hmt || [];
 					<div class="text_div1">二维码生成数量不限</div>
 					<div class="text_div2">限时7天</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(0);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -391,7 +592,7 @@ var _hmt = _hmt || [];
 					<div class="text_div1">去除辰麒所有标识，开放所有模</div>
 					<div class="text_div2">版和定制功能，客服一对一辅导</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(600);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -406,7 +607,7 @@ var _hmt = _hmt || [];
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
 					<div class="text_div2">理，更大容量/少量个性化定制</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(1270);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -421,7 +622,7 @@ var _hmt = _hmt || [];
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
 					<div class="text_div2">理，根据客户需求定制功能开发</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(2670);">立即购买</div>
 			</div>
 		</div>
 	</div>
