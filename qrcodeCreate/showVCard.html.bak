@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	var uuid=getQueryString("uuid");
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/getHtmlGoodsGRMP",
+		data:{uuid:uuid},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(data){
+			console.log(data);
+			htmlGoodsGRMP=JSON.parse(data).htmlGoodsGRMP;
+			$("#title_div #title_span").text(htmlGoodsGRMP.name);
+			$("#previewCard_name").text(htmlGoodsGRMP.name);
+			$("#previewCard_mobile").text(htmlGoodsGRMP.mobile);
+			$("#previewCard_avator").attr("src","http://www.qrcodesy.com:8080"+htmlGoodsGRMP.avatorUrl);
+			$("#previewCard_dep").text(htmlGoodsGRMP.dep);
+			$("#previewCard_job").text(htmlGoodsGRMP.job);
+			$("#previewCard_company").text(htmlGoodsGRMP.company);
+
+			var touxian=htmlGoodsGRMP.touxian;
+			if(touxian=="")
+				$("#field_touxian").css("display","none");
+			else
+				$("#field_touxian").text(touxian);
+
+			var mobile=htmlGoodsGRMP.mobile;
+			if(mobile=="")
+				$("#field_mobile").css("display","none");
+			else
+				$("#field_mobile").text(mobile);
+
+			var email=htmlGoodsGRMP.email;
+			if(email=="")
+				$("#field_email").css("display","none");
+			else
+				$("#field_email").text(email);
+
+			var url=htmlGoodsGRMP.url;
+			if(url=="")
+				$("#field_url").css("display","none");
+			else
+				$("#field_url").text(url);
+
+			var fax=htmlGoodsGRMP.fax;
+			if(fax=="")
+				$("#field_fax").css("display","none");
+			else
+				$("#field_fax").text(fax);
+
+			var phone=htmlGoodsGRMP.phone;
+			if(phone=="")
+				$("#field_phone").css("display","none");
+			else
+				$("#field_phone").text(phone);
+
+			var weixin=htmlGoodsGRMP.weixin;
+			if(weixin=="")
+				$("#field_weixin").css("display","none");
+			else
+				$("#field_weixin").text(weixin);
+
+			var qq=htmlGoodsGRMP.qq;
+			if(qq=="")
+				$("#field_qq").css("display","none");
+			else
+				$("#field_qq").text(qq);
+
+			var weibo=htmlGoodsGRMP.weibo;
+			if(weibo=="")
+				$("#field_weibo").css("display","none");
+			else
+				$("#field_weibo").text(weibo);
+
+			var company=htmlGoodsGRMP.company;
+			if(company=="")
+				$("#field_company").css("display","none");
+			else
+				$("#field_company").text(company);
+
+			var address=htmlGoodsGRMP.address;
+			if(address=="")
+				$("#field_address").css("display","none");
+			else
+				$("#field_address").text(address);
+
+			var note=htmlGoodsGRMP.note;
+			if(note=="")
+				$("#field_note").css("display","none");
+			else
+				$("#field_note").text(note);
+
+			var qrcode=htmlGoodsGRMP.qrcode;
+			$("#showQrcode_div").empty();
+			$("#showQrcode_div").append("<img src=\"http://www.qrcodesy.com:8080/"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+		}
+	});
+});
+
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return  unescape(r[2]); return null;
+}
+</script>
+<title>名片</title>
+<style>
+body{
+	width: 100%;
+}
+.main_div{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.title_div{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size: 20px;
+	font-weight:bold;
+	color: rgba(0,0,0,.87);
+}
+.previewCard{
+	width:340px;
+	height:180px;
+	border: 1px solid rgba(120,130,140,.13);
+	margin:10px auto;
+}
+.previewCard_name{
+	font-size: 24px;
+	color:rgba(0,0,0,.87);
+	margin-top: 28px;
+	margin-left: 22px;
+}
+.previewCard_mobile{
+	font-size: 12px;
+	color:#666;
+	margin-top: 10px;
+	margin-left: 22px;
+}
+.previewCard_avator{
+	width: 75px;
+	height: 75px;
+	float:right;
+	margin-top: -50px;
+	margin-right: 24px;
+	border-radius: 50%;
+}
+.previewCard_dep{
+	font-size: 12px;
+	color:#666;
+	margin-top: 5px;
+	margin-left: 22px;
+}
+.previewCard_job{
+	font-size: 12px;
+	color:#666;
+	margin-top: 5px;
+	margin-left: 18px;
+}
+.previewCard_company{
+	font-size: 12px;
+	color:#666;
+	margin-top: 38px;
+	margin-left: 22px;
+}
+.field_touxian,.field_mobile,.field_phone,.field_email,.field_url,.field_fax,.field_weixin,.field_qq,.field_weibo,.field_company,.field_address,.field_note{
+	width:318px;
+	height:20px;
+	padding: 10px 0 10px 22px;
+	border-bottom: 1px solid rgba(120,130,140,.13);
+	color:rgba(0,0,0,.87);
+	font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="main_div" id="main_div">
+	<div class="title_div" id="title_div"><span id="title_span"></span>的名片</div>
+	<div class="previewCard">
+		<div class="previewCard_name" id="previewCard_name"></div>
+		<div class="previewCard_mobile" id="previewCard_mobile"></div>
+		<img class="previewCard_avator" id="previewCard_avator" src="../2018/06/default_head_image.png">
+		<span class="previewCard_dep" id="previewCard_dep"></span>
+		<span class="previewCard_job" id="previewCard_job"></span>
+		<div class="previewCard_company" id="previewCard_company"></div>
+	</div>
+	<div class="previewForm" style="width: 340px;margin: 0 auto;">
+		<div class="field_touxian" id="field_touxian"></div>
+		<div class="field_mobile" id="field_mobile"></div>
+		<div class="field_email" id="field_email"></div>
+		<div class="field_url" id="field_url"></div>
+		<div class="field_fax" id="field_fax"></div>
+		<div class="field_phone" id="field_phone"></div>
+		<div class="field_weixin" id="field_weixin"></div>
+		<div class="field_qq" id="field_qq"></div>
+		<div class="field_weibo" id="field_weibo"></div>
+		<div class="field_company" id="field_company"></div>
+		<div class="field_address" id="field_address"></div>
+		<div class="field_note" id="field_note"></div>
+	</div>
+</div>
+</body>
+</html>
