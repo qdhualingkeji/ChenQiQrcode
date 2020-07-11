@@ -115,41 +115,47 @@ header .nav .logo {
 .bjContent_div{
 	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
 }
-.jfItem_div{
+.jfdhjpItem_div{
 	margin-top:-260px;margin-left:630px;
+}
+.jfdhjpContent_div{
+	background-image: url('rsrc/scene/202006120002.png');
+}
+.smylItem_div{
+	margin-top:-260px;margin-left:840px;
+}
+.smylContent_div{
+	background-image: url('rsrc/scene/202006120001.png');
+}
+.jfItem_div{
+	margin-top:0px;margin-left:0px;
 }
 .jfContent_div{
 	background-image: url('rsrc/scene/202004260001.png');
 }
 .yspItem_div{
-	margin-top:-260px;margin-left:840px;
+	margin-top:-260px;margin-left:210px;
 }
 .yspContent_div{
 	background-image: url('rsrc/scene/202004260003.png');
 }
 .smsItem_div{
-	margin-top:-260px;margin-left:210px;
+	margin-top:-260px;margin-left:420px;
 }
 .smsContent_div{
 	background-image: url('rsrc/scene/202004260002.png');
 }
 .dmtzlItem_div{
-	margin-top:-260px;margin-left:420px;
+	margin-top:-260px;margin-left:630px;
 }
 .dmtzlContent_div{
 	background-image: url('rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
 }
 .jzsgItem_div{
-	margin-top:-260px;margin-left:630px;
+	margin-top:-260px;margin-left:840px;
 }
 .jzsgContent_div{
 	background-image: url('rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
-}
-.jfdhjpItem_div{
-	margin-top:-260px;margin-left:840px;
-}
-.jfdhjpContent_div{
-	background-image: url('rsrc/scene/202004270001.png');
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
@@ -191,6 +197,9 @@ function goAddModule(type){
 		break;
 		case "jzsg":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
+		break;
+		case "smyl":
+			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=smyl&from=cq";
 		break;
 		case "jfdhjp":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp";
@@ -314,6 +323,26 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="title_div">白酒</div>
 			</div>
+			<div class="item_div jfdhjpItem_div" id="item_div">
+				<div class="content_div jfdhjpContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模版</div>
+				</div>
+				<div class="title_div">积分兑换奖品</div>
+			</div>
+			<div class="item_div smylItem_div" id="item_div">
+				<div class="content_div smylContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('smyl')">应用此模版</div>
+				</div>
+				<div class="title_div">树木园林</div>
+			</div>
 			<div class="item_div jfItem_div" id="item_div">
 				<div class="content_div jfContent_div">
 					
@@ -334,9 +363,6 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="title_div">艺术品</div>
 			</div>
-			<a>
-				<div class="item_div"></div>
-			</a>
 			<div class="item_div smsItem_div" id="item_div">
 				<div class="content_div smsContent_div">
 					
@@ -366,16 +392,6 @@ var _hmt = _hmt || [];
 					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模版</div>
 				</div>
 				<div class="title_div">建筑施工</div>
-			</div>
-			<div class="item_div jfdhjpItem_div" id="item_div">
-				<div class="content_div jfdhjpContent_div">
-					
-				</div>
-				<div class="overlay_div">
-					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模版</div>
-				</div>
-				<div class="title_div">积分兑换奖品</div>
 			</div>
 		</div>
 	</div>
