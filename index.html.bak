@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="applicable-device"content="pc,mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
 <meta name="description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
 <meta property="og:image" content="qrcode/searchimg/logo.jpg" />
 <link rel="canonical" href="https://qrcode.pro">
@@ -125,6 +125,9 @@ function openGkspBgDiv(flag){
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
+}
+.collaboration ul li p {
+    cursor: pointer;
 }
 ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p {
     margin: 0;

@@ -198,6 +198,9 @@ function goAddModule(type){
 		case "jzsg":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
 		break;
+		case "smyl":
+			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=smyl&from=cq";
+		break;
 		case "jfdhjp":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp";
 		break;

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="Generator" content="EditPlus®">
 <meta name="Author" content="">
-<meta name="Keywords" content="">
-<meta name="Description" content="">
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
+<meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="../qrcode/js/jquery-3.1.1.min.js"></script>
 <script>
@@ -180,9 +180,9 @@ body{
 	width:318px;
 	height:20px;
 	padding: 10px 0 10px 22px;
-	border-bottom: 1px solid rgba(120,130,140,.13);
 	color:rgba(0,0,0,.87);
 	font-size: 14px;
+	border-bottom: 1px solid rgba(120,130,140,.13);
 }
 </style>
 </head>
