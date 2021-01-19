@@ -244,7 +244,7 @@ header .nav .logo {
 	letter-spacing: 0;
 }
 </style>
- <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+ <title>辰麒二维码案例模版</title>
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
