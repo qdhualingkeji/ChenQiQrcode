@@ -38,6 +38,9 @@
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -85,7 +88,10 @@ var _hmt = _hmt || [];
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -127,7 +133,7 @@ var _hmt = _hmt || [];
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

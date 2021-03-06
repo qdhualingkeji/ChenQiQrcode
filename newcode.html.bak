@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="Generator" content="EditPlus®">
   <meta name="Author" content="">
-  <meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
+  <meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
   <meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
@@ -162,6 +162,9 @@ header .nav .logo {
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -173,6 +176,54 @@ $(function(){
     }
   });
 });
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
 
 function goAddModule(type){
 	var url;
@@ -243,7 +294,13 @@ var _hmt = _hmt || [];
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
+			<a class="kf-open registered but"><span>申请试用</span></a>
+		</div>
+		<div class="nav_button">
 			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
     </div>

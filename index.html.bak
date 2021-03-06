@@ -29,7 +29,7 @@
 </script>
 <script type="text/javascript">
 $(function(){
-  setInterval("checkBgIfLogin()","3000","3000");
+  //setInterval("checkBgIfLogin()","3000","3000");
 
   var gkspbw=$("#gkspBg_div").css("width");
   gkspbw=gkspbw.substring(0,gkspbw.length-2);
@@ -98,13 +98,13 @@ function autoLogin(){
 		dataType:"jsonp",
 		type: "post",
 		jsonpCallback:"jsonpCallback",
-		success:function(json){
-			var result=JSON.parse(json);
-			if(result.status==0){
-				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+result.url;
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
 			}
 			else{
-				alert(result.msg);
+				alert(data.msg);
 			}
 		}
 	});
