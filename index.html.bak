@@ -29,6 +29,8 @@
 </script>
 <script type="text/javascript">
 $(function(){
+  setInterval("checkBgIfLogin()","3000","3000");
+
   var gkspbw=$("#gkspBg_div").css("width");
   gkspbw=gkspbw.substring(0,gkspbw.length-2);
   var gkspw=$("#gksp_div").css("width");
@@ -59,6 +61,54 @@ $(function(){
 	$(this).find(".img2").css("display","none");
   });
 });
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(json){
+			var result=JSON.parse(json);
+			if(result.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+result.url;
+			}
+			else{
+				alert(result.msg);
+			}
+		}
+	});
+}
 
 function openModule(){
 	location.href="newcode.html";
@@ -502,7 +552,10 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but">登录</a>
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but" id="loginBut_a">登录</a>
+			<a class="htgl but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -925,7 +978,7 @@ var swiper = new Swiper('.merchants', {
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

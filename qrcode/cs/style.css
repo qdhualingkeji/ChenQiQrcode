@@ -181,7 +181,7 @@ header .nav .nav_button a{
 	display:inline-block;
 	margin: 10px 4px;
 }
-header .nav .nav_button .login{
+header .nav .nav_button .login,header .nav .nav_button .htgl{
 	/*
 	border: 1px solid #fff;
 	*/
@@ -190,6 +190,7 @@ header .nav .nav_button .login{
 	background-color: transparent;
 	*/
 	background-color: #00a3ff;
+	display:none;
 }
 header .nav .nav_button .login2 {
     border: 1px solid #000;
