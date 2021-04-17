@@ -336,6 +336,54 @@ $(function(){
   });
 });
 
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#nav_button #userName").val(data.userName);
+				$("#nav_button #password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#nav_button #userName").val("");
+				$("#nav_button #password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#nav_button #userName").val();
+	var password=$("#nav_button #password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
 function goRegist(){
 	var price=$("#price_hid").val();
 	location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/regist?action=buy&price="+price;
@@ -384,7 +432,7 @@ function login(){
   $.ajax({
 	 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/loginQL",
 	 dataType:'jsonp',
-	 data:"userName="+userName+"&password="+password,
+	 data:"userName="+userName+"&password="+password+"&action=addModule",
 	 processData: false, 
 	 jsonp:'callback',
 	 jsonpCallback:"jsonpCallback",
@@ -468,10 +516,10 @@ var _hmt = _hmt || [];
 		<div class="main_div">
 			<div class="logLeft_div">
 				<h2 class="sjhdl_h2">手机号登录</h2>
-				<div class="userName_div">
+				<div class="userName_div" id="userName_div">
 					<input type="text" class="userName_inp" id="userName" onfocus="focusUserName();" onblur="checkUserName();"/>
 				</div>
-				<div class="password_div">
+				<div class="password_div" id="password_div">
 					<input type="password" class="password_inp" id="password" onblur="checkPassword();"/>
 				</div>
 				<div class="loginBut_div" onclick="checkInputData();">登 录</div>
@@ -511,7 +559,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
-		<div class="nav_button">
+		<div class="nav_button" id="nav_button">
 			<input type="hidden" id="userName"/>
 			<input type="hidden" id="password"/>
 			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
