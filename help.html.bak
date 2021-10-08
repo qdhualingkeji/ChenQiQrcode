@@ -67,6 +67,54 @@ $(function(){
 	initContentDiv("dlzc");
 });
 
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
 function initContentDiv(navFlag){
 	var contentDiv=$("#rightNav_div #content_div");
 	contentDiv.empty();

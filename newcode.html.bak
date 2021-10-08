@@ -107,55 +107,55 @@ header .nav .logo {
 	margin-top:-260px;margin-left:210px;
 }
 .hjContent_div{
-	background-image: url('rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');
 }
 .bjItem_div{
 	margin-top:-260px;margin-left:420px;
 }
 .bjContent_div{
-	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
 }
 .jfdhjpItem_div{
 	margin-top:-260px;margin-left:630px;
 }
 .jfdhjpContent_div{
-	background-image: url('rsrc/scene/202006120002.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202006120002.png');
 }
 .smylItem_div{
 	margin-top:-260px;margin-left:840px;
 }
 .smylContent_div{
-	background-image: url('rsrc/scene/202006120001.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202006120001.png');
 }
 .jfItem_div{
 	margin-top:0px;margin-left:0px;
 }
 .jfContent_div{
-	background-image: url('rsrc/scene/202004260001.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260001.png');
 }
 .yspItem_div{
 	margin-top:-260px;margin-left:210px;
 }
 .yspContent_div{
-	background-image: url('rsrc/scene/202004260003.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260003.png');
 }
 .smsItem_div{
 	margin-top:-260px;margin-left:420px;
 }
 .smsContent_div{
-	background-image: url('rsrc/scene/202004260002.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260002.png');
 }
 .dmtzlItem_div{
 	margin-top:-260px;margin-left:630px;
 }
 .dmtzlContent_div{
-	background-image: url('rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
 }
 .jzsgItem_div{
 	margin-top:-260px;margin-left:840px;
 }
 .jzsgContent_div{
-	background-image: url('rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
@@ -298,7 +298,6 @@ var _hmt = _hmt || [];
 			<input type="hidden" id="password"/>
 			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
 			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
-			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
 		<div class="nav_button">
 			<a class="kf-open registered but"><span>申请试用</span></a>

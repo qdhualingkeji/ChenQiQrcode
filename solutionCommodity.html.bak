@@ -290,6 +290,27 @@ function checkBgIfLogin(){
 	});
 }
 
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
 var _hmt = _hmt || [];
 (function() {
 	var hm = document.createElement('script');

@@ -427,8 +427,8 @@ function checkPassword(){
 }
 
 function login(){
-  var userName=$("#userName").val();
-  var password=MD5($("#password").val()).toUpperCase();
+  var userName=$("#userName_div #userName").val();
+  var password=MD5($("#password_div #password").val()).toUpperCase();
   $.ajax({
 	 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/loginQL",
 	 dataType:'jsonp',
