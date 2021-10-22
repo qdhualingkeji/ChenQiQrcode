@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
+<meta name="Description" content="辰麒二维码各版本价格: 基础版600元每年、高级版1270元每年、行业版2670元每年,更大使用量,以及去除辰麒标识及跳转中间页,支持音视频等功能。">
+<link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
+<style>
+header .nav .logo {
+    display: block;
+    width: 560px;
+    height: 58px;
+	margin-top: 3px;
+    margin-left: 20px;
+    background: url(qrcode/ig/logo.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.xwdt_div{
+	width:100%;height:auto;margin-top:80px;background-color:#fff;padding:1px;
+}
+.xwdt_div .title_div{
+	width:816px;height:50px;line-height:50px;margin:30px auto;font-size:30px;
+}
+.xwdt_div .list_div{
+	width:816px;height:auto;margin:0 auto;
+}
+.xwdt_div .list_div .item_div{
+	width:100%;height:50px;line-height:50px;border-bottom: 1px dashed #DDD;
+}
+.xwdt_div .list_div .item_div .text_span{
+	font-size:15px;margin-left:10px;
+}
+.xwdt_div .list_div .item_div .date_span{
+	float:right;margin-right:10px;
+}
+
+.w_grid_div{
+	width:100%;
+	height:auto;
+	bottom:0;
+	background-color:#1F232A;
+	position:fixed;
+}
+.info-tell{
+	width:995px;
+	padding-top: 25px;
+	height: auto;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.info-tell p{
+	font-size: 15px;
+	color:#FFFFFF;
+	letter-spacing: 0;
+	line-height: 45px;
+}
+.bqxx{
+	width:1440px;
+	height:52px;
+	line-height:52px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	margin:0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: 0;
+}
+</style>
+<title>新闻动态</title>
+<script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script src="qlqrcode_files/MD5.js"></script>
+<script type="text/javascript">
+$(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
+  var nav=$("header");
+  var win=$(window);
+  var sc=$(document);
+  win.scroll(function(){
+    if(sc.scrollTop()>=50){
+      nav.addClass("fix");
+    }else{
+    nav.removeClass("fix");
+    }
+  });
+});
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#nav_button #userName").val(data.userName);
+				$("#nav_button #password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#nav_button #userName").val("");
+				$("#nav_button #password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#nav_button #userName").val();
+	var password=$("#nav_button #password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<header class="fix">
+<div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
+    <a href="/" class="logo fl">&nbsp;</a>
+    <div class="navbar">
+        <ul class="menu" style="color:#000;">
+            <li>
+				<a class="a2" href="index.html">首页</a>
+			</li>
+            <li>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
+			</li>
+			<li>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
+			</li>
+            <li>
+				<a class="a2" href="price.html">定制价格</a>
+            </li>
+			<li class="active">
+				<a href="new.html">新闻动态</a>
+			</li>
+			<li>
+				<a class="a2" href="help.html">帮助</a>
+			</li>
+        </ul>
+		<div class="nav_button" id="nav_button">
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
+			<!--
+			<a class="kf-open registered but"><span>申请试用</span></a>
+			-->
+		</div>
+    </div>
+</div>
+</header>
+<nav class="topnav">
+    <div class="topnav-layer">
+        <div class="topnav-menu">
+            <div class="topnav-menu-col" id="topnavToggle">
+                <div class="topnav-rotate-top"><span></span></div>
+                <div class="topnav-rotate-middle"><span></span></div>
+                <div class="topnav-rotate-bottom"><span></span></div>
+            </div>
+        </div>
+        <div class="topnav-logo"><a href="/"></a></div>
+        <div class="topnav-reg"><a href="/login">登录</a></div>
+    </div>
+    <div class="menu-list">
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/qrcode/function">功能</a></li>
+            <li>
+                <a href="/qrcode/solution">解决方案</a>
+                <p><a href="/qrcode/solution">一站式</a></p>
+                <p><a href="/qrcode/solution/traceback.html">防伪追溯</a></p>
+                <p><a href="/qrcode/solution/inspect.html">设备巡检</a></p>
+                <p><a href="/qrcode/solution/record.html">周期记录</a></p>
+            </li>
+            <li>
+				<a href="/qrcode/case">案例展示</a>
+				<p><a href="https://qrcode.pro/q/?c=16666661150000000129000008000004">农药追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000128000009000000">种子追溯</a></p>
+				<p><a href="https://qrcode.pro/q/?c=00000003000041000000">化肥追溯</a></p>
+				<p><a href="/qrcode/case">更多案例</a></p>
+			</li>
+            <li>
+				<a href="/help/faq/information/">资讯帮助</a>
+				<p><a href="/help/faq/problem/">常识问答</a></p>
+				<p><a href="/help/faq/information/">行业资讯</a></p>
+				<p><a href="/help/faq/help/">帮助文档</a></p>
+				<p><a href="/qrcode/about/">关于我们</a></p>
+			</li>
+			<li><a href="/tools/qrcode/">二维码生成器</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="xwdt_div">
+	<div class="title_div">新闻动态</div>
+	<div class="list_div">
+		<div class="item_div">
+			<img src="qlqrcode_files/images/202110150010.jpg" />
+			<span class="text_span">装载机电子秤选购须知</span>
+			<span class="date_span">[2021-09-30]</span>
+		</div>
+		<div class="item_div">
+			<img src="qlqrcode_files/images/202110150010.jpg" />
+			<span class="text_span">装载机秤装卸</span>
+			<span class="date_span">[2021-09-30]</span>
+		</div>
+		<div class="item_div">
+			<img src="qlqrcode_files/images/202110150010.jpg" />
+			<span class="text_span">智能称重软件系统功能</span>
+			<span class="date_span">[2021-09-30]</span>
+		</div>
+	</div>
+</div>
+
+<!--w_grid-1568271949559_start-->
+<div id="w_grid-1568271949559" class="w_grid_div">
+	<div class="info-tell">
+		<p>咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</p>
+		<p>邮箱地址：qdhualing@126.com</p>
+		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
+	</div>
+	<div class="bqxx">
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
+	</div>
+</div>
+<!--w_grid-1568271949559_end-->
+</body>
+</html>

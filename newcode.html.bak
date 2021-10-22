@@ -284,7 +284,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
 			</li>
             <li class="list">
 				<a class="a2" href="price.html">定制价格</a>

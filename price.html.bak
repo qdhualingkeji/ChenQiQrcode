@@ -571,6 +571,9 @@ var _hmt = _hmt || [];
 				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li>
+				<a href="new.html">新闻动态</a>
+			</li>
+			<li>
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
@@ -642,8 +645,8 @@ var _hmt = _hmt || [];
 					<span class="jine_span">0元/年</span>
 				</div>
 				<div class="xqhdtx_div">
-					<div class="text_div1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-					<div class="text_div2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+					<div class="text_div1">&nbsp;</div>
+					<div class="text_div2">&nbsp;</div>
 				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">二维码生成数量不限</div>

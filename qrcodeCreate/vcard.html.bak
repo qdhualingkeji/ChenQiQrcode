@@ -607,10 +607,13 @@ var _hmt = _hmt || [];
 					<a href="../solutionCommodity.html">案例模版</a>
 				</li>
 				<li class="active">
-					<a href="text.html">二维码生成器</a>
+					<a href="url.html">二维码生成器</a>
 				</li>
 				<li>
 					<a href="../price.html">定制价格</a>
+				</li>
+				<li>
+					<a href="new.html">新闻动态</a>
 				</li>
 				<li>
 					<a href="../help.html">帮助</a>
