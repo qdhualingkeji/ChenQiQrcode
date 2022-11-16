@@ -101,6 +101,7 @@ function autoLogin(){
 	});
 }
 
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 var _hmt = _hmt || [];
 (function() {
 	var hm = document.createElement('script');
@@ -126,15 +127,14 @@ var _hmt = _hmt || [];
 				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li class="active">
-<<<<<<< HEAD
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
-=======
 				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
->>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 			</li>
             <li class="list">
 				<a class="a2" href="price.html">定制价格</a>
             </li>
+			<li>
+				<a href="new.html">新闻动态</a>
+			</li>
 			<li class="list">
 				<a class="a2" href="help.html">帮助</a>
 			</li>
