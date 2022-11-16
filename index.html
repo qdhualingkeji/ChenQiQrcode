@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+<title>辰麒二维码首页</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="applicable-device"content="pc,mobile" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯" />
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
 <meta name="description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。" />
 <meta property="og:image" content="qrcode/searchimg/logo.jpg" />
 <link rel="canonical" href="https://qrcode.pro">
@@ -66,10 +66,13 @@ function openModule(){
 
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
 })();
 
 /*
@@ -122,6 +125,9 @@ function openGkspBgDiv(flag){
 .w-1000 {
     width: 1000px;
     margin: 0 auto;
+}
+.collaboration ul li p {
+    cursor: pointer;
 }
 ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p {
     margin: 0;
@@ -483,7 +489,7 @@ ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, sp
 				<a href="index.html">首页</a>
 			</li>
             <li>
-				<a href="solutionCommodity.html">案例模板</a>
+				<a href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
 				<a href="qrcodeCreate/text.html">二维码生成器</a>
@@ -600,14 +606,40 @@ var swiper = new Swiper('.merchants', {
 <div class="collaboration min_w">
     <div class="title">丰富场景应用 满足多样化需求</div>
     <ul>
-        <li><i class="chanpin" onclick="openModule()"></i><p>产品展示</p></li>
-        <li><i class="fangwei" onclick="openModule()"></i><p>防伪追溯</p></li>
-        <li><i class="fenlei" onclick="openModule()"></i><p>分类管理</p></li>
-        <li><i class="weijian" onclick="openModule()"></i><p>设备维检</p></li>
-        <li><i class="daili" onclick="openModule()"></i><p>代理管理</p></li>
-        <li><i class="shuju" onclick="openModule()"></i><p>数据分析</p></li>
-        <li><i class="quanxian" onclick="openModule()"></i><p>权限管理</p></li>
-        <li><i class="yingxiao" onclick="openModule()"></i><p>营销推广</p></li>
+        <li>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=spzs&moduleType=redWine&from=cq">
+				<i class="chanpin"></i>
+				<p>产品展示</p>
+			</a>
+		</li>
+        <li onclick="openModule()">
+			<i class="fangwei"></i>
+			<p>防伪追溯</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="fenlei"></i>
+			<p>分类管理</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="weijian"></i>
+			<p>设备维检</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="daili"></i>
+			<p>代理管理</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="shuju"></i>
+			<p>数据分析</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="quanxian"></i>
+			<p>权限管理</p>
+		</li>
+        <li onclick="openModule()">
+			<i class="yingxiao"></i>
+			<p>营销推广</p>
+		</li>
     </ul>
     <a class="more but" href="solutionCommodity.html">查看更多功能介绍</a>
 </div>
@@ -636,7 +668,7 @@ var swiper = new Swiper('.merchants', {
 					</li>
 					<li class="system-tab-content-li">
 						<h4>行业模版</h4>
-						<p>常见行业模板免费套用，只需3步即可生成属于自己的二维码</p>
+						<p>常见行业模版免费套用，只需3步即可生成属于自己的二维码</p>
 					</li>
 				</ul>
 			</div>
@@ -651,8 +683,8 @@ var swiper = new Swiper('.merchants', {
 			</div>
 		</div>
 		<div class="action-box2">
-			<div class="symbcj_div" onclick="location.href='newcode.html'">使用模板创建</div>
-			<div class="zdycj_div" onclick="alert('这个模板有待添加')">自定义创建</div>
+			<div class="symbcj_div" onclick="location.href='newcode.html'">使用模版创建</div>
+			<div class="zdycj_div" onclick="alert('这个模版有待添加')">自定义创建</div>
 		</div>
 	</div>
 </section>

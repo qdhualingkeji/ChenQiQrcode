@@ -171,7 +171,7 @@ $(function(){
 				waibHtml+="<span style=\"font-size: 16px;\">第一步：编辑二维码内容</span>";
 			waibHtml+="</strong>";
 		waibHtml+="</p>";
-		waibHtml+="<p>在页面右侧选择合适的案例模板，根据自己的需求进行修改并保存，快速生成二维码。</p>";
+		waibHtml+="<p>在页面右侧选择合适的案例模版，根据自己的需求进行修改并保存，快速生成二维码。</p>";
 		/*
 		waibHtml+="<p>";
 			waibHtml+="教程详见：";
@@ -325,6 +325,7 @@ $(function(){
 		waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190731/0001.png\" style=\"width:279px;height:557px;\"/>";
 		waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190731/0002.png\" style=\"width:280px;height:559px;margin-left:50px;\"/>";
 		waibHtml+="</div>";
+		/*
 		waibHtml+="<div style=\"height:30px;line-height:30px;margin-top:50px;\">操作步骤：</div>";
 		waibHtml+="<div style=\"height:30px;line-height:30px;\">一、积分二维码活动设置</div>";
 		waibHtml+="<div style=\"height:30px;line-height:30px;\">1.导航栏找到积分兑换奖品点击活动设置，编辑并保存设置</div>";
@@ -374,13 +375,14 @@ $(function(){
 		waibHtml+="<img src=\"qlqrcode_files/images/202005250011.png\" style=\"width:800px;height:302px;\"/>";
 		waibHtml+="</div>";
 		waibHtml+="<div style=\"height:30px;line-height:30px;margin-bottom: 20px;text-align:center;\">图 7</div>";
+		*/
 		
-		ctiuHtml+="<li class=\"create-tpl-item Margin16\" go-preview=\"\" is_preview=\"0\" scene_id=\"1382\" code-click-data=\"61\" data-id=\"3196\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/2b541c82ef7e535cf2f0a2c370dfa36c1547083765.png\">";
+		ctiuHtml+="<a href=\"http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp\"><li class=\"create-tpl-item Margin16\"  is_preview=\"0\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/2b541c82ef7e535cf2f0a2c370dfa36c1547083765.png\">";
 			ctiuHtml+="<h4 class=\"item-name\">";
-				ctiuHtml+="案例试用";
+				ctiuHtml+="模版试用";
 				ctiuHtml+="<i class=\"fa fa-angle-right\"></i>";
 			ctiuHtml+="</h4>";
-		ctiuHtml+="</li>";
+		ctiuHtml+="</li></a>";
 	}
 	else if(id==1380){
 		dcHtml+="<h1 class=\"detail_title\">";
@@ -827,7 +829,7 @@ $(function(){
 				waibHtml+="<strong>第二步：批量创建样品二维码</strong>";
 			waibHtml+="</span>";
 		waibHtml+="</p>";
-		waibHtml+="<p>通常你需要制作大量样品标签二维码，可以将做好的单个二维码转换成批量模板。</p>";
+		waibHtml+="<p>通常你需要制作大量样品标签二维码，可以将做好的单个二维码转换成批量模版。</p>";
 		waibHtml+="<p>然后将样品信息整理成excel表格，一次性导入就可快速完成批量二维码的制作，提升制作效率。</p>";
 		/*
 		waibHtml+="<p style=\"margin-bottom: 15px;\">";
@@ -1034,7 +1036,7 @@ $(function(){
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li class="active">
-				<a class="a2" href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
@@ -1732,7 +1734,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 <div class="create-code-tpl-box leftClass" id="leftBox">
 	<div class="quick-create-tpl">
 		<div class="create-item-box">
-			<h3 class="quick-create-tpl-name">使用案例模板，快速新建</h3>
+			<h3 class="quick-create-tpl-name">使用案例模版，快速新建</h3>
 			<ul class="create-tpl-item-ul" id="create-tpl-item-ul">
 				
 				
@@ -1853,9 +1855,6 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 		case "3195":
 			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg";
 		break;
-		case "3196":
-			location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jfdhjp";
-		break;
 		}
 	}
 </script>
@@ -1944,8 +1943,11 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
       var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement('script');
-                    hm.src = '//hm.baidu.com/hm.js?cb508e5fef81367bfa47f4ec313bf68c';        
-					var s = document.getElementsByTagName('script')[0];
+		if(location.href.indexOf("www.qrcodesy.com")!=-1)
+            hm.src = '//hm.baidu.com/hm.js?cb508e5fef81367bfa47f4ec313bf68c';
+		else
+            hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+		var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(hm, s);
         var getCookie = function (name) {
           var arr = document.cookie.match(new RegExp('(^| )' + name + '=([^;]*)(;|$)'));

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="Generator" content="EditPlus®">
 <meta name="Author" content="">
-<meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
 <meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 <link rel="stylesheet" type="text/css" href="../qrcode/cs/style.css" />
@@ -29,16 +29,19 @@ $(function(){
 		$(".editGRMP_div #xmDropdown_div").css("display","none");
 	});
 
+	$("#add_div #locationHref_hid").val(location.href);
+	$("#editGRMP_div #locationHref_hid").val(location.href);
+
 	var type=getQueryString("type");
+	var uuid=getQueryString("uuid");
 	//type=1;
-	if(type==1){//名片创建成功
+	if(type==1&uuid!=null){//名片创建成功
 		$("#add_div").css("display","none");
 		$("#qympewm_div").css("display","none");
 
 		$("#createSuccess_div").css("display","block");
 		$("#showQrcode_div").css("display","block");
 
-		var uuid=getQueryString("uuid");
 		$.ajax({
 		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/getHtmlGoodsGRMP",
 		data:{uuid:uuid},
@@ -133,7 +136,7 @@ $(function(){
 		}
 	});
 	}
-	else if(type==2){//再建一张
+	else if(type==1&uuid==null){//再建一张
 		$("#createSuccess_div").css("display","none");
 		$("#showQrcode_div").css("display","none");
 
@@ -286,10 +289,13 @@ function showSuccessDiv(){
 
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
 })();
 </script>
 <style>
@@ -535,7 +541,7 @@ var _hmt = _hmt || [];
 	display:none;
 }
 </style>
-<title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+<title>辰麒名片二维码生成器</title>
 </head>
 <body>
 <header class="fix">
@@ -547,7 +553,7 @@ var _hmt = _hmt || [];
 					<a href="../index.html">首页</a>
 				</li>
                 <li>
-					<a href="../solutionCommodity.html">案例模板</a>
+					<a href="../solutionCommodity.html">案例模版</a>
 				</li>
 				<li class="active">
 					<a href="text.html">二维码生成器</a>
@@ -590,7 +596,7 @@ var _hmt = _hmt || [];
 			<h1 class="personVcardTitle">个人名片二维码</h1>
 			<p class="personVcardDesc">适用于制作少量名片，单张创建，扫码可一键保存到通讯录</p>
 			<div class="avator">
-				<img id="upload-img" src="https://blogcdnimg.clewm.net/2018/06/default_head_image.png" alt="" width="90" height="90" border="0">
+				<img id="upload-img" src="../2018/06/default_head_image.png" alt="" width="90" height="90" border="0">
 				<div class="upload pointer" id="upload-btn">
 					<input type="file" name="avatorImg" id="uploadfile" accept=".jpg, .jpeg, .png, .bmp" class="uploadfile" hidden="" onchange="showAvatorImg(this)">
 					<!--
@@ -674,6 +680,7 @@ var _hmt = _hmt || [];
 				</div>
 			</div>
 			<div class="createQrcode_div" id="createQrcode_div" onclick="createQrcode()" style="width:148px;height:48px;line-height:48px;margin:35px auto 0;text-align:center;font-size:15px;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:5px;">生成二维码</div>
+			<input type="hidden" id="locationHref_hid" name="locationHref"/>
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
 		</form>
@@ -683,7 +690,7 @@ var _hmt = _hmt || [];
 			<div class="previewCard" style="width:340px;height:180px;border: 1px solid rgba(120,130,140,.13);margin:30px auto;">
 				<div class="previewCard_name" id="previewCard_name" style="font-size: 24px;color:rgba(0,0,0,.87);margin-top: 28px;margin-left: 22px;"></div>
 				<div class="previewCard_mobile" id="previewCard_mobile" style="font-size: 12px;color:#666;margin-top: 10px;margin-left: 22px;"></div>
-				<img class="previewCard_avator" id="previewCard_avator" src="https://ncstatic.clewm.net/rsrc/2020/0306/15/d566a49a9c8c77ddf20766de635fad02.jpg" style="width: 75px;height: 75px;float:right;margin-top: -50px;margin-right: 24px;border-radius: 50%;">
+				<img class="previewCard_avator" id="previewCard_avator" src="../2018/06/default_head_image.png" style="width: 75px;height: 75px;float:right;margin-top: -50px;margin-right: 24px;border-radius: 50%;">
 				<span class="previewCard_dep" id="previewCard_dep" style="font-size: 12px;color:#666;margin-top: 5px;margin-left: 22px;"></span>
 				<span class="previewCard_job" id="previewCard_job" style="font-size: 12px;color:#666;margin-top: 5px;margin-left: 18px;"></span>
 				<div class="previewCard_company" id="previewCard_company" style="font-size: 12px;color:#666;margin-top: 38px;margin-left: 22px;"></div>
@@ -704,7 +711,7 @@ var _hmt = _hmt || [];
 			</div>
 			<div style="width:242px;margin:0 auto;margin-bottom:20px;">
 				<div class="edit_div" id="edit_div" onclick="showEditDiv()" style="width:112px;height:38px;line-height:38px;margin-top:35px;text-align:center;color:rgba(0,0,0,.87);border:1px solid rgba(120,130,140,.13);cursor:pointer;border-radius:3px;">编辑</div>
-				<div class="zjyz_div" id="zjyz_div" onclick="location.href='vcard.html?type=2'" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:#00A3FF;border:1px solid #00A3FF;cursor:pointer;border-radius:3px;">再建一张</div>
+				<div class="zjyz_div" id="zjyz_div" onclick="location.href='vcard.html?type=1'" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:#00A3FF;border:1px solid #00A3FF;cursor:pointer;border-radius:3px;">再建一张</div>
 			</div>
 		</div>
 
@@ -802,6 +809,7 @@ var _hmt = _hmt || [];
 				<div class="save_div" id="save_div" onclick="saveUpdate()" style="width:112px;height:38px;line-height:38px;margin-top:-40px;margin-left:130px;text-align:center;color:rgba(255,255,255,1);background-color:#00A3FF;cursor:pointer;border-radius:3px;">保存修改</div>
 			</div>
 			
+			<input type="hidden" id="locationHref_hid" name="locationHref"/>
 			<input id="submit_but" type="submit" value="提交" style="display:none;"/>
 		</div>
 		</form>

@@ -13,7 +13,7 @@ function createQrcode(){
 	var content=$("#content_ta").val();
 	$.ajax({
 		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/createQrcodeByCQSCQ",
-		data:{text:content},
+		data:{text:content,textType:1},
 		dataType:"jsonp",
 		type: "post",
 		jsonpCallback:"jsonpCallback",

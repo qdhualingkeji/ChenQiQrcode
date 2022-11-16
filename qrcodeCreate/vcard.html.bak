@@ -129,7 +129,7 @@ $(function(){
 
 			var qrcode=htmlGoodsGRMP.qrcode;
 			$("#showQrcode_div").empty();
-			$("#showQrcode_div").append("<img src=\"http://www.qrcodesy.com:8080/GoodsPublic/upload/"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
+			$("#showQrcode_div").append("<img src=\"http://www.qrcodesy.com:8080/"+qrcode+"\" style=\"width:100%;height:100%;\"/>");
 		}
 	});
 	}

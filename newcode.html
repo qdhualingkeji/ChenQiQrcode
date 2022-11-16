@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="Generator" content="EditPlus®">
   <meta name="Author" content="">
-  <meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
+  <meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
   <meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
@@ -115,41 +115,47 @@ header .nav .logo {
 .bjContent_div{
 	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
 }
-.jfItem_div{
+.jfdhjpItem_div{
 	margin-top:-260px;margin-left:630px;
+}
+.jfdhjpContent_div{
+	background-image: url('rsrc/scene/202006120002.png');
+}
+.smylItem_div{
+	margin-top:-260px;margin-left:840px;
+}
+.smylContent_div{
+	background-image: url('rsrc/scene/202006120001.png');
+}
+.jfItem_div{
+	margin-top:0px;margin-left:0px;
 }
 .jfContent_div{
 	background-image: url('rsrc/scene/202004260001.png');
 }
 .yspItem_div{
-	margin-top:-260px;margin-left:840px;
+	margin-top:-260px;margin-left:210px;
 }
 .yspContent_div{
 	background-image: url('rsrc/scene/202004260003.png');
 }
 .smsItem_div{
-	margin-top:-260px;margin-left:210px;
+	margin-top:-260px;margin-left:420px;
 }
 .smsContent_div{
 	background-image: url('rsrc/scene/202004260002.png');
 }
 .dmtzlItem_div{
-	margin-top:-260px;margin-left:420px;
+	margin-top:-260px;margin-left:630px;
 }
 .dmtzlContent_div{
 	background-image: url('rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
 }
 .jzsgItem_div{
-	margin-top:-260px;margin-left:630px;
+	margin-top:-260px;margin-left:840px;
 }
 .jzsgContent_div{
 	background-image: url('rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
-}
-.jfdhjpItem_div{
-	margin-top:-260px;margin-left:840px;
-}
-.jfdhjpContent_div{
-	background-image: url('rsrc/scene/202004270001.png');
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
@@ -192,6 +198,9 @@ function goAddModule(type){
 		case "jzsg":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=jzsg&from=cq";
 		break;
+		case "smyl":
+			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goAddModule?trade=smyl&from=cq";
+		break;
 		case "jfdhjp":
 			url="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp";
 		break;
@@ -201,10 +210,13 @@ function goAddModule(type){
 
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
 })();
 </script>
  </head>
@@ -218,7 +230,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li class="active">
-				<a class="a2" href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
 				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
@@ -227,7 +239,7 @@ var _hmt = _hmt || [];
 				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li class="list">
-				<a class="a2" href="/help/faq/information/">帮助</a>
+				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
@@ -281,14 +293,14 @@ var _hmt = _hmt || [];
 
 <div class="center_div">
 	<div class="selectModule_div">
-		<div class="active_new_code_title">选择模板，开始创建二维码</div>
+		<div class="active_new_code_title">选择模版，开始创建二维码</div>
 
 		<div style="width:775px;height:3px;margin: 0 auto;margin-top: 62px;background-color:rgba(120,130,140,.13)"></div>
 
 		<div class="moduleList_div">
 			<a>
 				<div class="item_div">
-					<div class="create_div" onclick="alert('模板待添加')">从空白新建</div>
+					<div class="create_div" onclick="alert('模版待添加')">从空白新建</div>
 				</div>
 			</a>
 			<div class="item_div hjItem_div" id="item_div">
@@ -297,7 +309,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('redWine')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('redWine')">应用此模版</div>
 				</div>
 				<div class="title_div">红酒</div>
 			</div>
@@ -307,9 +319,29 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('whiteWine')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('whiteWine')">应用此模版</div>
 				</div>
 				<div class="title_div">白酒</div>
+			</div>
+			<div class="item_div jfdhjpItem_div" id="item_div">
+				<div class="content_div jfdhjpContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模版</div>
+				</div>
+				<div class="title_div">积分兑换奖品</div>
+			</div>
+			<div class="item_div smylItem_div" id="item_div">
+				<div class="content_div smylContent_div">
+					
+				</div>
+				<div class="overlay_div">
+					<div class="preview_div">预览</div>
+					<div class="yycmb_div" onclick="goAddModule('smyl')">应用此模版</div>
+				</div>
+				<div class="title_div">树木园林</div>
 			</div>
 			<div class="item_div jfItem_div" id="item_div">
 				<div class="content_div jfContent_div">
@@ -317,7 +349,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('homeTextiles')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('homeTextiles')">应用此模版</div>
 				</div>
 				<div class="title_div">家纺</div>
 			</div>
@@ -327,20 +359,17 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('artwork')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('artwork')">应用此模版</div>
 				</div>
 				<div class="title_div">艺术品</div>
 			</div>
-			<a>
-				<div class="item_div"></div>
-			</a>
 			<div class="item_div smsItem_div" id="item_div">
 				<div class="content_div smsContent_div">
 					
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('productExplain')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('productExplain')">应用此模版</div>
 				</div>
 				<div class="title_div">说明书</div>
 			</div>
@@ -350,7 +379,7 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('dmtzl')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('dmtzl')">应用此模版</div>
 				</div>
 				<div class="title_div">多媒体资料</div>
 			</div>
@@ -360,19 +389,9 @@ var _hmt = _hmt || [];
 				</div>
 				<div class="overlay_div">
 					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模板</div>
+					<div class="yycmb_div" onclick="goAddModule('jzsg')">应用此模版</div>
 				</div>
 				<div class="title_div">建筑施工</div>
-			</div>
-			<div class="item_div jfdhjpItem_div" id="item_div">
-				<div class="content_div jfdhjpContent_div">
-					
-				</div>
-				<div class="overlay_div">
-					<div class="preview_div">预览</div>
-					<div class="yycmb_div" onclick="goAddModule('jfdhjp')">应用此模板</div>
-				</div>
-				<div class="title_div">积分兑换奖品</div>
 			</div>
 		</div>
 	</div>

@@ -15,7 +15,7 @@
   if(from=="showGoods"){
 	  var accountId=paramArr[1];
 	  var uuid=paramArr[2];
-	  //alert(accountId+","+uuid);
+	  //alert(accountId+","+uuid+","+code);
 	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goShowHtmlGoods?trade=jfdhjp&uuid="+uuid+"&accountId="+accountId+"&code="+code;
   }
   else if(from=="bindWX"){
