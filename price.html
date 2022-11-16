@@ -102,7 +102,7 @@ header .nav .logo {
 }
 .usePrice_div .list_div{
 	width:1032px;
-	height:300px;
+	height:380px;
 	/*
 	background-color:#fff;
 	*/
@@ -138,17 +138,32 @@ header .nav .logo {
 .usePrice_div .list_div .item_div .jine_span{
 	font-size: 18px;
 }
+.usePrice_div .list_div .item_div .xqhdtx_div,{
+	width: 100%;
+}
+.usePrice_div .list_div .item_div .xqhdtx_div .text_div1{
+	text-align: center;
+	color:#f00;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.usePrice_div .list_div .item_div .xqhdtx_div .text_div2{
+	text-align: center;
+	color:#f00;
+	font-size: 12px;
+	margin-top: 5px;
+}
 .usePrice_div .list_div .item_div .text-intro_div{
 	width: 100%;
 	height:60px;
 }
-.usePrice_div .list_div .item_div .text_div1{
+.usePrice_div .list_div .item_div .text-intro_div .text_div1{
 	text-align: center;
 	color:#666;
 	font-size: 12px;
 	margin-top: 15px;
 }
-.usePrice_div .list_div .item_div .text_div2{
+.usePrice_div .list_div .item_div .text-intro_div .text_div2{
 	text-align: center;
 	color:#666;
 	font-size: 12px;
@@ -158,7 +173,7 @@ header .nav .logo {
 	width:112px;
 	height:38px;
 	line-height:38px;
-	margin:50px auto 0;
+	margin:20px auto 0;
 	font-size:15px;
 	color: #f57c00;
 	border: #f57c00 solid 1px;
@@ -321,6 +336,9 @@ header .nav .logo {
 <script src="qlqrcode_files/MD5.js"></script>
 <script type="text/javascript">
 $(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -332,6 +350,54 @@ $(function(){
     }
   });
 });
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#nav_button #userName").val(data.userName);
+				$("#nav_button #password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#nav_button #userName").val("");
+				$("#nav_button #password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#nav_button #userName").val();
+	var password=$("#nav_button #password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
 
 function goRegist(){
 	var price=$("#price_hid").val();
@@ -376,12 +442,12 @@ function checkPassword(){
 }
 
 function login(){
-  var userName=$("#userName").val();
-  var password=MD5($("#password").val()).toUpperCase();
+  var userName=$("#userName_div #userName").val();
+  var password=MD5($("#password_div #password").val()).toUpperCase();
   $.ajax({
 	 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/loginQL",
 	 dataType:'jsonp',
-	 data:"userName="+userName+"&password="+password,
+	 data:"userName="+userName+"&password="+password+"&action=addModule",
 	 processData: false, 
 	 jsonp:'callback',
 	 jsonpCallback:"jsonpCallback",
@@ -465,10 +531,10 @@ var _hmt = _hmt || [];
 		<div class="main_div">
 			<div class="logLeft_div">
 				<h2 class="sjhdl_h2">手机号登录</h2>
-				<div class="userName_div">
+				<div class="userName_div" id="userName_div">
 					<input type="text" class="userName_inp" id="userName" onfocus="focusUserName();" onblur="checkUserName();"/>
 				</div>
-				<div class="password_div">
+				<div class="password_div" id="password_div">
 					<input type="password" class="password_inp" id="password" onblur="checkPassword();"/>
 				</div>
 				<div class="loginBut_div" onclick="checkInputData();">登 录</div>
@@ -499,17 +565,23 @@ var _hmt = _hmt || [];
 				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
 			</li>
             <li class="active">
 				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li>
+				<a class="a2" href="new.html">新闻动态</a>
+			</li>
+			<li>
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
-		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+		<div class="nav_button" id="nav_button">
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -572,6 +644,10 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">0元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">&nbsp;</div>
+					<div class="text_div2">&nbsp;</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">二维码生成数量不限</div>
 					<div class="text_div2">限时7天</div>
@@ -586,6 +662,10 @@ var _hmt = _hmt || [];
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">600元/年</span>
+				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
 				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">去除辰麒所有标识，开放所有模</div>
@@ -602,6 +682,10 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">1270元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
 					<div class="text_div2">理，更大容量/少量个性化定制</div>
@@ -616,6 +700,10 @@ var _hmt = _hmt || [];
 				<div class="price_div">
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">2670元/年</span>
+				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
 				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
@@ -969,7 +1057,7 @@ var _hmt = _hmt || [];
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

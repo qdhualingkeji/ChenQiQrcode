@@ -5,10 +5,9 @@
 <title>商品标签二维码-辰麒二维码制作教程</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit"><meta name="description" content="将二维码附在酒类、茶叶、美容保健品等各类商品外包装或标签中，消费者扫码即可查看商品的价格、基本信息、使用方式、厂家联系方式等内容，在有限的标签中展示更丰富的信息。" />
-<meta name="keywords" content="商品,商品标签,商品包装,酒类,红酒,白酒,啤酒,二维码,条形码,一维码,辰麒,酒水饮料,保健食品,日用品,家居建材,食品农产品,价格二维码" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯,商品二维码,商品标签二维码,商品包装二维码,酒类二维码,红酒二维码,白酒二维码,啤酒二维码,二维码,条形码,一维码,辰麒,酒水饮料二维码,保健食品二维码,日用品二维码,家居建材二维码,食品农产品二维码,价格二维码" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
-
 <link rel="stylesheet" href="qlqrcode_files/static/css/page-index-screen_51b1169.css">
 <link rel="icon" href="qlqrcode_files/images/favicon.ico" mce_href="/static/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="qlqrcode_files/images/favicon.ico" mce_href="/static/images/favicon.ico" type="image/x-icon"
@@ -37,6 +36,60 @@ function getQueryString(name){
 }
 
 $(function(){
+	checkBgIfLogin();
+	setInterval("checkBgIfLogin()","3000");
+	initHtml();
+});
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
+function initHtml(){
 	var dcHtml="";
 	var waibHtml="";
 	var ctiuHtml="";
@@ -325,6 +378,7 @@ $(function(){
 		waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190731/0001.png\" style=\"width:279px;height:557px;\"/>";
 		waibHtml+="<img src=\"qlqrcode_files/attachment/image/20190731/0002.png\" style=\"width:280px;height:559px;margin-left:50px;\"/>";
 		waibHtml+="</div>";
+<<<<<<< HEAD
 		/*
 		waibHtml+="<div style=\"height:30px;line-height:30px;margin-top:50px;\">操作步骤：</div>";
 		waibHtml+="<div style=\"height:30px;line-height:30px;\">一、积分二维码活动设置</div>";
@@ -376,6 +430,38 @@ $(function(){
 		waibHtml+="</div>";
 		waibHtml+="<div style=\"height:30px;line-height:30px;margin-bottom: 20px;text-align:center;\">图 7</div>";
 		*/
+=======
+		waibHtml+="<div style=\"height:30px;line-height:30px;margin-top:50px;\"><span style=\"color: #000000;\"><strong><span style=\"font-size: 18px;\">操作规程</span></strong></span></div>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p>";
+		waibHtml+="<strong>";
+		waibHtml+="<span style=\"font-size: 16px;\">第一步：进入二维码生成页面</span>";
+		waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>点击后台行业模版-积分兑换奖品-二维码生成-添加，来到积分二维码添加页面。</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p>";
+		waibHtml+="<strong>";
+		waibHtml+="<span style=\"font-size: 16px;\">第二步：添加积分二维码</span>";
+		waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>上传商家logo、填写二维码中包含的积分，点击提交。返回积分二维码列表，刚才添加的二维码就出现在其中了，包含二维码、所含积分、创建时间等，可对其编辑、导出。</p>";
+		waibHtml+="<p>这个生成的只是该积分下的一个案例码而已，要生成商品码，附在商品包装上，需选择相应的案例码，导出才行。</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p>";
+		waibHtml+="<strong>";
+		waibHtml+="<span style=\"font-size: 16px;\">第三步：生成商品码</span>";
+		waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>在积分二维码列表里选择对应的案例码，点击导出，按照提示步骤操作。操作成功，即可生成一定数量的商品码。</p>";
+		waibHtml+="<p></p>";
+		waibHtml+="<p>";
+		waibHtml+="<strong>";
+		waibHtml+="<span style=\"font-size: 16px;\">第四步：微信扫描商品码</span>";
+		waibHtml+="</strong>";
+		waibHtml+="</p>";
+		waibHtml+="<p>打开手机端微信扫一扫，扫相应的商品码可领取一定积分。当积分达到该活动的兑奖积分时，会出现兑奖码、奖品兑换提示，用此兑奖码到商家处兑换奖品。生成兑奖码后会扣除一定账户积分，通过再次扫商品码获取更多积分。每个商品码只能扫一次，重复扫码无效。</p>";
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 		
 		ctiuHtml+="<a href=\"http://www.qrcodesy.com:8080/GoodsPublic/merchant/login?from=jfdhjp\"><li class=\"create-tpl-item Margin16\"  is_preview=\"0\" data-type=\"1\" data-long=\"qlqrcode_files/images/rsrc/scene/2b541c82ef7e535cf2f0a2c370dfa36c1547083765.png\">";
 			ctiuHtml+="<h4 class=\"item-name\">";
@@ -899,7 +985,7 @@ $(function(){
 	$("#detail-content").html(dcHtml);
 	$("#wordpress_article_info_box").html(waibHtml);
 	$("#create-tpl-item-ul").html(ctiuHtml);
-});
+}	
 </script>
 <script>
 	var CLI_DOMAIN='cli.im',
@@ -1039,7 +1125,7 @@ $(function(){
 				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
 			</li>
             <li class="list">
 				<a class="a2" href="price.html">定制价格</a>
@@ -1049,7 +1135,10 @@ $(function(){
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -1933,7 +2022,7 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->
@@ -1944,9 +2033,15 @@ var SOCKETAPISURL = 'https://socket.api.cli.im';
       (function() {
         var hm = document.createElement('script');
 		if(location.href.indexOf("www.qrcodesy.com")!=-1)
+<<<<<<< HEAD
             hm.src = '//hm.baidu.com/hm.js?cb508e5fef81367bfa47f4ec313bf68c';
 		else
             hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+=======
+            hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+		else
+            hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 		var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(hm, s);
         var getCookie = function (name) {

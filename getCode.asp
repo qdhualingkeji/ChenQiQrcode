@@ -25,7 +25,8 @@
   else if(from=="checkPhoneAdmin"){
 	  var fromUrl=paramArr[1];
 	  var fromWebSite=paramArr[2];
-	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/"+fromUrl+"?code="+code+"&fromWebSite="+fromWebSite;
+	  var uuid=paramArr[3];
+	  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/phone/"+fromUrl+"?code="+code+"&fromWebSite="+fromWebSite+"&uuid="+uuid;
   }
   </script>
  </head>

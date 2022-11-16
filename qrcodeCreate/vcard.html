@@ -12,6 +12,9 @@
 <script>
 var htmlGoodsGRMP;
 $(function(){
+	checkBgIfLogin();
+	setInterval("checkBgIfLogin()","3000");
+
 	$(".add_div .lxfsDropdown_div .item_div").click(function(){
 		addItem(this,1);
 		$(".add_div #lxfsDropdown_div").css("display","none");
@@ -151,6 +154,54 @@ $(function(){
 		$("#qympewm_div").css("display","block");
 	}
 });
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
 
 function getQueryString(name){
 	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -556,17 +607,23 @@ var _hmt = _hmt || [];
 					<a href="../solutionCommodity.html">案例模版</a>
 				</li>
 				<li class="active">
-					<a href="text.html">二维码生成器</a>
+					<a href="url.html">二维码生成器</a>
 				</li>
 				<li>
 					<a href="../price.html">定制价格</a>
+				</li>
+				<li>
+					<a href="../new.html">新闻动态</a>
 				</li>
 				<li>
 					<a href="../help.html">帮助</a>
 				</li>
             </ul>
 			<div class="nav_button">
-				<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but">登录</a>
+				<input type="hidden" id="userName"/>
+				<input type="hidden" id="password"/>
+				<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login but" id="loginBut_a">登录</a>
+				<a class="htgl but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 				<!--
 				<a class="kf-open registered but"><span>申请试用</span></a>
 				-->
@@ -578,10 +635,10 @@ var _hmt = _hmt || [];
 <div class="cli_nav nav_gray scene_mobile clearfix p-a-0">
 	<ul class="sub_nav sub_mobile_nav cli_head_container clearfix">
 		<li>
-			<a href="text.html" title="生成文本二维码" class="tab_sep">文本</a>
+			<a href="url.html" title="生成网址二维码" class="tab_sep [navigation_url]" onclick="StatisticsData(120,12)">网址</a>
 		</li>
 		<li>
-			<a href="url.html" title="生成网址二维码" class="tab_sep [navigation_url]" onclick="StatisticsData(120,12)">网址</a>
+			<a href="text.html" title="生成文本二维码" class="tab_sep">文本</a>
 		</li>
 		<li>
 			<a href="vcard.html" title="名片二维码" class="tab_sep [navigation_vcard] on" onclick="StatisticsData(120,16)">名片</a>
@@ -858,7 +915,7 @@ var _hmt = _hmt || [];
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

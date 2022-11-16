@@ -4,10 +4,65 @@
 <meta charset="UTF-8">
 <meta name="Generator" content="EditPlus®">
 <meta name="Author" content="">
-<meta name="Keywords" content="辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,防伪系统,追溯平台,溯源系统,巡检系统,一码追溯">
-<meta name="Description" content="一码追溯,免费二维码生成,提供二维码防伪溯源_设备巡检_记录管理_防窜货_一物一码标签印刷_网站营销一站式解决方案,致力于帮助企业快速提高品牌形象与管理效率。">
+<meta name="keywords" content="辰麒网,二维码,二维码图片,二维码制作,二维码名片,qrcode,二维码是什么,辰麒二维码,二维码防伪,二维码溯源,二维码营销,二维码生成,二维码追溯,二维码论坛,二维条码,微信二维码,二维码防伪系统,二维码追溯平台,二维码溯源系统,二维码巡检系统,二维码一码追溯" />
+<meta name="Description" content="辰麒二维码各版本价格: 基础版600元每年、高级版1270元每年、行业版2670元每年,更大使用量,以及去除辰麒标识及跳转中间页,支持音视频等功能。">
 <link rel="stylesheet" type="text/css" href="qrcode/cs/style.css" />
 <style>
+.login_bg_div{
+	width:100%;height:100%;background-color:rgba(0, 0, 0, 0.3);position:fixed;display:none;z-index:6;
+}
+.login_div{
+	width: 795px;height: 540px;margin: 60px auto 0;background: #eff2f3;border: 1px solid #eee;padding:1px;border-radius: 6px;box-sizing: border-box;overflow: hidden;position: relative;
+}
+.login_div .closeBut_div{
+	right:10px;top:10px;color:#bbb;position: absolute;cursor: pointer;
+}
+.login_div .dlqlzh_div{
+	height: 34px;line-height: 34px;font-size: 24px;color: #4caf50;text-align: center;margin-top: 50px;
+}
+.login_div .main_div{
+	width: 735px;height:380px;margin: 45px auto 0;background-color: #fff;padding:1px;
+}
+.login_div .logLeft_div{
+	width:365px;height:220px;margin-top: 50px;
+}
+.login_div .sjhdl_h2{
+	height:20px;line-height:20px;color: #4a4a4a;font-size:16px;font-weight: 700;text-align: center;margin-bottom: 20px;
+}
+.login_div .userName_div,.login_div .password_div{
+	width: 220px;height:48px;margin: auto;border-bottom: 1px solid #eee;
+}
+.login_div .userName_inp,.login_div .password_inp{
+	width: 210px;height: 48px;line-height: 48px;font-size: 14px;padding: 0 5px;border-radius: 4px;border: 1px solid rgba(120,130,140,0.25);
+}
+.login_div .loginBut_div{
+	width: 220px;height: 38px;line-height: 38px;font-size: 16px;color:#fff;text-align:center;margin:40px auto 0;border-radius: 4px;background-color:rgb(76, 175, 80);cursor: pointer;
+}
+.login_div .cutLine_div{
+	width: 1px;height: 183px;left: 50%;margin-top: -183px;background-color: rgba(120,130,140,.13);position: absolute;
+}
+.login_div .logRight_div{
+	width:365px;height:220px;margin-top:-220px;margin-left:370px;
+}
+.login_div .wxkjdl_h2{
+	height:20px;line-height:20px;color: #4a4a4a;font-size:16px;font-weight: 700;text-align: center;margin-bottom: 20px;
+}
+.login_div .wxkjdl_div{
+	width: 100%;height:210px;margin: 20px auto 0;text-align: center;
+}
+.login_div .qrcode_img{
+	width: 180px;height:180px;
+}
+.login_div .wxsys_div{
+	font-size: 12px;color: #9B9B9B;
+}
+.login_div .regist_div{
+	font-size: 12px;color: #9b9b9b;text-align: center;margin-top: 75px;
+}
+.login_div .regist_a{
+	color: #357bb3;
+}
+
 header .nav .logo {
     display: block;
     width: 560px;
@@ -47,7 +102,7 @@ header .nav .logo {
 }
 .usePrice_div .list_div{
 	width:1032px;
-	height:300px;
+	height:380px;
 	/*
 	background-color:#fff;
 	*/
@@ -83,17 +138,32 @@ header .nav .logo {
 .usePrice_div .list_div .item_div .jine_span{
 	font-size: 18px;
 }
+.usePrice_div .list_div .item_div .xqhdtx_div,{
+	width: 100%;
+}
+.usePrice_div .list_div .item_div .xqhdtx_div .text_div1{
+	text-align: center;
+	color:#f00;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.usePrice_div .list_div .item_div .xqhdtx_div .text_div2{
+	text-align: center;
+	color:#f00;
+	font-size: 12px;
+	margin-top: 5px;
+}
 .usePrice_div .list_div .item_div .text-intro_div{
 	width: 100%;
 	height:60px;
 }
-.usePrice_div .list_div .item_div .text_div1{
+.usePrice_div .list_div .item_div .text-intro_div .text_div1{
 	text-align: center;
 	color:#666;
 	font-size: 12px;
 	margin-top: 15px;
 }
-.usePrice_div .list_div .item_div .text_div2{
+.usePrice_div .list_div .item_div .text-intro_div .text_div2{
 	text-align: center;
 	color:#666;
 	font-size: 12px;
@@ -103,7 +173,7 @@ header .nav .logo {
 	width:112px;
 	height:38px;
 	line-height:38px;
-	margin:50px auto 0;
+	margin:20px auto 0;
 	font-size:15px;
 	color: #f57c00;
 	border: #f57c00 solid 1px;
@@ -261,10 +331,14 @@ header .nav .logo {
 	letter-spacing: 0;
 }
 </style>
-<title>辰麒二维码追溯系统，一物一码，智能追溯</title>
+<title>辰麒二维码价格方案</title>
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
+<script src="qlqrcode_files/MD5.js"></script>
 <script type="text/javascript">
 $(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -277,16 +351,210 @@ $(function(){
   });
 });
 
+<<<<<<< HEAD
+=======
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#nav_button #userName").val(data.userName);
+				$("#nav_button #password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#nav_button #userName").val("");
+				$("#nav_button #password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#nav_button #userName").val();
+	var password=$("#nav_button #password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
+
+function goRegist(){
+	var price=$("#price_hid").val();
+	location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/regist?action=buy&price="+price;
+}
+
+function checkInputData(){
+	if(checkUserName()){
+		if(checkPassword()){
+			login();
+		}
+	}
+}
+
+function focusUserName(){
+	var userName=$("#userName").val();
+	if(userName=="请填写用户名"){
+		$("#userName").val("");
+		$("#userName").css("color","#000");
+	}
+}
+
+function checkUserName(){
+	var userName=$("#userName").val();
+	if(userName==null||userName==""||userName=="请填写用户名"){
+		$("#userName").css("color","#f00");
+		$("#userName").val("请填写用户名");
+		return false;
+	}
+	else
+		return true;
+}
+
+function checkPassword(){
+	var password=$("#password").val();
+	if(password==null||password==""||password=="请填写密码"){
+		alert("请填写密码");
+		return false;
+	}
+	else
+		return true;
+}
+
+function login(){
+  var userName=$("#userName_div #userName").val();
+  var password=MD5($("#password_div #password").val()).toUpperCase();
+  $.ajax({
+	 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/loginQL",
+	 dataType:'jsonp',
+	 data:"userName="+userName+"&password="+password+"&action=addModule",
+	 processData: false, 
+	 jsonp:'callback',
+	 jsonpCallback:"jsonpCallback",
+	 type:'get',
+	 success:function(data){
+	   var json=JSON.parse(data);
+	   //console.log(json);
+	   if(json.status==0){
+		  var price=$("#price_hid").val();
+		  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/saveQLUser?price="+price+"&userName="+userName+"&password="+password;
+	   }
+	   else{
+		  alert(json.msg);
+	   }
+	 },
+	 error:function(XMLHttpRequest, textStatus, errorThrown) {
+	   alert(XMLHttpRequest);
+	   alert(XMLHttpRequest.status);
+	   alert(XMLHttpRequest.readyState);
+	   alert(textStatus);
+	 }
+ });
+}
+
+function goFeeBuy(price){
+	if(price==0){
+		location.href="newcode.html";
+	}
+	else{
+	  $.ajax({
+		 url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/checkIfLogin",
+		 dataType:'jsonp',
+		 processData: false, 
+		 jsonp:'callback',
+		 jsonpCallback:"jsonpCallback",
+		 type:'get',
+		 success:function(data){
+		   var json=JSON.parse(data);
+		   console.log(json);
+		   if(json.status==0){
+			  location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/main/goFeeBuy?price="+price;
+		   }
+		   else{
+			  //location.href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/regist?price="+price;
+			  $("#login_bg_div").css("display","block");
+			  $("#login_bg_div #price_hid").val(price);
+		   }
+		 },
+		 error:function(XMLHttpRequest, textStatus, errorThrown) {
+		   alert(XMLHttpRequest);
+		   alert(XMLHttpRequest.status);
+		   alert(XMLHttpRequest.readyState);
+		   alert(textStatus);
+		 }
+	  });
+	}
+}
+
+function closeLoginBgDiv(){
+	$("#login_bg_div").css("display","none");
+}
+
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
+	var hm = document.createElement('script');
+	if(location.href.indexOf("www.qrcodesy.com")!=-1)
+		hm.src = '//hm.baidu.com/hm.js?2d58e7ee2c6bd4eb74b0893c5a3a92a4';
+	else
+		hm.src = '//hm.baidu.com/hm.js?8c80a9e9c16ebc0f53192a4a9c150e97';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(hm, s);
 })();
 </script>
 </head>
 <body>
+
+<div class="login_bg_div" id="login_bg_div">
+	<div class="login_div">
+		<div class="closeBut_div" onclick="closeLoginBgDiv();">X</div>
+		<div class="dlqlzh_div">登录辰麒账号</div>
+		<div class="main_div">
+			<div class="logLeft_div">
+				<h2 class="sjhdl_h2">手机号登录</h2>
+				<div class="userName_div" id="userName_div">
+					<input type="text" class="userName_inp" id="userName" onfocus="focusUserName();" onblur="checkUserName();"/>
+				</div>
+				<div class="password_div" id="password_div">
+					<input type="password" class="password_inp" id="password" onblur="checkPassword();"/>
+				</div>
+				<div class="loginBut_div" onclick="checkInputData();">登 录</div>
+			</div>
+			<div class="cutLine_div"></div>
+			<div class="logRight_div">
+				<h2 class="wxkjdl_h2">微信快捷登录</h2>
+				<div class="wxkjdl_div">
+					<img class="qrcode_img" src="http://www.qrcodesy.com:8080/GoodsPublic/resource/images/009.png"/>
+ 					<div class="wxsys_div">微信扫一扫，快速登录</div>
+				</div>
+			</div>
+ 			<div class="regist_div">还没有账号？<a class="regist_a" onclick="goRegist();">立即免费注册</a></div>
+		</div>
+		<input type="hidden" id="price_hid"/>
+	</div>
+</div>
+
 <header class="fix">
 <div class="nav" style="box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
     <a href="/" class="logo fl">&nbsp;</a>
@@ -296,20 +564,26 @@ var _hmt = _hmt || [];
 				<a class="a2" href="index.html">首页</a>
 			</li>
             <li>
-				<a class="a2" href="solutionCommodity.html">案例模板</a>
+				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
 			</li>
             <li class="active">
 				<a class="a2" href="price.html">定制价格</a>
             </li>
 			<li>
+				<a class="a2" href="new.html">新闻动态</a>
+			</li>
+			<li>
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
-		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+		<div class="nav_button" id="nav_button">
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
 			<!--
 			<a class="kf-open registered but"><span>申请试用</span></a>
 			-->
@@ -372,11 +646,15 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">0元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">&nbsp;</div>
+					<div class="text_div2">&nbsp;</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">二维码生成数量不限</div>
 					<div class="text_div2">限时7天</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(0);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -387,11 +665,15 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">600元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">去除辰麒所有标识，开放所有模</div>
 					<div class="text_div2">版和定制功能，客服一对一辅导</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(600);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -402,11 +684,15 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">1270元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
 					<div class="text_div2">理，更大容量/少量个性化定制</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(1270);">立即购买</div>
 			</div>
 		</div>
 		<div class="item_div" style="margin-left:50px;">
@@ -417,11 +703,15 @@ var _hmt = _hmt || [];
 					<span class="fuhao_span">￥</span>
 					<span class="jine_span">2670元/年</span>
 				</div>
+				<div class="xqhdtx_div">
+					<div class="text_div1">限期活动价0元/年</div>
+					<div class="text_div2">截止到2021年11月30日</div>
+				</div>
 				<div class="text-intro_div">
 					<div class="text_div1">多管理员账号协作建码/数据管</div>
 					<div class="text_div2">理，根据客户需求定制功能开发</div>
 				</div>
-				<div class="buy_div">立即购买</div>
+				<div class="buy_div" onclick="goFeeBuy(2670);">立即购买</div>
 			</div>
 		</div>
 	</div>
@@ -769,7 +1059,7 @@ var _hmt = _hmt || [];
 		<p>公司地址：青岛市市北中央商务区西王大厦16F</p>
 	</div>
 	<div class="bqxx">
-		青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color:#999;">鲁ICP备19062226号-3</a>
+		青岛华凌科技有限公司 qdhualing.com <a href="https://beian.miit.gov.cn" target="_blank" style="color:#999;">鲁ICP备19062226号-3</a>
 	</div>
 </div>
 <!--w_grid-1568271949559_end-->

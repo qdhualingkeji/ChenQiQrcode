@@ -107,61 +107,76 @@ header .nav .logo {
 	margin-top:-260px;margin-left:210px;
 }
 .hjContent_div{
-	background-image: url('rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/693ac3a37d1123f6ea582f81aa2e01f91540273623.png');
 }
 .bjItem_div{
 	margin-top:-260px;margin-left:420px;
 }
 .bjContent_div{
-	background-image: url('rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/c5f3b260c6e47ab14d49c66b9275ed3b1549864235.png');
 }
 .jfdhjpItem_div{
 	margin-top:-260px;margin-left:630px;
 }
 .jfdhjpContent_div{
+<<<<<<< HEAD
 	background-image: url('rsrc/scene/202006120002.png');
+=======
+	background-image: url('qlqrcode_files/images/rsrc/scene/202006120002.png');
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 }
 .smylItem_div{
 	margin-top:-260px;margin-left:840px;
 }
 .smylContent_div{
+<<<<<<< HEAD
 	background-image: url('rsrc/scene/202006120001.png');
+=======
+	background-image: url('qlqrcode_files/images/rsrc/scene/202006120001.png');
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 }
 .jfItem_div{
 	margin-top:0px;margin-left:0px;
 }
 .jfContent_div{
-	background-image: url('rsrc/scene/202004260001.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260001.png');
 }
 .yspItem_div{
 	margin-top:-260px;margin-left:210px;
 }
 .yspContent_div{
-	background-image: url('rsrc/scene/202004260003.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260003.png');
 }
 .smsItem_div{
 	margin-top:-260px;margin-left:420px;
 }
 .smsContent_div{
-	background-image: url('rsrc/scene/202004260002.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/202004260002.png');
 }
 .dmtzlItem_div{
 	margin-top:-260px;margin-left:630px;
 }
 .dmtzlContent_div{
-	background-image: url('rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
+	background-image: url('qlqrcode_files/images/rsrc/scene/d3d9f95ac203e909f193110cbf0125371579163477.png');
 }
 .jzsgItem_div{
 	margin-top:-260px;margin-left:840px;
 }
 .jzsgContent_div{
+<<<<<<< HEAD
 	background-image: url('rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
+=======
+	background-image: url('qlqrcode_files/images/rsrc/scene/bd4568ac2e4ed86d7be11c46b1ae6d191554261953.png');
+>>>>>>> 241a62acced37f6e24db64471c369f659d0aaa7d
 }
 </style>
 <title>辰麒二维码追溯系统，一物一码，智能追溯</title>
 <script type="text/javascript" src="qrcode/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
+  checkBgIfLogin();
+  setInterval("checkBgIfLogin()","3000");
+
   var nav=$("header");
   var win=$(window);
   var sc=$(document);
@@ -173,6 +188,54 @@ $(function(){
     }
   });
 });
+
+function checkBgIfLogin(){
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/checkBgIfLogin",
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			var ifLogin=data.ifLogin;
+			if(ifLogin=="ok"){
+				$("#loginBut_a").css("display","none");
+				$("#htglBut_a").css("display","block");
+
+				$("#userName").val(data.userName);
+				$("#password").val(data.passWord);
+			}
+			else{
+				$("#loginBut_a").css("display","block");
+				$("#htglBut_a").css("display","none");
+				
+				$("#userName").val("");
+				$("#password").val("");
+			}
+		}
+	});
+}
+
+function autoLogin(){
+	var userName=$("#userName").val();
+	var password=$("#password").val();
+	$.ajax({
+		url:"http://www.qrcodesy.com:8080/GoodsPublic/merchant/chenQi/autoLogin",
+		data:{userName:userName,password:password},
+		dataType:"jsonp",
+		type: "post",
+		jsonpCallback:"jsonpCallback",
+		success:function(result){
+			var data=JSON.parse(result);
+			if(data.status==0){
+				location.href="http://www.qrcodesy.com:8080/GoodsPublic"+data.url;
+			}
+			else{
+				alert(data.msg);
+			}
+		}
+	});
+}
 
 function goAddModule(type){
 	var url;
@@ -233,17 +296,25 @@ var _hmt = _hmt || [];
 				<a class="a2" href="solutionCommodity.html">案例模版</a>
 			</li>
 			<li>
-				<a class="a2" href="qrcodeCreate/text.html">二维码生成器</a>
+				<a class="a2" href="qrcodeCreate/url.html">二维码生成器</a>
 			</li>
             <li class="list">
 				<a class="a2" href="price.html">定制价格</a>
             </li>
+			<li>
+				<a href="new.html">新闻动态</a>
+			</li>
 			<li class="list">
 				<a class="a2" href="help.html">帮助</a>
 			</li>
         </ul>
 		<div class="nav_button">
-			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but">登录</a>
+			<input type="hidden" id="userName"/>
+			<input type="hidden" id="password"/>
+			<a href="http://www.qrcodesy.com:8080/GoodsPublic/merchant/login" target="_blank" class="login2 but" id="loginBut_a">登录</a>
+			<a class="htgl2 but" id="htglBut_a" onclick="autoLogin()">后台管理</a>
+		</div>
+		<div class="nav_button">
 			<a class="kf-open registered but"><span>申请试用</span></a>
 		</div>
     </div>
